@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
+            <connections>
+                <outlet property="blueView" destination="7" id="10"/>
+                <outlet property="greenView" destination="9" id="11"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" image="blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="416"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" image="green.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                </imageView>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                    <rect key="frame" x="84" y="54" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="推挤">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="29"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                    <rect key="frame" x="164" y="54" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="揭开">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="30"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="244" y="54" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="覆盖">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="31"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="4" y="54" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="62"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="淡化">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="28"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="4" y="9" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="58"/>
+                        <constraint firstAttribute="width" constant="72" id="59"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="下翻">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed2:" destination="-1" eventType="touchUpInside" id="36"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                    <rect key="frame" x="84" y="9" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="60"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="上翻">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed2:" destination="-1" eventType="touchUpInside" id="37"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34">
+                    <rect key="frame" x="164" y="9" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="56"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="左转">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed2:" destination="-1" eventType="touchUpInside" id="38"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="244" y="9" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="61"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="右转">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed2:" destination="-1" eventType="touchUpInside" id="39"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40">
+                    <rect key="frame" x="4" y="399" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="143"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="翻页">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="52"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="206" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41">
+                    <rect key="frame" x="84" y="399" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="反翻页">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="53"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="207" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42">
+                    <rect key="frame" x="164" y="399" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="镜头开">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="54"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="208" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43">
+                    <rect key="frame" x="244" y="399" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="镜头关">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="55"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44">
+                    <rect key="frame" x="4" y="354" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="142"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="立方体">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="48"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                    <rect key="frame" x="84" y="354" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="吸收">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="49"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                    <rect key="frame" x="164" y="354" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="翻转">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="50"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47">
+                    <rect key="frame" x="244" y="354" width="72" height="36"/>
+                    <color key="backgroundColor" red="0.13613390903262171" green="0.17949479610223795" blue="0.47174339908181828" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="波纹">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed1:" destination="-1" eventType="touchUpInside" id="51"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="18" firstAttribute="top" secondItem="17" secondAttribute="top" id="63"/>
+                <constraint firstItem="33" firstAttribute="top" secondItem="32" secondAttribute="top" id="64"/>
+                <constraint firstItem="34" firstAttribute="leading" secondItem="33" secondAttribute="trailing" constant="8" symbolic="YES" id="65"/>
+                <constraint firstItem="33" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="66"/>
+                <constraint firstItem="33" firstAttribute="baseline" secondItem="34" secondAttribute="firstBaseline" id="67"/>
+                <constraint firstItem="42" firstAttribute="top" secondItem="41" secondAttribute="top" id="68"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="17" secondAttribute="trailing" constant="8" symbolic="YES" id="69"/>
+                <constraint firstItem="35" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" id="70"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="34" secondAttribute="trailing" constant="8" symbolic="YES" id="71"/>
+                <constraint firstItem="40" firstAttribute="baseline" secondItem="41" secondAttribute="firstBaseline" id="73"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="47" secondAttribute="leading" id="74"/>
+                <constraint firstItem="40" firstAttribute="baseline" secondItem="41" secondAttribute="baseline" id="76"/>
+                <constraint firstItem="32" firstAttribute="baseline" secondItem="33" secondAttribute="firstBaseline" id="77"/>
+                <constraint firstItem="16" firstAttribute="leading" secondItem="19" secondAttribute="trailing" constant="8" symbolic="YES" id="78"/>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="45" secondAttribute="trailing" constant="8" symbolic="YES" id="79"/>
+                <constraint firstItem="44" firstAttribute="baseline" secondItem="45" secondAttribute="baseline" id="80"/>
+                <constraint firstItem="34" firstAttribute="baseline" secondItem="35" secondAttribute="firstBaseline" id="81"/>
+                <constraint firstItem="45" firstAttribute="baseline" secondItem="46" secondAttribute="baseline" id="82"/>
+                <constraint firstItem="33" firstAttribute="baseline" secondItem="32" secondAttribute="firstBaseline" id="83"/>
+                <constraint firstItem="19" firstAttribute="baseline" secondItem="16" secondAttribute="firstBaseline" id="84"/>
+                <constraint firstItem="41" firstAttribute="leading" secondItem="40" secondAttribute="trailing" constant="8" symbolic="YES" id="86"/>
+                <constraint firstItem="33" firstAttribute="baseline" secondItem="34" secondAttribute="baseline" id="87"/>
+                <constraint firstItem="18" firstAttribute="baseline" secondItem="17" secondAttribute="baseline" id="88"/>
+                <constraint firstItem="47" firstAttribute="leading" secondItem="43" secondAttribute="leading" id="91"/>
+                <constraint firstItem="16" firstAttribute="baseline" secondItem="17" secondAttribute="baseline" id="92"/>
+                <constraint firstItem="45" firstAttribute="leading" secondItem="44" secondAttribute="trailing" constant="8" symbolic="YES" id="93"/>
+                <constraint firstItem="41" firstAttribute="baseline" secondItem="40" secondAttribute="firstBaseline" id="94"/>
+                <constraint firstItem="47" firstAttribute="trailing" secondItem="43" secondAttribute="trailing" id="95"/>
+                <constraint firstItem="46" firstAttribute="top" secondItem="47" secondAttribute="top" id="96"/>
+                <constraint firstItem="43" firstAttribute="baseline" secondItem="42" secondAttribute="baseline" id="97"/>
+                <constraint firstItem="42" firstAttribute="leading" secondItem="46" secondAttribute="leading" id="98"/>
+                <constraint firstItem="45" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="99"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="100"/>
+                <constraint firstItem="40" firstAttribute="leading" secondItem="44" secondAttribute="leading" id="101"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="35" secondAttribute="leading" id="102"/>
+                <constraint firstItem="47" firstAttribute="leading" secondItem="46" secondAttribute="trailing" constant="8" symbolic="YES" id="103"/>
+                <constraint firstItem="34" firstAttribute="top" secondItem="35" secondAttribute="top" id="104"/>
+                <constraint firstItem="45" firstAttribute="top" secondItem="44" secondAttribute="top" id="105"/>
+                <constraint firstItem="41" firstAttribute="baseline" secondItem="42" secondAttribute="firstBaseline" id="106"/>
+                <constraint firstItem="45" firstAttribute="top" secondItem="46" secondAttribute="top" id="107"/>
+                <constraint firstItem="45" firstAttribute="baseline" secondItem="44" secondAttribute="firstBaseline" id="108"/>
+                <constraint firstItem="19" firstAttribute="baseline" secondItem="16" secondAttribute="baseline" id="110"/>
+                <constraint firstAttribute="bottom" secondItem="40" secondAttribute="bottom" constant="101" id="111"/>
+                <constraint firstItem="17" firstAttribute="baseline" secondItem="18" secondAttribute="firstBaseline" id="112"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="4" id="113"/>
+                <constraint firstItem="18" firstAttribute="trailing" secondItem="47" secondAttribute="trailing" id="114"/>
+                <constraint firstItem="42" firstAttribute="baseline" secondItem="43" secondAttribute="firstBaseline" id="116"/>
+                <constraint firstItem="40" firstAttribute="top" secondItem="41" secondAttribute="top" id="117"/>
+                <constraint firstItem="33" firstAttribute="leading" secondItem="32" secondAttribute="trailing" constant="8" symbolic="YES" id="118"/>
+                <constraint firstItem="16" firstAttribute="top" secondItem="17" secondAttribute="top" id="119"/>
+                <constraint firstItem="43" firstAttribute="leading" secondItem="42" secondAttribute="trailing" constant="8" symbolic="YES" id="120"/>
+                <constraint firstItem="45" firstAttribute="baseline" secondItem="46" secondAttribute="firstBaseline" id="121"/>
+                <constraint firstItem="33" firstAttribute="top" secondItem="34" secondAttribute="top" id="122"/>
+                <constraint firstAttribute="bottom" secondItem="44" secondAttribute="bottom" constant="146" id="123"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="16" secondAttribute="trailing" constant="8" symbolic="YES" id="124"/>
+                <constraint firstItem="33" firstAttribute="baseline" secondItem="32" secondAttribute="baseline" id="125"/>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="126"/>
+                <constraint firstItem="46" firstAttribute="baseline" secondItem="47" secondAttribute="firstBaseline" id="127"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="32" secondAttribute="leading" id="128"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="1" secondAttribute="top" constant="54" id="129"/>
+                <constraint firstItem="43" firstAttribute="top" secondItem="42" secondAttribute="top" id="130"/>
+                <constraint firstItem="41" firstAttribute="leading" secondItem="45" secondAttribute="leading" id="131"/>
+                <constraint firstItem="34" firstAttribute="baseline" secondItem="35" secondAttribute="baseline" id="132"/>
+                <constraint firstItem="32" firstAttribute="top" secondItem="1" secondAttribute="top" constant="9" id="133"/>
+                <constraint firstItem="44" firstAttribute="baseline" secondItem="45" secondAttribute="firstBaseline" id="134"/>
+                <constraint firstItem="41" firstAttribute="baseline" secondItem="42" secondAttribute="baseline" id="135"/>
+                <constraint firstItem="47" firstAttribute="baseline" secondItem="46" secondAttribute="baseline" id="136"/>
+                <constraint firstItem="16" firstAttribute="top" secondItem="19" secondAttribute="top" id="137"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="34" secondAttribute="leading" id="138"/>
+                <constraint firstItem="42" firstAttribute="leading" secondItem="41" secondAttribute="trailing" constant="8" symbolic="YES" id="139"/>
+                <constraint firstItem="16" firstAttribute="baseline" secondItem="19" secondAttribute="firstBaseline" id="140"/>
+                <constraint firstItem="16" firstAttribute="baseline" secondItem="17" secondAttribute="firstBaseline" id="141"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="N71-lH-4lp"/>
+                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" id="Oia-cd-Fja"/>
+                <constraint firstAttribute="trailing" secondItem="9" secondAttribute="trailing" id="TRD-tO-pnh"/>
+                <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" id="fcs-lb-HiE"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="1" secondAttribute="top" id="nuk-gK-WfG"/>
+                <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="qSZ-4p-lXM"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="sdu-fY-9vn"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" id="woJ-7i-9qw"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="N71-lH-4lp"/>
+                    <exclude reference="Oia-cd-Fja"/>
+                    <exclude reference="nuk-gK-WfG"/>
+                    <exclude reference="qSZ-4p-lXM"/>
+                    <exclude reference="TRD-tO-pnh"/>
+                    <exclude reference="fcs-lb-HiE"/>
+                    <exclude reference="sdu-fY-9vn"/>
+                    <exclude reference="woJ-7i-9qw"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="N71-lH-4lp"/>
+                    <include reference="Oia-cd-Fja"/>
+                    <include reference="nuk-gK-WfG"/>
+                    <include reference="qSZ-4p-lXM"/>
+                    <include reference="TRD-tO-pnh"/>
+                    <include reference="fcs-lb-HiE"/>
+                    <include reference="sdu-fY-9vn"/>
+                    <include reference="woJ-7i-9qw"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="305" y="364"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue.jpg" width="640" height="960"/>
+        <image name="green.jpg" width="640" height="960"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController">
+            <connections>
+                <outlet property="mainTableView" destination="0cs-pY-BOU" id="qVZ-yi-QNq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0cs-pY-BOU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7ji-VL-U0t"/>
+                        <outlet property="delegate" destination="-1" id="yQ0-a8-HB9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0cs-pY-BOU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="97b-j2-icp"/>
+                <constraint firstItem="0cs-pY-BOU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DIy-eP-yZN"/>
+                <constraint firstAttribute="bottom" secondItem="0cs-pY-BOU" secondAttribute="bottom" id="bsk-Re-LV2"/>
+                <constraint firstAttribute="trailing" secondItem="0cs-pY-BOU" secondAttribute="trailing" id="flT-oh-c6Z"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="0cs-pY-BOU"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="97b-j2-icp"/>
+                    <exclude reference="DIy-eP-yZN"/>
+                    <exclude reference="bsk-Re-LV2"/>
+                    <exclude reference="flT-oh-c6Z"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="0cs-pY-BOU"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="97b-j2-icp"/>
+                    <include reference="DIy-eP-yZN"/>
+                    <include reference="bsk-Re-LV2"/>
+                    <include reference="flT-oh-c6Z"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

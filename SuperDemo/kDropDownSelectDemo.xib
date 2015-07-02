@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="kDropDownSelectDemo">
+            <connections>
+                <outlet property="lblSelectedCountryNames" destination="0lt-Xb-AwC" id="xi6-y9-26k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-8b-IMe">
+                    <rect key="frame" x="16" y="58" width="287" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="287" id="HGN-xZ-NN7"/>
+                        <constraint firstAttribute="height" constant="28" id="mfD-Hd-El4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Select Country" backgroundImage="drop_down.png">
+                        <color key="titleColor" red="0.0" green="0.42352944609999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HGN-xZ-NN7"/>
+                            <exclude reference="mfD-Hd-El4"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HGN-xZ-NN7"/>
+                            <include reference="mfD-Hd-El4"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="DropDownSingle:" destination="-1" eventType="touchUpInside" id="RAa-14-QeR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-Ce-AcA">
+                    <rect key="frame" x="16" y="150" width="287" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="287" id="4o4-rY-joQ"/>
+                        <constraint firstAttribute="height" constant="28" id="qW6-7S-PyD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Select Country" backgroundImage="drop_down.png">
+                        <color key="titleColor" red="0.0" green="0.42352944609999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4o4-rY-joQ"/>
+                            <exclude reference="qW6-7S-PyD"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="4o4-rY-joQ"/>
+                            <include reference="qW6-7S-PyD"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="DropDownPressed:" destination="-1" eventType="touchUpInside" id="h8e-xI-AXi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Selection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-Ab-1O8">
+                    <rect key="frame" x="20" y="121" width="139" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="139" id="WAp-ad-U2Q"/>
+                        <constraint firstAttribute="height" constant="21" id="i5I-x8-B3m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.42352944609999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WAp-ad-U2Q"/>
+                            <exclude reference="i5I-x8-B3m"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="WAp-ad-U2Q"/>
+                            <include reference="i5I-x8-B3m"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutiple Selection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-Wo-Jo1">
+                    <rect key="frame" x="16" y="29" width="139" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="139" id="3ZM-1n-Yru"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.42352944609999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3ZM-1n-Yru"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="3ZM-1n-Yru"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lt-Xb-AwC">
+                    <rect key="frame" x="16" y="240" width="287" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N01-kg-pK9">
+                            <variation key="widthClass=compact" constant="84"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="287" id="Xqt-vi-SwF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.42352944609999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="N01-kg-pK9"/>
+                            <exclude reference="Xqt-vi-SwF"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="N01-kg-pK9"/>
+                            <include reference="Xqt-vi-SwF"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UHv-Ce-AcA" firstAttribute="top" secondItem="CRj-Wo-Jo1" secondAttribute="bottom" constant="8" id="1Dm-Kx-9Ux"/>
+                <constraint firstItem="Ri9-8b-IMe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3yX-VJ-ZNz"/>
+                <constraint firstItem="CRj-Wo-Jo1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Cfg-1P-CYJ"/>
+                <constraint firstItem="UHv-Ce-AcA" firstAttribute="top" secondItem="CRj-Wo-Jo1" secondAttribute="bottom" constant="8" id="Ih0-Aw-JKb"/>
+                <constraint firstItem="CL7-Ab-1O8" firstAttribute="top" secondItem="UHv-Ce-AcA" secondAttribute="bottom" constant="37" id="Lja-Jh-uyB"/>
+                <constraint firstItem="0lt-Xb-AwC" firstAttribute="top" secondItem="Ri9-8b-IMe" secondAttribute="bottom" constant="18" id="PAC-Mt-sFX"/>
+                <constraint firstItem="UHv-Ce-AcA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="STg-G2-MKz"/>
+                <constraint firstItem="CL7-Ab-1O8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="d11-El-FYK"/>
+                <constraint firstItem="Ri9-8b-IMe" firstAttribute="top" secondItem="CL7-Ab-1O8" secondAttribute="bottom" constant="8" id="eOF-eU-PWG"/>
+                <constraint firstItem="CRj-Wo-Jo1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="qdm-0e-Iw6"/>
+                <constraint firstItem="0lt-Xb-AwC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vuN-sD-23f"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Ri9-8b-IMe"/>
+                    <exclude reference="UHv-Ce-AcA"/>
+                    <exclude reference="CL7-Ab-1O8"/>
+                    <exclude reference="CRj-Wo-Jo1"/>
+                    <exclude reference="0lt-Xb-AwC"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Cfg-1P-CYJ"/>
+                    <exclude reference="qdm-0e-Iw6"/>
+                    <exclude reference="1Dm-Kx-9Ux"/>
+                    <exclude reference="Ih0-Aw-JKb"/>
+                    <exclude reference="STg-G2-MKz"/>
+                    <exclude reference="Lja-Jh-uyB"/>
+                    <exclude reference="d11-El-FYK"/>
+                    <exclude reference="3yX-VJ-ZNz"/>
+                    <exclude reference="eOF-eU-PWG"/>
+                    <exclude reference="PAC-Mt-sFX"/>
+                    <exclude reference="vuN-sD-23f"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Ri9-8b-IMe"/>
+                    <include reference="UHv-Ce-AcA"/>
+                    <include reference="CL7-Ab-1O8"/>
+                    <include reference="CRj-Wo-Jo1"/>
+                    <include reference="0lt-Xb-AwC"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Cfg-1P-CYJ"/>
+                    <include reference="qdm-0e-Iw6"/>
+                    <include reference="1Dm-Kx-9Ux"/>
+                    <include reference="Ih0-Aw-JKb"/>
+                    <include reference="STg-G2-MKz"/>
+                    <include reference="Lja-Jh-uyB"/>
+                    <include reference="d11-El-FYK"/>
+                    <include reference="3yX-VJ-ZNz"/>
+                    <include reference="eOF-eU-PWG"/>
+                    <include reference="PAC-Mt-sFX"/>
+                    <include reference="vuN-sD-23f"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="drop_down.png" width="287" height="28"/>
+    </resources>
+</document>

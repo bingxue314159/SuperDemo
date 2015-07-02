@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="M13BadgeViewController">
+            <connections>
+                <outlet property="badgeSuperView" destination="PHw-ut-Rtn" id="44Q-ub-Qat"/>
+                <outlet property="textField" destination="K0m-Xc-TYo" id="2oD-75-fkn"/>
+                <outlet property="view" destination="8hd-0z-ucz" id="ZRH-SY-9es"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8hd-0z-ucz">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHw-ut-Rtn">
+                    <rect key="frame" x="115" y="45" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Badge Text:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-ix-ky9">
+                    <rect key="frame" x="20" y="206" width="82" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-Xc-TYo">
+                    <rect key="frame" x="110" y="200" width="190" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cYm-58-fbE"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPO-fv-7wh">
+                    <rect key="frame" x="127" y="232" width="30" height="30"/>
+                    <state key="normal" title="Text">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeTextColor:" destination="-1" eventType="touchUpInside" id="aPS-7k-nwe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRy-ZH-FHZ">
+                    <rect key="frame" x="168" y="232" width="47" height="30"/>
+                    <state key="normal" title="Border">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeBorderColor:" destination="-1" eventType="touchUpInside" id="6qL-Tn-Md9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Liz-o0-Rvq">
+                    <rect key="frame" x="223" y="231" width="94" height="33"/>
+                    <state key="normal" title="Background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeBackgroundColor:" destination="-1" eventType="touchUpInside" id="jJO-LZ-ke0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Color:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMF-Nx-4nU">
+                    <rect key="frame" x="20" y="238" width="99" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Font:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScU-aj-Joq">
+                    <rect key="frame" x="20" y="275" width="93" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Border / Gloss:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nei-ea-z7y">
+                    <rect key="frame" x="20" y="313" width="147" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corner Radius:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8k-Wb-D82">
+                    <rect key="frame" x="20" y="353" width="103" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horiz. Align:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ab-xI-IeL">
+                    <rect key="frame" x="20" y="391" width="83" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5qd-pr-iqc">
+                    <rect key="frame" x="121" y="270" width="196" height="29"/>
+                    <segments>
+                        <segment title="System"/>
+                        <segment title="Georgia"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeFont:" destination="-1" eventType="valueChanged" id="FTe-Ax-NRV"/>
+                    </connections>
+                </segmentedControl>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="sxU-2h-BWo">
+                    <rect key="frame" x="129" y="345" width="173" height="31"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="129" y="345" width="173" height="31"/>
+                    </variation>
+                    <connections>
+                        <action selector="changeCornerRadius:" destination="-1" eventType="valueChanged" id="xez-pV-R94"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Width:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="917-Vn-M6w">
+                    <rect key="frame" x="20" y="465" width="78" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shadow Badge / Border / Text:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z44-bZ-txD">
+                    <rect key="frame" x="20" y="499" width="212" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-bz-4xb">
+                    <rect key="frame" x="104" y="458" width="198" height="31"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="104" y="458" width="198" height="31"/>
+                    </variation>
+                    <connections>
+                        <action selector="changeMaxWidth:" destination="-1" eventType="valueChanged" id="QW4-uz-rtw"/>
+                    </connections>
+                </slider>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="Jmm-eM-Ovl">
+                    <rect key="frame" x="110" y="386" width="190" height="29"/>
+                    <segments>
+                        <segment title="Left"/>
+                        <segment title="Center"/>
+                        <segment title="Right"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeHorizontalAlignment:" destination="-1" eventType="valueChanged" id="Jx6-Rl-hd5"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vert. Align:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1q-cB-IOI">
+                    <rect key="frame" x="20" y="426" width="74" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-W8-dqP">
+                    <rect key="frame" x="102" y="422" width="198" height="29"/>
+                    <segments>
+                        <segment title="Top"/>
+                        <segment title="Middle"/>
+                        <segment title="Bottom"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeVerticalAligment:" destination="-1" eventType="valueChanged" id="p2z-JR-rMs"/>
+                    </connections>
+                </segmentedControl>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-Dd-P1S">
+                    <rect key="frame" x="20" y="525" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeShadowBadge:" destination="-1" eventType="valueChanged" id="w84-bQ-rEE"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xqp-r7-c7N">
+                    <rect key="frame" x="268" y="525" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeShadowText:" destination="-1" eventType="valueChanged" id="xXA-2O-hNI"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ma-DQH">
+                    <rect key="frame" x="141" y="525" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeShadowBorder:" destination="-1" eventType="valueChanged" id="vqe-2f-U9z"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6AW-Jr-pHr">
+                    <rect key="frame" x="183" y="306" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeShowBorder:" destination="-1" eventType="valueChanged" id="xVm-bd-p5Y"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hides when zero:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzn-mP-iGU">
+                    <rect key="frame" x="20" y="168" width="147" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-p4-qi3">
+                    <rect key="frame" x="141" y="161" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeHideWhenZero:" destination="-1" eventType="valueChanged" id="nnc-C3-AND"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Apv-C2-Pj5">
+                    <rect key="frame" x="251" y="306" width="51" height="31"/>
+                    <connections>
+                        <action selector="changeGloss:" destination="-1" eventType="valueChanged" id="EiI-fV-I70"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+</document>

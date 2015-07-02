@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYGOtherViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kZ-Zq-5uc">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-KN-HU6">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="那些在学习iOS开发前就应该知道的事（part 1）">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="8" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="XFC-cm-AOZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-aj-NlE">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="收集了很多优质的swift资源">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="84" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="WxR-Le-dCo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-0N-JLf">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="awesome-ios-ui——优质iOS UI/UX库精选">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="122" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="2lY-yg-WXN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc8-PL-qke">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="ios-good-practices——为iOS开发者提供灵感">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="160" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="q3o-u4-kLn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBb-an-Z2G">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="awesome-ios——精选的优质iOS生态系统">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="46" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="dxZ-GV-Ldp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-Zm-szb">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="那些在学习iOS开发前就应该知道的事（part 2）">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="198" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="g5F-Nn-NzE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efy-1J-TTj">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="数据建模--MJExtension">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="8" y="236" width="384" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="q0t-cO-099"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="WPI-KN-HU6"/>
+                            <exclude reference="IAO-aj-NlE"/>
+                            <exclude reference="6wt-0N-JLf"/>
+                            <exclude reference="Sc8-PL-qke"/>
+                            <exclude reference="QBb-an-Z2G"/>
+                            <exclude reference="ZKY-Zm-szb"/>
+                            <exclude reference="efy-1J-TTj"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="736"/>
+                        <mask key="subviews">
+                            <include reference="WPI-KN-HU6"/>
+                            <include reference="IAO-aj-NlE"/>
+                            <include reference="6wt-0N-JLf"/>
+                            <include reference="Sc8-PL-qke"/>
+                            <include reference="QBb-an-Z2G"/>
+                            <include reference="ZKY-Zm-szb"/>
+                            <include reference="efy-1J-TTj"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5kZ-Zq-5uc" secondAttribute="trailing" id="2Z0-wZ-yNw"/>
+                <constraint firstItem="5kZ-Zq-5uc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HMN-w9-aQ8"/>
+                <constraint firstAttribute="bottom" secondItem="5kZ-Zq-5uc" secondAttribute="bottom" id="VL1-Zs-RgJ"/>
+                <constraint firstItem="5kZ-Zq-5uc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uf4-c0-OCf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5kZ-Zq-5uc"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2Z0-wZ-yNw"/>
+                    <exclude reference="HMN-w9-aQ8"/>
+                    <exclude reference="VL1-Zs-RgJ"/>
+                    <exclude reference="uf4-c0-OCf"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5kZ-Zq-5uc"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2Z0-wZ-yNw"/>
+                    <include reference="HMN-w9-aQ8"/>
+                    <include reference="VL1-Zs-RgJ"/>
+                    <include reference="uf4-c0-OCf"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

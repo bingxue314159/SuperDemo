@@ -30,7 +30,8 @@
     [super viewDidLoad];
     
     [titleArray addObject:@"选取器DEMO1-IQActionSheetDemo"];
-    [titleArray addObject:@"选取器DEMO2-kDropDownSelectDemo"];
+    [titleArray addObject:@"选取器DEMO2-ActionSheetPickerTableViewController"];
+    [titleArray addObject:@"选取器DEMO3-kDropDownSelectDemo"];
     [titleArray addObject:@"地区选取器-HZAreaPickerViewDemo"];
     [titleArray addObject:@"照片选取器-TYGUzysViewController"];
 }
@@ -69,15 +70,24 @@
     NSString *title = [titleArray objectAtIndex:indexPath.row];
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
-    UIViewController* viewController = [[NSClassFromString(className) alloc] init];
-    viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
-    viewController.hidesBottomBarWhenPushed = YES;
-    
     UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
     
-    [self.navigationController pushViewController:viewController animated:YES];
+    if ([@"ActionSheetPickerTableViewController" isEqualToString:className]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ActionSheetPickerDemo" bundle:nil];
+
+        UIViewController *viewController = [storyboard instantiateInitialViewController];
+        [self.navigationController pushViewController:viewController animated:YES];
+        
+    }
+    else{
+        UIViewController* viewController = [[NSClassFromString(className) alloc] init];
+        viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
+        viewController.hidesBottomBarWhenPushed = YES;
+
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
     
 }
 

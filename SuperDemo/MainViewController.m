@@ -70,11 +70,12 @@
     //设置字体颜色
     UIColor *titleNormalColor = [UIColor blackColor];
     UIColor *titleSelectedColor = [UIColor orangeColor];
+    
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       titleNormalColor, UITextAttributeTextColor,
+                                                       titleNormalColor, NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       titleSelectedColor, UITextAttributeTextColor,
+                                                       titleSelectedColor, NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateSelected];
     
     //视图控制器
@@ -114,10 +115,10 @@
     
     /*
      if(SystemVersion >= 7.0){
-     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];//IOS7
+        [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];//IOS7
      }
      else{
-     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
      }
      */
     

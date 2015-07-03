@@ -1,0 +1,145 @@
+PODS:
+  - ActionSheetPicker-3.0 (1.6.2)
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMPopTip (0.7.2)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - CubeController (1.2.1)
+  - DTCoreText (1.6.15):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.5)
+  - DTFoundation/DTAnimatedGIF (1.7.5)
+  - DTFoundation/DTHTMLParser (1.7.5):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.5):
+    - DTFoundation/Core
+  - DWBubbleMenuButton (1.0.1)
+  - HCSStarRatingView (1.0)
+  - HexColors (2.2.1)
+  - iCarousel (1.8.1)
+  - IGLDropDownMenu (1.0.0)
+  - IQActionSheetPickerView (1.0.1)
+  - IQKeyboardManager (3.2.4)
+  - KxMenu (1)
+  - M13BadgeView (1.0.4)
+  - MBProgressHUD (0.9.1)
+  - MJRefresh (1.4.7)
+  - MYBlurIntroductionView (1.0.3)
+  - pop (1.0.7)
+  - QBPopupMenu (2.0)
+  - REFrostedViewController (2.4.8)
+  - REMenu (1.10)
+  - RESideMenu (4.0.7)
+  - RWDropdownMenu (1.0.3)
+  - SVProgressHUD (1.1.3)
+  - SWTableViewCell (0.3.7)
+  - TSMessages (0.9.12):
+    - HexColors
+  - UzysAssetsPickerController (0.9.7)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 1.6.2)
+  - AFNetworking (~> 2.0)
+  - AMPopTip (~> 0.7.1)
+  - BlocksKit (~> 2.2.5)
+  - CubeController (~> 1.2.1)
+  - DTCoreText (~> 1.6.15)
+  - DWBubbleMenuButton (~> 1.0.1)
+  - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
+  - iCarousel (~> 1.8.1)
+  - IGLDropDownMenu (~> 1.0.0)
+  - IQActionSheetPickerView (~> 1.0.1)
+  - IQKeyboardManager (~> 3.2.3)
+  - KxMenu (~> 1)
+  - M13BadgeView (~> 1.0.4)
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh (~> 1.4.7)
+  - MYBlurIntroductionView (~> 1.0.3)
+  - pop (~> 1.0)
+  - QBPopupMenu (~> 2.0)
+  - REFrostedViewController (~> 2.4)
+  - REMenu (~> 1.10)
+  - RESideMenu (~> 4.0.7)
+  - RWDropdownMenu (~> 1.0.2)
+  - SVProgressHUD (~> 1.1.3)
+  - SWTableViewCell (~> 0.3.7)
+  - TSMessages (~> 0.9.12)
+  - UzysAssetsPickerController
+
+EXTERNAL SOURCES:
+  HCSStarRatingView:
+    :git: https://github.com/hugocampossousa/HCSStarRatingView.git
+
+CHECKOUT OPTIONS:
+  HCSStarRatingView:
+    :commit: 52fcff0ec04ba7d1f8c8219c2f24c8ec71258b93
+    :git: https://github.com/hugocampossousa/HCSStarRatingView.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: cc9f90ae785070623e9b972270013c3242190fb0
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AMPopTip: 85f39d509fec9746b51a08c18857777dd68566cc
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CubeController: 817245a45f97b1285b0490440859bd3728f3c1ef
+  DTCoreText: 13ce06e63204a3b47c9db974e3d9be982bb0b1ed
+  DTFoundation: 1d28080c20c3da041706545363f8238ab53a6204
+  DWBubbleMenuButton: 4d9bdbb9d662bdf65c93ceb7fc65901871143d1e
+  HCSStarRatingView: 6fb5c03b4ae2b8a1cca712da20fca99898c69af1
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
+  IGLDropDownMenu: 6fb4338dbf7092db9086ce61efd60c01d4ef717b
+  IQActionSheetPickerView: b137560c882ededef060ca7fe8486d98366a1762
+  IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
+  M13BadgeView: 700dd0714fdc837c0cf1c8c004454963ec22441f
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  MYBlurIntroductionView: b12651c25574580472ff34989a4c5b81c157009f
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  QBPopupMenu: e370cbc7ad8a8d09afe1726117aa18f92696f66a
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  REMenu: 30dad195930adf6c5eeb8041e3257aa60bf9fa49
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  RWDropdownMenu: c7fda4b7adf4f3f63a46d96359c2f490a7713795
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TSMessages: 2a52642128d7ab15b46930c810b9c9403a2b58f3
+  UzysAssetsPickerController: eae7c24955501a80df34286b1797a2ec6f6b1ab9
+
+COCOAPODS: 0.37.2

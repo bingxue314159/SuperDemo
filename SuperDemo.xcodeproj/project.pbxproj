@@ -234,7 +234,6 @@
 		0897EEF61B44F77F00EBCA00 /* HudDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* HudDemoViewController.xib */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
-		08B003611B450D9F00AD7913 /* yun_pos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B003601B450D9F00AD7913 /* yun_pos.plist */; };
 		08B2F6DE1B140710008DE604 /* SuperDemoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B2F6DD1B140710008DE604 /* SuperDemoIcon.png */; };
 		08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72DFD1B252D2100967012 /* RWDemoViewController.m */; };
 		08C72E011B25321F00967012 /* REMenuExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E001B25321F00967012 /* REMenuExample.m */; };
@@ -284,6 +283,16 @@
 		08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EA56171B4381B7007ED35B /* BlocksKitViewController.xib */; };
 		08EA561D1B4381E8007ED35B /* DTCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */; };
 		08EA561E1B4381E8007ED35B /* DTCoreTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */; };
+		08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */; };
+		08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */; };
+		08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */; };
+		08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C791B4681C000722C9C /* ActionSheetPickerTableViewController.m */; };
+		08F19C861B4681C000722C9C /* ActionSheetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C7B1B4681C000722C9C /* ActionSheetPickerViewController.m */; };
+		08F19C871B4681C000722C9C /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F19C7C1B4681C000722C9C /* cancel.png */; };
+		08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C7E1B4681C000722C9C /* NSDate+TCUtils.m */; };
+		08F19C891B4681C000722C9C /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F19C7F1B4681C000722C9C /* ok.png */; };
+		08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C811B4681C000722C9C /* TestTableViewController.m */; };
+		08F19C8C1B4681E900722C9C /* ActionSheetPickerDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -615,7 +624,6 @@
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
-		08B003601B450D9F00AD7913 /* yun_pos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = yun_pos.plist; sourceTree = "<group>"; };
 		08B2F6DA1B1406E5008DE604 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		08B2F6DB1B1406E5008DE604 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		08B2F6DD1B140710008DE604 /* SuperDemoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuperDemoIcon.png; sourceTree = "<group>"; };
@@ -694,6 +702,23 @@
 		08EA561A1B4381E8007ED35B /* DTCoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreTextViewController.h; sourceTree = "<group>"; };
 		08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoreTextViewController.m; sourceTree = "<group>"; };
 		08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCoreTextViewController.xib; sourceTree = "<group>"; };
+		08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AbstractActionSheetPicker+CustomButton.h"; sourceTree = "<group>"; };
+		08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AbstractActionSheetPicker+CustomButton.m"; sourceTree = "<group>"; };
+		08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
+		08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerAppDelegate.m; sourceTree = "<group>"; };
+		08F19C761B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerCustomPickerDelegate.h; sourceTree = "<group>"; };
+		08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerCustomPickerDelegate.m; sourceTree = "<group>"; };
+		08F19C781B4681C000722C9C /* ActionSheetPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerTableViewController.h; sourceTree = "<group>"; };
+		08F19C791B4681C000722C9C /* ActionSheetPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerTableViewController.m; sourceTree = "<group>"; };
+		08F19C7A1B4681C000722C9C /* ActionSheetPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerViewController.h; sourceTree = "<group>"; };
+		08F19C7B1B4681C000722C9C /* ActionSheetPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerViewController.m; sourceTree = "<group>"; };
+		08F19C7C1B4681C000722C9C /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		08F19C7D1B4681C000722C9C /* NSDate+TCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TCUtils.h"; sourceTree = "<group>"; };
+		08F19C7E1B4681C000722C9C /* NSDate+TCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TCUtils.m"; sourceTree = "<group>"; };
+		08F19C7F1B4681C000722C9C /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
+		08F19C801B4681C000722C9C /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		08F19C811B4681C000722C9C /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheetPickerDemo.storyboard; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -755,7 +780,6 @@
 			children = (
 				0843EF711AE4E01200220F15 /* images */,
 				0843EE541AE4D8B500220F15 /* Info.plist */,
-				08B003601B450D9F00AD7913 /* yun_pos.plist */,
 				0843F0CA1AE503B000220F15 /* PrefixHeader.pch */,
 				0843EE551AE4D8B500220F15 /* main.m */,
 			);
@@ -1010,6 +1034,7 @@
 				0843EFAA1AE4EAC100220F15 /* HZAreaPickerViewDemo.h */,
 				0843EFAB1AE4EAC100220F15 /* HZAreaPickerViewDemo.m */,
 				0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */,
+				08F19C711B4681C000722C9C /* ActionSheetPickDemo */,
 			);
 			name = Select;
 			sourceTree = "<group>";
@@ -1460,6 +1485,30 @@
 			name = WebView;
 			sourceTree = "<group>";
 		};
+		08F19C711B4681C000722C9C /* ActionSheetPickDemo */ = {
+			isa = PBXGroup;
+			children = (
+				08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */,
+				08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */,
+				08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */,
+				08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */,
+				08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */,
+				08F19C761B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.h */,
+				08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */,
+				08F19C781B4681C000722C9C /* ActionSheetPickerTableViewController.h */,
+				08F19C791B4681C000722C9C /* ActionSheetPickerTableViewController.m */,
+				08F19C7A1B4681C000722C9C /* ActionSheetPickerViewController.h */,
+				08F19C7B1B4681C000722C9C /* ActionSheetPickerViewController.m */,
+				08F19C7C1B4681C000722C9C /* cancel.png */,
+				08F19C7D1B4681C000722C9C /* NSDate+TCUtils.h */,
+				08F19C7E1B4681C000722C9C /* NSDate+TCUtils.m */,
+				08F19C7F1B4681C000722C9C /* ok.png */,
+				08F19C801B4681C000722C9C /* TestTableViewController.h */,
+				08F19C811B4681C000722C9C /* TestTableViewController.m */,
+			);
+			path = ActionSheetPickDemo;
+			sourceTree = "<group>";
+		};
 		6A5DE5FEE734230BFA577471 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1606,6 +1655,7 @@
 				0843F1191AE5076900220F15 /* m25@2x.png in Resources */,
 				0843F11B1AE5076900220F15 /* m27@2x.png in Resources */,
 				0843F0911AE502AE00220F15 /* MapOverlaysViewController.xib in Resources */,
+				08F19C891B4681C000722C9C /* ok.png in Resources */,
 				0843F1241AE5076900220F15 /* m35@2x.png in Resources */,
 				0843F0951AE502AE00220F15 /* MotionEffectViewController.xib in Resources */,
 				0843F1351AE5076900220F15 /* stage_3@2x.png in Resources */,
@@ -1650,7 +1700,6 @@
 				0843EFE11AE4F6E800220F15 /* search_icon@2x.png in Resources */,
 				08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */,
 				0843F0931AE502AE00220F15 /* MapSnapshotViewController.xib in Resources */,
-				08B003611B450D9F00AD7913 /* yun_pos.plist in Resources */,
 				0843F0811AE502AE00220F15 /* ActivityTypesViewController.xib in Resources */,
 				0843F1111AE5076900220F15 /* m18@2x.png in Resources */,
 				08D7D9B21AE62AEE00543F2A /* red.jpg in Resources */,
@@ -1665,6 +1714,7 @@
 				0843EF761AE4E38700220F15 /* SelectTableViewController.xib in Resources */,
 				08D7D9B01AE62AEE00543F2A /* blue.jpg in Resources */,
 				0843F0991AE502AE00220F15 /* QRCodeViewController.xib in Resources */,
+				08F19C871B4681C000722C9C /* cancel.png in Resources */,
 				08D7D9D01AE6316600543F2A /* AMPOP-red.png in Resources */,
 				08D7D9CC1AE6316600543F2A /* AMPOP-green.png in Resources */,
 				0843F0081AE4FDB400220F15 /* MYCustomPanel.xib in Resources */,
@@ -1719,6 +1769,7 @@
 				08D7D9CB1AE6316600543F2A /* AMPOP-blue@2x.png in Resources */,
 				0843EFDA1AE4F6E800220F15 /* check_icon.png in Resources */,
 				0843F12A1AE5076900220F15 /* m40@2x.png in Resources */,
+				08F19C8C1B4681E900722C9C /* ActionSheetPickerDemo.storyboard in Resources */,
 				08DA8B9A1B28233C00999A2C /* TYGWebViewController.xib in Resources */,
 				08D7D9B71AE62BFD00543F2A /* IQKeyboardViewController.xib in Resources */,
 				0843EF031AE4DB7F00220F15 /* 发现_on@2x.png in Resources */,
@@ -1806,13 +1857,16 @@
 				0843EF811AE4E54700220F15 /* IQActionSheetDemo.m in Sources */,
 				08EA56181B4381B7007ED35B /* BlocksKitViewController.m in Sources */,
 				0843F0861AE502AE00220F15 /* DynamicBehaviorsViewController.m in Sources */,
+				08F19C861B4681C000722C9C /* ActionSheetPickerViewController.m in Sources */,
 				08D7D9B61AE62BFD00543F2A /* IQKeyboardViewController.m in Sources */,
+				08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */,
 				0843F0361AE4FF0800220F15 /* MJTableViewController.m in Sources */,
 				0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */,
 				0843F08E1AE502AE00220F15 /* MapDirectionsViewController.m in Sources */,
 				0843EE5F1AE4D8B500220F15 /* SecondViewController.m in Sources */,
 				0843EF931AE4E70C00220F15 /* kDropDownSelectDemo.m in Sources */,
 				0843F0C21AE502D200220F15 /* PulsingHaloLayer.m in Sources */,
+				08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */,
 				0843F0341AE4FF0800220F15 /* MJSampleIndexViewController.m in Sources */,
 				0843EF231AE4DBC200220F15 /* NSData+AES256.m in Sources */,
 				08EA561D1B4381E8007ED35B /* DTCoreTextViewController.m in Sources */,
@@ -1835,6 +1889,7 @@
 				0843EF891AE4E6B200220F15 /* DropDownListView.m in Sources */,
 				0843EEDA1AE4DB0C00220F15 /* ImageBoxView.m in Sources */,
 				0843F0BE1AE502D200220F15 /* HUTransitionAnimator.m in Sources */,
+				08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */,
 				0843F09C1AE502AE00220F15 /* SampleScene.m in Sources */,
 				0843EE821AE4D92900220F15 /* ThirdViewController.m in Sources */,
 				08D7D9731AE6199500543F2A /* CubeDemo.m in Sources */,
@@ -1852,10 +1907,12 @@
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
 				080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */,
 				0843F08A1AE502AE00220F15 /* ImageFiltersViewController.m in Sources */,
+				08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */,
 				0843F0351AE4FF0800220F15 /* MJScrollViewController.m in Sources */,
 				0843EE7E1AE4D8FD00220F15 /* MainViewController.m in Sources */,
 				0843F0C01AE502D200220F15 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				0843F0A51AE502AE00220F15 /* SpriteKitViewController.m in Sources */,
+				08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */,
 				08D7D9901AE620E700543F2A /* SVProgressHUDViewController.m in Sources */,
 				0843F09D1AE502AE00220F15 /* SloMoVideoRecordViewController.m in Sources */,
 				08D7CEA41B217CAF00A3C8AD /* IGLDemoViewController.m in Sources */,
@@ -1875,6 +1932,7 @@
 				0843EFA71AE4EA8400220F15 /* HZAreaPickerView.m in Sources */,
 				08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */,
 				0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */,
+				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,
 				0843EED81AE4DB0C00220F15 /* EmptryView.m in Sources */,
 				08D7D9951AE6223000543F2A /* TSMessagesViewController.m in Sources */,
 				0843EEDE1AE4DB0C00220F15 /* UIImage+FixOrientation.m in Sources */,

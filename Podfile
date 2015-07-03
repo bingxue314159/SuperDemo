@@ -7,6 +7,7 @@ pod 'AMPopTip', '~> 0.7.1'  #信息提示控件，具有漂亮的弹出框动画
 
 pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
+pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
 
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图

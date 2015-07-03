@@ -1,0 +1,1 @@
+PODS_UZYSASSETSPICKERCONTROLLER_OTHER_LDFLAGS = -framework "AVFoundation" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "QuartzCore"

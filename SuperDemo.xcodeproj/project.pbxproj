@@ -230,8 +230,8 @@
 		0843F13C1AE5076900220F15 /* addedIn7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1061AE5076900220F15 /* addedIn7.plist */; };
 		0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */; };
 		0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */; };
-		0897EEF41B44F77700EBCA00 /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* HudDemoViewController.m */; };
-		0897EEF61B44F77F00EBCA00 /* HudDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* HudDemoViewController.xib */; };
+		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
+		0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
 		08B2F6DE1B140710008DE604 /* SuperDemoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B2F6DD1B140710008DE604 /* SuperDemoIcon.png */; };
@@ -618,9 +618,9 @@
 		0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGHUDandPOPTableViewController.h; sourceTree = "<group>"; };
 		0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGHUDandPOPTableViewController.m; sourceTree = "<group>"; };
 		0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGHUDandPOPTableViewController.xib; sourceTree = "<group>"; };
-		0897EEF21B44F77700EBCA00 /* HudDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudDemoViewController.h; sourceTree = "<group>"; };
-		0897EEF31B44F77700EBCA00 /* HudDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudDemoViewController.m; sourceTree = "<group>"; };
-		0897EEF51B44F77F00EBCA00 /* HudDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HudDemoViewController.xib; sourceTree = "<group>"; };
+		0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDViewController.h; sourceTree = "<group>"; };
+		0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDViewController.m; sourceTree = "<group>"; };
+		0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBProgressHUDViewController.xib; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
@@ -1384,9 +1384,9 @@
 				08D7D9BC1AE62FE400543F2A /* AMPoptipViewController.h */,
 				08D7D9BD1AE62FE400543F2A /* AMPoptipViewController.m */,
 				08D7D9D41AE6317D00543F2A /* AMPoptipViewController.xib */,
-				0897EEF21B44F77700EBCA00 /* HudDemoViewController.h */,
-				0897EEF31B44F77700EBCA00 /* HudDemoViewController.m */,
-				0897EEF51B44F77F00EBCA00 /* HudDemoViewController.xib */,
+				0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */,
+				0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */,
+				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
 			);
 			name = HUD;
 			sourceTree = "<group>";
@@ -1617,7 +1617,7 @@
 				08D7D9CF1AE6316600543F2A /* AMPOP-orange@2x.png in Resources */,
 				0843F1341AE5076900220F15 /* stage_2@2x.png in Resources */,
 				0843EFC51AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib in Resources */,
-				0897EEF61B44F77F00EBCA00 /* HudDemoViewController.xib in Resources */,
+				0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */,
 				0843EFDE1AE4F6E800220F15 /* reload.png in Resources */,
 				0843F10B1AE5076900220F15 /* m12@2x.png in Resources */,
 				0843F1091AE5076900220F15 /* m10@2x.png in Resources */,
@@ -1847,7 +1847,7 @@
 				0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.m in Sources */,
 				08D7D97A1AE619D500543F2A /* CubeViewController.m in Sources */,
 				0843EE871AE4D93D00220F15 /* FourViewController.m in Sources */,
-				0897EEF41B44F77700EBCA00 /* HudDemoViewController.m in Sources */,
+				0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */,
 				0843EFA91AE4EA8400220F15 /* HZLocation.m in Sources */,
 				08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */,
 				083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */,

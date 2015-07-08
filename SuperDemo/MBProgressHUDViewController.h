@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface HudDemoViewController : UIViewController
+@interface MBProgressHUDViewController : UIViewController
 
 @end

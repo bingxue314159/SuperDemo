@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [titleArray addObject:@"HUD效果-SVProgressHUDViewController"];
-    [titleArray addObject:@"HUD效果-HudDemoViewController"];
+    [titleArray addObject:@"HUD效果-MBProgressHUDViewController"];
     [titleArray addObject:@"POPTip-AMPoptipViewController"];
     
 }

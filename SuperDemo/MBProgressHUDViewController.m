@@ -6,7 +6,7 @@
 //  Copyright bukovinski.com 2009. All rights reserved.
 //
 
-#import "HudDemoViewController.h"
+#import "MBProgressHUDViewController.h"
 #import "MBProgressHUD.h"
 #import <unistd.h>
 
@@ -17,7 +17,7 @@
 #endif
 
 
-@interface HudDemoViewController () <MBProgressHUDDelegate> {
+@interface MBProgressHUDViewController () <MBProgressHUDDelegate> {
 	MBProgressHUD *HUD;
 	long long expectedLength;
 	long long currentLength;
@@ -28,7 +28,7 @@
 @end
 
 
-@implementation HudDemoViewController
+@implementation MBProgressHUDViewController
 
 #pragma mark - Lifecycle methods
 

@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_ActionSheetPicker_3_0 6
 #define COCOAPODS_VERSION_PATCH_ActionSheetPicker_3_0 2
 
+// AwesomeMenu
+#define COCOAPODS_POD_AVAILABLE_AwesomeMenu
+#define COCOAPODS_VERSION_MAJOR_AwesomeMenu 1
+#define COCOAPODS_VERSION_MINOR_AwesomeMenu 0
+#define COCOAPODS_VERSION_PATCH_AwesomeMenu 0
+
 // BlocksKit
 #define COCOAPODS_POD_AVAILABLE_BlocksKit
 #define COCOAPODS_VERSION_MAJOR_BlocksKit 2
@@ -204,6 +210,12 @@
 #define COCOAPODS_VERSION_MINOR_QBPopupMenu 0
 #define COCOAPODS_VERSION_PATCH_QBPopupMenu 0
 
+// REFormattedNumberField
+#define COCOAPODS_POD_AVAILABLE_REFormattedNumberField
+#define COCOAPODS_VERSION_MAJOR_REFormattedNumberField 1
+#define COCOAPODS_VERSION_MINOR_REFormattedNumberField 1
+#define COCOAPODS_VERSION_PATCH_REFormattedNumberField 5
+
 // REFrostedViewController
 #define COCOAPODS_POD_AVAILABLE_REFrostedViewController
 #define COCOAPODS_VERSION_MAJOR_REFrostedViewController 2
@@ -221,6 +233,18 @@
 #define COCOAPODS_VERSION_MAJOR_RESideMenu 4
 #define COCOAPODS_VERSION_MINOR_RESideMenu 0
 #define COCOAPODS_VERSION_PATCH_RESideMenu 7
+
+// RETableViewManager
+#define COCOAPODS_POD_AVAILABLE_RETableViewManager
+#define COCOAPODS_VERSION_MAJOR_RETableViewManager 1
+#define COCOAPODS_VERSION_MINOR_RETableViewManager 6
+#define COCOAPODS_VERSION_PATCH_RETableViewManager 0
+
+// REValidation
+#define COCOAPODS_POD_AVAILABLE_REValidation
+#define COCOAPODS_VERSION_MAJOR_REValidation 0
+#define COCOAPODS_VERSION_MINOR_REValidation 1
+#define COCOAPODS_VERSION_PATCH_REValidation 4
 
 // RWDropdownMenu
 #define COCOAPODS_POD_AVAILABLE_RWDropdownMenu

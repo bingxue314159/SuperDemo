@@ -35,6 +35,8 @@
     [titleArray addObject:@"评分星星-TYGStarRationViewController"];
     [titleArray addObject:@"BlocksKit-BlocksKitViewController"];
     [titleArray addObject:@"DTCoreText-DTCoreTextViewController"];
+    [titleArray addObject:@"快速生成TableView-RETableRootViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

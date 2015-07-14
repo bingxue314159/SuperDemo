@@ -58,6 +58,20 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png"
   install_resource "IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
@@ -80,8 +94,23 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star.png"
+  install_resource "AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png"
   install_resource "IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
@@ -104,6 +133,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

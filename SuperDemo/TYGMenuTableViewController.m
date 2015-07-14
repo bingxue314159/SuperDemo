@@ -37,6 +37,7 @@
     [titleArray addObject:@"导航栏侧边下拉、弹出-RWDemoViewController"];
     [titleArray addObject:@"导航栏下拉、弹出-REMenuExample"];
     [titleArray addObject:@"导航栏滑动菜单-REFrostedViewControllerExample"];
+    [titleArray addObject:@"菊花菜单-AwesomeMenuDemoViewController"];
 
 }
 

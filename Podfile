@@ -23,13 +23,14 @@ pod 'KxMenu', '~> 1'    #垂直的弹出式菜单
 pod 'QBPopupMenu', '~> 2.0'   #横向的弹出式菜单
 pod 'IGLDropDownMenu', '~> 1.0.0'   #有多种自定义动画效果的下拉菜单
 pod 'DWBubbleMenuButton', '~> 1.0.1'    #一个带有动画的菜单按钮类。允许朝上下左右四个方向展开和收起菜单，菜单的数量是可变的
-
+pod 'AwesomeMenu', '~> 1.0.0'   #菊花菜单
 pod 'RWDropdownMenu', '~> 1.0.2'    #是一个时尚的下拉菜单，该菜单可以以全屏显示，也可以是弹出框，点击导航栏按钮即可显示该菜单
 
 platform :ios, '6.0'
 pod 'REMenu', '~> 1.10' #下弹式导航栏菜单
 pod 'RESideMenu', '~> 4.0.7'    #IOS7风格，抽屉式菜单
 pod 'REFrostedViewController', '~> 2.4' #IOS7几格，导航栏更多左、右滑动菜单
+pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 
 pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个扩展
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果

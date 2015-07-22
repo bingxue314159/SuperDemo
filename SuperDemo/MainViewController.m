@@ -131,6 +131,10 @@
         [[UINavigationBar appearance] setTranslucent:NO];
     }
     
+    //自定义返回按钮
+    UIImage *backButtonImage_OFF = [[UIImage imageNamed:@"back_ON_25.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage_OFF forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     //返回按钮样式及颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 //    if(SystemVersion >= 7.0){

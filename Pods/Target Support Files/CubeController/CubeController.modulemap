@@ -1,0 +1,6 @@
+module CubeController {
+  umbrella header "CubeController-umbrella.h"
+
+  export *
+  module * { export * }
+}

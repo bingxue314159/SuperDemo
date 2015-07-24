@@ -38,6 +38,12 @@
     [titleArray addObject:@"RTLabel-RTLabelTableViewController"];
     [titleArray addObject:@"快速生成TableView-RETableRootViewController"];
     
+    [titleArray addObject:@"进度条-LDProgressViewController"];
+    [titleArray addObject:@"饼形进度条-MDRadialProgressViewDemo"];
+    [titleArray addObject:@"WebView进度条-NJKWebViewProgressDemo"];
+    
+    [titleArray addObject:@"Checkbox-M13CheckboxDemo"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

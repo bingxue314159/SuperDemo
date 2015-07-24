@@ -4,172 +4,117 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AMPopTip.xcscheme</key>
+		<key>AMPopTip.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ActionSheetPicker-3.0.xcscheme</key>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AwesomeMenu.xcscheme</key>
+		<key>AwesomeMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BlocksKit.xcscheme</key>
+		<key>BlocksKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CubeController.xcscheme</key>
+		<key>CubeController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DTCoreText.xcscheme</key>
+		<key>DTCoreText.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DTFoundation.xcscheme</key>
+		<key>DTFoundation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-DWBubbleMenuButton.xcscheme</key>
+		<key>DWBubbleMenuButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HCSStarRatingView.xcscheme</key>
+		<key>HCSStarRatingView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HexColors.xcscheme</key>
+		<key>HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-IGLDropDownMenu.xcscheme</key>
+		<key>IGLDropDownMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-IQActionSheetPickerView.xcscheme</key>
+		<key>IQActionSheetPickerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-IQKeyboardManager.xcscheme</key>
+		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-KxMenu.xcscheme</key>
+		<key>KxMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-M13BadgeView.xcscheme</key>
+		<key>LDProgressView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MBProgressHUD.xcscheme</key>
+		<key>M13BadgeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MJRefresh.xcscheme</key>
+		<key>M13Checkbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MYBlurIntroductionView.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-QBPopupMenu.xcscheme</key>
+		<key>MDRadialProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-REFormattedNumberField.xcscheme</key>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-REFrostedViewController.xcscheme</key>
+		<key>MYBlurIntroductionView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-REMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RESideMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RETableViewManager-RETableViewManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RETableViewManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-REValidation.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-RWDropdownMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SVProgressHUD.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SWTableViewCell.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-TSMessages.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-UzysAssetsPickerController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iCarousel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-pop.xcscheme</key>
+		<key>NJKWebViewProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -179,180 +124,275 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QBPopupMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REFormattedNumberField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REFrostedViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RETableViewManager-RETableViewManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RETableViewManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REValidation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RWDropdownMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SWTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TSMessages.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UzysAssetsPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03749A28C046D23614A3A420</key>
+		<key>0B895D1ED41E05B8D25EDA32DFAAAA88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F209561EE45D7E2B234ADE1</key>
+		<key>0F5394B852EBC0324D7CF1D91A0E5287</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>12F0A3C1D92A3428838943D7</key>
+		<key>18386586409F6B796820E225D6CB32F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>142D1642AE631C59CDF62438</key>
+		<key>19D84391AFB1C7EF8163E139881915BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14A35ABA2D58B83AFEA6B072</key>
+		<key>1BD034A55FADC5B64122DDCC4EB54650</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>15B57170A24FA9CC1F5F15F6</key>
+		<key>1CB87744C2F57359134352E04B7D26A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B2D17720DEF20FE2575310F</key>
+		<key>5049FDFB818EF979FF2B2CD10E5EC667</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C50B0D0ADC3B7FFA1AE0ECD</key>
+		<key>53C197A937323F35C44ED0EBEC390F12</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>322697A12D9ECB11B1D15727</key>
+		<key>5F99952CCAE023EC5040A00B7CF0331B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>349BA54834A45C2F5878A8CF</key>
+		<key>66A315B331C16D4288635999B33D8D73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3851731C17D41F207F070BDD</key>
+		<key>67596BA728650976EA3A986E80BEDCB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C86ED453ECA6E5932B86EC4</key>
+		<key>6994FED64781A586459FC93C412462F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DF2CEBC21BE6F79D35366CA</key>
+		<key>6B2B7B528DC4CAB17E8B096353B10B46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ECFC5AEC2E8C1C315276018</key>
+		<key>6E87BE87F9CACB07794A20DE0454AE10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4508CB6BAA7DF142B4925A96</key>
+		<key>753AC1E36233FAAF3A9A03D052A93B9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61BB953F03AEAACC01256C7D</key>
+		<key>76AA5EA8A488E3658050986FD1B81D38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>670C367329005F526FE662BA</key>
+		<key>798E6B30B719536AD9D05CD57B1D977B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A8D7AE7C8DDB9682C901069</key>
+		<key>898F7D346192AE86A68ACCA412BB2FBF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F3E2374B4BCED9C4512F7F2</key>
+		<key>95E5402146CA3795DD212E81EE1224F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B6509D079EA090E48CB3863</key>
+		<key>980BA24C7EFCE25889324EF2E11D64F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>883C0B3D0569C719F6062CD7</key>
+		<key>A0A8610C9B3817119E54CA7A35177FCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F3075E4F5023FB8D0477706</key>
+		<key>A5B574DB910922CDF847AB3A0EC30172</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F76C643E4783AEEC6124630</key>
+		<key>A99F305625CBC80484F3B1916F01C9E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>978E0EF39F6DDE3D87A9C74D</key>
+		<key>AF7B3A741EBCD42A06BF6EC744D3D819</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A2314578F0318C32EE824C0</key>
+		<key>BBDE212407967FB20D4A54A4A18DB5D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F206A911FB61D932433BFF7</key>
+		<key>BDD0B6327C27D52C2E9EA120DA3F607B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5907A89E31BAFC27BACEEBD</key>
+		<key>BEB22E418BB394D601D1C9A5BD3BBBE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE6E662D928C783B9D53BEB1</key>
+		<key>C00A89E46B4F99ACCCA6594F6E296785</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B78731AFAC3FE0D93510A2D5</key>
+		<key>C4BF013BF45B847AEE9689D76C6C75F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDA325603C68959F9B26793F</key>
+		<key>C541CC56FC3B7E634D052BDDD8DF385E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C2B9712117DA30E126BD823E</key>
+		<key>C979C8FBF6F698CE0D00BDE1F30B1C70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C96138FA52C3F88C66489E21</key>
+		<key>D1309498472C4E8B2B47CD92E9445D30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA4804CFF28BC17124FD5CC0</key>
+		<key>E0AB54FAA504E9735F5451001751EC34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF98372D4AC3582E5881C96C</key>
+		<key>E2DFBEE59A774A45FB9875363297AB5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E24E0ABF5DBEC828D43CF419</key>
+		<key>E9EA501BD7D8753845400655FDA15926</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA8CE37DA88BE5A1CCF077E8A937384F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE55213157A605FBFCB4DCBA3471797D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE967D64B513CD1D9244B974C9626CFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1CD15285CCC20E64A62814010D44561</key>
 		<dict>
 			<key>primary</key>
 			<true/>

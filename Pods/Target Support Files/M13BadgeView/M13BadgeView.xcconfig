@@ -1,0 +1,1 @@
+M__BADGEVIEW_OTHER_LDFLAGS = -framework "Foundation" -framework "QuartzCore"

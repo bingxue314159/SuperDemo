@@ -5,11 +5,16 @@ pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果
 pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）
 pod 'AMPopTip', '~> 0.7.1'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 
+pod 'LDProgressView', '~> 1.2.1'    # 实现扁平化风格或者或者非扁平化风格的ProgressView，可以给ProgressView添加动态条纹背景
+pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库
+pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
+
 pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
 pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
 
+pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
 pod 'CubeController', '~> 1.2.1'    #3D转场
 pod 'iCarousel', '~> 1.8.1' #实现各种各样的cover flow效果

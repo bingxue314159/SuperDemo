@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDProgressViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="YFA-YU-YPe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zp4-VU-Oo6">
+                    <rect key="frame" x="20" y="80" width="280" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Olv-ld-0QS"/>
+                        <constraint firstAttribute="width" constant="280" id="vz2-Ax-3rw"/>
+                    </constraints>
+                    <segments>
+                        <segment title="0"/>
+                        <segment title="10"/>
+                        <segment title="20"/>
+                        <segment title="40"/>
+                        <segment title="60"/>
+                        <segment title="80"/>
+                        <segment title="100"/>
+                    </segments>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Olv-ld-0QS"/>
+                            <exclude reference="vz2-Ax-3rw"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Olv-ld-0QS"/>
+                            <include reference="vz2-Ax-3rw"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="changeValue:" destination="-1" eventType="valueChanged" id="jiA-gI-Uhv"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Zp4-VU-Oo6" secondAttribute="centerX" id="L6t-k2-g64"/>
+                <constraint firstItem="Zp4-VU-Oo6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="QxP-Tw-x7t"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Zp4-VU-Oo6"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="L6t-k2-g64"/>
+                    <exclude reference="QxP-Tw-x7t"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Zp4-VU-Oo6"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="L6t-k2-g64"/>
+                    <include reference="QxP-Tw-x7t"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

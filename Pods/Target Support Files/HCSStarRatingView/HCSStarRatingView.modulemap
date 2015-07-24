@@ -1,0 +1,6 @@
+module HCSStarRatingView {
+  umbrella header "HCSStarRatingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

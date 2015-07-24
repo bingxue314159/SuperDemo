@@ -1,0 +1,6 @@
+module LDProgressView {
+  umbrella header "LDProgressView-umbrella.h"
+
+  export *
+  module * { export * }
+}

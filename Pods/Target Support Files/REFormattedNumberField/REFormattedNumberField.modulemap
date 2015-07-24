@@ -1,0 +1,6 @@
+module REFormattedNumberField {
+  umbrella header "REFormattedNumberField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+module KxMenu {
+  umbrella header "KxMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

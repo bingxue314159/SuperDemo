@@ -1,0 +1,6 @@
+module UzysAssetsPickerController {
+  umbrella header "UzysAssetsPickerController-umbrella.h"
+
+  export *
+  module * { export * }
+}

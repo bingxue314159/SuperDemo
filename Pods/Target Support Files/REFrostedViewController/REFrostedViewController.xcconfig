@@ -1,0 +1,1 @@
+REFROSTEDVIEWCONTROLLER_OTHER_LDFLAGS = -framework "Accelerate" -framework "QuartzCore"

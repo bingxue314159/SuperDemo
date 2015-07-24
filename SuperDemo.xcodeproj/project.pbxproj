@@ -228,6 +228,9 @@
 		0843F13A1AE5076900220F15 /* stage_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1031AE5076900220F15 /* stage_8@2x.png */; };
 		0843F13B1AE5076900220F15 /* stage_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1041AE5076900220F15 /* stage_9@2x.png */; };
 		0843F13C1AE5076900220F15 /* addedIn7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1061AE5076900220F15 /* addedIn7.plist */; };
+		0874A4E91B62273100007951 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4E81B62273100007951 /* RTLabel.m */; };
+		0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4EB1B62274100007951 /* RTLabelTableViewController.m */; };
+		0874A4EF1B62274100007951 /* RTLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4ED1B62274100007951 /* RTLabelTableViewCell.m */; };
 		0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */; };
 		0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */; };
 		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
@@ -663,6 +666,12 @@
 		0843F1031AE5076900220F15 /* stage_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stage_8@2x.png"; sourceTree = "<group>"; };
 		0843F1041AE5076900220F15 /* stage_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stage_9@2x.png"; sourceTree = "<group>"; };
 		0843F1061AE5076900220F15 /* addedIn7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addedIn7.plist; sourceTree = "<group>"; };
+		0874A4E71B62273100007951 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
+		0874A4E81B62273100007951 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
+		0874A4EA1B62274100007951 /* RTLabelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabelTableViewController.h; sourceTree = "<group>"; };
+		0874A4EB1B62274100007951 /* RTLabelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabelTableViewController.m; sourceTree = "<group>"; };
+		0874A4EC1B62274100007951 /* RTLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabelTableViewCell.h; sourceTree = "<group>"; };
+		0874A4ED1B62274100007951 /* RTLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabelTableViewCell.m; sourceTree = "<group>"; };
 		0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGHUDandPOPTableViewController.h; sourceTree = "<group>"; };
 		0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGHUDandPOPTableViewController.m; sourceTree = "<group>"; };
 		0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGHUDandPOPTableViewController.xib; sourceTree = "<group>"; };
@@ -980,6 +989,7 @@
 		0843EF141AE4DB8700220F15 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0874A4E61B62273100007951 /* RTLabel */,
 				0843EF9D1AE4EA8400220F15 /* area picker */,
 				0843F0A91AE502D200220F15 /* AVCaptureManager */,
 				0843EFBD1AE4F13700220F15 /* DMLazyScrollView */,
@@ -1094,6 +1104,7 @@
 				08EA561A1B4381E8007ED35B /* DTCoreTextViewController.h */,
 				08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */,
 				08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */,
+				0874A4F01B62274600007951 /* RTLabelDemo */,
 				08F27D091B550ABC0039DF49 /* RETableViewManagerExample */,
 			);
 			name = third;
@@ -1469,6 +1480,26 @@
 				0843F1061AE5076900220F15 /* addedIn7.plist */,
 			);
 			path = plists;
+			sourceTree = "<group>";
+		};
+		0874A4E61B62273100007951 /* RTLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0874A4E71B62273100007951 /* RTLabel.h */,
+				0874A4E81B62273100007951 /* RTLabel.m */,
+			);
+			path = RTLabel;
+			sourceTree = "<group>";
+		};
+		0874A4F01B62274600007951 /* RTLabelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0874A4EA1B62274100007951 /* RTLabelTableViewController.h */,
+				0874A4EB1B62274100007951 /* RTLabelTableViewController.m */,
+				0874A4EC1B62274100007951 /* RTLabelTableViewCell.h */,
+				0874A4ED1B62274100007951 /* RTLabelTableViewCell.m */,
+			);
+			name = RTLabelDemo;
 			sourceTree = "<group>";
 		};
 		0897EEE31B44C7F200EBCA00 /* IOS7Sampler */ = {
@@ -2097,6 +2128,7 @@
 				0843F0C41AE502D200220F15 /* ZBFallenBricksAnimator.m in Sources */,
 				0843F0A71AE502AE00220F15 /* WebPaginationViewController.m in Sources */,
 				0843F0961AE502AE00220F15 /* MultipeerConnectivityViewController.m in Sources */,
+				0874A4EF1B62274100007951 /* RTLabelTableViewCell.m in Sources */,
 				08F27D571B550ABC0039DF49 /* ListHeaderView.m in Sources */,
 				0843EFAD1AE4EAC100220F15 /* HZAreaPickerViewDemo.m in Sources */,
 				0843EFC01AE4F13700220F15 /* DMLazyScrollView.m in Sources */,
@@ -2113,6 +2145,7 @@
 				0843EE871AE4D93D00220F15 /* FourViewController.m in Sources */,
 				0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */,
 				0843EFA91AE4EA8400220F15 /* HZLocation.m in Sources */,
+				0874A4E91B62273100007951 /* RTLabel.m in Sources */,
 				08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */,
 				083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */,
 				0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */,
@@ -2176,6 +2209,7 @@
 				0843EE5C1AE4D8B500220F15 /* FirstViewController.m in Sources */,
 				08F27D501B550ABC0039DF49 /* RETableRootViewController.m in Sources */,
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
+				0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */,
 				0843F0901AE502AE00220F15 /* MapOverlaysViewController.m in Sources */,
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,

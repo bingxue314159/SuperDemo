@@ -37,7 +37,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    [titleArray addObject:@"评分星星-TYGStarRationViewController"];
+    [titleArray addObject:@"日历控件-PDTSimpleCalendarDemo"];
+    [titleArray addObject:@"左右滑动列表cell-SWTableViewCellDemo"];
+    [titleArray addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
 //    [titleArray addObject:@"BlocksKit-BlocksKitViewController"];
 //    [titleArray addObject:@"DTCoreText-DTCoreTextViewController"];
 }

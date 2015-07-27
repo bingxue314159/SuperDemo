@@ -41,7 +41,6 @@
     [titleArray addObject:@"无限滚动-DMLazyScrollViewViewController"];
     [titleArray addObject:@"M13BadgeView-M13BadgeViewController"];
     [titleArray addObject:@"快速集成下拉刷新MJRefresh-MJSampleIndexViewController"];
-    [titleArray addObject:@"左右滑动列表cell-SWTableViewCellDemo"];
     [titleArray addObject:@"3D导航-CubeDemo"];
     [titleArray addObject:@"标签云-SphereViewController"];
     [titleArray addObject:@"消息弹出-TSMessagesViewController"];

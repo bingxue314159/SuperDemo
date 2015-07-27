@@ -13,6 +13,7 @@ pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
 pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
+pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
 
 pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
@@ -39,6 +40,8 @@ pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 
 pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个扩展
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
+
+pod 'PDTSimpleCalendar', '~> 0.8.0' #日历组件,可以在各个方面对它进行定制，无论是运行逻辑还是外观方面
 
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"

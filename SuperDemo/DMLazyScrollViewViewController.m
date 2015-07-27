@@ -99,7 +99,7 @@
         
         UILabel* label = [[UILabel alloc] initWithFrame:contr.view.bounds];
         label.backgroundColor = [UIColor clearColor];
-        label.text = [NSString stringWithFormat:@"%d",index];
+        label.text = [NSString stringWithFormat:@"%ld",(long)index];
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont boldSystemFontOfSize:50];
         [contr.view addSubview:label];

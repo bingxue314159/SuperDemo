@@ -243,6 +243,15 @@
 		0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
+		08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */; };
+		08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */; };
+		08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */; };
+		08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3C31B660E42007838EA /* MGSwipeTableCellDemoTestData.m */; };
+		08B3A3CD1B661083007838EA /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3C81B661083007838EA /* cat@2x.png */; };
+		08B3A3CE1B661083007838EA /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3C91B661083007838EA /* check@2x.png */; };
+		08B3A3CF1B661083007838EA /* fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CA1B661083007838EA /* fav@2x.png */; };
+		08B3A3D01B661083007838EA /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CB1B661083007838EA /* menu@2x.png */; };
+		08B3A3D11B661083007838EA /* MGSwipeBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */; };
 		08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72DFD1B252D2100967012 /* RWDemoViewController.m */; };
 		08C72E011B25321F00967012 /* REMenuExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E001B25321F00967012 /* REMenuExample.m */; };
 		08C72E121B2545B400967012 /* REFrostedViewControllerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */; };
@@ -697,6 +706,18 @@
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
+		08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarDemo.h; sourceTree = "<group>"; };
+		08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarDemo.m; sourceTree = "<group>"; };
+		08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MGSwipeTableCellDemo.storyboard; sourceTree = "<group>"; };
+		08B3A3C01B660E42007838EA /* MGSwipeTableCellDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCellDemo.h; sourceTree = "<group>"; };
+		08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCellDemo.m; sourceTree = "<group>"; };
+		08B3A3C21B660E42007838EA /* MGSwipeTableCellDemoTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCellDemoTestData.h; sourceTree = "<group>"; };
+		08B3A3C31B660E42007838EA /* MGSwipeTableCellDemoTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCellDemoTestData.m; sourceTree = "<group>"; };
+		08B3A3C81B661083007838EA /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		08B3A3C91B661083007838EA /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		08B3A3CA1B661083007838EA /* fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fav@2x.png"; sourceTree = "<group>"; };
+		08B3A3CB1B661083007838EA /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MGSwipeBackground.jpg; sourceTree = "<group>"; };
 		08C72DFC1B252D2100967012 /* RWDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDemoViewController.h; sourceTree = "<group>"; };
 		08C72DFD1B252D2100967012 /* RWDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDemoViewController.m; sourceTree = "<group>"; };
 		08C72DFF1B25321F00967012 /* REMenuExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuExample.h; sourceTree = "<group>"; };
@@ -1080,8 +1101,6 @@
 				08D7D9921AE6223000543F2A /* TSMessagesViewController.h */,
 				08D7D9931AE6223000543F2A /* TSMessagesViewController.m */,
 				08D7D9941AE6223000543F2A /* TSMessagesViewController.xib */,
-				08D7D9AA1AE6267200543F2A /* SWTableViewCellDemo.h */,
-				08D7D9AB1AE6267200543F2A /* SWTableViewCellDemo.m */,
 				08D7D9B31AE62BFD00543F2A /* IQKeyboardViewController.h */,
 				08D7D9B41AE62BFD00543F2A /* IQKeyboardViewController.m */,
 				08D7D9B51AE62BFD00543F2A /* IQKeyboardViewController.xib */,
@@ -1098,6 +1117,15 @@
 			children = (
 				0843EE5D1AE4D8B500220F15 /* SecondViewController.h */,
 				0843EE5E1AE4D8B500220F15 /* SecondViewController.m */,
+				08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */,
+				08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */,
+				08D7D9AA1AE6267200543F2A /* SWTableViewCellDemo.h */,
+				08D7D9AB1AE6267200543F2A /* SWTableViewCellDemo.m */,
+				08B3A3C01B660E42007838EA /* MGSwipeTableCellDemo.h */,
+				08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */,
+				08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */,
+				08B3A3C21B660E42007838EA /* MGSwipeTableCellDemoTestData.h */,
+				08B3A3C31B660E42007838EA /* MGSwipeTableCellDemoTestData.m */,
 			);
 			name = second;
 			sourceTree = "<group>";
@@ -1155,6 +1183,7 @@
 		0843EF711AE4E01200220F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				08B3A3C71B661083007838EA /* TableViewCell */,
 				08D5308A1B5F974600409CF1 /* ICON */,
 				08D7D9BF1AE6316600543F2A /* AMPopVIewImage */,
 				0843F0CE1AE5076900220F15 /* iOS7SamplerImage */,
@@ -1560,6 +1589,18 @@
 			name = HUD;
 			sourceTree = "<group>";
 		};
+		08B3A3C71B661083007838EA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				08B3A3C81B661083007838EA /* cat@2x.png */,
+				08B3A3C91B661083007838EA /* check@2x.png */,
+				08B3A3CA1B661083007838EA /* fav@2x.png */,
+				08B3A3CB1B661083007838EA /* menu@2x.png */,
+				08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		08D5308A1B5F974600409CF1 /* ICON */ = {
 			isa = PBXGroup;
 			children = (
@@ -1902,6 +1943,7 @@
 				0843F10F1AE5076900220F15 /* m16@2x.png in Resources */,
 				08F27D711B550ABC0039DF49 /* Middle_Alt@2x.png in Resources */,
 				0843EFBB1AE4F03700220F15 /* page.png in Resources */,
+				08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */,
 				0843F1271AE5076900220F15 /* m38@2x.png in Resources */,
 				08D7D9CF1AE6316600543F2A /* AMPOP-orange@2x.png in Resources */,
 				0843F1341AE5076900220F15 /* stage_2@2x.png in Resources */,
@@ -1922,6 +1964,7 @@
 				0843EEFC1AE4DB7F00220F15 /* VIP_on.png in Resources */,
 				08F27D5D1B550ABC0039DF49 /* photo2.jpg in Resources */,
 				0843F1331AE5076900220F15 /* stage_1@2x.png in Resources */,
+				08B3A3CF1B661083007838EA /* fav@2x.png in Resources */,
 				08D7D9D31AE6316600543F2A /* AMPOP-yellow@2x.png in Resources */,
 				0843EF081AE4DB7F00220F15 /* 我的_on.png in Resources */,
 				0843F1321AE5076900220F15 /* stage_10@2x.png in Resources */,
@@ -1978,6 +2021,7 @@
 				0843EFFC1AE4FAA800220F15 /* HeaderImage.png in Resources */,
 				0843F0A81AE502AE00220F15 /* WebPaginationViewController.xib in Resources */,
 				08F27D6C1B550ABC0039DF49 /* Heart_Highlighted@2x.png in Resources */,
+				08B3A3D01B661083007838EA /* menu@2x.png in Resources */,
 				0843F0A41AE502AE00220F15 /* SpringAnimationViewController.xib in Resources */,
 				0843EF961AE4E75600220F15 /* drop_down@2x.png in Resources */,
 				0843EF041AE4DB7F00220F15 /* 发现_on@3x.png in Resources */,
@@ -2019,7 +2063,9 @@
 				0843F10C1AE5076900220F15 /* m13@2x.png in Resources */,
 				0843F12B1AE5076900220F15 /* m4@2x.png in Resources */,
 				0843F08D1AE502AE00220F15 /* Map3DViewController.xib in Resources */,
+				08B3A3CE1B661083007838EA /* check@2x.png in Resources */,
 				0843F1361AE5076900220F15 /* stage_4@2x.png in Resources */,
+				08B3A3D11B661083007838EA /* MGSwipeBackground.jpg in Resources */,
 				0843EE641AE4D8B500220F15 /* Images.xcassets in Resources */,
 				0843EF761AE4E38700220F15 /* SelectTableViewController.xib in Resources */,
 				08D7D9B01AE62AEE00543F2A /* blue.jpg in Resources */,
@@ -2099,6 +2145,7 @@
 				0843F0C91AE5034B00220F15 /* BrowseCodeViewController.xib in Resources */,
 				0843EF111AE4DB7F00220F15 /* 首页_黑.png in Resources */,
 				0843EF9A1AE4E9BA00220F15 /* done@2x.png in Resources */,
+				08B3A3CD1B661083007838EA /* cat@2x.png in Resources */,
 				08F27D701B550ABC0039DF49 /* Middle@2x.png in Resources */,
 				0843F09B1AE502AE00220F15 /* ReadingListViewController.xib in Resources */,
 				0843F13B1AE5076900220F15 /* stage_9@2x.png in Resources */,
@@ -2206,6 +2253,7 @@
 				0843EE591AE4D8B500220F15 /* AppDelegate.m in Sources */,
 				08F27D581B550ABC0039DF49 /* ListImageCell.m in Sources */,
 				08D7D9BE1AE62FE400543F2A /* AMPoptipViewController.m in Sources */,
+				08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */,
 				0843EED91AE4DB0C00220F15 /* File.m in Sources */,
 				08F27D531B550ABC0039DF49 /* XIBTestViewController.m in Sources */,
 				08C72E011B25321F00967012 /* REMenuExample.m in Sources */,
@@ -2218,6 +2266,7 @@
 				0843F0941AE502AE00220F15 /* MotionEffectViewController.m in Sources */,
 				0843EF241AE4DBC200220F15 /* TYGEncryptDecrypt.m in Sources */,
 				0843F0CD1AE506D600220F15 /* MasterViewController.m in Sources */,
+				08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */,
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
@@ -2259,6 +2308,7 @@
 				08D7CEA41B217CAF00A3C8AD /* IGLDemoViewController.m in Sources */,
 				0843EF251AE4DBC200220F15 /* TYGUUMSign.m in Sources */,
 				0843F0321AE4FF0800220F15 /* MJCollectionViewController.m in Sources */,
+				08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */,
 				08DA8B941B28201500999A2C /* TYGOtherViewController.m in Sources */,
 				0843EEDD1AE4DB0C00220F15 /* UIButton+Badge.m in Sources */,
 				08D7CEAC1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.m in Sources */,

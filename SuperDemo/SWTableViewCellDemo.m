@@ -131,13 +131,13 @@
                                                 icon:[UIImage imageNamed:@"check.png"]];
     [leftUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"clock.png"]];
+                                                icon:[UIImage imageNamed:@"fav.png"]];
     [leftUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:1.0f green:0.231f blue:0.188f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"cross.png"]];
+                                                icon:[UIImage imageNamed:@"cat.png"]];
     [leftUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:0.55f green:0.27f blue:0.07f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"list.png"]];
+                                                icon:[UIImage imageNamed:@"menu.png"]];
     
     return leftUtilityButtons;
 }

@@ -1,0 +1,1 @@
+../../../Target Support Files/MGSwipeTableCell/MGSwipeTableCell-umbrella.h

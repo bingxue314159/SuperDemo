@@ -9,6 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PDTSimpleCalendarDemo : UIViewController
+@interface PDTSimpleCalendarDemo : UITabBarController
 
 @end

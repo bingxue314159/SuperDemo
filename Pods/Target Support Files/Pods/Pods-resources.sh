@@ -58,6 +58,13 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "ABCalendarPicker/ABCalendarPicker/GradientBar.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileDisabledSelected.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileNormal.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TilePattern.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileSelected.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileToday.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileTodaySelected.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"
@@ -98,6 +105,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "ABCalendarPicker/ABCalendarPicker/GradientBar.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileDisabledSelected.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileNormal.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TilePattern.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileSelected.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileToday.png"
+  install_resource "ABCalendarPicker/ABCalendarPicker/TileTodaySelected.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png"
   install_resource "AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png"

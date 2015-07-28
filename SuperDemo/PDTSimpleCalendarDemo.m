@@ -55,7 +55,7 @@
     // PREPARE LAZY VIEW
     lazyScrollView = [[DMLazyScrollView alloc] initWithFrame:conView.bounds];
     [lazyScrollView setEnableCircularScroll:YES];
-    [lazyScrollView setAutoPlay:YES];
+    [lazyScrollView setAutoPlay:NO];
     
     __weak __typeof(&*self)weakSelf = self;
     lazyScrollView.dataSource = ^(NSUInteger index) {

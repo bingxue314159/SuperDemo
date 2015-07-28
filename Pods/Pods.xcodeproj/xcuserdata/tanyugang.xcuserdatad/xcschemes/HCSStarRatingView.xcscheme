@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6025EEAF7B905CEDE958E8F2"
+               BlueprintIdentifier = "827561A8BD3B7AD8342B45EC"
                BuildableName = "libHCSStarRatingView.a"
                BlueprintName = "HCSStarRatingView"
                ReferencedContainer = "container:Pods.xcodeproj">

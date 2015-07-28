@@ -1,0 +1,6 @@
+module ABCalendarPicker {
+  umbrella header "ABCalendarPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

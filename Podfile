@@ -29,6 +29,8 @@ pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
 pod 'JJTabBarController', '~> 1.0.0'    #可高度自定义的tabBar
 pod 'M13InfiniteTabBar', '~> 2.3.2' #可高度自定义的tabBar
 
+pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
+
 pod 'KxMenu', '~> 1'    #垂直的弹出式菜单
 pod 'QBPopupMenu', '~> 2.0'   #横向的弹出式菜单
 pod 'IGLDropDownMenu', '~> 1.0.0'   #有多种自定义动画效果的下拉菜单
@@ -46,6 +48,9 @@ pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
 
 pod 'PDTSimpleCalendar', '~> 0.8.0' #日历组件,可以在各个方面对它进行定制，无论是运行逻辑还是外观方面
+pod 'TimesSquare', '~> 1.0.2'   #日历组件
+pod 'ABCalendarPicker', '~> 1.1.2'  #日历组件
+
 
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"

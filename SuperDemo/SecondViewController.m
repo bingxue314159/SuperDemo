@@ -7,11 +7,6 @@
 //
 
 #import "SecondViewController.h"
-#import "BrowseCodeViewController.h"
-
-#define kItemKeyTitle       @"title"
-#define kItemKeyDescription @"description"
-#define kItemKeyClassPrefix @"prefix"
 
 @interface SecondViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArray;
@@ -37,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [titleArray addObject:@"日历控件-PDTSimpleCalendarDemo"];
+    [titleArray addObject:@"*日历集合-CalendarViewController"];
     [titleArray addObject:@"左右滑动列表cell-SWTableViewCellDemo"];
     [titleArray addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
 //    [titleArray addObject:@"BlocksKit-BlocksKitViewController"];

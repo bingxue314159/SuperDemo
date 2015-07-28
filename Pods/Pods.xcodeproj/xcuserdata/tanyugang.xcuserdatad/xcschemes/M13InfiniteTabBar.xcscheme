@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC2936E666272CBF6C7A8282"
+               BlueprintIdentifier = "4C094E2A5AE667E6E6AAD443"
                BuildableName = "libM13InfiniteTabBar.a"
                BlueprintName = "M13InfiniteTabBar"
                ReferencedContainer = "container:Pods.xcodeproj">

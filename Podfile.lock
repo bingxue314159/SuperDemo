@@ -39,6 +39,7 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - CubeController (1.2.1)
+  - DACircularProgress (2.3.1)
   - DTCoreText (1.6.15):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
@@ -57,14 +58,20 @@ PODS:
   - IGLDropDownMenu (1.0.0)
   - IQActionSheetPickerView (1.0.1)
   - IQKeyboardManager (3.2.4)
+  - JJTabBarController (1.0.0)
   - KxMenu (1)
   - LDProgressView (1.2.1)
   - M13BadgeView (1.0.4)
   - M13Checkbox (1.1.2)
+  - M13InfiniteTabBar (2.3.2)
   - MBProgressHUD (0.9.1)
   - MDRadialProgress (1.3.2)
   - MGSwipeTableCell (1.5.1)
   - MJRefresh (1.4.7)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
   - MYBlurIntroductionView (1.0.3)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
@@ -83,6 +90,9 @@ PODS:
     - REValidation (~> 0.1.4)
   - REValidation (0.1.4)
   - RWDropdownMenu (1.0.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
   - SVProgressHUD (1.1.3)
   - SWTableViewCell (0.3.7)
   - TSMessages (0.9.12):
@@ -103,14 +113,17 @@ DEPENDENCIES:
   - IGLDropDownMenu (~> 1.0.0)
   - IQActionSheetPickerView (~> 1.0.1)
   - IQKeyboardManager (~> 3.2.3)
+  - JJTabBarController (~> 1.0.0)
   - KxMenu (~> 1)
   - LDProgressView (~> 1.2.1)
   - M13BadgeView (~> 1.0.4)
   - M13Checkbox (~> 1.1.2)
+  - M13InfiniteTabBar (~> 2.3.2)
   - MBProgressHUD (~> 0.9.1)
   - MDRadialProgress (~> 1.3.2)
   - MGSwipeTableCell (~> 1.5.1)
   - MJRefresh (~> 1.4.7)
+  - MWPhotoBrowser (~> 2.1.1)
   - MYBlurIntroductionView (~> 1.0.3)
   - NJKWebViewProgress (~> 0.2.3)
   - PDTSimpleCalendar (~> 0.8.0)
@@ -142,6 +155,7 @@ SPEC CHECKSUMS:
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CubeController: 817245a45f97b1285b0490440859bd3728f3c1ef
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DTCoreText: 13ce06e63204a3b47c9db974e3d9be982bb0b1ed
   DTFoundation: 1d28080c20c3da041706545363f8238ab53a6204
   DWBubbleMenuButton: 4d9bdbb9d662bdf65c93ceb7fc65901871143d1e
@@ -151,14 +165,17 @@ SPEC CHECKSUMS:
   IGLDropDownMenu: 6fb4338dbf7092db9086ce61efd60c01d4ef717b
   IQActionSheetPickerView: b137560c882ededef060ca7fe8486d98366a1762
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  JJTabBarController: c031ad6dd78746fc172711dfdb731ada1802e2a9
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   LDProgressView: f6afc7c30d2a9edf33001515f3189338567a32d2
   M13BadgeView: 700dd0714fdc837c0cf1c8c004454963ec22441f
   M13Checkbox: 0c0bb08dcd144c4ea33f883b68270f3f56908ea2
+  M13InfiniteTabBar: a3c75ba96ac7bc38415faa8bbf9ff286bbed8014
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MDRadialProgress: 1068574b9b4b870f64b605b07f734385bde5104d
   MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
   MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   MYBlurIntroductionView: b12651c25574580472ff34989a4c5b81c157009f
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   PDTSimpleCalendar: 165e96cd8b808c98b3204effa4f4d519a3b71580
@@ -171,6 +188,7 @@ SPEC CHECKSUMS:
   RETableViewManager: 9667ecb29c005c32df40a1dd1828224840a351a2
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   RWDropdownMenu: c7fda4b7adf4f3f63a46d96359c2f490a7713795
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc

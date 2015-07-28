@@ -12,8 +12,8 @@ pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
 pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
 pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器
-pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
-pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果
+pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）
+pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
 
 pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
@@ -24,6 +24,10 @@ pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRati
 
 pod 'pop', '~> 1.0' #FaceBook 动画库
 pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
+pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
+
+pod 'JJTabBarController', '~> 1.0.0'    #可高度自定义的tabBar
+pod 'M13InfiniteTabBar', '~> 2.3.2' #可高度自定义的tabBar
 
 pod 'KxMenu', '~> 1'    #垂直的弹出式菜单
 pod 'QBPopupMenu', '~> 2.0'   #横向的弹出式菜单

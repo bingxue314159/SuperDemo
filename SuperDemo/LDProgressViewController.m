@@ -85,7 +85,7 @@
     [self.view addSubview:label];
     
     // flat, green, no text, progress inset, outer stroke, solid
-    progressView = [[LDProgressView alloc] initWithFrame:CGRectMake(20, 360, SCREEN_WIDTH, 22)];
+    progressView = [[LDProgressView alloc] initWithFrame:CGRectMake(20, 360, SCREEN_WIDTH-40, 22)];
     progressView.color = [UIColor colorWithRed:0.00f green:0.64f blue:0.00f alpha:1.00f];
     progressView.flat = @YES;
     progressView.progress = 0.40;

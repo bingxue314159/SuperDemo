@@ -1,0 +1,6 @@
+module JJTabBarController {
+  umbrella header "JJTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

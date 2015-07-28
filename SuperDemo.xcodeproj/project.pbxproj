@@ -315,6 +315,25 @@
 		08F19C891B4681C000722C9C /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F19C7F1B4681C000722C9C /* ok.png */; };
 		08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C811B4681C000722C9C /* TestTableViewController.m */; };
 		08F19C8C1B4681E900722C9C /* ActionSheetPickerDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */; };
+		08F20B441B67275B005F092A /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */; };
+		08F20B581B67292A005F092A /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B461B67292A005F092A /* photo1.jpg */; };
+		08F20B591B67292A005F092A /* photo1t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B471B67292A005F092A /* photo1t.jpg */; };
+		08F20B5A1B67292A005F092A /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B481B67292A005F092A /* photo2.jpg */; };
+		08F20B5B1B67292A005F092A /* photo2t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B491B67292A005F092A /* photo2t.jpg */; };
+		08F20B5C1B67292A005F092A /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4A1B67292A005F092A /* photo3.jpg */; };
+		08F20B5D1B67292A005F092A /* photo3t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4B1B67292A005F092A /* photo3t.jpg */; };
+		08F20B5E1B67292A005F092A /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4C1B67292A005F092A /* photo4.jpg */; };
+		08F20B5F1B67292A005F092A /* photo4t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4D1B67292A005F092A /* photo4t.jpg */; };
+		08F20B601B67292A005F092A /* photo5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4E1B67292A005F092A /* photo5.jpg */; };
+		08F20B611B67292A005F092A /* photo5t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B4F1B67292A005F092A /* photo5t.jpg */; };
+		08F20B621B67292A005F092A /* photo6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B501B67292A005F092A /* photo6.jpg */; };
+		08F20B631B67292A005F092A /* photo6t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B511B67292A005F092A /* photo6t.jpg */; };
+		08F20B641B67292A005F092A /* photo7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B521B67292A005F092A /* photo7.jpg */; };
+		08F20B651B67292A005F092A /* photo7t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B531B67292A005F092A /* photo7t.jpg */; };
+		08F20B661B67292A005F092A /* photo8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B541B67292A005F092A /* photo8.jpg */; };
+		08F20B671B67292A005F092A /* photo8t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B551B67292A005F092A /* photo8t.jpg */; };
+		08F20B681B67292A005F092A /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B561B67292A005F092A /* video.mp4 */; };
+		08F20B691B67292A005F092A /* video_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F20B571B67292A005F092A /* video_thumb.jpg */; };
 		08F27D081B54F5E10039DF49 /* AwesomeMenuDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F27D071B54F5E10039DF49 /* AwesomeMenuDemoViewController.m */; };
 		08F27D4B1B550ABC0039DF49 /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F27D0D1B550ABC0039DF49 /* ControlsViewController.m */; };
 		08F27D4C1B550ABC0039DF49 /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F27D0F1B550ABC0039DF49 /* EditingViewController.m */; };
@@ -815,6 +834,26 @@
 		08F19C801B4681C000722C9C /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
 		08F19C811B4681C000722C9C /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheetPickerDemo.storyboard; sourceTree = "<group>"; };
+		08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
+		08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
+		08F20B461B67292A005F092A /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		08F20B471B67292A005F092A /* photo1t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1t.jpg; sourceTree = "<group>"; };
+		08F20B481B67292A005F092A /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		08F20B491B67292A005F092A /* photo2t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2t.jpg; sourceTree = "<group>"; };
+		08F20B4A1B67292A005F092A /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		08F20B4B1B67292A005F092A /* photo3t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3t.jpg; sourceTree = "<group>"; };
+		08F20B4C1B67292A005F092A /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4.jpg; sourceTree = "<group>"; };
+		08F20B4D1B67292A005F092A /* photo4t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4t.jpg; sourceTree = "<group>"; };
+		08F20B4E1B67292A005F092A /* photo5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo5.jpg; sourceTree = "<group>"; };
+		08F20B4F1B67292A005F092A /* photo5t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo5t.jpg; sourceTree = "<group>"; };
+		08F20B501B67292A005F092A /* photo6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6.jpg; sourceTree = "<group>"; };
+		08F20B511B67292A005F092A /* photo6t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6t.jpg; sourceTree = "<group>"; };
+		08F20B521B67292A005F092A /* photo7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7.jpg; sourceTree = "<group>"; };
+		08F20B531B67292A005F092A /* photo7t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7t.jpg; sourceTree = "<group>"; };
+		08F20B541B67292A005F092A /* photo8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8.jpg; sourceTree = "<group>"; };
+		08F20B551B67292A005F092A /* photo8t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8t.jpg; sourceTree = "<group>"; };
+		08F20B561B67292A005F092A /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		08F20B571B67292A005F092A /* video_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video_thumb.jpg; sourceTree = "<group>"; };
 		08F27D061B54F5E10039DF49 /* AwesomeMenuDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuDemoViewController.h; sourceTree = "<group>"; };
 		08F27D071B54F5E10039DF49 /* AwesomeMenuDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuDemoViewController.m; sourceTree = "<group>"; };
 		08F27D0C1B550ABC0039DF49 /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsViewController.h; sourceTree = "<group>"; };
@@ -1183,6 +1222,7 @@
 		0843EF711AE4E01200220F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				08F20B451B67292A005F092A /* Local Media */,
 				08B3A3C71B661083007838EA /* TableViewCell */,
 				08D5308A1B5F974600409CF1 /* ICON */,
 				08D7D9BF1AE6316600543F2A /* AMPopVIewImage */,
@@ -1212,6 +1252,8 @@
 				0843EFAA1AE4EAC100220F15 /* HZAreaPickerViewDemo.h */,
 				0843EFAB1AE4EAC100220F15 /* HZAreaPickerViewDemo.m */,
 				0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */,
+				08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */,
+				08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */,
 				08F19C711B4681C000722C9C /* ActionSheetPickDemo */,
 			);
 			name = Select;
@@ -1723,6 +1765,31 @@
 			path = ActionSheetPickDemo;
 			sourceTree = "<group>";
 		};
+		08F20B451B67292A005F092A /* Local Media */ = {
+			isa = PBXGroup;
+			children = (
+				08F20B461B67292A005F092A /* photo1.jpg */,
+				08F20B471B67292A005F092A /* photo1t.jpg */,
+				08F20B481B67292A005F092A /* photo2.jpg */,
+				08F20B491B67292A005F092A /* photo2t.jpg */,
+				08F20B4A1B67292A005F092A /* photo3.jpg */,
+				08F20B4B1B67292A005F092A /* photo3t.jpg */,
+				08F20B4C1B67292A005F092A /* photo4.jpg */,
+				08F20B4D1B67292A005F092A /* photo4t.jpg */,
+				08F20B4E1B67292A005F092A /* photo5.jpg */,
+				08F20B4F1B67292A005F092A /* photo5t.jpg */,
+				08F20B501B67292A005F092A /* photo6.jpg */,
+				08F20B511B67292A005F092A /* photo6t.jpg */,
+				08F20B521B67292A005F092A /* photo7.jpg */,
+				08F20B531B67292A005F092A /* photo7t.jpg */,
+				08F20B541B67292A005F092A /* photo8.jpg */,
+				08F20B551B67292A005F092A /* photo8t.jpg */,
+				08F20B561B67292A005F092A /* video.mp4 */,
+				08F20B571B67292A005F092A /* video_thumb.jpg */,
+			);
+			path = "Local Media";
+			sourceTree = "<group>";
+		};
 		08F27D091B550ABC0039DF49 /* RETableViewManagerExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -1948,6 +2015,7 @@
 				08D7D9CF1AE6316600543F2A /* AMPOP-orange@2x.png in Resources */,
 				0843F1341AE5076900220F15 /* stage_2@2x.png in Resources */,
 				0843EFC51AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib in Resources */,
+				08F20B5F1B67292A005F092A /* photo4t.jpg in Resources */,
 				0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */,
 				0843EFDE1AE4F6E800220F15 /* reload.png in Resources */,
 				0843F10B1AE5076900220F15 /* m12@2x.png in Resources */,
@@ -1959,6 +2027,7 @@
 				0843EFDF1AE4F6E800220F15 /* reload@2x.png in Resources */,
 				0843EF691AE4DDAF00220F15 /* AnimationViewController.xib in Resources */,
 				08F27D641B550ABC0039DF49 /* userpic3.jpg in Resources */,
+				08F20B631B67292A005F092A /* photo6t.jpg in Resources */,
 				0843F1161AE5076900220F15 /* m22@2x.png in Resources */,
 				0843F13C1AE5076900220F15 /* addedIn7.plist in Resources */,
 				0843EEFC1AE4DB7F00220F15 /* VIP_on.png in Resources */,
@@ -1991,6 +2060,7 @@
 				0843F1301AE5076900220F15 /* m9@2x.png in Resources */,
 				0874A5011B6233D900007951 /* NJKWebViewProgressDemo.xib in Resources */,
 				0843F1191AE5076900220F15 /* m25@2x.png in Resources */,
+				08F20B5E1B67292A005F092A /* photo4.jpg in Resources */,
 				08F27D5C1B550ABC0039DF49 /* photo1.jpg in Resources */,
 				08F27D651B550ABC0039DF49 /* userpic4.jpg in Resources */,
 				08F27D731B550ABC0039DF49 /* Single@2x.png in Resources */,
@@ -2000,10 +2070,13 @@
 				08F19C891B4681C000722C9C /* ok.png in Resources */,
 				0843F1241AE5076900220F15 /* m35@2x.png in Resources */,
 				0843F0951AE502AE00220F15 /* MotionEffectViewController.xib in Resources */,
+				08F20B661B67292A005F092A /* photo8.jpg in Resources */,
 				08F27D751B550ABC0039DF49 /* Single_Selected@2x.png in Resources */,
 				0843F1351AE5076900220F15 /* stage_3@2x.png in Resources */,
 				0843F1071AE5076900220F15 /* face_detection.jpg in Resources */,
 				0843F1131AE5076900220F15 /* m1@2x.png in Resources */,
+				08F20B601B67292A005F092A /* photo5.jpg in Resources */,
+				08F20B641B67292A005F092A /* photo7.jpg in Resources */,
 				0843F0871AE502AE00220F15 /* DynamicBehaviorsViewController.xib in Resources */,
 				08D7CEA11B21789A00A3C8AD /* TYGMenuTableViewController.xib in Resources */,
 				08D530881B5F973700409CF1 /* iTunesArtwork in Resources */,
@@ -2016,11 +2089,13 @@
 				08D7D97C1AE619D500543F2A /* GreenViewController.xib in Resources */,
 				0843F0A21AE502AE00220F15 /* SpeechSynthesisViewController.xib in Resources */,
 				0843EF991AE4E9BA00220F15 /* check_mark@2x.png in Resources */,
+				08F20B5C1B67292A005F092A /* photo3.jpg in Resources */,
 				0843F11E1AE5076900220F15 /* m2@2x.png in Resources */,
 				08D7D9CD1AE6316600543F2A /* AMPOP-green@2x.png in Resources */,
 				0843EFFC1AE4FAA800220F15 /* HeaderImage.png in Resources */,
 				0843F0A81AE502AE00220F15 /* WebPaginationViewController.xib in Resources */,
 				08F27D6C1B550ABC0039DF49 /* Heart_Highlighted@2x.png in Resources */,
+				08F20B621B67292A005F092A /* photo6.jpg in Resources */,
 				08B3A3D01B661083007838EA /* menu@2x.png in Resources */,
 				0843F0A41AE502AE00220F15 /* SpringAnimationViewController.xib in Resources */,
 				0843EF961AE4E75600220F15 /* drop_down@2x.png in Resources */,
@@ -2028,8 +2103,10 @@
 				08D530821B5F973200409CF1 /* back_ON_25.png in Resources */,
 				0843F08B1AE502AE00220F15 /* ImageFiltersViewController.xib in Resources */,
 				0843F1221AE5076900220F15 /* m33@2x.png in Resources */,
+				08F20B691B67292A005F092A /* video_thumb.jpg in Resources */,
 				08E9C8C61B0AD36A00DDF85C /* PopBasicViewController.xib in Resources */,
 				0843F1291AE5076900220F15 /* m3@2x.png in Resources */,
+				08F20B591B67292A005F092A /* photo1t.jpg in Resources */,
 				083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */,
 				08D7D9D21AE6316600543F2A /* AMPOP-yellow.png in Resources */,
 				0843EFB71AE4F01D00220F15 /* iCarouselExampleViewController.xib in Resources */,
@@ -2060,6 +2137,7 @@
 				0843F1141AE5076900220F15 /* m20@2x.png in Resources */,
 				0843EF0D1AE4DB7F00220F15 /* 我的_黑@3x.png in Resources */,
 				0874A4F51B622D3A00007951 /* LDProgressViewController.xib in Resources */,
+				08F20B5B1B67292A005F092A /* photo2t.jpg in Resources */,
 				0843F10C1AE5076900220F15 /* m13@2x.png in Resources */,
 				0843F12B1AE5076900220F15 /* m4@2x.png in Resources */,
 				0843F08D1AE502AE00220F15 /* Map3DViewController.xib in Resources */,
@@ -2068,12 +2146,14 @@
 				08B3A3D11B661083007838EA /* MGSwipeBackground.jpg in Resources */,
 				0843EE641AE4D8B500220F15 /* Images.xcassets in Resources */,
 				0843EF761AE4E38700220F15 /* SelectTableViewController.xib in Resources */,
+				08F20B5A1B67292A005F092A /* photo2.jpg in Resources */,
 				08D7D9B01AE62AEE00543F2A /* blue.jpg in Resources */,
 				0843F0991AE502AE00220F15 /* QRCodeViewController.xib in Resources */,
 				08F19C871B4681C000722C9C /* cancel.png in Resources */,
 				08D7D9D01AE6316600543F2A /* AMPOP-red.png in Resources */,
 				08F27D681B550ABC0039DF49 /* First@2x.png in Resources */,
 				08D7D9CC1AE6316600543F2A /* AMPOP-green.png in Resources */,
+				08F20B671B67292A005F092A /* photo8t.jpg in Resources */,
 				08F27D6A1B550ABC0039DF49 /* First_Selected@2x.png in Resources */,
 				08F27D6D1B550ABC0039DF49 /* Last@2x.png in Resources */,
 				0843F0081AE4FDB400220F15 /* MYCustomPanel.xib in Resources */,
@@ -2082,6 +2162,7 @@
 				08F27D6F1B550ABC0039DF49 /* Last_Selected@2x.png in Resources */,
 				08F27D721B550ABC0039DF49 /* Middle_Selected@2x.png in Resources */,
 				0843EFDC1AE4F6E800220F15 /* home_icon.png in Resources */,
+				08F20B5D1B67292A005F092A /* photo3t.jpg in Resources */,
 				0843F1081AE5076900220F15 /* IPhone_5s@2x.png in Resources */,
 				08D530891B5F973700409CF1 /* iTunesArtwork@2x in Resources */,
 				0843F1101AE5076900220F15 /* m17@2x.png in Resources */,
@@ -2113,15 +2194,18 @@
 				0843EFEA1AE4F76800220F15 /* M13BadgeViewController.xib in Resources */,
 				0843F0091AE4FDB400220F15 /* TestHeader.xib in Resources */,
 				0843F1181AE5076900220F15 /* m24@2x.png in Resources */,
+				08F20B611B67292A005F092A /* photo5t.jpg in Resources */,
 				0843EF071AE4DB7F00220F15 /* 发现_黑@3x.png in Resources */,
 				0843F1311AE5076900220F15 /* sample.jpg in Resources */,
 				0843EE881AE4D93D00220F15 /* FourViewController.xib in Resources */,
 				0843F10D1AE5076900220F15 /* m14@2x.png in Resources */,
 				0843EF131AE4DB7F00220F15 /* 首页_黑@3x.png in Resources */,
+				08F20B581B67292A005F092A /* photo1.jpg in Resources */,
 				0843EF011AE4DB7F00220F15 /* VIP_黑@3x.png in Resources */,
 				0843F1251AE5076900220F15 /* m36@2x.png in Resources */,
 				0843EFDB1AE4F6E800220F15 /* check_icon@2x.png in Resources */,
 				0843F11D1AE5076900220F15 /* m29@2x.png in Resources */,
+				08F20B681B67292A005F092A /* video.mp4 in Resources */,
 				08F27D741B550ABC0039DF49 /* Single_Alt@2x.png in Resources */,
 				0843F12F1AE5076900220F15 /* m8@2x.png in Resources */,
 				0843EF0C1AE4DB7F00220F15 /* 我的_黑@2x.png in Resources */,
@@ -2139,6 +2223,7 @@
 				08D7D9B71AE62BFD00543F2A /* IQKeyboardViewController.xib in Resources */,
 				0843EF031AE4DB7F00220F15 /* 发现_on@2x.png in Resources */,
 				08F27D601B550ABC0039DF49 /* photo5.jpg in Resources */,
+				08F20B651B67292A005F092A /* photo7t.jpg in Resources */,
 				0843EFA81AE4EA8400220F15 /* HZAreaPickerView.xib in Resources */,
 				0843F0851AE502AE00220F15 /* CustomTransitionViewController.xib in Resources */,
 				0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */,
@@ -2296,6 +2381,7 @@
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
 				080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */,
 				0843F08A1AE502AE00220F15 /* ImageFiltersViewController.m in Sources */,
+				08F20B441B67275B005F092A /* MWPhotoBrowserDemo.m in Sources */,
 				08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */,
 				0843F0351AE4FF0800220F15 /* MJScrollViewController.m in Sources */,
 				0843EE7E1AE4D8FD00220F15 /* MainViewController.m in Sources */,

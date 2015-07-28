@@ -1,0 +1,6 @@
+module M13InfiniteTabBar {
+  umbrella header "M13InfiniteTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

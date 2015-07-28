@@ -1,0 +1,1 @@
+../../../Target Support Files/MWPhotoBrowser/MWPhotoBrowser-umbrella.h

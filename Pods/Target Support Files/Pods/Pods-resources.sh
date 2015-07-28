@@ -94,6 +94,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -133,6 +134,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
   install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 

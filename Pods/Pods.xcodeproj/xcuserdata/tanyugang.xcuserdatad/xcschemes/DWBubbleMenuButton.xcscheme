@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4E5B5A8AC2F5ED36E50AB84B"
+               BlueprintIdentifier = "BCC9AD2EF6DDBA77D17A4503"
                BuildableName = "libDWBubbleMenuButton.a"
                BlueprintName = "DWBubbleMenuButton"
                ReferencedContainer = "container:Pods.xcodeproj">

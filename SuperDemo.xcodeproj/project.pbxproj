@@ -241,8 +241,11 @@
 		0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */; };
 		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
 		0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */; };
+		08981BA21B69BEF400E448C8 /* TYGPopAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
+		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
+		08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */; };
 		08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */; };
 		08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */; };
 		08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */; };
@@ -256,6 +259,8 @@
 		08C72E011B25321F00967012 /* REMenuExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E001B25321F00967012 /* REMenuExample.m */; };
 		08C72E121B2545B400967012 /* REFrostedViewControllerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */; };
 		08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E141B25461A00967012 /* DEMOMenuViewController.m */; };
+		08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */; };
+		08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */; };
 		08D530821B5F973200409CF1 /* back_ON_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530801B5F973200409CF1 /* back_ON_25.png */; };
 		08D530831B5F973200409CF1 /* back_OFF_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530811B5F973200409CF1 /* back_OFF_25.png */; };
 		08D530871B5F973700409CF1 /* SuperDemoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530841B5F973700409CF1 /* SuperDemoIcon.png */; };
@@ -739,9 +744,14 @@
 		0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDViewController.h; sourceTree = "<group>"; };
 		0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDViewController.m; sourceTree = "<group>"; };
 		0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBProgressHUDViewController.xib; sourceTree = "<group>"; };
+		08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGPopAnimationManager.h; sourceTree = "<group>"; };
+		08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGPopAnimationManager.m; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
+		08ADBFC41B69AE5F0034B231 /* PopSpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopSpringAnimationViewController.h; sourceTree = "<group>"; };
+		08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSpringAnimationViewController.m; sourceTree = "<group>"; };
+		08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopSpringAnimationViewController.xib; sourceTree = "<group>"; };
 		08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarDemo.h; sourceTree = "<group>"; };
 		08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarDemo.m; sourceTree = "<group>"; };
 		08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MGSwipeTableCellDemo.storyboard; sourceTree = "<group>"; };
@@ -762,6 +772,9 @@
 		08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewControllerExample.m; sourceTree = "<group>"; };
 		08C72E131B25461A00967012 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
 		08C72E141B25461A00967012 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDecayAnimationViewController.h; sourceTree = "<group>"; };
+		08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPDecayAnimationViewController.m; sourceTree = "<group>"; };
+		08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPDecayAnimationViewController.xib; sourceTree = "<group>"; };
 		08D530801B5F973200409CF1 /* back_ON_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_ON_25.png; sourceTree = "<group>"; };
 		08D530811B5F973200409CF1 /* back_OFF_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_OFF_25.png; sourceTree = "<group>"; };
 		08D530841B5F973700409CF1 /* SuperDemoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuperDemoIcon.png; sourceTree = "<group>"; };
@@ -1247,9 +1260,7 @@
 				0843EE841AE4D93D00220F15 /* FourViewController.h */,
 				0843EE851AE4D93D00220F15 /* FourViewController.m */,
 				0843EE861AE4D93D00220F15 /* FourViewController.xib */,
-				08E9C8C21B0AD36A00DDF85C /* PopBasicViewController.h */,
-				08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */,
-				08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */,
+				08ADBFC91B69B5320034B231 /* PopAnimation */,
 				08DA8B911B28201500999A2C /* TYGOtherViewController.h */,
 				08DA8B921B28201500999A2C /* TYGOtherViewController.m */,
 				08DA8B931B28201500999A2C /* TYGOtherViewController.xib */,
@@ -1668,6 +1679,24 @@
 				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
 			);
 			name = HUD;
+			sourceTree = "<group>";
+		};
+		08ADBFC91B69B5320034B231 /* PopAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */,
+				08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */,
+				08E9C8C21B0AD36A00DDF85C /* PopBasicViewController.h */,
+				08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */,
+				08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */,
+				08ADBFC41B69AE5F0034B231 /* PopSpringAnimationViewController.h */,
+				08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */,
+				08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */,
+				08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */,
+				08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */,
+				08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */,
+			);
+			name = PopAnimation;
 			sourceTree = "<group>";
 		};
 		08B3A3C71B661083007838EA /* TableViewCell */ = {
@@ -2102,6 +2131,7 @@
 				0843EFC51AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib in Resources */,
 				08F20B5F1B67292A005F092A /* photo4t.jpg in Resources */,
 				0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */,
+				08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */,
 				0843EFDE1AE4F6E800220F15 /* reload.png in Resources */,
 				0843F10B1AE5076900220F15 /* m12@2x.png in Resources */,
 				08F27D5E1B550ABC0039DF49 /* photo3.jpg in Resources */,
@@ -2190,6 +2220,7 @@
 				0843EF961AE4E75600220F15 /* drop_down@2x.png in Resources */,
 				0843EF041AE4DB7F00220F15 /* 发现_on@3x.png in Resources */,
 				08D530821B5F973200409CF1 /* back_ON_25.png in Resources */,
+				08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */,
 				0843F08B1AE502AE00220F15 /* ImageFiltersViewController.xib in Resources */,
 				0843F1221AE5076900220F15 /* m33@2x.png in Resources */,
 				08F20B691B67292A005F092A /* video_thumb.jpg in Resources */,
@@ -2414,6 +2445,7 @@
 				0843EF811AE4E54700220F15 /* IQActionSheetDemo.m in Sources */,
 				08EA56181B4381B7007ED35B /* BlocksKitViewController.m in Sources */,
 				0843F0861AE502AE00220F15 /* DynamicBehaviorsViewController.m in Sources */,
+				08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */,
 				08F19C861B4681C000722C9C /* ActionSheetPickerViewController.m in Sources */,
 				08D7D9B61AE62BFD00543F2A /* IQKeyboardViewController.m in Sources */,
 				08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */,
@@ -2438,6 +2470,8 @@
 				0843EE591AE4D8B500220F15 /* AppDelegate.m in Sources */,
 				08F27D581B550ABC0039DF49 /* ListImageCell.m in Sources */,
 				08D7D9BE1AE62FE400543F2A /* AMPoptipViewController.m in Sources */,
+				08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */,
+				08981BA21B69BEF400E448C8 /* TYGPopAnimationManager.m in Sources */,
 				08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */,
 				0843EED91AE4DB0C00220F15 /* File.m in Sources */,
 				08F27D531B550ABC0039DF49 /* XIBTestViewController.m in Sources */,

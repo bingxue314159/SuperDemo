@@ -8,6 +8,7 @@
 
 #import "PopBasicViewController.h"
 #import <pop/POP.h>
+#import "TYG_allHeadFiles.h"
 
 @interface PopBasicViewController (){
     BOOL isAnimation;
@@ -83,11 +84,11 @@
     /*
      1.springBounciness 弹簧弹力 取值范围为[0, 20]，默认值为4
      2.springSpeed 弹簧速度，速度越快，动画时间越短 [0, 20]，默认为12，和springBounciness一起决定着弹簧动画的效果
-     3.dynamicsTension 弹簧的张力
-     4.dynamicsFriction 弹簧摩擦
-     5.dynamicsMass 质量 。张力，摩擦，质量这三者可以从更细的粒度上替代springBounciness和springSpeed控制弹簧动画的效果
+     3.dynamicsTension 弹簧的张力,影响回弹力度以及速度
+     4.dynamicsFriction 弹簧摩擦,如果开启，动画会不断重复，幅度逐渐削弱，直到停止。
+     5.dynamicsMass 质量,细微的影响动画的回弹力度以及速度 。
+     张力，摩擦，质量这三者可以从更细的粒度上替代springBounciness和springSpeed控制弹簧动画的效果
      */
-    
     
     switch (index) {
         case 0:{
@@ -128,10 +129,9 @@
         }
         case 2:{
             //移动中间
-            NSInteger width = CGRectGetWidth(self.view.bounds);
-            
-            POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
-            anim.toValue = [NSValue valueWithCGPoint:CGPointMake(width*0.5, 200)];
+
+            POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
+            anim.toValue = [NSValue valueWithCGRect:CGRectMake(8, 200, SCREEN_WIDTH - 8*2, 25)];
             anim.springBounciness = 16;//弹簧弹力 取值范围为[0, 20]，默认值为4
             anim.springSpeed = 6;//弹簧速度，速度越快，动画时间越短 [0, 20]
             [self.basicView pop_addAnimation:anim forKey:@"springAnimation220"];
@@ -140,10 +140,10 @@
             CAShapeLayer *progressLayer = [CAShapeLayer layer];
 //            progressLayer.strokeColor = [UIColor colorWithWhite:1.0 alpha:0.98].CGColor;
             progressLayer.strokeColor = [UIColor redColor].CGColor;
-            progressLayer.lineWidth = 126.0;
+            progressLayer.lineWidth = 26.0;
             
             UIBezierPath *progressline = [UIBezierPath bezierPath];
-            [progressline moveToPoint:CGPointMake(25.0, 225.0)];
+            [progressline moveToPoint:CGPointMake(25.0, 25.0)];
             [progressline addLineToPoint:CGPointMake(700.0, 25.0)];
             progressLayer.path = progressline.CGPath;
             
@@ -187,8 +187,47 @@
 /**
  *  衰减动画
  */
-- (void)decayAnimation{
-
+- (void)decayAnimationIndex:(NSInteger)index{
+    switch (index) {
+        case 0:{
+            CAShapeLayer *progressLayer = [CAShapeLayer layer];
+            progressLayer.strokeColor = [UIColor redColor].CGColor;
+            progressLayer.lineWidth = 26.0;
+            
+            UIBezierPath *progressline = [UIBezierPath bezierPath];
+            [progressline moveToPoint:CGPointMake(25.0, 25.0)];
+            [progressline addLineToPoint:CGPointMake(700.0, 25.0)];
+            progressLayer.path = progressline.CGPath;
+            
+            
+            POPSpringAnimation *scaleAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+            scaleAnim.toValue = [NSValue valueWithCGPoint:CGPointMake(0.3, 0.3)];
+            
+            POPSpringAnimation *boundsAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBounds];
+            boundsAnim.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 800, 50)];
+            boundsAnim.completionBlock = ^(POPAnimation *anim, BOOL finished) {
+                if (finished) {
+                    UIGraphicsBeginImageContextWithOptions(self.basicView.frame.size, NO, 0.0);
+                    POPBasicAnimation *progressBoundsAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
+                    progressBoundsAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                    progressBoundsAnim.toValue = @1.0;
+                    progressBoundsAnim.completionBlock = ^(POPAnimation *anim, BOOL finished) {if (finished) {UIGraphicsEndImageContext();}};   
+                    [progressLayer pop_addAnimation:progressBoundsAnim forKey:@"AnimateBounds"]; 
+                } 
+            };
+            break;
+        }
+        case 1:{
+            
+            break;
+        }
+        case 2:{
+            
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 /**
@@ -224,6 +263,18 @@
         }
         case 22:{
             [self springAnimationIndex:2];
+            break;
+        }
+        case 30:{
+            [self decayAnimationIndex:0];
+            break;
+        }
+        case 31:{
+            [self decayAnimationIndex:1];
+            break;
+        }
+        case 32:{
+            [self decayAnimationIndex:2];
             break;
         }
         default:

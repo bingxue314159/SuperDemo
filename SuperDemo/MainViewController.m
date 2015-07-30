@@ -150,6 +150,8 @@
     
     
     self.viewControllers = [NSArray arrayWithObjects:self.navBarController1,self.navBarController2,self.navBarController3,self.navBarController4, nil];
+    
+    self.selectedIndex = 3;
     //    self.viewControllers = [NSArray arrayWithObjects:firstViewController,secondViewController,thirdViewController,fourViewController, nil];
 }
 

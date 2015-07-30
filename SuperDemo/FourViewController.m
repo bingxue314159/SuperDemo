@@ -32,6 +32,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [titleArray addObject:@"POP动画-PopBasicViewController"];
+    [titleArray addObject:@"POP动画-PopSpringAnimationViewController"];
+    [titleArray addObject:@"POP动画-POPDecayAnimationViewController"];
+    
     [titleArray addObject:@"其它-TYGOtherViewController"];
 
 }

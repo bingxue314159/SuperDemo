@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYGIBViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynt-JQ-dvj" customClass="TYGIBView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="0zA-Hd-8cv"/>
+                        <constraint firstAttribute="width" constant="100" id="s1J-CX-O7x"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0zA-Hd-8cv"/>
+                            <exclude reference="s1J-CX-O7x"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0zA-Hd-8cv"/>
+                            <include reference="s1J-CX-O7x"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可让UIView的属性能够在Interface Builder的图形化界面进行设置，并且动态的预览到效果" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2X-ZQ-Cip">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="HP1-JR-zDG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HP1-JR-zDG"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HP1-JR-zDG"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ynt-JQ-dvj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="3Em-Zr-Uiw"/>
+                <constraint firstAttribute="centerX" secondItem="ynt-JQ-dvj" secondAttribute="centerX" id="Dk3-L9-2Ok"/>
+                <constraint firstItem="z2X-ZQ-Cip" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VYT-Kx-joR"/>
+                <constraint firstAttribute="trailing" secondItem="z2X-ZQ-Cip" secondAttribute="trailing" constant="8" id="nuW-63-yBv"/>
+                <constraint firstItem="z2X-ZQ-Cip" firstAttribute="top" secondItem="ynt-JQ-dvj" secondAttribute="bottom" constant="15" id="oiT-At-U6f"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ynt-JQ-dvj"/>
+                    <exclude reference="z2X-ZQ-Cip"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="VYT-Kx-joR"/>
+                    <exclude reference="nuW-63-yBv"/>
+                    <exclude reference="oiT-At-U6f"/>
+                    <exclude reference="3Em-Zr-Uiw"/>
+                    <exclude reference="Dk3-L9-2Ok"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ynt-JQ-dvj"/>
+                    <include reference="z2X-ZQ-Cip"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="VYT-Kx-joR"/>
+                    <include reference="nuW-63-yBv"/>
+                    <include reference="oiT-At-U6f"/>
+                    <include reference="3Em-Zr-Uiw"/>
+                    <include reference="Dk3-L9-2Ok"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

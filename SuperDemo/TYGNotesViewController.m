@@ -32,6 +32,7 @@
     [titleArray addObject:@"UrlSchemeMap-TYGUrlSchemeMapViewController"];
     [titleArray addObject:@"版本检测-TYGAppVersionViewController"];
     
+    [titleArray addObject:@"IBInspectable-TYGIBViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

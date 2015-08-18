@@ -242,6 +242,22 @@
 		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
 		0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */; };
 		08981BA21B69BEF400E448C8 /* TYGPopAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */; };
+		08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */; };
+		08A320A61B82BFE800943DE9 /* TYGMapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320A41B82BFE800943DE9 /* TYGMapKitViewController.m */; };
+		08A320A71B82BFE800943DE9 /* TYGMapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A320A51B82BFE800943DE9 /* TYGMapKitViewController.xib */; };
+		08A320AA1B82C02A00943DE9 /* TYGMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320A91B82C02A00943DE9 /* TYGMapAnnotation.m */; };
+		08A320AE1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */; };
+		08A320AF1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A320AD1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib */; };
+		08A320B51B82C23B00943DE9 /* LocationTrans.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320B21B82C23B00943DE9 /* LocationTrans.m */; };
+		08A320B61B82C23B00943DE9 /* TYGDinwei.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320B41B82C23B00943DE9 /* TYGDinwei.m */; };
+		08A320BA1B82C27100943DE9 /* TYGAPPVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320B91B82C27100943DE9 /* TYGAPPVersion.m */; };
+		08A320BE1B82C29900943DE9 /* TYGAppVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320BC1B82C29900943DE9 /* TYGAppVersionViewController.m */; };
+		08A320BF1B82C29900943DE9 /* TYGAppVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A320BD1B82C29900943DE9 /* TYGAppVersionViewController.xib */; };
+		08A320C61B82C7F900943DE9 /* 定位3_白.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A320C11B82C7F900943DE9 /* 定位3_白.png */; };
+		08A320C71B82C7F900943DE9 /* 定位3_黑.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A320C21B82C7F900943DE9 /* 定位3_黑.png */; };
+		08A320C81B82C7F900943DE9 /* 定位3_橙.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A320C31B82C7F900943DE9 /* 定位3_橙.png */; };
+		08A320C91B82C7F900943DE9 /* 定位3_灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A320C41B82C7F900943DE9 /* 定位3_灰.png */; };
+		08A320CA1B82C7F900943DE9 /* 定位3_绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A320C51B82C7F900943DE9 /* 定位3_绿.png */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
 		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
@@ -746,6 +762,30 @@
 		0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBProgressHUDViewController.xib; sourceTree = "<group>"; };
 		08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGPopAnimationManager.h; sourceTree = "<group>"; };
 		08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGPopAnimationManager.m; sourceTree = "<group>"; };
+		08A3209F1B82BEFF00943DE9 /* TYGNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGNotesViewController.h; sourceTree = "<group>"; };
+		08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGNotesViewController.m; sourceTree = "<group>"; };
+		08A320A31B82BFE800943DE9 /* TYGMapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGMapKitViewController.h; sourceTree = "<group>"; };
+		08A320A41B82BFE800943DE9 /* TYGMapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGMapKitViewController.m; sourceTree = "<group>"; };
+		08A320A51B82BFE800943DE9 /* TYGMapKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGMapKitViewController.xib; sourceTree = "<group>"; };
+		08A320A81B82C02A00943DE9 /* TYGMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGMapAnnotation.h; sourceTree = "<group>"; };
+		08A320A91B82C02A00943DE9 /* TYGMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGMapAnnotation.m; sourceTree = "<group>"; };
+		08A320AB1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUrlSchemeMapViewController.h; sourceTree = "<group>"; };
+		08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUrlSchemeMapViewController.m; sourceTree = "<group>"; };
+		08A320AD1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGUrlSchemeMapViewController.xib; sourceTree = "<group>"; };
+		08A320B11B82C23B00943DE9 /* LocationTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTrans.h; sourceTree = "<group>"; };
+		08A320B21B82C23B00943DE9 /* LocationTrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTrans.m; sourceTree = "<group>"; };
+		08A320B31B82C23B00943DE9 /* TYGDinwei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGDinwei.h; sourceTree = "<group>"; };
+		08A320B41B82C23B00943DE9 /* TYGDinwei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGDinwei.m; sourceTree = "<group>"; };
+		08A320B81B82C27100943DE9 /* TYGAPPVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGAPPVersion.h; sourceTree = "<group>"; };
+		08A320B91B82C27100943DE9 /* TYGAPPVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGAPPVersion.m; sourceTree = "<group>"; };
+		08A320BB1B82C29900943DE9 /* TYGAppVersionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGAppVersionViewController.h; sourceTree = "<group>"; };
+		08A320BC1B82C29900943DE9 /* TYGAppVersionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGAppVersionViewController.m; sourceTree = "<group>"; };
+		08A320BD1B82C29900943DE9 /* TYGAppVersionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGAppVersionViewController.xib; sourceTree = "<group>"; };
+		08A320C11B82C7F900943DE9 /* 定位3_白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位3_白.png"; sourceTree = "<group>"; };
+		08A320C21B82C7F900943DE9 /* 定位3_黑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位3_黑.png"; sourceTree = "<group>"; };
+		08A320C31B82C7F900943DE9 /* 定位3_橙.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位3_橙.png"; sourceTree = "<group>"; };
+		08A320C41B82C7F900943DE9 /* 定位3_灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位3_灰.png"; sourceTree = "<group>"; };
+		08A320C51B82C7F900943DE9 /* 定位3_绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位3_绿.png"; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
@@ -1055,9 +1095,11 @@
 			isa = PBXGroup;
 			children = (
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
+				08A320B01B82C23B00943DE9 /* TYGDinwei */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
 				0843EEC21AE4DB0C00220F15 /* File.h */,
+				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
 				0843EEC31AE4DB0C00220F15 /* File.m */,
 				0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */,
 				0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */,
@@ -1086,6 +1128,7 @@
 		0843EEE31AE4DB7F00220F15 /* bottom */ = {
 			isa = PBXGroup;
 			children = (
+				08A320C01B82C7EA00943DE9 /* Dinwei */,
 				0843EEE41AE4DB7F00220F15 /* VIP_on.png */,
 				0843EEE51AE4DB7F00220F15 /* VIP_on@2x.png */,
 				0843EEE61AE4DB7F00220F15 /* VIP_on@3x.png */,
@@ -1260,6 +1303,7 @@
 				0843EE841AE4D93D00220F15 /* FourViewController.h */,
 				0843EE851AE4D93D00220F15 /* FourViewController.m */,
 				0843EE861AE4D93D00220F15 /* FourViewController.xib */,
+				08A320A21B82BF9C00943DE9 /* TYGNotes */,
 				08ADBFC91B69B5320034B231 /* PopAnimation */,
 				08DA8B911B28201500999A2C /* TYGOtherViewController.h */,
 				08DA8B921B28201500999A2C /* TYGOtherViewController.m */,
@@ -1679,6 +1723,58 @@
 				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
 			);
 			name = HUD;
+			sourceTree = "<group>";
+		};
+		08A320A21B82BF9C00943DE9 /* TYGNotes */ = {
+			isa = PBXGroup;
+			children = (
+				08A3209F1B82BEFF00943DE9 /* TYGNotesViewController.h */,
+				08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */,
+				08A320A31B82BFE800943DE9 /* TYGMapKitViewController.h */,
+				08A320A41B82BFE800943DE9 /* TYGMapKitViewController.m */,
+				08A320A51B82BFE800943DE9 /* TYGMapKitViewController.xib */,
+				08A320A81B82C02A00943DE9 /* TYGMapAnnotation.h */,
+				08A320A91B82C02A00943DE9 /* TYGMapAnnotation.m */,
+				08A320AB1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.h */,
+				08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */,
+				08A320AD1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib */,
+				08A320BB1B82C29900943DE9 /* TYGAppVersionViewController.h */,
+				08A320BC1B82C29900943DE9 /* TYGAppVersionViewController.m */,
+				08A320BD1B82C29900943DE9 /* TYGAppVersionViewController.xib */,
+			);
+			name = TYGNotes;
+			sourceTree = "<group>";
+		};
+		08A320B01B82C23B00943DE9 /* TYGDinwei */ = {
+			isa = PBXGroup;
+			children = (
+				08A320B11B82C23B00943DE9 /* LocationTrans.h */,
+				08A320B21B82C23B00943DE9 /* LocationTrans.m */,
+				08A320B31B82C23B00943DE9 /* TYGDinwei.h */,
+				08A320B41B82C23B00943DE9 /* TYGDinwei.m */,
+			);
+			path = TYGDinwei;
+			sourceTree = "<group>";
+		};
+		08A320B71B82C27100943DE9 /* TYGAPPVersion */ = {
+			isa = PBXGroup;
+			children = (
+				08A320B81B82C27100943DE9 /* TYGAPPVersion.h */,
+				08A320B91B82C27100943DE9 /* TYGAPPVersion.m */,
+			);
+			path = TYGAPPVersion;
+			sourceTree = "<group>";
+		};
+		08A320C01B82C7EA00943DE9 /* Dinwei */ = {
+			isa = PBXGroup;
+			children = (
+				08A320C11B82C7F900943DE9 /* 定位3_白.png */,
+				08A320C21B82C7F900943DE9 /* 定位3_黑.png */,
+				08A320C31B82C7F900943DE9 /* 定位3_橙.png */,
+				08A320C41B82C7F900943DE9 /* 定位3_灰.png */,
+				08A320C51B82C7F900943DE9 /* 定位3_绿.png */,
+			);
+			name = Dinwei;
 			sourceTree = "<group>";
 		};
 		08ADBFC91B69B5320034B231 /* PopAnimation */ = {
@@ -2123,6 +2219,7 @@
 				0843F1201AE5076900220F15 /* m31@2x.png in Resources */,
 				0843F10F1AE5076900220F15 /* m16@2x.png in Resources */,
 				08F27D711B550ABC0039DF49 /* Middle_Alt@2x.png in Resources */,
+				08A320C71B82C7F900943DE9 /* 定位3_黑.png in Resources */,
 				0843EFBB1AE4F03700220F15 /* page.png in Resources */,
 				08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */,
 				0843F1271AE5076900220F15 /* m38@2x.png in Resources */,
@@ -2226,6 +2323,7 @@
 				08F20B691B67292A005F092A /* video_thumb.jpg in Resources */,
 				08E9C8C61B0AD36A00DDF85C /* PopBasicViewController.xib in Resources */,
 				0843F1291AE5076900220F15 /* m3@2x.png in Resources */,
+				08A320A71B82BFE800943DE9 /* TYGMapKitViewController.xib in Resources */,
 				08F20B591B67292A005F092A /* photo1t.jpg in Resources */,
 				083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */,
 				08D7D9D21AE6316600543F2A /* AMPOP-yellow.png in Resources */,
@@ -2238,6 +2336,7 @@
 				0843F1381AE5076900220F15 /* stage_6@2x.png in Resources */,
 				0843EFAE1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib in Resources */,
 				0843F07F1AE502AE00220F15 /* ActivityTrackingViewController.xib in Resources */,
+				08A320C61B82C7F900943DE9 /* 定位3_白.png in Resources */,
 				0843F11A1AE5076900220F15 /* m26@2x.png in Resources */,
 				0843F1171AE5076900220F15 /* m23@2x.png in Resources */,
 				0843EFE01AE4F6E800220F15 /* search_icon.png in Resources */,
@@ -2245,6 +2344,7 @@
 				0843EF0B1AE4DB7F00220F15 /* 我的_黑.png in Resources */,
 				08F27D631B550ABC0039DF49 /* userpic2.jpg in Resources */,
 				08F20BA01B677C1F005F092A /* CalendarRowBottom.png in Resources */,
+				08A320C81B82C7F900943DE9 /* 定位3_橙.png in Resources */,
 				0843F1231AE5076900220F15 /* m34@2x.png in Resources */,
 				0843EFE11AE4F6E800220F15 /* search_icon@2x.png in Resources */,
 				08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */,
@@ -2286,6 +2386,9 @@
 				0843EFDC1AE4F6E800220F15 /* home_icon.png in Resources */,
 				08F20B5D1B67292A005F092A /* photo3t.jpg in Resources */,
 				0843F1081AE5076900220F15 /* IPhone_5s@2x.png in Resources */,
+				08A320CA1B82C7F900943DE9 /* 定位3_绿.png in Resources */,
+				08A320BF1B82C29900943DE9 /* TYGAppVersionViewController.xib in Resources */,
+				08A320AF1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib in Resources */,
 				08D530891B5F973700409CF1 /* iTunesArtwork@2x in Resources */,
 				0843F1101AE5076900220F15 /* m17@2x.png in Resources */,
 				0843EF121AE4DB7F00220F15 /* 首页_黑@2x.png in Resources */,
@@ -2332,6 +2435,7 @@
 				0843EFDB1AE4F6E800220F15 /* check_icon@2x.png in Resources */,
 				0843F11D1AE5076900220F15 /* m29@2x.png in Resources */,
 				08F20B681B67292A005F092A /* video.mp4 in Resources */,
+				08A320C91B82C7F900943DE9 /* 定位3_灰.png in Resources */,
 				08F27D741B550ABC0039DF49 /* Single_Alt@2x.png in Resources */,
 				08F20B9E1B677C1F005F092A /* CalendarRow.png in Resources */,
 				0843F12F1AE5076900220F15 /* m8@2x.png in Resources */,
@@ -2414,6 +2518,7 @@
 			files = (
 				08F27D541B550ABC0039DF49 /* ListImageItem.m in Sources */,
 				08F20B811B6770D3005F092A /* ABCalendarPickerDemo.m in Sources */,
+				08A320BE1B82C29900943DE9 /* TYGAppVersionViewController.m in Sources */,
 				0843F0C41AE502D200220F15 /* ZBFallenBricksAnimator.m in Sources */,
 				0843F0A71AE502AE00220F15 /* WebPaginationViewController.m in Sources */,
 				0843F0961AE502AE00220F15 /* MultipeerConnectivityViewController.m in Sources */,
@@ -2447,6 +2552,7 @@
 				0843F0861AE502AE00220F15 /* DynamicBehaviorsViewController.m in Sources */,
 				08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */,
 				08F19C861B4681C000722C9C /* ActionSheetPickerViewController.m in Sources */,
+				08A320B51B82C23B00943DE9 /* LocationTrans.m in Sources */,
 				08D7D9B61AE62BFD00543F2A /* IQKeyboardViewController.m in Sources */,
 				08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */,
 				0843F0361AE4FF0800220F15 /* MJTableViewController.m in Sources */,
@@ -2478,6 +2584,7 @@
 				08C72E011B25321F00967012 /* REMenuExample.m in Sources */,
 				0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */,
 				0843F0A11AE502AE00220F15 /* SpeechSynthesisViewController.m in Sources */,
+				08A320BA1B82C27100943DE9 /* TYGAPPVersion.m in Sources */,
 				0843EEDB1AE4DB0C00220F15 /* TYG_UIItems.m in Sources */,
 				0843F0BD1AE502D200220F15 /* AVCaptureManager.m in Sources */,
 				0843F07E1AE502AE00220F15 /* ActivityTrackingViewController.m in Sources */,
@@ -2489,9 +2596,11 @@
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
+				08A320B61B82C23B00943DE9 /* TYGDinwei.m in Sources */,
 				0843EF891AE4E6B200220F15 /* DropDownListView.m in Sources */,
 				0843EEDA1AE4DB0C00220F15 /* ImageBoxView.m in Sources */,
 				0874A4F31B622BA800007951 /* LDProgressViewController.m in Sources */,
+				08A320AA1B82C02A00943DE9 /* TYGMapAnnotation.m in Sources */,
 				0843F0BE1AE502D200220F15 /* HUTransitionAnimator.m in Sources */,
 				08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */,
 				0843F09C1AE502AE00220F15 /* SampleScene.m in Sources */,
@@ -2511,6 +2620,7 @@
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
 				0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */,
 				0843F0901AE502AE00220F15 /* MapOverlaysViewController.m in Sources */,
+				08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */,
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
 				080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */,
@@ -2529,6 +2639,7 @@
 				0843EF251AE4DBC200220F15 /* TYGUUMSign.m in Sources */,
 				0843F0321AE4FF0800220F15 /* MJCollectionViewController.m in Sources */,
 				08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */,
+				08A320A61B82BFE800943DE9 /* TYGMapKitViewController.m in Sources */,
 				08DA8B941B28201500999A2C /* TYGOtherViewController.m in Sources */,
 				0843EEDD1AE4DB0C00220F15 /* UIButton+Badge.m in Sources */,
 				08D7CEAC1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.m in Sources */,
@@ -2555,6 +2666,7 @@
 				0843EF8A1AE4E6B200220F15 /* DropDownViewCell.m in Sources */,
 				0843F0C81AE5034B00220F15 /* BrowseCodeViewController.m in Sources */,
 				0843F0071AE4FDB400220F15 /* MYCustomPanel.m in Sources */,
+				08A320AE1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m in Sources */,
 				0843F09F1AE502AE00220F15 /* SmileDetectionViewController.m in Sources */,
 				08E9C8C51B0AD36A00DDF85C /* PopBasicViewController.m in Sources */,
 				08F27D561B550ABC0039DF49 /* XIBTestItem.m in Sources */,

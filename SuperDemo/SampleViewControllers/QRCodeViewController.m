@@ -60,6 +60,7 @@
     self.imageView.image = resized;
 
     CGImageRelease(cgImage);
+
 }
 
 - (void)didReceiveMemoryWarning

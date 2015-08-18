@@ -15,7 +15,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIP-Rx-eu5">
@@ -46,7 +46,7 @@
                                 <constraint firstAttribute="height" constant="21" id="QQo-mW-xPM"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -84,7 +84,7 @@
                                 <constraint firstAttribute="height" constant="21" id="tSg-KB-NNN"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -128,12 +128,12 @@
                             <exclude reference="3fK-dU-bhL"/>
                             <exclude reference="Hue-qS-ORL"/>
                             <exclude reference="hGL-h6-Aft"/>
-                            <exclude reference="7Wa-1B-oYd"/>
-                            <exclude reference="JtD-kc-NVU"/>
-                            <exclude reference="f4X-If-n9d"/>
                             <exclude reference="Fpa-zi-wMP"/>
                             <exclude reference="KyU-uG-frW"/>
                             <exclude reference="qhM-pP-sNN"/>
+                            <exclude reference="7Wa-1B-oYd"/>
+                            <exclude reference="JtD-kc-NVU"/>
+                            <exclude reference="f4X-If-n9d"/>
                             <exclude reference="C5A-ck-cjf"/>
                             <exclude reference="dSL-gG-5v7"/>
                             <exclude reference="sHb-Ra-Z8S"/>
@@ -151,12 +151,12 @@
                             <include reference="3fK-dU-bhL"/>
                             <include reference="Hue-qS-ORL"/>
                             <include reference="hGL-h6-Aft"/>
-                            <include reference="7Wa-1B-oYd"/>
-                            <include reference="JtD-kc-NVU"/>
-                            <include reference="f4X-If-n9d"/>
                             <include reference="Fpa-zi-wMP"/>
                             <include reference="KyU-uG-frW"/>
                             <include reference="qhM-pP-sNN"/>
+                            <include reference="7Wa-1B-oYd"/>
+                            <include reference="JtD-kc-NVU"/>
+                            <include reference="f4X-If-n9d"/>
                             <include reference="C5A-ck-cjf"/>
                             <include reference="dSL-gG-5v7"/>
                             <include reference="sHb-Ra-Z8S"/>

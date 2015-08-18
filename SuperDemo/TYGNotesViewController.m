@@ -1,29 +1,26 @@
 //
-//  FourViewController.m
+//  TYGNotesViewController.m
 //  SuperDemo
 //
-//  Created by tanyugang on 15/4/20.
+//  Created by 谈宇刚 on 15/8/18.
 //  Copyright (c) 2015年 TYG. All rights reserved.
 //
 
-#import "FourViewController.h"
+#import "TYGNotesViewController.h"
 
-@interface FourViewController ()<UITableViewDataSource,UITableViewDelegate>{
+@interface TYGNotesViewController (){
     NSMutableArray *titleArray;
 }
 
 @end
 
-@implementation FourViewController
+@implementation TYGNotesViewController
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         titleArray = [NSMutableArray arrayWithCapacity:10];
-        
-        self.title = @"更多";
-        
     }
     return self;
 }
@@ -31,12 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [titleArray addObject:@"POP动画-PopBasicViewController"];
-    [titleArray addObject:@"POP动画-PopSpringAnimationViewController"];
-    [titleArray addObject:@"POP动画-POPDecayAnimationViewController"];
+    [titleArray addObject:@"iOS地图包-TYGMapKitViewController"];
+    [titleArray addObject:@"UrlSchemeMap-TYGUrlSchemeMapViewController"];
+    [titleArray addObject:@"版本检测-TYGAppVersionViewController"];
     
-    [titleArray addObject:@"其它-TYGOtherViewController"];
-    [titleArray addObject:@"个人学习笔记-TYGNotesViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

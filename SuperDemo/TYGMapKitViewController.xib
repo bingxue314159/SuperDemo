@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYGMapKitViewController">
+            <connections>
+                <outlet property="mapView" destination="aFY-Cu-933" id="Jkl-vc-iFc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-Cu-933">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="VBy-Y2-W5t"/>
+                    </connections>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aFY-Cu-933" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Duo-E4-uEC"/>
+                <constraint firstAttribute="trailing" secondItem="aFY-Cu-933" secondAttribute="trailing" id="F40-4K-Egi"/>
+                <constraint firstAttribute="bottom" secondItem="aFY-Cu-933" secondAttribute="bottom" id="S8h-Ta-4PO"/>
+                <constraint firstItem="aFY-Cu-933" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n9P-Eg-hwt"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="aFY-Cu-933"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Duo-E4-uEC"/>
+                    <exclude reference="F40-4K-Egi"/>
+                    <exclude reference="S8h-Ta-4PO"/>
+                    <exclude reference="n9P-Eg-hwt"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="aFY-Cu-933"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Duo-E4-uEC"/>
+                    <include reference="F40-4K-Egi"/>
+                    <include reference="S8h-Ta-4PO"/>
+                    <include reference="n9P-Eg-hwt"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

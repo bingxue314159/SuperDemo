@@ -8,4 +8,4 @@
 2.请点击SuperDemo.xcworkspace 启动工程
 
 ##截图
-![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/screen/SuperDemo.gif "菜单")  
+![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/SuperDemo.gif "菜单")  

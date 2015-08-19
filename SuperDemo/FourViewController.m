@@ -35,8 +35,8 @@
     [titleArray addObject:@"POP动画-PopSpringAnimationViewController"];
     [titleArray addObject:@"POP动画-POPDecayAnimationViewController"];
     
-    [titleArray addObject:@"其它-TYGOtherViewController"];
-    [titleArray addObject:@"个人学习笔记-TYGNotesViewController"];
+    [titleArray addObject:@"*其它-TYGOtherViewController"];
+    [titleArray addObject:@"*个人学习笔记-TYGNotesViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -150,10 +150,11 @@
     //导航栏标题样式
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:Color_NavBarTitel, NSForegroundColorAttributeName, Font_NavBarTitel, NSFontAttributeName, nil]];
     
-    
+    //有导航栏
     self.viewControllers = [NSArray arrayWithObjects:self.navBarController1,self.navBarController2,self.navBarController3,self.navBarController4, nil];
     
-    self.selectedIndex = 3;
+    self.selectedIndex = 3;//设置启动时第一次显示的UI
+    //没有导航栏
     //    self.viewControllers = [NSArray arrayWithObjects:firstViewController,secondViewController,thirdViewController,fourViewController, nil];
 }
 

@@ -26,8 +26,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
 
+    //初始化
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -37,7 +40,8 @@
         self.viewController = [[MainViewController alloc] init];
     }
 
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //设置状态栏风格
+    //设置状态栏风格--需要配合配置表
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     //侧边菜单
     DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];

@@ -5,15 +5,8 @@
 //  Created by 谈宇刚 on 15-1-25.
 //  Copyright (c) 2015年 uvct. All rights reserved.
 //
-/**
- *
- * 需要播放的音频文件不能超过30秒
- * 必须是IMA/ADPCM格式[in linear PCM or IMA4(IMA/ADPCM) format]
- * 必须是.caf  .aif .wav文件
- */
 
 #import "TYGAudioUtil.h"
-#import <AudioToolbox/AudioToolbox.h>
 
 @implementation TYGAudioUtil
 
@@ -26,8 +19,10 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:fileNmae ofType:fileType];
     SystemSoundID soundID;
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:path], &soundID);
+    //如果需要在播放完之后执行某些操作，可以调用如下方法注册一个播放完成回调函数
     AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, audioPlayFinish,(__bridge void*) self);
-    AudioServicesPlaySystemSound(soundID);
+    AudioServicesPlaySystemSound(soundID);//播放音效
+    //    AudioServicesPlayAlertSound(soundID);//播放音效并震动
 }
 
 /**

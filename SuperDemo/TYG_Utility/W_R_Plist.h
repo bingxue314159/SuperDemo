@@ -17,11 +17,6 @@
 
 @interface W_R_Plist : UIView
 
-@property (nonatomic, copy) NSMutableDictionary *dicData;
-
-- (id) init;
-- (BOOL)writeToFile:(NSDictionary *)senderData;
-- (id)readFromFile;
 
 //写数据到文件
 + (BOOL)writeToFile:(NSString *)fileNmae data:(id)senderData;

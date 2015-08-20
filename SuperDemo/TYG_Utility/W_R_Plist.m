@@ -8,71 +8,7 @@
 
 #import "W_R_Plist.h"
 
-@implementation W_R_Plist{
-    NSString *plistPath;
-
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-//初始化文件
-- (id) init {
-    
-    self = [super init];
-    if (self) {
-        
-        NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                                  NSUserDomainMask, YES) objectAtIndex:0];
-        plistPath = [rootPath stringByAppendingPathComponent:@"userInfo.plist"];
-        
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        
-        if (![fileManager fileExistsAtPath:plistPath]) {
-            [fileManager createFileAtPath:plistPath contents:nil attributes:nil];
-        }
-        
-    }
-    return self;
-}
-
-
-//写数据到文件
-- (BOOL)writeToFile:(NSDictionary *)senderData {
-    BOOL flag = NO;
-   
-    if ([[NSNull null] isEqual:senderData]) {
-        senderData = nil;
-    }
-    
-    self.dicData = [[NSMutableDictionary alloc] initWithDictionary:senderData];;
-    if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-        flag = [self.dicData writeToFile:plistPath atomically:YES];
-    }
-    else{
-        flag = NO;
-    }
-    
-    return flag;
-}
-
-//从文件中读取数据
-- (id)readFromFile{
-    self.dicData = nil;
-    if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]){
-        NSMutableDictionary *getData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-        self.dicData = [NSMutableDictionary dictionaryWithDictionary:getData];
-    }
-    return self.dicData;
-}
-
-
+@implementation W_R_Plist
 
 //写数据到文件
 + (BOOL)writeToFile:(NSString *)fileNmae data:(id)senderData {
@@ -155,15 +91,15 @@
     id rtn=[defaults stringForKey:key];
     
     //如果rtn为空，则从其他配置文件当中读取相关信息
-    if ([rtn length] == 0) {
-        NSString *path=[[NSBundle mainBundle] pathForResource:@"Config" ofType:@"plist"];
-        NSMutableDictionary* dic=[NSMutableDictionary dictionaryWithContentsOfFile:path];
-        
-        rtn=[dic valueForKey:key];
-        if ([[NSNull null] isEqual:rtn]) {
-            rtn = nil;
-        }
-    }
+    //    if ([rtn length] == 0) {
+    //        NSString *path=[[NSBundle mainBundle] pathForResource:@"Config" ofType:@"plist"];
+    //        NSMutableDictionary* dic=[NSMutableDictionary dictionaryWithContentsOfFile:path];
+    //        
+    //        rtn=[dic valueForKey:key];
+    //        if ([[NSNull null] isEqual:rtn]) {
+    //            rtn = nil;
+    //        }
+    //    }
     
     NSLog(@"读取配置文件：%@=%@",key,rtn);
     
@@ -173,26 +109,37 @@
 /**
  * 功能：设置配置文件Config.plist当中key对应的值value
  */
-+ (BOOL)setValue:(id)value key:(NSString *)key
-{
++ (BOOL)setValue:(id)value key:(NSString *)key{
+    /*
+     BOOL flag = NO;
+     @try {
+     NSString *path=[[NSBundle mainBundle] pathForResource:@"Config" ofType:@"plist"];
+     NSMutableDictionary* dic=[NSMutableDictionary dictionaryWithContentsOfFile:path];
+     [dic setObject:value forKey:key];
+     
+     if ([dic writeToFile:path atomically:YES]) {
+     flag = YES;
+     }
+     }
+     @catch (NSException *exception) {
+     flag = NO;
+     NSLog(@"写值到配置文件Config.plist时出错 error = %@",exception);
+     }
+     @finally {
+     
+     }
+     
+     return flag;
+     */
+    
     BOOL flag = NO;
-    @try {
-        NSString *path=[[NSBundle mainBundle] pathForResource:@"Config" ofType:@"plist"];
-        NSMutableDictionary* dic=[NSMutableDictionary dictionaryWithContentsOfFile:path];
-        [dic setObject:value forKey:key];
-        
-        if ([dic writeToFile:path atomically:YES]) {
-            flag = YES;
-        }
-    }
-    @catch (NSException *exception) {
-        flag = NO;
-        NSLog(@"写值到配置文件Config.plist时出错 error = %@",exception);
-    }
-    @finally {
-        
-    }
-
+    
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [defaults setValue:value forKey:key];
+    
+    //这里建议同步存储到磁盘中，但是不是必须的
+    flag = [defaults synchronize];
+    
     return flag;
 }
 

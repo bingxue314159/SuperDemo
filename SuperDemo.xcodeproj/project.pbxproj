@@ -63,7 +63,6 @@
 		0843EF221AE4DBC200220F15 /* GTMBase64_tyg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF191AE4DBC200220F15 /* GTMBase64_tyg.m */; };
 		0843EF231AE4DBC200220F15 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */; };
 		0843EF241AE4DBC200220F15 /* TYGEncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */; };
-		0843EF251AE4DBC200220F15 /* TYGUUMSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF201AE4DBC200220F15 /* TYGUUMSign.m */; };
 		0843EF691AE4DDAF00220F15 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF661AE4DDAF00220F15 /* AnimationViewController.xib */; };
 		0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF681AE4DDAF00220F15 /* AnimationViewController.m */; };
 		0843EF751AE4E38700220F15 /* SelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF731AE4E38700220F15 /* SelectTableViewController.m */; };
@@ -520,8 +519,6 @@
 		0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
 		0843EF1D1AE4DBC200220F15 /* TYGEncryptDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGEncryptDecrypt.h; sourceTree = "<group>"; };
 		0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGEncryptDecrypt.m; sourceTree = "<group>"; };
-		0843EF1F1AE4DBC200220F15 /* TYGUUMSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUUMSign.h; sourceTree = "<group>"; };
-		0843EF201AE4DBC200220F15 /* TYGUUMSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUUMSign.m; sourceTree = "<group>"; };
 		0843EF661AE4DDAF00220F15 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		0843EF671AE4DDAF00220F15 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		0843EF681AE4DDAF00220F15 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
@@ -1196,8 +1193,6 @@
 				0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */,
 				0843EF1D1AE4DBC200220F15 /* TYGEncryptDecrypt.h */,
 				0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */,
-				0843EF1F1AE4DBC200220F15 /* TYGUUMSign.h */,
-				0843EF201AE4DBC200220F15 /* TYGUUMSign.m */,
 			);
 			path = Encrypt_Decryption;
 			sourceTree = "<group>";
@@ -2668,7 +2663,6 @@
 				08D7D9901AE620E700543F2A /* SVProgressHUDViewController.m in Sources */,
 				0843F09D1AE502AE00220F15 /* SloMoVideoRecordViewController.m in Sources */,
 				08D7CEA41B217CAF00A3C8AD /* IGLDemoViewController.m in Sources */,
-				0843EF251AE4DBC200220F15 /* TYGUUMSign.m in Sources */,
 				0843F0321AE4FF0800220F15 /* MJCollectionViewController.m in Sources */,
 				08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */,
 				08A320A61B82BFE800943DE9 /* TYGMapKitViewController.m in Sources */,

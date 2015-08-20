@@ -7,7 +7,7 @@
 //
 
 #import "EncryptUtil.h"
-#define DESKEY @"D6D2402F1C98E208FF2E863AA29334BD65AE1932A821502D9E5673CDE3C713ACFE53E2103CD40ED6BEBB101B484CAE83D537806C6CB611AEE86ED2CA8C97BBE95CF8476066D419E8E833376B850172107844D394016715B2E47E0A6EECB3E83A361FA75FA44693F90D38C6F62029FCD8EA395ED868F9D718293E9C0E63194E87"
+#define DESKEY @"1234455436whadfgaergadvfasfg"
 
 @implementation EncryptUtil
 
@@ -77,12 +77,12 @@
 
 + (NSString *)encryptWithText:(NSString *)sText
 {
-    return [self encrypt:sText encryptOrDecrypt:kCCEncrypt key:@"s41Uw5z1k[<81~b2a9"];
+    return [self encrypt:sText encryptOrDecrypt:kCCEncrypt key:@"asdgwa!$#vzdr"];
 }
 
 + (NSString *)decryptWithText:(NSString *)sText
 {
-    return [self encrypt:sText encryptOrDecrypt:kCCDecrypt key:@"s41Uw5z1k[<81~b2a9"];
+    return [self encrypt:sText encryptOrDecrypt:kCCDecrypt key:@"asdgwa!$#vzdr"];
 }
 
 + (NSString *)encryptTextWithKey:(NSString *)sText key:(NSString *) key

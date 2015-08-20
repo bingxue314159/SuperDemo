@@ -60,6 +60,11 @@
 + (void)MsgBox:(NSString *)msg;
 
 /**
+ *  提示窗口
+ */
++ (void)MsgBox:(NSString *)msg subTitle:(NSString *)subTitle;
+
+/**
  * 气泡式提示窗口
  */
 + (void)popMessage:(NSString *)msg;
@@ -123,10 +128,8 @@
 
 /**
  *  汉字转拼音
- *
  *  @param chinese 汉字
- *
- *  @return 不带声调的拼音
+ *  @return 不带声调的拼音(多个汉字拼音间会带有空格)
  */
 + (NSString *) getPinyinFromChinese:(NSString *)chinese;
 
@@ -170,5 +173,20 @@
  * 将服务器传输来的data数据转化为字典
  */
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData;
+
+/**
+ *  获取随机颜色
+ *  @return 随机颜色
+ */
++(UIColor *)randomColor;
+
+/**
+ *  生成随机数
+ *  @param from 随机数左边界
+ *  @param to   随机数右边界
+ *  @return 边界内的随机数
+ */
++(int)getRandomNumber:(int)from to:(int)to;
+
 
 @end

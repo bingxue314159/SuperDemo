@@ -173,6 +173,16 @@
 	[alert show];
 }
 
+/**
+ *  提示窗口
+ */
++ (void)MsgBox:(NSString *)msg subTitle:(NSString *)subTitle{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:msg message:subTitle
+                                                   delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
 + (void)popMessage:(NSString *)msg{
     
     CGFloat offset_v = 5;
@@ -653,6 +663,29 @@
     }
     
     return responseDic;
+}
+
+
+/**
+ *  获取随机颜色
+ *  @return 随机颜色
+ */
++(UIColor *)randomColor{
+    CGFloat hue = ( arc4random() % 256 / 256.0 ); //0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5; // 0.5 to 1.0,away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5; //0.5 to 1.0,away from black
+    
+    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+}
+
+/**
+ *  生成随机数
+ *  @param from 随机数左边界
+ *  @param to   随机数右边界
+ *  @return 边界内的随机数
+ */
++(int)getRandomNumber:(int)from to:(int)to{
+    return (int)(from + (arc4random() % (to - from + 1)));
 }
 
 @end

@@ -114,12 +114,14 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"view1NavBg.png"] forBarMetrics:UIBarMetricsDefault];
     
     /*
-     if(SystemVersion >= 7.0){
-        [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];//IOS7
-     }
-     else{
-        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-     }
+    if (SystemVersion >= 7.0) {
+        [[UINavigationBar appearance] setBarTintColor:Color_NavBar_BACKGROUND];
+        //状态栏风格--需要配合配置表
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    }
+    else {
+        [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]];
+    }
      */
     
     //隐藏那条黑线

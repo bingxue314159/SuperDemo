@@ -264,6 +264,7 @@
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
 		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
 		08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */; };
+		08B2A1D21B8569E900B89635 /* view1NavBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1D11B8569E900B89635 /* view1NavBg.png */; };
 		08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */; };
 		08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */; };
 		08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */; };
@@ -797,6 +798,7 @@
 		08ADBFC41B69AE5F0034B231 /* PopSpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopSpringAnimationViewController.h; sourceTree = "<group>"; };
 		08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSpringAnimationViewController.m; sourceTree = "<group>"; };
 		08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopSpringAnimationViewController.xib; sourceTree = "<group>"; };
+		08B2A1D11B8569E900B89635 /* view1NavBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view1NavBg.png; sourceTree = "<group>"; };
 		08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarDemo.h; sourceTree = "<group>"; };
 		08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarDemo.m; sourceTree = "<group>"; };
 		08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MGSwipeTableCellDemo.storyboard; sourceTree = "<group>"; };
@@ -1330,6 +1332,7 @@
 				0843EF9B1AE4E9C300220F15 /* kDropDownImage */,
 				0843EF9C1AE4E9D700220F15 /* AnimationImage */,
 				0843EEE31AE4DB7F00220F15 /* bottom */,
+				08B2A1D11B8569E900B89635 /* view1NavBg.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -2252,6 +2255,7 @@
 				0843EFC51AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib in Resources */,
 				08F20B5F1B67292A005F092A /* photo4t.jpg in Resources */,
 				0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */,
+				08B2A1D21B8569E900B89635 /* view1NavBg.png in Resources */,
 				08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */,
 				0843EFDE1AE4F6E800220F15 /* reload.png in Resources */,
 				0843F10B1AE5076900220F15 /* m12@2x.png in Resources */,

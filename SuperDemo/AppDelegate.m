@@ -36,19 +36,8 @@
     else{
         self.viewController = [[MainViewController alloc] init];
     }
-    
-    self.viewController.navigationController.navigationBar.translucent = NO;//导航栏禁用半透明效果
+
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //设置状态栏风格
-    
-    if (SystemVersion >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:Color_NavBar_BACKGROUND];
-        //状态栏风格--需要配合配置表
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
-    else {
-        [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]];
-    }
-    
 
     //侧边菜单
     DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];

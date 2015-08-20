@@ -1,6 +1,0 @@
-module DTCoreText {
-  umbrella header "DTCoreText-umbrella.h"
-
-  export *
-  module * { export * }
-}

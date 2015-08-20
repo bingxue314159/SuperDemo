@@ -33,7 +33,8 @@
     [titleArray addObject:@"HUD效果-SVProgressHUDViewController"];
     [titleArray addObject:@"HUD效果-MBProgressHUDViewController"];
     [titleArray addObject:@"POPTip-AMPoptipViewController"];
-    
+    [titleArray addObject:@"View弹出-KGModalDemo"];
+    [titleArray addObject:@"View弹出-KLCPopupDemo"];
 }
 
 - (void)didReceiveMemoryWarning {

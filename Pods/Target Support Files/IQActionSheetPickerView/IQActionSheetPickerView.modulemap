@@ -1,6 +1,0 @@
-module IQActionSheetPickerView {
-  umbrella header "IQActionSheetPickerView-umbrella.h"
-
-  export *
-  module * { export * }
-}

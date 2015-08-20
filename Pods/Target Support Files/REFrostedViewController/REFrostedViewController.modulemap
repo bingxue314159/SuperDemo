@@ -1,6 +1,0 @@
-module REFrostedViewController {
-  umbrella header "REFrostedViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D190D01E5DACAA4C9252B1F"
+               BlueprintIdentifier = "E3B13F7BE26A749B5075F095"
                BuildableName = "libJJTabBarController.a"
                BlueprintName = "JJTabBarController"
                ReferencedContainer = "container:Pods.xcodeproj">

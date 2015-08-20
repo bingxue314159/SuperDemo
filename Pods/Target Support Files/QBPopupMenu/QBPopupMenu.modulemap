@@ -1,6 +1,0 @@
-module QBPopupMenu {
-  umbrella header "QBPopupMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

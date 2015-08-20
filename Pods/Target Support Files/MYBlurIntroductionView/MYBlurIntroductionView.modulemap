@@ -1,6 +1,0 @@
-module MYBlurIntroductionView {
-  umbrella header "MYBlurIntroductionView-umbrella.h"
-
-  export *
-  module * { export * }
-}

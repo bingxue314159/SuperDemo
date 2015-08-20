@@ -1,1 +1,0 @@
-../../../Target Support Files/AMPopTip/AMPopTip-umbrella.h

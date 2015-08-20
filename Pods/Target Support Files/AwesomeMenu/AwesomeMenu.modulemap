@@ -1,6 +1,0 @@
-module AwesomeMenu {
-  umbrella header "AwesomeMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

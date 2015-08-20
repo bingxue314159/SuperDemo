@@ -9,3 +9,13 @@
 
 ##截图
 ![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/SuperDemo.gif "菜单")  
+
+##已知问题
+###1.冲突
+ASValueTrackingSlider与ASProgressPopUpView为同一作者，但在两个工程中用了同样的静态常量，把其中一个工程里的常量名更改一下就可以通过编译了    
+```objc
+const float ARROW_LENGTH = 8.0;   
+const float POPUPVIEW_WIDTH_PAD = 1.15;    
+const float POPUPVIEW_HEIGHT_PAD = 1.1;    
+NSString *const FillColorAnimation = @"fillColor";    
+```

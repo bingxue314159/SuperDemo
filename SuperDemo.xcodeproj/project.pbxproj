@@ -265,6 +265,15 @@
 		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
 		08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */; };
 		08B2A1D21B8569E900B89635 /* view1NavBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1D11B8569E900B89635 /* view1NavBg.png */; };
+		08B2A1D61B85AA7700B89635 /* TYGProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */; };
+		08B2A1D91B85B42400B89635 /* ASValueTrackingSliderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2A1D81B85B42400B89635 /* ASValueTrackingSliderDemo.m */; };
+		08B2A1DB1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1DA1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib */; };
+		08B2A1DF1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2A1DD1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m */; };
+		08B2A1E01B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1DE1B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib */; };
+		08B2A1E41B85C46800B89635 /* KGModalDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2A1E21B85C46800B89635 /* KGModalDemo.m */; };
+		08B2A1E51B85C46800B89635 /* KGModalDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1E31B85C46800B89635 /* KGModalDemo.xib */; };
+		08B2A1E91B85C49F00B89635 /* KLCPopupDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2A1E71B85C49F00B89635 /* KLCPopupDemo.m */; };
+		08B2A1EA1B85C49F00B89635 /* KLCPopupDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B2A1E81B85C49F00B89635 /* KLCPopupDemo.xib */; };
 		08B3A3BD1B660308007838EA /* PDTSimpleCalendarDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */; };
 		08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */; };
 		08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */; };
@@ -799,6 +808,20 @@
 		08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSpringAnimationViewController.m; sourceTree = "<group>"; };
 		08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopSpringAnimationViewController.xib; sourceTree = "<group>"; };
 		08B2A1D11B8569E900B89635 /* view1NavBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view1NavBg.png; sourceTree = "<group>"; };
+		08B2A1D41B85AA7700B89635 /* TYGProgressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGProgressTableViewController.h; sourceTree = "<group>"; };
+		08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGProgressTableViewController.m; sourceTree = "<group>"; };
+		08B2A1D71B85B42400B89635 /* ASValueTrackingSliderDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSliderDemo.h; sourceTree = "<group>"; };
+		08B2A1D81B85B42400B89635 /* ASValueTrackingSliderDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSliderDemo.m; sourceTree = "<group>"; };
+		08B2A1DA1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASValueTrackingSliderDemo.xib; sourceTree = "<group>"; };
+		08B2A1DC1B85BDCB00B89635 /* ASProgressPopUpViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpViewDemo.h; sourceTree = "<group>"; };
+		08B2A1DD1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpViewDemo.m; sourceTree = "<group>"; };
+		08B2A1DE1B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASProgressPopUpViewDemo.xib; sourceTree = "<group>"; };
+		08B2A1E11B85C46800B89635 /* KGModalDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGModalDemo.h; sourceTree = "<group>"; };
+		08B2A1E21B85C46800B89635 /* KGModalDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModalDemo.m; sourceTree = "<group>"; };
+		08B2A1E31B85C46800B89635 /* KGModalDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGModalDemo.xib; sourceTree = "<group>"; };
+		08B2A1E61B85C49F00B89635 /* KLCPopupDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopupDemo.h; sourceTree = "<group>"; };
+		08B2A1E71B85C49F00B89635 /* KLCPopupDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopupDemo.m; sourceTree = "<group>"; };
+		08B2A1E81B85C49F00B89635 /* KLCPopupDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCPopupDemo.xib; sourceTree = "<group>"; };
 		08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarDemo.h; sourceTree = "<group>"; };
 		08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarDemo.m; sourceTree = "<group>"; };
 		08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MGSwipeTableCellDemo.storyboard; sourceTree = "<group>"; };
@@ -1286,16 +1309,9 @@
 				08EA561A1B4381E8007ED35B /* DTCoreTextViewController.h */,
 				08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */,
 				08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */,
-				0874A4F11B622BA800007951 /* LDProgressViewController.h */,
-				0874A4F21B622BA800007951 /* LDProgressViewController.m */,
-				0874A4F41B622D3A00007951 /* LDProgressViewController.xib */,
-				0874A4F61B62309300007951 /* MDRadialProgressViewDemo.h */,
-				0874A4F71B62309300007951 /* MDRadialProgressViewDemo.m */,
+				08B2A1D31B85AA4800B89635 /* Progress */,
 				0874A4FA1B62311700007951 /* M13CheckboxDemo.h */,
 				0874A4FB1B62311700007951 /* M13CheckboxDemo.m */,
-				0874A4FD1B6233D900007951 /* NJKWebViewProgressDemo.h */,
-				0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */,
-				0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */,
 				0874A4F01B62274600007951 /* RTLabelDemo */,
 				08F27D091B550ABC0039DF49 /* RETableViewManagerExample */,
 			);
@@ -1727,6 +1743,12 @@
 				0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */,
 				0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */,
 				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
+				08B2A1E11B85C46800B89635 /* KGModalDemo.h */,
+				08B2A1E21B85C46800B89635 /* KGModalDemo.m */,
+				08B2A1E31B85C46800B89635 /* KGModalDemo.xib */,
+				08B2A1E61B85C49F00B89635 /* KLCPopupDemo.h */,
+				08B2A1E71B85C49F00B89635 /* KLCPopupDemo.m */,
+				08B2A1E81B85C49F00B89635 /* KLCPopupDemo.xib */,
 			);
 			name = HUD;
 			sourceTree = "<group>";
@@ -1820,6 +1842,29 @@
 				08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */,
 			);
 			name = PopAnimation;
+			sourceTree = "<group>";
+		};
+		08B2A1D31B85AA4800B89635 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				08B2A1D41B85AA7700B89635 /* TYGProgressTableViewController.h */,
+				08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */,
+				0874A4F11B622BA800007951 /* LDProgressViewController.h */,
+				0874A4F21B622BA800007951 /* LDProgressViewController.m */,
+				0874A4F41B622D3A00007951 /* LDProgressViewController.xib */,
+				0874A4F61B62309300007951 /* MDRadialProgressViewDemo.h */,
+				0874A4F71B62309300007951 /* MDRadialProgressViewDemo.m */,
+				0874A4FD1B6233D900007951 /* NJKWebViewProgressDemo.h */,
+				0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */,
+				0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */,
+				08B2A1D71B85B42400B89635 /* ASValueTrackingSliderDemo.h */,
+				08B2A1D81B85B42400B89635 /* ASValueTrackingSliderDemo.m */,
+				08B2A1DA1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib */,
+				08B2A1DC1B85BDCB00B89635 /* ASProgressPopUpViewDemo.h */,
+				08B2A1DD1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m */,
+				08B2A1DE1B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib */,
+			);
+			name = Progress;
 			sourceTree = "<group>";
 		};
 		08B3A3C71B661083007838EA /* TableViewCell */ = {
@@ -2298,6 +2343,7 @@
 				0843EFFB1AE4FAA800220F15 /* ForkImage.png in Resources */,
 				08F27D671B550ABC0039DF49 /* userpic6.jpg in Resources */,
 				08F27D611B550ABC0039DF49 /* photo6.jpg in Resources */,
+				08B2A1DB1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib in Resources */,
 				0843F1301AE5076900220F15 /* m9@2x.png in Resources */,
 				0874A5011B6233D900007951 /* NJKWebViewProgressDemo.xib in Resources */,
 				0843F1191AE5076900220F15 /* m25@2x.png in Resources */,
@@ -2321,6 +2367,7 @@
 				08F20B601B67292A005F092A /* photo5.jpg in Resources */,
 				08F20B641B67292A005F092A /* photo7.jpg in Resources */,
 				0843F0871AE502AE00220F15 /* DynamicBehaviorsViewController.xib in Resources */,
+				08B2A1E01B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib in Resources */,
 				08D7CEA11B21789A00A3C8AD /* TYGMenuTableViewController.xib in Resources */,
 				08D530881B5F973700409CF1 /* iTunesArtwork in Resources */,
 				0843EF091AE4DB7F00220F15 /* 我的_on@2x.png in Resources */,
@@ -2364,6 +2411,7 @@
 				0843F1381AE5076900220F15 /* stage_6@2x.png in Resources */,
 				0843EFAE1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib in Resources */,
 				0843F07F1AE502AE00220F15 /* ActivityTrackingViewController.xib in Resources */,
+				08B2A1E51B85C46800B89635 /* KGModalDemo.xib in Resources */,
 				08A320C61B82C7F900943DE9 /* 定位3_白.png in Resources */,
 				0843F11A1AE5076900220F15 /* m26@2x.png in Resources */,
 				0843F1171AE5076900220F15 /* m23@2x.png in Resources */,
@@ -2459,6 +2507,7 @@
 				08F20B581B67292A005F092A /* photo1.jpg in Resources */,
 				08F20B841B67718C005F092A /* CalendarShadow.png in Resources */,
 				0843EF011AE4DB7F00220F15 /* VIP_黑@3x.png in Resources */,
+				08B2A1EA1B85C49F00B89635 /* KLCPopupDemo.xib in Resources */,
 				0843F1251AE5076900220F15 /* m36@2x.png in Resources */,
 				0843EFDB1AE4F6E800220F15 /* check_icon@2x.png in Resources */,
 				08A320CF1B82CAA300943DE9 /* TYGIBViewController.xib in Resources */,
@@ -2549,6 +2598,7 @@
 				08F20B811B6770D3005F092A /* ABCalendarPickerDemo.m in Sources */,
 				08A320BE1B82C29900943DE9 /* TYGAppVersionViewController.m in Sources */,
 				0843F0C41AE502D200220F15 /* ZBFallenBricksAnimator.m in Sources */,
+				08B2A1DF1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m in Sources */,
 				0843F0A71AE502AE00220F15 /* WebPaginationViewController.m in Sources */,
 				0843F0961AE502AE00220F15 /* MultipeerConnectivityViewController.m in Sources */,
 				0874A4F81B62309300007951 /* MDRadialProgressViewDemo.m in Sources */,
@@ -2574,6 +2624,7 @@
 				083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */,
 				0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */,
 				08D7D98C1AE61DB400543F2A /* SphereViewController.m in Sources */,
+				08B2A1D61B85AA7700B89635 /* TYGProgressTableViewController.m in Sources */,
 				0843EFCC1AE4F62F00220F15 /* kxMenuDemo.m in Sources */,
 				08F27D4B1B550ABC0039DF49 /* ControlsViewController.m in Sources */,
 				0843EF811AE4E54700220F15 /* IQActionSheetDemo.m in Sources */,
@@ -2619,6 +2670,7 @@
 				0843F0BD1AE502D200220F15 /* AVCaptureManager.m in Sources */,
 				0843F07E1AE502AE00220F15 /* ActivityTrackingViewController.m in Sources */,
 				0843EFB61AE4F01D00220F15 /* iCarouselExampleViewController.m in Sources */,
+				08B2A1E41B85C46800B89635 /* KGModalDemo.m in Sources */,
 				0843F0941AE502AE00220F15 /* MotionEffectViewController.m in Sources */,
 				0843EF241AE4DBC200220F15 /* TYGEncryptDecrypt.m in Sources */,
 				0843F0CD1AE506D600220F15 /* MasterViewController.m in Sources */,
@@ -2634,10 +2686,12 @@
 				0843F0BE1AE502D200220F15 /* HUTransitionAnimator.m in Sources */,
 				08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */,
 				0843F09C1AE502AE00220F15 /* SampleScene.m in Sources */,
+				08B2A1E91B85C49F00B89635 /* KLCPopupDemo.m in Sources */,
 				08F27D4C1B550ABC0039DF49 /* EditingViewController.m in Sources */,
 				0843EE821AE4D92900220F15 /* ThirdViewController.m in Sources */,
 				08D7D9731AE6199500543F2A /* CubeDemo.m in Sources */,
 				0843F0981AE502AE00220F15 /* QRCodeViewController.m in Sources */,
+				08B2A1D91B85B42400B89635 /* ASValueTrackingSliderDemo.m in Sources */,
 				0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */,
 				0843F0371AE4FF0800220F15 /* MJTestViewController.m in Sources */,
 				0843EF211AE4DBC200220F15 /* EncryptUtil.m in Sources */,

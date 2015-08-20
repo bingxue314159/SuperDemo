@@ -1,6 +1,0 @@
-module RESideMenu {
-  umbrella header "RESideMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -23,6 +23,8 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - AMPopTip (0.7.2)
+  - ASProgressPopUpView (0.8)
+  - ASValueTrackingSlider (0.10.1)
   - AwesomeMenu (1.0.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -61,6 +63,8 @@ PODS:
   - IQActionSheetPickerView (1.0.1)
   - IQKeyboardManager (3.2.4)
   - JJTabBarController (1.0.0)
+  - KGModal (1.1.0)
+  - KLCPopup (1.0)
   - KxMenu (1)
   - LDProgressView (1.2.1)
   - M13BadgeView (1.0.4)
@@ -107,6 +111,8 @@ DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 1.6.2)
   - AFNetworking (~> 2.0)
   - AMPopTip (~> 0.7.1)
+  - ASProgressPopUpView (~> 0.8)
+  - ASValueTrackingSlider (~> 0.10.1)
   - AwesomeMenu (~> 1.0.0)
   - BlocksKit (~> 2.2.5)
   - CubeController (~> 1.2.1)
@@ -119,6 +125,8 @@ DEPENDENCIES:
   - IQActionSheetPickerView (~> 1.0.1)
   - IQKeyboardManager (~> 3.2.3)
   - JJTabBarController (~> 1.0.0)
+  - KGModal (~> 1.1.0)
+  - KLCPopup (~> 1.0)
   - KxMenu (~> 1)
   - LDProgressView (~> 1.2.1)
   - M13BadgeView (~> 1.0.4)
@@ -159,6 +167,8 @@ SPEC CHECKSUMS:
   ActionSheetPicker-3.0: cc9f90ae785070623e9b972270013c3242190fb0
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AMPopTip: 85f39d509fec9746b51a08c18857777dd68566cc
+  ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
+  ASValueTrackingSlider: 00fe601d9b5b2efeac515c1673afbf452f8e78ba
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CubeController: 817245a45f97b1285b0490440859bd3728f3c1ef
@@ -174,6 +184,8 @@ SPEC CHECKSUMS:
   IQActionSheetPickerView: b137560c882ededef060ca7fe8486d98366a1762
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   JJTabBarController: c031ad6dd78746fc172711dfdb731ada1802e2a9
+  KGModal: 57277ac326498d9eebcdc677a59ff4528b21935f
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   LDProgressView: f6afc7c30d2a9edf33001515f3189338567a32d2
   M13BadgeView: 700dd0714fdc837c0cf1c8c004454963ec22441f
@@ -203,4 +215,4 @@ SPEC CHECKSUMS:
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   UzysAssetsPickerController: eae7c24955501a80df34286b1797a2ec6f6b1ab9
 
-COCOAPODS: 0.38.1
+COCOAPODS: 0.38.2

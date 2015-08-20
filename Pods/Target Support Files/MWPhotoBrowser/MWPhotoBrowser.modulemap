@@ -1,6 +1,0 @@
-module MWPhotoBrowser {
-  umbrella header "MWPhotoBrowser-umbrella.h"
-
-  export *
-  module * { export * }
-}

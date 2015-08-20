@@ -1,6 +1,0 @@
-module DWBubbleMenuButton {
-  umbrella header "DWBubbleMenuButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

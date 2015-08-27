@@ -20,3 +20,6 @@ const float POPUPVIEW_WIDTH_PAD = 1.15;
 const float POPUPVIEW_HEIGHT_PAD = 1.1;    
 NSString *const FillColorAnimation = @"fillColor";    
 ```
+
+##签名
+![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/程序,你快下来吧.gif "签名")

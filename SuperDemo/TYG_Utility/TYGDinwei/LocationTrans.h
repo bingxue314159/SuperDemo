@@ -11,6 +11,18 @@
  * 百度的经纬坐标在GCJ-02的基础上再做了次加密，就是DB-09坐标系
  */
 
+/**
+ 国内各地图API坐标系统比较
+ * API                  坐标系
+ * 百度地图API          百度坐标
+ * 腾讯搜搜地图API       火星坐标
+ * 搜狐搜狗地图API       搜狗坐标
+ * 阿里云地图API         火星坐标
+ * 图吧MapBar地图API    图吧坐标
+ * 高德MapABC地图API    火星坐标
+ * 灵图51ditu地图API    火星坐标
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface LocationTrans : NSObject

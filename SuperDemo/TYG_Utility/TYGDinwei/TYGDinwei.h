@@ -49,6 +49,13 @@
  */
 + (void)getAddressByLatitude:(CLLocation *)location completionHandler:(void(^)(CLPlacemark *placemark,NSError *error))completionHandler;
 
-//距离计算
+/**
+ *  计算两个坐标点的距离(系统自带方法)
+ *  @param current   第一个点
+ *  @param location2 第二个点
+ *  @return 两个点的距离
+ */
++ (CLLocationDistance)getDistanceWith:(CLLocation *)current location2:(CLLocation *)location2;
+
 
 @end

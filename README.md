@@ -12,7 +12,8 @@
 
 ##已知问题
 ###1.冲突
-ASValueTrackingSlider与ASProgressPopUpView为同一作者，但在两个工程中用了同样的静态常量，把其中一个工程里的常量名更改一下就可以通过编译了    
+ASValueTrackingSlider与ASProgressPopUpView为同一作者，但在两个工程中用了同样的静态常量，把其中一个工程里的常量名更改一下就可以通过编译了   
+此问题已联系作者，已在'ASValueTrackingSlider', '~> 0.11.2' 版本解决    
 ```objc
 const float ARROW_LENGTH = 8.0;   
 const float POPUPVIEW_WIDTH_PAD = 1.15;    

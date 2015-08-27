@@ -76,48 +76,82 @@
 // if animated colors are set, the color will change each time the slider value changes
 - (UIColor *)popUpViewColor
 {
-    return [self.popUpView color] ?: _popUpViewColor;
+    return self.popUpView.color ?: _popUpViewColor;
 }
 
-- (void)setPopUpViewColor:(UIColor *)popUpViewColor
+- (void)setPopUpViewColor:(UIColor *)color
 {
-    _popUpViewColor = popUpViewColor;
+    _popUpViewColor = color;
     _popUpViewAnimatedColors = nil; // animated colors should be discarded
-    [self.popUpView setColor:popUpViewColor];
+    [self.popUpView setColor:color];
 
     if (_autoAdjustTrackColor) {
         super.minimumTrackTintColor = [self.popUpView opaqueColor];
     }
 }
 
-- (void)setPopUpViewAnimatedColors:(NSArray *)popUpViewAnimatedColors
+- (void)setPopUpViewAnimatedColors:(NSArray *)colors
 {
-    [self setPopUpViewAnimatedColors:popUpViewAnimatedColors withPositions:nil];
+    [self setPopUpViewAnimatedColors:colors withPositions:nil];
 }
 
 // if 2 or more colors are present, set animated colors
 // if only 1 color is present then call 'setPopUpViewColor:'
 // if arg is nil then restore previous _popUpViewColor
-- (void)setPopUpViewAnimatedColors:(NSArray *)popUpViewAnimatedColors withPositions:(NSArray *)positions
+- (void)setPopUpViewAnimatedColors:(NSArray *)colors withPositions:(NSArray *)positions
 {
     if (positions) {
-        NSAssert([popUpViewAnimatedColors count] == [positions count], @"popUpViewAnimatedColors and locations should contain the same number of items");
+        NSAssert([colors count] == [positions count], @"popUpViewAnimatedColors and locations should contain the same number of items");
     }
     
-    _popUpViewAnimatedColors = popUpViewAnimatedColors;
+    _popUpViewAnimatedColors = colors;
     _keyTimes = [self keyTimesFromSliderPositions:positions];
     
-    if ([popUpViewAnimatedColors count] >= 2) {
-        [self.popUpView setAnimatedColors:popUpViewAnimatedColors withKeyTimes:_keyTimes];
+    if ([colors count] >= 2) {
+        [self.popUpView setAnimatedColors:colors withKeyTimes:_keyTimes];
     } else {
-        [self setPopUpViewColor:[popUpViewAnimatedColors lastObject] ?: _popUpViewColor];
+        [self setPopUpViewColor:[colors lastObject] ?: _popUpViewColor];
     }
 }
 
-- (void)setPopUpViewCornerRadius:(CGFloat)popUpViewCornerRadius
+- (void)setPopUpViewCornerRadius:(CGFloat)radius
 {
-    _popUpViewCornerRadius = popUpViewCornerRadius;
-    [self.popUpView setCornerRadius:popUpViewCornerRadius];
+    self.popUpView.cornerRadius = radius;
+}
+
+- (CGFloat)popUpViewCornerRadius
+{
+    return self.popUpView.cornerRadius;
+}
+
+- (void)setPopUpViewArrowLength:(CGFloat)length
+{
+    self.popUpView.arrowLength = length;
+}
+
+- (CGFloat)popUpViewArrowLength
+{
+    return self.popUpView.arrowLength;
+}
+
+- (void)setPopUpViewWidthPaddingFactor:(CGFloat)factor
+{
+    self.popUpView.widthPaddingFactor = factor;
+}
+
+- (CGFloat)popUpViewWidthPaddingFactor
+{
+    return self.popUpView.widthPaddingFactor;
+}
+
+- (void)setPopUpViewHeightPaddingFactor:(CGFloat)factor
+{
+    self.popUpView.heightPaddingFactor = factor;
+}
+
+- (CGFloat)popUpViewHeightPaddingFactor
+{
+    return self.popUpView.heightPaddingFactor;
 }
 
 // when either the min/max value or number formatter changes, recalculate the popUpView width
@@ -193,7 +227,6 @@
     self.popUpView = [[ASValuePopUpView alloc] initWithFrame:CGRectZero];
     self.popUpViewColor = [UIColor colorWithHue:0.6 saturation:0.6 brightness:0.5 alpha:0.8];
 
-    self.popUpViewCornerRadius = 4.0;
     self.popUpView.alpha = 0.0;
     self.popUpView.delegate = self;
     [self addSubview:self.popUpView];
@@ -277,6 +310,9 @@
 
 - (void)_hidePopUpViewAnimated:(BOOL)animated
 {
+    if ([self.delegate respondsToSelector:@selector(sliderWillHidePopUpView:)]) {
+        [self.delegate sliderWillHidePopUpView:self];
+    }
     [self.popUpView hideAnimated:animated completionBlock:^{
         if ([self.delegate respondsToSelector:@selector(sliderDidHidePopUpView:)]) {
             [self.delegate sliderDidHidePopUpView:self];

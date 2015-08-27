@@ -24,7 +24,7 @@ PODS:
     - AFNetworking/NSURLSession
   - AMPopTip (0.7.2)
   - ASProgressPopUpView (0.8)
-  - ASValueTrackingSlider (0.10.1)
+  - ASValueTrackingSlider (0.11.2)
   - AwesomeMenu (1.0.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -112,7 +112,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - AMPopTip (~> 0.7.1)
   - ASProgressPopUpView (~> 0.8)
-  - ASValueTrackingSlider (~> 0.10.1)
+  - ASValueTrackingSlider (~> 0.11.2)
   - AwesomeMenu (~> 1.0.0)
   - BlocksKit (~> 2.2.5)
   - CubeController (~> 1.2.1)
@@ -168,7 +168,7 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AMPopTip: 85f39d509fec9746b51a08c18857777dd68566cc
   ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
-  ASValueTrackingSlider: 00fe601d9b5b2efeac515c1673afbf452f8e78ba
+  ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CubeController: 817245a45f97b1285b0490440859bd3728f3c1ef

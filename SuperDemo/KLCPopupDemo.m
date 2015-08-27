@@ -319,21 +319,30 @@ typedef NS_ENUM(NSInteger, CellType) {
 - (void)showButtonPressed:(id)sender {
     
     // Generate content view to present
+    CGFloat viewW = 250;
+    CGFloat viewH = 200;
     UIView* contentView = [[UIView alloc] init];
-    contentView.translatesAutoresizingMaskIntoConstraints = NO;
+    contentView.frame = CGRectMake(0, 0, 250, 200);
     contentView.backgroundColor = [UIColor klcLightGreenColor];
     contentView.layer.cornerRadius = 12.0;
     
-    UILabel* dismissLabel = [[UILabel alloc] init];
-    dismissLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    CGFloat labelW = 120;
+    CGFloat labelH = 50;
+    CGFloat labelY = 32;
+    CGFloat labelX = (viewW - labelW)/2.0;
+    UILabel* dismissLabel = [[UILabel alloc] initWithFrame:CGRectMake(labelX, labelY, labelW, labelH)];
     dismissLabel.backgroundColor = [UIColor clearColor];
     dismissLabel.textColor = [UIColor whiteColor];
     dismissLabel.font = [UIFont boldSystemFontOfSize:72.0];
     dismissLabel.text = @"Hi.";
     
+    CGFloat buttonW = 120;
+    CGFloat buttonH = 50;
+    CGFloat buttonX = (viewW - buttonW)/2.0;
+    CGFloat buttonY = viewH - buttonH - 16;
     UIButton* dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    dismissButton.translatesAutoresizingMaskIntoConstraints = NO;
-    dismissButton.contentEdgeInsets = UIEdgeInsetsMake(10, 20, 10, 20);
+    dismissButton.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
     dismissButton.backgroundColor = [UIColor klcGreenColor];
     [dismissButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [dismissButton setTitleColor:[[dismissButton titleColorForState:UIControlStateNormal] colorWithAlphaComponent:0.5] forState:UIControlStateHighlighted];
@@ -344,20 +353,6 @@ typedef NS_ENUM(NSInteger, CellType) {
     
     [contentView addSubview:dismissLabel];
     [contentView addSubview:dismissButton];
-    
-    NSDictionary* views = NSDictionaryOfVariableBindings(contentView, dismissButton, dismissLabel);
-    
-    [contentView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(16)-[dismissLabel]-(10)-[dismissButton]-(24)-|"
-                                             options:NSLayoutFormatAlignAllCenterX
-                                             metrics:nil
-                                               views:views]];
-    
-    [contentView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(36)-[dismissLabel]-(36)-|"
-                                             options:0
-                                             metrics:nil
-                                               views:views]];
     
     // Show in popup
     KLCPopupLayout layout = KLCPopupLayoutMake((KLCPopupHorizontalLayout)[self valueForRow:_selectedRowInHorizontalField inFieldWithTag:FieldTagHorizontalLayout],

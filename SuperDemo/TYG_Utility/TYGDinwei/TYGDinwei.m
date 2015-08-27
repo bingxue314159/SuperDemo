@@ -206,5 +206,22 @@
     }];
 }
 
+/**
+ *  计算两个坐标点的距离(系统自带方法)
+ *  @param current   第一个点
+ *  @param location2 第二个点
+ *  @return 两个点的距离
+ */
++ (CLLocationDistance)getDistanceWith:(CLLocation *)current location2:(CLLocation *)location2{
+
+//    CLLocation *current=[[CLLocation alloc] initWithLatitude:32.178722 longitude:119.508619];
+
+    // 计算距离
+    CLLocationDistance meters=[current distanceFromLocation:location2];
+    return meters;
+}
+
+
+
 
 @end

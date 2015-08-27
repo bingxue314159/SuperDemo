@@ -18,7 +18,7 @@ pod 'AMPopTip', '~> 0.7.1'  #信息提示控件，具有漂亮的弹出框动画
 pod 'LDProgressView', '~> 1.2.1'    # 实现扁平化风格或者或者非扁平化风格的ProgressView，可以给ProgressView添加动态条纹背景
 pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库
 pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
-pod 'ASValueTrackingSlider', '~> 0.10.1'    #UISlider 的子类，即时显示了滑块的指示数字，可进行各种效果定制
+pod 'ASValueTrackingSlider', '~> 0.11.2'    #UISlider 的子类，即时显示了滑块的指示数字，可进行各种效果定制
 pod 'ASProgressPopUpView', '~> 0.8' #直接在进度栏上显示进度的百分比，并提供颜色和不同效果的定制
 
 #----------------------视图弹出----------------------

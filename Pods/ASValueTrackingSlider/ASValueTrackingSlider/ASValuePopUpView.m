@@ -27,11 +27,7 @@
 }
 @end
 
-const float ARROW_LENGTH_2 = 13.0;
-const float POPUPVIEW_WIDTH_PAD_2 = 1.15;
-const float POPUPVIEW_HEIGHT_PAD_2 = 1.1;
-
-NSString *const FillColorAnimation_2 = @"fillColor";
+NSString *const SliderFillColorAnim = @"fillColor";
 
 @implementation ASValuePopUpView
 {
@@ -79,14 +75,16 @@ NSString *const FillColorAnimation_2 = @"fillColor";
         self.userInteractionEnabled = NO;
         _pathLayer = (CAShapeLayer *)self.layer; // ivar can now be accessed without casting to CAShapeLayer every time
         
+        _cornerRadius = 4.0;
+        _arrowLength = 13.0;
+        _widthPaddingFactor = 1.15;
+        _heightPaddingFactor = 1.1;
+        
         _textLayer = [CATextLayer layer];
         _textLayer.alignmentMode = kCAAlignmentCenter;
         _textLayer.anchorPoint = CGPointMake(0, 0);
         _textLayer.contentsScale = [UIScreen mainScreen].scale;
-        
-        CABasicAnimation *defaultTextLayerAnim = [CABasicAnimation animation];
-        defaultTextLayerAnim.duration = 0.25;
-        _textLayer.actions = @{@"contents" : defaultTextLayerAnim};
+        _textLayer.actions = @{@"contents" : [NSNull null]};
         
         _colorAnimLayer = [CAShapeLayer layer];
         
@@ -113,7 +111,7 @@ NSString *const FillColorAnimation_2 = @"fillColor";
 - (void)setColor:(UIColor *)color
 {
     _pathLayer.fillColor = color.CGColor;
-    [_colorAnimLayer removeAnimationForKey:FillColorAnimation_2]; // single color, no animation required
+    [_colorAnimLayer removeAnimationForKey:SliderFillColorAnim]; // single color, no animation required
 }
 
 - (UIColor *)opaqueColor
@@ -151,7 +149,7 @@ NSString *const FillColorAnimation_2 = @"fillColor";
         [cgColors addObject:(id)col.CGColor];
     }
     
-    CAKeyframeAnimation *colorAnim = [CAKeyframeAnimation animationWithKeyPath:FillColorAnimation_2];
+    CAKeyframeAnimation *colorAnim = [CAKeyframeAnimation animationWithKeyPath:SliderFillColorAnim];
     colorAnim.keyTimes = keyTimes;
     colorAnim.values = cgColors;
     colorAnim.fillMode = kCAFillModeBoth;
@@ -164,12 +162,12 @@ NSString *const FillColorAnimation_2 = @"fillColor";
     _colorAnimLayer.speed = FLT_MIN;
     _colorAnimLayer.timeOffset = 0.0;
     
-    [_colorAnimLayer addAnimation:colorAnim forKey:FillColorAnimation_2];
+    [_colorAnimLayer addAnimation:colorAnim forKey:SliderFillColorAnim];
 }
 
 - (void)setAnimationOffset:(CGFloat)animOffset returnColor:(void (^)(UIColor *opaqueReturnColor))block
 {
-    if ([_colorAnimLayer animationForKey:FillColorAnimation_2]) {
+    if ([_colorAnimLayer animationForKey:SliderFillColorAnim]) {
         _colorAnimLayer.timeOffset = animOffset;
         _pathLayer.fillColor = [_colorAnimLayer.presentationLayer fillColor];
         block([self opaqueColor]);
@@ -213,8 +211,8 @@ NSString *const FillColorAnimation_2 = @"fillColor";
 {
     [[_attributedString mutableString] setString:string];
     CGFloat w, h;
-    w = ceilf([_attributedString size].width * POPUPVIEW_WIDTH_PAD_2);
-    h = ceilf(([_attributedString size].height * POPUPVIEW_HEIGHT_PAD_2) + ARROW_LENGTH_2);
+    w = ceilf([_attributedString size].width * _widthPaddingFactor);
+    h = ceilf(([_attributedString size].height * _heightPaddingFactor) + _arrowLength);
     return CGSizeMake(w, h);
 }
 
@@ -288,7 +286,7 @@ NSString *const FillColorAnimation_2 = @"fillColor";
     
     // Create rounded rect
     CGRect roundedRect = rect;
-    roundedRect.size.height -= ARROW_LENGTH_2;
+    roundedRect.size.height -= _arrowLength;
     UIBezierPath *popUpPath = [UIBezierPath bezierPathWithRoundedRect:roundedRect cornerRadius:_cornerRadius];
     
     // Create arrow path
@@ -316,7 +314,7 @@ NSString *const FillColorAnimation_2 = @"fillColor";
     
     CGFloat textHeight = [_attributedString size].height;
     CGRect textRect = CGRectMake(self.bounds.origin.x,
-                                 (self.bounds.size.height-ARROW_LENGTH_2-textHeight)/2,
+                                 (self.bounds.size.height-_arrowLength-textHeight)/2,
                                  self.bounds.size.width, textHeight);
     _textLayer.frame = CGRectIntegral(textRect);
 }
@@ -325,12 +323,12 @@ static UIColor* opaqueUIColorFromCGColor(CGColorRef col)
 {
     if (col == NULL) return nil;
     
-    const CGFloat *components_2 = CGColorGetComponents(col);
+    const CGFloat *components = CGColorGetComponents(col);
     UIColor *color;
     if (CGColorGetNumberOfComponents(col) == 2) {
-        color = [UIColor colorWithWhite:components_2[0] alpha:1.0];
+        color = [UIColor colorWithWhite:components[0] alpha:1.0];
     } else {
-        color = [UIColor colorWithRed:components_2[0] green:components_2[1] blue:components_2[2] alpha:1.0];
+        color = [UIColor colorWithRed:components[0] green:components[1] blue:components[2] alpha:1.0];
     }
     return color;
 }

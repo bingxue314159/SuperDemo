@@ -103,11 +103,7 @@
 		0843EFE11AE4F6E800220F15 /* search_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFD71AE4F6E800220F15 /* search_icon@2x.png */; };
 		0843EFEA1AE4F76800220F15 /* M13BadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFE81AE4F76800220F15 /* M13BadgeViewController.xib */; };
 		0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFEC1AE4F82000220F15 /* M13BadgeViewController.m */; };
-		0843EFFA1AE4FAA800220F15 /* CheckMarkWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFF61AE4FAA800220F15 /* CheckMarkWhite.png */; };
-		0843EFFB1AE4FAA800220F15 /* ForkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFF71AE4FAA800220F15 /* ForkImage.png */; };
-		0843EFFC1AE4FAA800220F15 /* HeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFF81AE4FAA800220F15 /* HeaderImage.png */; };
-		0843EFFD1AE4FAA800220F15 /* Toronto, ON.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFF91AE4FAA800220F15 /* Toronto, ON.jpg */; };
-		0843F0001AE4FADE00220F15 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFFF1AE4FADE00220F15 /* LoadingViewController.m */; };
+		0843F0001AE4FADE00220F15 /* MYBlurIntroductionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFFF1AE4FADE00220F15 /* MYBlurIntroductionDemo.m */; };
 		0843F0071AE4FDB400220F15 /* MYCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843F0031AE4FDB400220F15 /* MYCustomPanel.m */; };
 		0843F0081AE4FDB400220F15 /* MYCustomPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843F0041AE4FDB400220F15 /* MYCustomPanel.xib */; };
 		0843F0091AE4FDB400220F15 /* TestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843F0051AE4FDB400220F15 /* TestHeader.xib */; };
@@ -523,6 +519,8 @@
 		08F483E71B9571F800814233 /* MYBlur-Toronto, ON.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F483E31B9571F800814233 /* MYBlur-Toronto, ON.jpg */; };
 		08F483EA1B95731300814233 /* TYGLoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483E91B95731300814233 /* TYGLoadingTableViewController.m */; };
 		08F483ED1B95742600814233 /* IFTTTJazzHandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */; };
+		08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483F21B957C9A00814233 /* OnboardDemo.m */; };
+		08F483F51B957E4600814233 /* OnboardDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F483F41B957E4600814233 /* OnboardDemo.xib */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -678,12 +676,8 @@
 		0843EFE81AE4F76800220F15 /* M13BadgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M13BadgeViewController.xib; sourceTree = "<group>"; };
 		0843EFEB1AE4F81F00220F15 /* M13BadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13BadgeViewController.h; sourceTree = "<group>"; };
 		0843EFEC1AE4F82000220F15 /* M13BadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13BadgeViewController.m; sourceTree = "<group>"; };
-		0843EFF61AE4FAA800220F15 /* CheckMarkWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMarkWhite.png; sourceTree = "<group>"; };
-		0843EFF71AE4FAA800220F15 /* ForkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForkImage.png; sourceTree = "<group>"; };
-		0843EFF81AE4FAA800220F15 /* HeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderImage.png; sourceTree = "<group>"; };
-		0843EFF91AE4FAA800220F15 /* Toronto, ON.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Toronto, ON.jpg"; sourceTree = "<group>"; };
-		0843EFFE1AE4FADE00220F15 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingViewController.h; path = ../LoadingViewController.h; sourceTree = "<group>"; };
-		0843EFFF1AE4FADE00220F15 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingViewController.m; path = ../LoadingViewController.m; sourceTree = "<group>"; };
+		0843EFFE1AE4FADE00220F15 /* MYBlurIntroductionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYBlurIntroductionDemo.h; path = ../MYBlurIntroductionDemo.h; sourceTree = "<group>"; };
+		0843EFFF1AE4FADE00220F15 /* MYBlurIntroductionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYBlurIntroductionDemo.m; path = ../MYBlurIntroductionDemo.m; sourceTree = "<group>"; };
 		0843F0021AE4FDB400220F15 /* MYCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomPanel.h; sourceTree = "<group>"; };
 		0843F0031AE4FDB400220F15 /* MYCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomPanel.m; sourceTree = "<group>"; };
 		0843F0041AE4FDB400220F15 /* MYCustomPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCustomPanel.xib; sourceTree = "<group>"; };
@@ -1233,6 +1227,9 @@
 		08F483E91B95731300814233 /* TYGLoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGLoadingTableViewController.m; sourceTree = "<group>"; };
 		08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTJazzHandsViewController.h; sourceTree = "<group>"; };
 		08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTJazzHandsViewController.m; sourceTree = "<group>"; };
+		08F483F11B957C9A00814233 /* OnboardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardDemo.h; sourceTree = "<group>"; };
+		08F483F21B957C9A00814233 /* OnboardDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardDemo.m; sourceTree = "<group>"; };
+		08F483F41B957E4600814233 /* OnboardDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardDemo.xib; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1425,7 +1422,6 @@
 				0843EE581AE4D8B500220F15 /* AppDelegate.m */,
 				0843EE7C1AE4D8FD00220F15 /* MainViewController.h */,
 				0843EE7D1AE4D8FD00220F15 /* MainViewController.m */,
-				0843F0011AE4FDB400220F15 /* Loading */,
 				0843EF621AE4DC1F00220F15 /* first */,
 				0843EF631AE4DC2800220F15 /* second */,
 				0843EF641AE4DC2E00220F15 /* third */,
@@ -1534,23 +1530,22 @@
 		0843EF711AE4E01200220F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				08F483DF1B9571F800814233 /* MYBlurImages */,
-				08F483911B9571BD00814233 /* JazzHandsImages */,
-				08F483A11B9571BD00814233 /* OnboardImages */,
-				08EC5E151B9552480081C8CA /* HMSegmentImages */,
-				08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */,
-				08F20B911B677C1F005F092A /* TimesSquare */,
-				08F20B451B67292A005F092A /* Local Media */,
-				08B3A3C71B661083007838EA /* TableViewCell */,
-				08D5308A1B5F974600409CF1 /* ICON */,
 				08D7D9BF1AE6316600543F2A /* AMPopVIewImage */,
-				0843F0CE1AE5076900220F15 /* iOS7SamplerImage */,
-				0843EFF51AE4FAA800220F15 /* MYIntroductionImage */,
-				0843EFCD1AE4F6E800220F15 /* kxMenuImage */,
-				0843EFBC1AE4F03D00220F15 /* iCarousel */,
-				0843EF9B1AE4E9C300220F15 /* kDropDownImage */,
 				0843EF9C1AE4E9D700220F15 /* AnimationImage */,
 				0843EEE31AE4DB7F00220F15 /* bottom */,
+				08EC5E151B9552480081C8CA /* HMSegmentImages */,
+				0843EFBC1AE4F03D00220F15 /* iCarousel */,
+				08D5308A1B5F974600409CF1 /* ICON */,
+				0843F0CE1AE5076900220F15 /* iOS7SamplerImage */,
+				08F483911B9571BD00814233 /* JazzHandsImages */,
+				0843EF9B1AE4E9C300220F15 /* kDropDownImage */,
+				0843EFCD1AE4F6E800220F15 /* kxMenuImage */,
+				08F20B451B67292A005F092A /* Local Media */,
+				08F483DF1B9571F800814233 /* MYBlurImages */,
+				08F483A11B9571BD00814233 /* OnboardImages */,
+				08B3A3C71B661083007838EA /* TableViewCell */,
+				08F20B911B677C1F005F092A /* TimesSquare */,
+				08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */,
 				08B2A1D11B8569E900B89635 /* view1NavBg.png */,
 			);
 			name = images;
@@ -1658,29 +1653,17 @@
 			path = kxMenuImage;
 			sourceTree = "<group>";
 		};
-		0843EFF51AE4FAA800220F15 /* MYIntroductionImage */ = {
+		0843F0011AE4FDB400220F15 /* MYIntroduction */ = {
 			isa = PBXGroup;
 			children = (
-				0843EFF61AE4FAA800220F15 /* CheckMarkWhite.png */,
-				0843EFF71AE4FAA800220F15 /* ForkImage.png */,
-				0843EFF81AE4FAA800220F15 /* HeaderImage.png */,
-				0843EFF91AE4FAA800220F15 /* Toronto, ON.jpg */,
-			);
-			path = MYIntroductionImage;
-			sourceTree = "<group>";
-		};
-		0843F0011AE4FDB400220F15 /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				0843EFFE1AE4FADE00220F15 /* LoadingViewController.h */,
-				0843EFFF1AE4FADE00220F15 /* LoadingViewController.m */,
+				0843EFFE1AE4FADE00220F15 /* MYBlurIntroductionDemo.h */,
+				0843EFFF1AE4FADE00220F15 /* MYBlurIntroductionDemo.m */,
 				0843F0021AE4FDB400220F15 /* MYCustomPanel.h */,
 				0843F0031AE4FDB400220F15 /* MYCustomPanel.m */,
 				0843F0041AE4FDB400220F15 /* MYCustomPanel.xib */,
 				0843F0051AE4FDB400220F15 /* TestHeader.xib */,
 				0843F0061AE4FDB400220F15 /* TestPanel3.xib */,
 			);
-			name = Loading;
 			path = MYIntroduction;
 			sourceTree = "<group>";
 		};
@@ -2200,8 +2183,12 @@
 			children = (
 				08F483E81B95731300814233 /* TYGLoadingTableViewController.h */,
 				08F483E91B95731300814233 /* TYGLoadingTableViewController.m */,
+				08F483F11B957C9A00814233 /* OnboardDemo.h */,
+				08F483F21B957C9A00814233 /* OnboardDemo.m */,
+				08F483F41B957E4600814233 /* OnboardDemo.xib */,
 				08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */,
 				08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */,
+				0843F0011AE4FDB400220F15 /* MYIntroduction */,
 			);
 			name = LoadingView;
 			sourceTree = "<group>";
@@ -2719,12 +2706,10 @@
 				08F483E41B9571F800814233 /* MYBlur-CheckMarkWhite.png in Resources */,
 				08F483D11B9571BD00814233 /* Onboard-red.png in Resources */,
 				0843F1261AE5076900220F15 /* m37@2x.png in Resources */,
-				0843EFFA1AE4FAA800220F15 /* CheckMarkWhite.png in Resources */,
 				0843F0A61AE502AE00220F15 /* SpriteKitViewController.xib in Resources */,
 				0843F00A1AE4FDB400220F15 /* TestPanel3.xib in Resources */,
 				08F483C51B9571BD00814233 /* JazzHands-text2.png in Resources */,
 				0843F10E1AE5076900220F15 /* m15@2x.png in Resources */,
-				0843EFFD1AE4FAA800220F15 /* Toronto, ON.jpg in Resources */,
 				0843EEFD1AE4DB7F00220F15 /* VIP_on@2x.png in Resources */,
 				0843F1281AE5076900220F15 /* m39@2x.png in Resources */,
 				08F483CB1B9571BD00814233 /* Onboard-cone.png in Resources */,
@@ -2738,7 +2723,6 @@
 				0843EF941AE4E70C00220F15 /* kDropDownSelectDemo.xib in Resources */,
 				0843F1211AE5076900220F15 /* m32@2x.png in Resources */,
 				0843EE8E1AE4D9B900220F15 /* FirstViewController.xib in Resources */,
-				0843EFFB1AE4FAA800220F15 /* ForkImage.png in Resources */,
 				08F27D671B550ABC0039DF49 /* userpic6.jpg in Resources */,
 				08EC5E311B9552480081C8CA /* HMSeg-3@2x.png in Resources */,
 				08F27D611B550ABC0039DF49 /* photo6.jpg in Resources */,
@@ -2800,7 +2784,6 @@
 				08F20B5C1B67292A005F092A /* photo3.jpg in Resources */,
 				0843F11E1AE5076900220F15 /* m2@2x.png in Resources */,
 				08D7D9CD1AE6316600543F2A /* AMPOP-green@2x.png in Resources */,
-				0843EFFC1AE4FAA800220F15 /* HeaderImage.png in Resources */,
 				0843F0A81AE502AE00220F15 /* WebPaginationViewController.xib in Resources */,
 				08F483D31B9571BD00814233 /* Onboard-shark.png in Resources */,
 				08F27D6C1B550ABC0039DF49 /* Heart_Highlighted@2x.png in Resources */,
@@ -2860,6 +2843,7 @@
 				08D7D9B21AE62AEE00543F2A /* red.jpg in Resources */,
 				08F27D661B550ABC0039DF49 /* userpic5.jpg in Resources */,
 				0843F11F1AE5076900220F15 /* m30@2x.png in Resources */,
+				08F483F51B957E4600814233 /* OnboardDemo.xib in Resources */,
 				08EC5DF71B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png in Resources */,
 				0843F1141AE5076900220F15 /* m20@2x.png in Resources */,
 				08F483BF1B9571BD00814233 /* JazzHands-jazz.png in Resources */,
@@ -3174,6 +3158,7 @@
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
 				0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */,
 				0843F0901AE502AE00220F15 /* MapOverlaysViewController.m in Sources */,
+				08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */,
 				08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */,
 				08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */,
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
@@ -3205,7 +3190,7 @@
 				0843F0801AE502AE00220F15 /* ActivityTypesViewController.m in Sources */,
 				08F27D4E1B550ABC0039DF49 /* ListViewController.m in Sources */,
 				0843EFC41AE4F15000220F15 /* DMLazyScrollViewViewController.m in Sources */,
-				0843F0001AE4FADE00220F15 /* LoadingViewController.m in Sources */,
+				0843F0001AE4FADE00220F15 /* MYBlurIntroductionDemo.m in Sources */,
 				08F20B8F1B677BF3005F092A /* TSQTACalendarRowCell.m in Sources */,
 				08DA8B991B28233C00999A2C /* TYGWebViewController.m in Sources */,
 				0843EFA71AE4EA8400220F15 /* HZAreaPickerView.m in Sources */,

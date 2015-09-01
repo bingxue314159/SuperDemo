@@ -1,0 +1,204 @@
+//
+//  OnboardDemo.m
+//  SuperDemo
+//
+//  Created by 谈宇刚 on 15/9/1.
+//  Copyright (c) 2015年 TYG. All rights reserved.
+//
+
+#import "OnboardDemo.h"
+#import "OnboardingViewController.h"
+#import "OnboardingContentViewController.h"
+
+@interface OnboardDemo (){
+    OnboardingViewController *onboardVc;
+}
+
+@end
+
+@implementation OnboardDemo
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonClick:(UIButton *)sender {
+    switch (sender.tag) {
+        case 1:{
+            onboardVc = [self generateFirstDemoVC];
+            break;
+        }
+        case 2:{
+            onboardVc = [self generateSecondDemoVC];
+            break;
+        }
+        case 3:{
+            onboardVc = [self generateThirdDemoVC];
+            break;
+        }
+        case 4:{
+            onboardVc = [self generateFourthDemoVC];
+            break;
+        }
+        default:{
+
+            break;
+        }
+    }
+    
+    [self playLoading:onboardVc];
+}
+
+- (void)playLoading:(OnboardingViewController *)board{
+    if (nil == board) {
+        onboardVc = [self generateFirstDemoVC];
+    }
+    
+    [self presentViewController:onboardVc animated:YES completion:^{
+        
+    }];
+
+}
+
+- (void)handleOnboardingCompletion{
+    
+    [onboardVc dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
+#pragma mark -
+- (OnboardingViewController *)generateFirstDemoVC {
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"What A Beautiful Photo" body:@"This city background image is so beautiful." image:[UIImage imageNamed:@"Onboard-blue"] buttonText:@"Enable Location Services" action:^{
+        [[[UIAlertView alloc] initWithTitle:nil message:@"Here you can prompt users for various application permissions, providing them useful information about why you'd like those permissions to enhance their experience, increasing your chances they will grant those permissions." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }];
+    
+    OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"I'm so sorry" body:@"I can't get over the nice blurry background photo." image:[UIImage imageNamed:@"Onboard-red"] buttonText:@"Connect With Facebook" action:^{
+        [[[UIAlertView alloc] initWithTitle:nil message:@"Prompt users to do other cool things on startup. As you can see, hitting the action button on the prior page brought you automatically to the next page. Cool, huh?" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }];
+    secondPage.movesToNextViewController = YES;
+    secondPage.viewDidAppearBlock = ^{
+        [[[UIAlertView alloc] initWithTitle:@"Welcome!" message:@"You've arrived on the second page, and this alert was displayed from within the page's viewDidAppearBlock." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    };
+    
+    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"Seriously Though" body:@"Kudos to the photographer." image:[UIImage imageNamed:@"Onboard-yellow"] buttonText:@"Get Started" action:^{
+        [self handleOnboardingCompletion];
+    }];
+    
+    OnboardingViewController *onboardingVC = [OnboardingViewController onboardWithBackgroundImage:[UIImage imageNamed:@"Onboard-street"] contents:@[firstPage, secondPage, thirdPage]];
+    onboardingVC.shouldFadeTransitions = YES;
+    onboardingVC.fadePageControlOnLastPage = YES;
+    
+    // If you want to allow skipping the onboarding process, enable skipping and set a block to be executed
+    // when the user hits the skip button.
+    onboardingVC.allowSkipping = YES;
+    onboardingVC.skipHandler = ^{
+        [self handleOnboardingCompletion];
+    };
+    
+    return onboardingVC;
+}
+
+- (OnboardingViewController *)generateSecondDemoVC {
+    OnboardingContentViewController *firstPage = [[OnboardingContentViewController alloc] initWithTitle:@"Everything Under The Sun" body:@"The temperature of the photosphere is over 10,000°F." image:nil buttonText:nil action:nil];
+    firstPage.topPadding = 10;
+    firstPage.underTitlePadding = 220;
+    firstPage.titleTextColor = [UIColor colorWithRed:239/255.0 green:88/255.0 blue:35/255.0 alpha:1.0];
+    firstPage.titleFontName = @"SFOuterLimitsUpright";
+    firstPage.bodyTextColor = [UIColor colorWithRed:239/255.0 green:88/255.0 blue:35/255.0 alpha:1.0];
+    firstPage.bodyFontName = @"NasalizationRg-Regular";
+    firstPage.bodyFontSize = 18;
+    
+    OnboardingContentViewController *secondPage = [[OnboardingContentViewController alloc] initWithTitle:@"Every Second" body:@"600 million tons of protons are converted into helium atoms." image:nil buttonText:nil action:nil];
+    secondPage.titleFontName = @"SFOuterLimitsUpright";
+    secondPage.underTitlePadding = 240;
+    secondPage.topPadding = 10;
+    secondPage.titleTextColor = [UIColor colorWithRed:251/255.0 green:176/255.0 blue:59/255.0 alpha:1.0];
+    secondPage.bodyTextColor = [UIColor colorWithRed:251/255.0 green:176/255.0 blue:59/255.0 alpha:1.0];
+    secondPage.bodyFontName = @"NasalizationRg-Regular";
+    secondPage.bodyFontSize = 18;
+    
+    OnboardingContentViewController *thirdPage = [[OnboardingContentViewController alloc] initWithTitle:@"We're All Star Stuff" body:@"Our very bodies consist of the same chemical elements found in the most distant nebulae, and our activities are guided by the same universal rules." image:nil buttonText:@"Explore the universe" action:^{
+        [self handleOnboardingCompletion];
+    }];
+    thirdPage.topPadding = 10;
+    thirdPage.underTitlePadding = 220;
+    thirdPage.bottomPadding = -10;
+    thirdPage.titleFontName = @"SFOuterLimitsUpright";
+    thirdPage.titleTextColor = [UIColor colorWithRed:58/255.0 green:105/255.0 blue:136/255.0 alpha:1.0];
+    thirdPage.bodyTextColor = [UIColor colorWithRed:58/255.0 green:105/255.0 blue:136/255.0 alpha:1.0];
+    thirdPage.buttonTextColor = [UIColor colorWithRed:239/255.0 green:88/255.0 blue:35/255.0 alpha:1.0];
+    thirdPage.bodyFontName = @"NasalizationRg-Regular";
+    thirdPage.bodyFontSize = 15;
+    thirdPage.buttonFontName = @"SpaceAge";
+    thirdPage.buttonFontSize = 17;
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *moviePath = [bundle pathForResource:@"Onboard-sun" ofType:@"mp4"];
+    NSURL *movieURL = [NSURL fileURLWithPath:moviePath];
+    
+    OnboardingViewController *onboardingVC = [[OnboardingViewController alloc] initWithBackgroundVideoURL:movieURL contents:@[firstPage, secondPage, thirdPage]];
+    onboardingVC.shouldFadeTransitions = YES;
+    onboardingVC.shouldMaskBackground = NO;
+    onboardingVC.pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:239/255.0 green:88/255.0 blue:35/255.0 alpha:1.0];
+    onboardingVC.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+    return onboardingVC;
+}
+
+- (OnboardingViewController *)generateThirdDemoVC {
+    OnboardingContentViewController *firstPage = [[OnboardingContentViewController alloc] initWithTitle:@"It's one small step for a man..." body:@"The first man on the moon, Buzz Aldrin, only had one photo taken of him while on the lunar surface due to an unexpected call from Dick Nixon." image:[UIImage imageNamed:@"Onboard-space1"] buttonText:nil action:nil];
+    firstPage.bodyFontSize = 25;
+    
+    OnboardingContentViewController *secondPage = [[OnboardingContentViewController alloc] initWithTitle:@"The Drake Equation" body:@"In 1961, Frank Drake proposed a probabilistic formula to help estimate the number of potential active and radio-capable extraterrestrial civilizations in the Milky Way Galaxy." image:[UIImage imageNamed:@"Onboard-space2"] buttonText:nil action:nil];
+    secondPage.bodyFontSize = 24;
+    
+    OnboardingContentViewController *thirdPage = [[OnboardingContentViewController alloc] initWithTitle:@"Cold Welding" body:@"Two pieces of metal without any coating on them will form into one piece in the vacuum of space." image:[UIImage imageNamed:@"Onboard-space3"] buttonText:nil action:nil];
+    
+    OnboardingContentViewController *fourthPage = [[OnboardingContentViewController alloc] initWithTitle:@"Goodnight Moon" body:@"Every year the moon moves about 3.8cm further away from the Earth." image:[UIImage imageNamed:@"Onboard-space4"] buttonText:@"See Ya Later!" action:^{
+        [self handleOnboardingCompletion];
+    }];
+    
+    OnboardingViewController *onboardingVC = [[OnboardingViewController alloc] initWithBackgroundImage:[UIImage imageNamed:@"Onboard-milky_way.jpg"] contents:@[firstPage, secondPage, thirdPage, fourthPage]];
+    onboardingVC.shouldMaskBackground = NO;
+    onboardingVC.shouldBlurBackground = YES;
+
+    return onboardingVC;
+}
+
+- (OnboardingViewController *)generateFourthDemoVC {
+    OnboardingContentViewController *firstPage = [[OnboardingContentViewController alloc] initWithTitle:@"\"If you can't explain it simply, you don't know it well enough.\"" body:@"                 - Einsten" image:[UIImage imageNamed:@"Onboard-"] buttonText:nil action:nil];
+    
+    OnboardingContentViewController *secondPage = [[OnboardingContentViewController alloc] initWithTitle:@"\"If you wish to make an apple pie from scratch, you must first invent the universe.\"" body:@"                 - Sagan" image:nil buttonText:nil action:nil];
+    secondPage.topPadding = 0;
+    
+    OnboardingContentViewController *thirdPage = [[OnboardingContentViewController alloc] initWithTitle:@"\"That which can be asserted without evidence, can be dismissed without evidence.\"" body:@"                 - Hitchens" image:nil buttonText:nil action:nil];
+    thirdPage.titleFontSize = 33;
+    thirdPage.bodyFontSize = 25;
+    
+    OnboardingContentViewController *fourthPage = [[OnboardingContentViewController alloc] initWithTitle:@"\"Scientists have become the bearers of the torch of discovery in our quest for knowledge.\"" body:@"                 - Hawking" image:nil buttonText:nil action:nil];
+    fourthPage.titleFontSize = 28;
+    fourthPage.bodyFontSize = 24;
+    
+    OnboardingViewController *onboardingVC = [[OnboardingViewController alloc] initWithBackgroundImage:[UIImage imageNamed:@"Onboard-yellowbg"] contents:@[firstPage, secondPage, thirdPage, fourthPage]];
+    onboardingVC.shouldMaskBackground = NO;
+    onboardingVC.titleTextColor = [UIColor colorWithRed:57/255.0 green:57/255.0 blue:57/255.0 alpha:1.0];;
+    onboardingVC.bodyTextColor = [UIColor colorWithRed:244/255.0 green:64/255.0 blue:40/255.0 alpha:1.0];
+    onboardingVC.fontName = @"HelveticaNeue-Italic";
+    
+    onboardingVC.allowSkipping = YES;
+    onboardingVC.skipHandler = ^{
+        [self handleOnboardingCompletion];
+    };
+    
+    return onboardingVC;
+}
+
+@end

@@ -8,7 +8,6 @@
 
 #import "IFTTTJazzHandsViewController.h"
 #import <Masonry/Masonry.h>
-#import "IFTTTCircleView.h"
 
 @interface IFTTTJazzHandsViewController ()
 
@@ -118,7 +117,7 @@
     self.planePathView = [UIView new];
     [self.contentView addSubview:self.planePathView];
     
-    self.plane = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"JazzHands-Plane"]];
+    self.plane = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"JazzHands-Airplane"]];
     
     self.musicStand = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"JazzHands-MusicStand"]];
     [self.contentView addSubview:self.musicStand];

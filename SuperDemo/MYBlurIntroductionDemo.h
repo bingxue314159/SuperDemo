@@ -10,6 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "MYBlurIntroductionView.h"
 
-@interface LoadingViewController : UIViewController <MYIntroductionDelegate>
+@interface MYBlurIntroductionDemo : UIViewController <MYIntroductionDelegate>
 
 @end

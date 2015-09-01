@@ -33,9 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [titleArray addObject:@"Onboard-OnboardDemo"];
     [titleArray addObject:@"JazzHands-IFTTTJazzHandsViewController"];
-    [titleArray addObject:@"Onboard-IFTTTJazzHandsViewController"];
-    [titleArray addObject:@"MYBlurIntroductionView-IFTTTJazzHandsViewController"];
+    [titleArray addObject:@"MYBlurIntroductionView-MYBlurIntroductionDemo"];
     
 }
 

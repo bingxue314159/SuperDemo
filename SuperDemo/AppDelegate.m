@@ -12,7 +12,7 @@
 
 #import "UncaughtExceptionHandler.h"
 
-#import "LoadingViewController.h"
+#import "MYBlurIntroductionDemo.h"
 
 #import "REFrostedViewController.h"
 #import "DEMOMenuViewController.h"
@@ -53,7 +53,7 @@
 //    frostedViewController.delegate = self;
     
     //首次运行时的引导图
-//    LoadingViewController *loadingView = [[LoadingViewController alloc] init];
+//    MYBlurIntroductionDemo *loadingView = [[MYBlurIntroductionDemo alloc] init];
 //    [self.viewController.view addSubview:loadingView.view];
     
     self.window.rootViewController = frostedViewController;

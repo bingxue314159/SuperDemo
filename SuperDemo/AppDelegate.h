@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "REFrostedViewController.h"
 @class MainViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainViewController *viewController;
-
+@property (strong, nonatomic) REFrostedViewController *frostedViewController;
 
 @end
 

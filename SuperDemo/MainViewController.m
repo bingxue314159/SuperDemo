@@ -64,7 +64,7 @@
     self.tabBar.layer.masksToBounds = YES;
     self.tabBar.tintColor = [UIColor colorWithRed:1 green:0.4 blue:0.02 alpha:1];
     self.tabBar.shadowImage = [[UIImage alloc] init];//隐藏那条黑线
-    self.selectedIndex = 0;
+    self.selectedIndex = 0;//在此处设置是无效的，因为viewControlls还未加载
     //    self.delegate = self;
     
     //设置字体颜色
@@ -153,7 +153,7 @@
     //有导航栏
     self.viewControllers = [NSArray arrayWithObjects:self.navBarController1,self.navBarController2,self.navBarController3,self.navBarController4, nil];
     
-    self.selectedIndex = 1;//设置启动时第一次显示的UI
+    self.selectedIndex = 0;//设置启动时第一次显示的UI
     //没有导航栏
     //    self.viewControllers = [NSArray arrayWithObjects:firstViewController,secondViewController,thirdViewController,fourViewController, nil];
 }

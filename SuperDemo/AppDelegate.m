@@ -14,7 +14,7 @@
 
 #import "MYBlurIntroductionDemo.h"
 
-#import "REFrostedViewController.h"
+
 #import "DEMOMenuViewController.h"
 
 @interface AppDelegate ()
@@ -51,6 +51,8 @@
     frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
     frostedViewController.liveBlur = YES;
 //    frostedViewController.delegate = self;
+//    [self.window addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
+    self.frostedViewController = frostedViewController;
     
     //首次运行时的引导图
 //    MYBlurIntroductionDemo *loadingView = [[MYBlurIntroductionDemo alloc] init];
@@ -61,6 +63,18 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)panGestureRecognized:(UIPanGestureRecognizer *)sender
+{
+    // Dismiss keyboard (optional)
+    //
+    [self.window endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    
+    // Present the view controller
+    //
+    [self.frostedViewController panGestureRecognized:sender];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

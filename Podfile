@@ -8,6 +8,7 @@ pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
 
 pod 'pop', '~> 1.0' #FaceBook 动画库
+pod 'Masonry'   #一个轻量级的布局框架 拥有自己的描述语法 采用更优雅的链式语法封装自动布局 简洁明了 并具有高可读性 而且同时支持 iOS 和 Max OS X
 
 #----------------------Progress & HUD & PopTip----------------------
 pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果
@@ -15,9 +16,10 @@ pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果
 pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）
 pod 'AMPopTip', '~> 0.7.1'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 
-pod 'LDProgressView', '~> 1.2.1'    # 实现扁平化风格或者或者非扁平化风格的ProgressView，可以给ProgressView添加动态条纹背景
 pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库
 pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
+pod 'LDProgressView', '~> 1.2.1'    # 实现扁平化风格或者或者非扁平化风格的ProgressView，可以给ProgressView添加动态条纹背景
+
 pod 'ASValueTrackingSlider', '~> 0.11.2'    #UISlider 的子类，即时显示了滑块的指示数字，可进行各种效果定制
 pod 'ASProgressPopUpView', '~> 0.8' #直接在进度栏上显示进度的百分比，并提供颜色和不同效果的定制
 
@@ -36,12 +38,23 @@ pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
 pod 'CubeController', '~> 1.2.1'    #3D转场
 pod 'iCarousel', '~> 1.8.1' #实现各种各样的cover flow效果
-pod 'MYBlurIntroductionView', '~> 1.0.3'    #实现了应用首次启动时的介绍组件，提供高度自定义功能。
 pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRatingView.git'   #评分星星
 
 pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
 pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
+
+
+#----------------------原生UI控件的替代----------------------
+pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多的定制功能，可更改颜色、间隙宽度、样式和直径
+pod 'HMSegmentedControl', '~> 1.5.2'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
+pod 'TTSwitch', '~> 0.0.6'  #UISwicth 的扩展，ZJSwitch也不错
+
+#----------------------启动引导----------------------
+pod 'MYBlurIntroductionView', '~> 1.0.3'    #实现了应用首次启动时的介绍组件，提供高度自定义功能。
+pod 'JazzHands', '~> 2.0.3'
+pod 'Onboard', '~> 2.1.6'
+
 #----------------------TabBar----------------------
 pod 'JJTabBarController', '~> 1.0.0'    #可高度自定义的tabBar
 pod 'M13InfiniteTabBar', '~> 2.3.2' #可高度自定义的tabBar

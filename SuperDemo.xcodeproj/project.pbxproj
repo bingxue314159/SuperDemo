@@ -338,6 +338,58 @@
 		08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EA56171B4381B7007ED35B /* BlocksKitViewController.xib */; };
 		08EA561D1B4381E8007ED35B /* DTCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */; };
 		08EA561E1B4381E8007ED35B /* DTCoreTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */; };
+		08EC5DC61B953FAE0081C8CA /* TYGUIListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC5DC51B953FAE0081C8CA /* TYGUIListTableViewController.m */; };
+		08EC5DCA1B954AF90081C8CA /* TTSwitchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC5DC91B954AF90081C8CA /* TTSwitchDemoViewController.m */; };
+		08EC5DEF1B954D7F0081C8CA /* TTSwithc-switchGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DCD1B954D7F0081C8CA /* TTSwithc-switchGreen.png */; };
+		08EC5DF01B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DCE1B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png */; };
+		08EC5DF11B954D7F0081C8CA /* TTSwithc-switchMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DCF1B954D7F0081C8CA /* TTSwithc-switchMask.png */; };
+		08EC5DF21B954D7F0081C8CA /* TTSwithc-switchMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD01B954D7F0081C8CA /* TTSwithc-switchMask@2x.png */; };
+		08EC5DF31B954D7F0081C8CA /* TTSwithc-switchRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD11B954D7F0081C8CA /* TTSwithc-switchRed.png */; };
+		08EC5DF41B954D7F0081C8CA /* TTSwithc-switchRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD21B954D7F0081C8CA /* TTSwithc-switchRed@2x.png */; };
+		08EC5DF51B954D7F0081C8CA /* TTSwithc-switchToggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD31B954D7F0081C8CA /* TTSwithc-switchToggle.png */; };
+		08EC5DF61B954D7F0081C8CA /* TTSwithc-switchToggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD41B954D7F0081C8CA /* TTSwithc-switchToggle@2x.png */; };
+		08EC5DF71B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD51B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png */; };
+		08EC5DF81B954D7F0081C8CA /* TTSwithc-switchToggleHigh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD61B954D7F0081C8CA /* TTSwithc-switchToggleHigh@2x.png */; };
+		08EC5DF91B954D7F0081C8CA /* TTSwithc-round-switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD81B954D7F0081C8CA /* TTSwithc-round-switch-mask.png */; };
+		08EC5DFA1B954D7F0081C8CA /* TTSwithc-round-switch-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DD91B954D7F0081C8CA /* TTSwithc-round-switch-mask@2x.png */; };
+		08EC5DFB1B954D7F0081C8CA /* TTSwithc-round-switch-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDA1B954D7F0081C8CA /* TTSwithc-round-switch-overlay.png */; };
+		08EC5DFC1B954D7F0081C8CA /* TTSwithc-round-switch-overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDB1B954D7F0081C8CA /* TTSwithc-round-switch-overlay@2x.png */; };
+		08EC5DFD1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDC1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight.png */; };
+		08EC5DFE1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDD1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight@2x.png */; };
+		08EC5DFF1B954D7F0081C8CA /* TTSwithc-round-switch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDE1B954D7F0081C8CA /* TTSwithc-round-switch-thumb.png */; };
+		08EC5E001B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DDF1B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png */; };
+		08EC5E011B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE01B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text.png */; };
+		08EC5E021B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE11B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text@2x.png */; };
+		08EC5E031B954D7F0081C8CA /* TTSwithc-round-switch-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE21B954D7F0081C8CA /* TTSwithc-round-switch-track.png */; };
+		08EC5E041B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE31B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png */; };
+		08EC5E051B954D7F0081C8CA /* TTSwithc-square-switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE51B954D7F0081C8CA /* TTSwithc-square-switch-mask.png */; };
+		08EC5E061B954D7F0081C8CA /* TTSwithc-square-switch-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE61B954D7F0081C8CA /* TTSwithc-square-switch-mask@2x.png */; };
+		08EC5E071B954D7F0081C8CA /* TTSwithc-square-switch-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE71B954D7F0081C8CA /* TTSwithc-square-switch-overlay.png */; };
+		08EC5E081B954D7F0081C8CA /* TTSwithc-square-switch-overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE81B954D7F0081C8CA /* TTSwithc-square-switch-overlay@2x.png */; };
+		08EC5E091B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DE91B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png */; };
+		08EC5E0A1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DEA1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png */; };
+		08EC5E0B1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DEB1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png */; };
+		08EC5E0C1B954D7F0081C8CA /* TTSwithc-square-switch-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DEC1B954D7F0081C8CA /* TTSwithc-square-switch-thumb@2x.png */; };
+		08EC5E0D1B954D7F0081C8CA /* TTSwithc-square-switch-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DED1B954D7F0081C8CA /* TTSwithc-square-switch-track.png */; };
+		08EC5E0E1B954D7F0081C8CA /* TTSwithc-square-switch-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5DEE1B954D7F0081C8CA /* TTSwithc-square-switch-track@2x.png */; };
+		08EC5E111B9550660081C8CA /* StyledPageControlTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC5E101B9550660081C8CA /* StyledPageControlTableViewController.m */; };
+		08EC5E141B9551480081C8CA /* HMSegmentedControlDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EC5E131B9551480081C8CA /* HMSegmentedControlDemo.m */; };
+		08EC5E261B9552480081C8CA /* HMSeg-1-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E161B9552480081C8CA /* HMSeg-1-selected.png */; };
+		08EC5E271B9552480081C8CA /* HMSeg-1-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E171B9552480081C8CA /* HMSeg-1-selected@2x.png */; };
+		08EC5E281B9552480081C8CA /* HMSeg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E181B9552480081C8CA /* HMSeg-1.png */; };
+		08EC5E291B9552480081C8CA /* HMSeg-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E191B9552480081C8CA /* HMSeg-1@2x.png */; };
+		08EC5E2A1B9552480081C8CA /* HMSeg-2-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1A1B9552480081C8CA /* HMSeg-2-selected.png */; };
+		08EC5E2B1B9552480081C8CA /* HMSeg-2-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1B1B9552480081C8CA /* HMSeg-2-selected@2x.png */; };
+		08EC5E2C1B9552480081C8CA /* HMSeg-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1C1B9552480081C8CA /* HMSeg-2.png */; };
+		08EC5E2D1B9552480081C8CA /* HMSeg-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1D1B9552480081C8CA /* HMSeg-2@2x.png */; };
+		08EC5E2E1B9552480081C8CA /* HMSeg-3-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1E1B9552480081C8CA /* HMSeg-3-selected.png */; };
+		08EC5E2F1B9552480081C8CA /* HMSeg-3-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E1F1B9552480081C8CA /* HMSeg-3-selected@2x.png */; };
+		08EC5E301B9552480081C8CA /* HMSeg-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E201B9552480081C8CA /* HMSeg-3.png */; };
+		08EC5E311B9552480081C8CA /* HMSeg-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E211B9552480081C8CA /* HMSeg-3@2x.png */; };
+		08EC5E321B9552480081C8CA /* HMSeg-4-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E221B9552480081C8CA /* HMSeg-4-selected.png */; };
+		08EC5E331B9552480081C8CA /* HMSeg-4-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E231B9552480081C8CA /* HMSeg-4-selected@2x.png */; };
+		08EC5E341B9552480081C8CA /* HMSeg-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E241B9552480081C8CA /* HMSeg-4.png */; };
+		08EC5E351B9552480081C8CA /* HMSeg-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E251B9552480081C8CA /* HMSeg-4@2x.png */; };
 		08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */; };
 		08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */; };
 		08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */; };
@@ -428,6 +480,49 @@
 		08F27D731B550ABC0039DF49 /* Single@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F27D481B550ABC0039DF49 /* Single@2x.png */; };
 		08F27D741B550ABC0039DF49 /* Single_Alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F27D491B550ABC0039DF49 /* Single_Alt@2x.png */; };
 		08F27D751B550ABC0039DF49 /* Single_Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F27D4A1B550ABC0039DF49 /* Single_Selected@2x.png */; };
+		08F483B91B9571BD00814233 /* JazzHands-Airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483921B9571BD00814233 /* JazzHands-Airplane.png */; };
+		08F483BA1B9571BD00814233 /* JazzHands-BigCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483931B9571BD00814233 /* JazzHands-BigCloud.png */; };
+		08F483BB1B9571BD00814233 /* JazzHands-BlueStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483941B9571BD00814233 /* JazzHands-BlueStick.png */; };
+		08F483BC1B9571BD00814233 /* JazzHands-hands.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483951B9571BD00814233 /* JazzHands-hands.png */; };
+		08F483BD1B9571BD00814233 /* JazzHands-IFTTTCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483961B9571BD00814233 /* JazzHands-IFTTTCloud.png */; };
+		08F483BE1B9571BD00814233 /* JazzHands-IFTTTPresents.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483971B9571BD00814233 /* JazzHands-IFTTTPresents.png */; };
+		08F483BF1B9571BD00814233 /* JazzHands-jazz.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483981B9571BD00814233 /* JazzHands-jazz.png */; };
+		08F483C01B9571BD00814233 /* JazzHands-littleCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483991B9571BD00814233 /* JazzHands-littleCloud.png */; };
+		08F483C11B9571BD00814233 /* JazzHands-MusicNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839A1B9571BD00814233 /* JazzHands-MusicNotes.png */; };
+		08F483C21B9571BD00814233 /* JazzHands-MusicStand.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839B1B9571BD00814233 /* JazzHands-MusicStand.png */; };
+		08F483C31B9571BD00814233 /* JazzHands-OrangeStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839C1B9571BD00814233 /* JazzHands-OrangeStick.png */; };
+		08F483C41B9571BD00814233 /* JazzHands-Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839D1B9571BD00814233 /* JazzHands-Sun.png */; };
+		08F483C51B9571BD00814233 /* JazzHands-text2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839E1B9571BD00814233 /* JazzHands-text2.png */; };
+		08F483C61B9571BD00814233 /* JazzHands-text3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F4839F1B9571BD00814233 /* JazzHands-text3.png */; };
+		08F483C81B9571BD00814233 /* Onboard-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A21B9571BD00814233 /* Onboard-blue.png */; };
+		08F483C91B9571BD00814233 /* Onboard-charcoal.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A31B9571BD00814233 /* Onboard-charcoal.png */; };
+		08F483CA1B9571BD00814233 /* Onboard-coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A41B9571BD00814233 /* Onboard-coffee.png */; };
+		08F483CB1B9571BD00814233 /* Onboard-cone.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A51B9571BD00814233 /* Onboard-cone.png */; };
+		08F483CC1B9571BD00814233 /* Onboard-headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A61B9571BD00814233 /* Onboard-headphones.png */; };
+		08F483CD1B9571BD00814233 /* Onboard-layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A71B9571BD00814233 /* Onboard-layers.png */; };
+		08F483CE1B9571BD00814233 /* Onboard-milky_way.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A81B9571BD00814233 /* Onboard-milky_way.jpg */; };
+		08F483CF1B9571BD00814233 /* Onboard-nasalization rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08F483A91B9571BD00814233 /* Onboard-nasalization rg.ttf */; };
+		08F483D01B9571BD00814233 /* Onboard-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AA1B9571BD00814233 /* Onboard-purple.png */; };
+		08F483D11B9571BD00814233 /* Onboard-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AB1B9571BD00814233 /* Onboard-red.png */; };
+		08F483D21B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AC1B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf */; };
+		08F483D31B9571BD00814233 /* Onboard-shark.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AD1B9571BD00814233 /* Onboard-shark.png */; };
+		08F483D41B9571BD00814233 /* Onboard-space age.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AE1B9571BD00814233 /* Onboard-space age.ttf */; };
+		08F483D51B9571BD00814233 /* Onboard-space1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483AF1B9571BD00814233 /* Onboard-space1.png */; };
+		08F483D61B9571BD00814233 /* Onboard-space2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B01B9571BD00814233 /* Onboard-space2.png */; };
+		08F483D71B9571BD00814233 /* Onboard-space3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B11B9571BD00814233 /* Onboard-space3.png */; };
+		08F483D81B9571BD00814233 /* Onboard-space4.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B21B9571BD00814233 /* Onboard-space4.png */; };
+		08F483D91B9571BD00814233 /* Onboard-street.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B31B9571BD00814233 /* Onboard-street.png */; };
+		08F483DA1B9571BD00814233 /* Onboard-sun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B41B9571BD00814233 /* Onboard-sun.mp4 */; };
+		08F483DB1B9571BD00814233 /* Onboard-testtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B51B9571BD00814233 /* Onboard-testtube.png */; };
+		08F483DC1B9571BD00814233 /* Onboard-tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B61B9571BD00814233 /* Onboard-tree.png */; };
+		08F483DD1B9571BD00814233 /* Onboard-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B71B9571BD00814233 /* Onboard-yellow.png */; };
+		08F483DE1B9571BD00814233 /* Onboard-yellowbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483B81B9571BD00814233 /* Onboard-yellowbg.png */; };
+		08F483E41B9571F800814233 /* MYBlur-CheckMarkWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483E01B9571F800814233 /* MYBlur-CheckMarkWhite.png */; };
+		08F483E51B9571F800814233 /* MYBlur-ForkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483E11B9571F800814233 /* MYBlur-ForkImage.png */; };
+		08F483E61B9571F800814233 /* MYBlur-HeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F483E21B9571F800814233 /* MYBlur-HeaderImage.png */; };
+		08F483E71B9571F800814233 /* MYBlur-Toronto, ON.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F483E31B9571F800814233 /* MYBlur-Toronto, ON.jpg */; };
+		08F483EA1B95731300814233 /* TYGLoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483E91B95731300814233 /* TYGLoadingTableViewController.m */; };
+		08F483ED1B95742600814233 /* IFTTTJazzHandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -917,6 +1012,62 @@
 		08EA561A1B4381E8007ED35B /* DTCoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreTextViewController.h; sourceTree = "<group>"; };
 		08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoreTextViewController.m; sourceTree = "<group>"; };
 		08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCoreTextViewController.xib; sourceTree = "<group>"; };
+		08EC5DC41B953FAE0081C8CA /* TYGUIListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUIListTableViewController.h; sourceTree = "<group>"; };
+		08EC5DC51B953FAE0081C8CA /* TYGUIListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUIListTableViewController.m; sourceTree = "<group>"; };
+		08EC5DC81B954AF90081C8CA /* TTSwitchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchDemoViewController.h; sourceTree = "<group>"; };
+		08EC5DC91B954AF90081C8CA /* TTSwitchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwitchDemoViewController.m; sourceTree = "<group>"; };
+		08EC5DCD1B954D7F0081C8CA /* TTSwithc-switchGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchGreen.png"; sourceTree = "<group>"; };
+		08EC5DCE1B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchGreen@2x.png"; sourceTree = "<group>"; };
+		08EC5DCF1B954D7F0081C8CA /* TTSwithc-switchMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchMask.png"; sourceTree = "<group>"; };
+		08EC5DD01B954D7F0081C8CA /* TTSwithc-switchMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchMask@2x.png"; sourceTree = "<group>"; };
+		08EC5DD11B954D7F0081C8CA /* TTSwithc-switchRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchRed.png"; sourceTree = "<group>"; };
+		08EC5DD21B954D7F0081C8CA /* TTSwithc-switchRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchRed@2x.png"; sourceTree = "<group>"; };
+		08EC5DD31B954D7F0081C8CA /* TTSwithc-switchToggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchToggle.png"; sourceTree = "<group>"; };
+		08EC5DD41B954D7F0081C8CA /* TTSwithc-switchToggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchToggle@2x.png"; sourceTree = "<group>"; };
+		08EC5DD51B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchToggleHigh.png"; sourceTree = "<group>"; };
+		08EC5DD61B954D7F0081C8CA /* TTSwithc-switchToggleHigh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-switchToggleHigh@2x.png"; sourceTree = "<group>"; };
+		08EC5DD81B954D7F0081C8CA /* TTSwithc-round-switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-mask.png"; sourceTree = "<group>"; };
+		08EC5DD91B954D7F0081C8CA /* TTSwithc-round-switch-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-mask@2x.png"; sourceTree = "<group>"; };
+		08EC5DDA1B954D7F0081C8CA /* TTSwithc-round-switch-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-overlay.png"; sourceTree = "<group>"; };
+		08EC5DDB1B954D7F0081C8CA /* TTSwithc-round-switch-overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-overlay@2x.png"; sourceTree = "<group>"; };
+		08EC5DDC1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-thumb-highlight.png"; sourceTree = "<group>"; };
+		08EC5DDD1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-thumb-highlight@2x.png"; sourceTree = "<group>"; };
+		08EC5DDE1B954D7F0081C8CA /* TTSwithc-round-switch-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-thumb.png"; sourceTree = "<group>"; };
+		08EC5DDF1B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-thumb@2x.png"; sourceTree = "<group>"; };
+		08EC5DE01B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-track-no-text.png"; sourceTree = "<group>"; };
+		08EC5DE11B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-track-no-text@2x.png"; sourceTree = "<group>"; };
+		08EC5DE21B954D7F0081C8CA /* TTSwithc-round-switch-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-track.png"; sourceTree = "<group>"; };
+		08EC5DE31B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-round-switch-track@2x.png"; sourceTree = "<group>"; };
+		08EC5DE51B954D7F0081C8CA /* TTSwithc-square-switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-mask.png"; sourceTree = "<group>"; };
+		08EC5DE61B954D7F0081C8CA /* TTSwithc-square-switch-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-mask@2x.png"; sourceTree = "<group>"; };
+		08EC5DE71B954D7F0081C8CA /* TTSwithc-square-switch-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-overlay.png"; sourceTree = "<group>"; };
+		08EC5DE81B954D7F0081C8CA /* TTSwithc-square-switch-overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-overlay@2x.png"; sourceTree = "<group>"; };
+		08EC5DE91B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-thumb-highlight.png"; sourceTree = "<group>"; };
+		08EC5DEA1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-thumb-highlight@2x.png"; sourceTree = "<group>"; };
+		08EC5DEB1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-thumb.png"; sourceTree = "<group>"; };
+		08EC5DEC1B954D7F0081C8CA /* TTSwithc-square-switch-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-thumb@2x.png"; sourceTree = "<group>"; };
+		08EC5DED1B954D7F0081C8CA /* TTSwithc-square-switch-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-track.png"; sourceTree = "<group>"; };
+		08EC5DEE1B954D7F0081C8CA /* TTSwithc-square-switch-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TTSwithc-square-switch-track@2x.png"; sourceTree = "<group>"; };
+		08EC5E0F1B9550660081C8CA /* StyledPageControlTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledPageControlTableViewController.h; sourceTree = "<group>"; };
+		08EC5E101B9550660081C8CA /* StyledPageControlTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledPageControlTableViewController.m; sourceTree = "<group>"; };
+		08EC5E121B9551480081C8CA /* HMSegmentedControlDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControlDemo.h; sourceTree = "<group>"; };
+		08EC5E131B9551480081C8CA /* HMSegmentedControlDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControlDemo.m; sourceTree = "<group>"; };
+		08EC5E161B9552480081C8CA /* HMSeg-1-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-1-selected.png"; sourceTree = "<group>"; };
+		08EC5E171B9552480081C8CA /* HMSeg-1-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-1-selected@2x.png"; sourceTree = "<group>"; };
+		08EC5E181B9552480081C8CA /* HMSeg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-1.png"; sourceTree = "<group>"; };
+		08EC5E191B9552480081C8CA /* HMSeg-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-1@2x.png"; sourceTree = "<group>"; };
+		08EC5E1A1B9552480081C8CA /* HMSeg-2-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-2-selected.png"; sourceTree = "<group>"; };
+		08EC5E1B1B9552480081C8CA /* HMSeg-2-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-2-selected@2x.png"; sourceTree = "<group>"; };
+		08EC5E1C1B9552480081C8CA /* HMSeg-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-2.png"; sourceTree = "<group>"; };
+		08EC5E1D1B9552480081C8CA /* HMSeg-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-2@2x.png"; sourceTree = "<group>"; };
+		08EC5E1E1B9552480081C8CA /* HMSeg-3-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-3-selected.png"; sourceTree = "<group>"; };
+		08EC5E1F1B9552480081C8CA /* HMSeg-3-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-3-selected@2x.png"; sourceTree = "<group>"; };
+		08EC5E201B9552480081C8CA /* HMSeg-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-3.png"; sourceTree = "<group>"; };
+		08EC5E211B9552480081C8CA /* HMSeg-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-3@2x.png"; sourceTree = "<group>"; };
+		08EC5E221B9552480081C8CA /* HMSeg-4-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4-selected.png"; sourceTree = "<group>"; };
+		08EC5E231B9552480081C8CA /* HMSeg-4-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4-selected@2x.png"; sourceTree = "<group>"; };
+		08EC5E241B9552480081C8CA /* HMSeg-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4.png"; sourceTree = "<group>"; };
+		08EC5E251B9552480081C8CA /* HMSeg-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4@2x.png"; sourceTree = "<group>"; };
 		08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AbstractActionSheetPicker+CustomButton.h"; sourceTree = "<group>"; };
 		08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AbstractActionSheetPicker+CustomButton.m"; sourceTree = "<group>"; };
 		08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
@@ -1037,6 +1188,51 @@
 		08F27D481B550ABC0039DF49 /* Single@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Single@2x.png"; sourceTree = "<group>"; };
 		08F27D491B550ABC0039DF49 /* Single_Alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Single_Alt@2x.png"; sourceTree = "<group>"; };
 		08F27D4A1B550ABC0039DF49 /* Single_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Single_Selected@2x.png"; sourceTree = "<group>"; };
+		08F483921B9571BD00814233 /* JazzHands-Airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-Airplane.png"; sourceTree = "<group>"; };
+		08F483931B9571BD00814233 /* JazzHands-BigCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-BigCloud.png"; sourceTree = "<group>"; };
+		08F483941B9571BD00814233 /* JazzHands-BlueStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-BlueStick.png"; sourceTree = "<group>"; };
+		08F483951B9571BD00814233 /* JazzHands-hands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-hands.png"; sourceTree = "<group>"; };
+		08F483961B9571BD00814233 /* JazzHands-IFTTTCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-IFTTTCloud.png"; sourceTree = "<group>"; };
+		08F483971B9571BD00814233 /* JazzHands-IFTTTPresents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-IFTTTPresents.png"; sourceTree = "<group>"; };
+		08F483981B9571BD00814233 /* JazzHands-jazz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-jazz.png"; sourceTree = "<group>"; };
+		08F483991B9571BD00814233 /* JazzHands-littleCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-littleCloud.png"; sourceTree = "<group>"; };
+		08F4839A1B9571BD00814233 /* JazzHands-MusicNotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-MusicNotes.png"; sourceTree = "<group>"; };
+		08F4839B1B9571BD00814233 /* JazzHands-MusicStand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-MusicStand.png"; sourceTree = "<group>"; };
+		08F4839C1B9571BD00814233 /* JazzHands-OrangeStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-OrangeStick.png"; sourceTree = "<group>"; };
+		08F4839D1B9571BD00814233 /* JazzHands-Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-Sun.png"; sourceTree = "<group>"; };
+		08F4839E1B9571BD00814233 /* JazzHands-text2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-text2.png"; sourceTree = "<group>"; };
+		08F4839F1B9571BD00814233 /* JazzHands-text3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JazzHands-text3.png"; sourceTree = "<group>"; };
+		08F483A21B9571BD00814233 /* Onboard-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-blue.png"; sourceTree = "<group>"; };
+		08F483A31B9571BD00814233 /* Onboard-charcoal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-charcoal.png"; sourceTree = "<group>"; };
+		08F483A41B9571BD00814233 /* Onboard-coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-coffee.png"; sourceTree = "<group>"; };
+		08F483A51B9571BD00814233 /* Onboard-cone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-cone.png"; sourceTree = "<group>"; };
+		08F483A61B9571BD00814233 /* Onboard-headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-headphones.png"; sourceTree = "<group>"; };
+		08F483A71B9571BD00814233 /* Onboard-layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-layers.png"; sourceTree = "<group>"; };
+		08F483A81B9571BD00814233 /* Onboard-milky_way.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Onboard-milky_way.jpg"; sourceTree = "<group>"; };
+		08F483A91B9571BD00814233 /* Onboard-nasalization rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onboard-nasalization rg.ttf"; sourceTree = "<group>"; };
+		08F483AA1B9571BD00814233 /* Onboard-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-purple.png"; sourceTree = "<group>"; };
+		08F483AB1B9571BD00814233 /* Onboard-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-red.png"; sourceTree = "<group>"; };
+		08F483AC1B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onboard-sf-outer-limits.upright.ttf"; sourceTree = "<group>"; };
+		08F483AD1B9571BD00814233 /* Onboard-shark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-shark.png"; sourceTree = "<group>"; };
+		08F483AE1B9571BD00814233 /* Onboard-space age.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onboard-space age.ttf"; sourceTree = "<group>"; };
+		08F483AF1B9571BD00814233 /* Onboard-space1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-space1.png"; sourceTree = "<group>"; };
+		08F483B01B9571BD00814233 /* Onboard-space2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-space2.png"; sourceTree = "<group>"; };
+		08F483B11B9571BD00814233 /* Onboard-space3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-space3.png"; sourceTree = "<group>"; };
+		08F483B21B9571BD00814233 /* Onboard-space4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-space4.png"; sourceTree = "<group>"; };
+		08F483B31B9571BD00814233 /* Onboard-street.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-street.png"; sourceTree = "<group>"; };
+		08F483B41B9571BD00814233 /* Onboard-sun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onboard-sun.mp4"; sourceTree = "<group>"; };
+		08F483B51B9571BD00814233 /* Onboard-testtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-testtube.png"; sourceTree = "<group>"; };
+		08F483B61B9571BD00814233 /* Onboard-tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-tree.png"; sourceTree = "<group>"; };
+		08F483B71B9571BD00814233 /* Onboard-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-yellow.png"; sourceTree = "<group>"; };
+		08F483B81B9571BD00814233 /* Onboard-yellowbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Onboard-yellowbg.png"; sourceTree = "<group>"; };
+		08F483E01B9571F800814233 /* MYBlur-CheckMarkWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MYBlur-CheckMarkWhite.png"; sourceTree = "<group>"; };
+		08F483E11B9571F800814233 /* MYBlur-ForkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MYBlur-ForkImage.png"; sourceTree = "<group>"; };
+		08F483E21B9571F800814233 /* MYBlur-HeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MYBlur-HeaderImage.png"; sourceTree = "<group>"; };
+		08F483E31B9571F800814233 /* MYBlur-Toronto, ON.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MYBlur-Toronto, ON.jpg"; sourceTree = "<group>"; };
+		08F483E81B95731300814233 /* TYGLoadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGLoadingTableViewController.h; sourceTree = "<group>"; };
+		08F483E91B95731300814233 /* TYGLoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGLoadingTableViewController.m; sourceTree = "<group>"; };
+		08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTJazzHandsViewController.h; sourceTree = "<group>"; };
+		08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTJazzHandsViewController.m; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1287,6 +1483,9 @@
 				08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */,
 				08B3A3C21B660E42007838EA /* MGSwipeTableCellDemoTestData.h */,
 				08B3A3C31B660E42007838EA /* MGSwipeTableCellDemoTestData.m */,
+				08EC5DC71B9540420081C8CA /* LoadingView */,
+				08B2A1D31B85AA4800B89635 /* Progress */,
+				08EC5DC31B953F390081C8CA /* UIList */,
 			);
 			name = second;
 			sourceTree = "<group>";
@@ -1309,7 +1508,6 @@
 				08EA561A1B4381E8007ED35B /* DTCoreTextViewController.h */,
 				08EA561B1B4381E8007ED35B /* DTCoreTextViewController.m */,
 				08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */,
-				08B2A1D31B85AA4800B89635 /* Progress */,
 				0874A4FA1B62311700007951 /* M13CheckboxDemo.h */,
 				0874A4FB1B62311700007951 /* M13CheckboxDemo.m */,
 				0874A4F01B62274600007951 /* RTLabelDemo */,
@@ -1336,6 +1534,11 @@
 		0843EF711AE4E01200220F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				08F483DF1B9571F800814233 /* MYBlurImages */,
+				08F483911B9571BD00814233 /* JazzHandsImages */,
+				08F483A11B9571BD00814233 /* OnboardImages */,
+				08EC5E151B9552480081C8CA /* HMSegmentImages */,
+				08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */,
 				08F20B911B677C1F005F092A /* TimesSquare */,
 				08F20B451B67292A005F092A /* Local Media */,
 				08B3A3C71B661083007838EA /* TableViewCell */,
@@ -1977,6 +2180,118 @@
 			name = WebView;
 			sourceTree = "<group>";
 		};
+		08EC5DC31B953F390081C8CA /* UIList */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5DC41B953FAE0081C8CA /* TYGUIListTableViewController.h */,
+				08EC5DC51B953FAE0081C8CA /* TYGUIListTableViewController.m */,
+				08EC5DC81B954AF90081C8CA /* TTSwitchDemoViewController.h */,
+				08EC5DC91B954AF90081C8CA /* TTSwitchDemoViewController.m */,
+				08EC5E0F1B9550660081C8CA /* StyledPageControlTableViewController.h */,
+				08EC5E101B9550660081C8CA /* StyledPageControlTableViewController.m */,
+				08EC5E121B9551480081C8CA /* HMSegmentedControlDemo.h */,
+				08EC5E131B9551480081C8CA /* HMSegmentedControlDemo.m */,
+			);
+			name = UIList;
+			sourceTree = "<group>";
+		};
+		08EC5DC71B9540420081C8CA /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				08F483E81B95731300814233 /* TYGLoadingTableViewController.h */,
+				08F483E91B95731300814233 /* TYGLoadingTableViewController.m */,
+				08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */,
+				08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
+		08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5DCC1B954D7F0081C8CA /* Fade */,
+				08EC5DD71B954D7F0081C8CA /* Round */,
+				08EC5DE41B954D7F0081C8CA /* Square */,
+			);
+			path = TTSwitchImage;
+			sourceTree = "<group>";
+		};
+		08EC5DCC1B954D7F0081C8CA /* Fade */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5DCD1B954D7F0081C8CA /* TTSwithc-switchGreen.png */,
+				08EC5DCE1B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png */,
+				08EC5DCF1B954D7F0081C8CA /* TTSwithc-switchMask.png */,
+				08EC5DD01B954D7F0081C8CA /* TTSwithc-switchMask@2x.png */,
+				08EC5DD11B954D7F0081C8CA /* TTSwithc-switchRed.png */,
+				08EC5DD21B954D7F0081C8CA /* TTSwithc-switchRed@2x.png */,
+				08EC5DD31B954D7F0081C8CA /* TTSwithc-switchToggle.png */,
+				08EC5DD41B954D7F0081C8CA /* TTSwithc-switchToggle@2x.png */,
+				08EC5DD51B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png */,
+				08EC5DD61B954D7F0081C8CA /* TTSwithc-switchToggleHigh@2x.png */,
+			);
+			path = Fade;
+			sourceTree = "<group>";
+		};
+		08EC5DD71B954D7F0081C8CA /* Round */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5DD81B954D7F0081C8CA /* TTSwithc-round-switch-mask.png */,
+				08EC5DD91B954D7F0081C8CA /* TTSwithc-round-switch-mask@2x.png */,
+				08EC5DDA1B954D7F0081C8CA /* TTSwithc-round-switch-overlay.png */,
+				08EC5DDB1B954D7F0081C8CA /* TTSwithc-round-switch-overlay@2x.png */,
+				08EC5DDC1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight.png */,
+				08EC5DDD1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight@2x.png */,
+				08EC5DDE1B954D7F0081C8CA /* TTSwithc-round-switch-thumb.png */,
+				08EC5DDF1B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png */,
+				08EC5DE01B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text.png */,
+				08EC5DE11B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text@2x.png */,
+				08EC5DE21B954D7F0081C8CA /* TTSwithc-round-switch-track.png */,
+				08EC5DE31B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png */,
+			);
+			path = Round;
+			sourceTree = "<group>";
+		};
+		08EC5DE41B954D7F0081C8CA /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5DE51B954D7F0081C8CA /* TTSwithc-square-switch-mask.png */,
+				08EC5DE61B954D7F0081C8CA /* TTSwithc-square-switch-mask@2x.png */,
+				08EC5DE71B954D7F0081C8CA /* TTSwithc-square-switch-overlay.png */,
+				08EC5DE81B954D7F0081C8CA /* TTSwithc-square-switch-overlay@2x.png */,
+				08EC5DE91B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png */,
+				08EC5DEA1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png */,
+				08EC5DEB1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png */,
+				08EC5DEC1B954D7F0081C8CA /* TTSwithc-square-switch-thumb@2x.png */,
+				08EC5DED1B954D7F0081C8CA /* TTSwithc-square-switch-track.png */,
+				08EC5DEE1B954D7F0081C8CA /* TTSwithc-square-switch-track@2x.png */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		08EC5E151B9552480081C8CA /* HMSegmentImages */ = {
+			isa = PBXGroup;
+			children = (
+				08EC5E161B9552480081C8CA /* HMSeg-1-selected.png */,
+				08EC5E171B9552480081C8CA /* HMSeg-1-selected@2x.png */,
+				08EC5E181B9552480081C8CA /* HMSeg-1.png */,
+				08EC5E191B9552480081C8CA /* HMSeg-1@2x.png */,
+				08EC5E1A1B9552480081C8CA /* HMSeg-2-selected.png */,
+				08EC5E1B1B9552480081C8CA /* HMSeg-2-selected@2x.png */,
+				08EC5E1C1B9552480081C8CA /* HMSeg-2.png */,
+				08EC5E1D1B9552480081C8CA /* HMSeg-2@2x.png */,
+				08EC5E1E1B9552480081C8CA /* HMSeg-3-selected.png */,
+				08EC5E1F1B9552480081C8CA /* HMSeg-3-selected@2x.png */,
+				08EC5E201B9552480081C8CA /* HMSeg-3.png */,
+				08EC5E211B9552480081C8CA /* HMSeg-3@2x.png */,
+				08EC5E221B9552480081C8CA /* HMSeg-4-selected.png */,
+				08EC5E231B9552480081C8CA /* HMSeg-4-selected@2x.png */,
+				08EC5E241B9552480081C8CA /* HMSeg-4.png */,
+				08EC5E251B9552480081C8CA /* HMSeg-4@2x.png */,
+			);
+			path = HMSegmentImages;
+			sourceTree = "<group>";
+		};
 		08F19C711B4681C000722C9C /* ActionSheetPickDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -2186,6 +2501,68 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		08F483911B9571BD00814233 /* JazzHandsImages */ = {
+			isa = PBXGroup;
+			children = (
+				08F483921B9571BD00814233 /* JazzHands-Airplane.png */,
+				08F483931B9571BD00814233 /* JazzHands-BigCloud.png */,
+				08F483941B9571BD00814233 /* JazzHands-BlueStick.png */,
+				08F483951B9571BD00814233 /* JazzHands-hands.png */,
+				08F483961B9571BD00814233 /* JazzHands-IFTTTCloud.png */,
+				08F483971B9571BD00814233 /* JazzHands-IFTTTPresents.png */,
+				08F483981B9571BD00814233 /* JazzHands-jazz.png */,
+				08F483991B9571BD00814233 /* JazzHands-littleCloud.png */,
+				08F4839A1B9571BD00814233 /* JazzHands-MusicNotes.png */,
+				08F4839B1B9571BD00814233 /* JazzHands-MusicStand.png */,
+				08F4839C1B9571BD00814233 /* JazzHands-OrangeStick.png */,
+				08F4839D1B9571BD00814233 /* JazzHands-Sun.png */,
+				08F4839E1B9571BD00814233 /* JazzHands-text2.png */,
+				08F4839F1B9571BD00814233 /* JazzHands-text3.png */,
+			);
+			path = JazzHandsImages;
+			sourceTree = "<group>";
+		};
+		08F483A11B9571BD00814233 /* OnboardImages */ = {
+			isa = PBXGroup;
+			children = (
+				08F483A21B9571BD00814233 /* Onboard-blue.png */,
+				08F483A31B9571BD00814233 /* Onboard-charcoal.png */,
+				08F483A41B9571BD00814233 /* Onboard-coffee.png */,
+				08F483A51B9571BD00814233 /* Onboard-cone.png */,
+				08F483A61B9571BD00814233 /* Onboard-headphones.png */,
+				08F483A71B9571BD00814233 /* Onboard-layers.png */,
+				08F483A81B9571BD00814233 /* Onboard-milky_way.jpg */,
+				08F483A91B9571BD00814233 /* Onboard-nasalization rg.ttf */,
+				08F483AA1B9571BD00814233 /* Onboard-purple.png */,
+				08F483AB1B9571BD00814233 /* Onboard-red.png */,
+				08F483AC1B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf */,
+				08F483AD1B9571BD00814233 /* Onboard-shark.png */,
+				08F483AE1B9571BD00814233 /* Onboard-space age.ttf */,
+				08F483AF1B9571BD00814233 /* Onboard-space1.png */,
+				08F483B01B9571BD00814233 /* Onboard-space2.png */,
+				08F483B11B9571BD00814233 /* Onboard-space3.png */,
+				08F483B21B9571BD00814233 /* Onboard-space4.png */,
+				08F483B31B9571BD00814233 /* Onboard-street.png */,
+				08F483B41B9571BD00814233 /* Onboard-sun.mp4 */,
+				08F483B51B9571BD00814233 /* Onboard-testtube.png */,
+				08F483B61B9571BD00814233 /* Onboard-tree.png */,
+				08F483B71B9571BD00814233 /* Onboard-yellow.png */,
+				08F483B81B9571BD00814233 /* Onboard-yellowbg.png */,
+			);
+			path = OnboardImages;
+			sourceTree = "<group>";
+		};
+		08F483DF1B9571F800814233 /* MYBlurImages */ = {
+			isa = PBXGroup;
+			children = (
+				08F483E01B9571F800814233 /* MYBlur-CheckMarkWhite.png */,
+				08F483E11B9571F800814233 /* MYBlur-ForkImage.png */,
+				08F483E21B9571F800814233 /* MYBlur-HeaderImage.png */,
+				08F483E31B9571F800814233 /* MYBlur-Toronto, ON.jpg */,
+			);
+			path = MYBlurImages;
+			sourceTree = "<group>";
+		};
 		6A5DE5FEE734230BFA577471 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2286,29 +2663,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				0843EF831AE4E54E00220F15 /* IQActionSheetDemo.xib in Resources */,
+				08EC5DFF1B954D7F0081C8CA /* TTSwithc-round-switch-thumb.png in Resources */,
+				08EC5DFB1B954D7F0081C8CA /* TTSwithc-round-switch-overlay.png in Resources */,
 				08F27D6B1B550ABC0039DF49 /* Heart@2x.png in Resources */,
 				0843EF0F1AE4DB7F00220F15 /* 首页_on@2x.png in Resources */,
+				08EC5E2B1B9552480081C8CA /* HMSeg-2-selected@2x.png in Resources */,
 				0843F1201AE5076900220F15 /* m31@2x.png in Resources */,
+				08EC5DF41B954D7F0081C8CA /* TTSwithc-switchRed@2x.png in Resources */,
+				08EC5E071B954D7F0081C8CA /* TTSwithc-square-switch-overlay.png in Resources */,
+				08EC5E281B9552480081C8CA /* HMSeg-1.png in Resources */,
+				08F483D91B9571BD00814233 /* Onboard-street.png in Resources */,
 				0843F10F1AE5076900220F15 /* m16@2x.png in Resources */,
 				08F27D711B550ABC0039DF49 /* Middle_Alt@2x.png in Resources */,
 				08A320C71B82C7F900943DE9 /* 定位3_黑.png in Resources */,
+				08EC5E261B9552480081C8CA /* HMSeg-1-selected.png in Resources */,
 				0843EFBB1AE4F03700220F15 /* page.png in Resources */,
+				08EC5DFA1B954D7F0081C8CA /* TTSwithc-round-switch-mask@2x.png in Resources */,
 				08B3A3C41B660E42007838EA /* MGSwipeTableCellDemo.storyboard in Resources */,
+				08EC5DFD1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight.png in Resources */,
 				0843F1271AE5076900220F15 /* m38@2x.png in Resources */,
 				08D7D9CF1AE6316600543F2A /* AMPOP-orange@2x.png in Resources */,
 				0843F1341AE5076900220F15 /* stage_2@2x.png in Resources */,
+				08EC5E2C1B9552480081C8CA /* HMSeg-2.png in Resources */,
 				0843EFC51AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib in Resources */,
+				08F483DA1B9571BD00814233 /* Onboard-sun.mp4 in Resources */,
 				08F20B5F1B67292A005F092A /* photo4t.jpg in Resources */,
 				0897EEF61B44F77F00EBCA00 /* MBProgressHUDViewController.xib in Resources */,
 				08B2A1D21B8569E900B89635 /* view1NavBg.png in Resources */,
 				08ADBFC81B69AE5F0034B231 /* PopSpringAnimationViewController.xib in Resources */,
 				0843EFDE1AE4F6E800220F15 /* reload.png in Resources */,
 				0843F10B1AE5076900220F15 /* m12@2x.png in Resources */,
+				08EC5E051B954D7F0081C8CA /* TTSwithc-square-switch-mask.png in Resources */,
+				08F483BB1B9571BD00814233 /* JazzHands-BlueStick.png in Resources */,
 				08F27D5E1B550ABC0039DF49 /* photo3.jpg in Resources */,
 				0843F1091AE5076900220F15 /* m10@2x.png in Resources */,
 				08DA8B951B28201500999A2C /* TYGOtherViewController.xib in Resources */,
 				0843F12D1AE5076900220F15 /* m6@2x.png in Resources */,
 				0843F10A1AE5076900220F15 /* m11@2x.png in Resources */,
+				08F483E51B9571F800814233 /* MYBlur-ForkImage.png in Resources */,
 				0843EFDF1AE4F6E800220F15 /* reload@2x.png in Resources */,
 				0843EF691AE4DDAF00220F15 /* AnimationViewController.xib in Resources */,
 				08F27D641B550ABC0039DF49 /* userpic3.jpg in Resources */,
@@ -2317,19 +2709,25 @@
 				0843F13C1AE5076900220F15 /* addedIn7.plist in Resources */,
 				0843EEFC1AE4DB7F00220F15 /* VIP_on.png in Resources */,
 				08F27D5D1B550ABC0039DF49 /* photo2.jpg in Resources */,
+				08EC5E291B9552480081C8CA /* HMSeg-1@2x.png in Resources */,
 				0843F1331AE5076900220F15 /* stage_1@2x.png in Resources */,
 				08B3A3CF1B661083007838EA /* fav@2x.png in Resources */,
 				08D7D9D31AE6316600543F2A /* AMPOP-yellow@2x.png in Resources */,
+				08EC5E0D1B954D7F0081C8CA /* TTSwithc-square-switch-track.png in Resources */,
 				0843EF081AE4DB7F00220F15 /* 我的_on.png in Resources */,
 				0843F1321AE5076900220F15 /* stage_10@2x.png in Resources */,
+				08F483E41B9571F800814233 /* MYBlur-CheckMarkWhite.png in Resources */,
+				08F483D11B9571BD00814233 /* Onboard-red.png in Resources */,
 				0843F1261AE5076900220F15 /* m37@2x.png in Resources */,
 				0843EFFA1AE4FAA800220F15 /* CheckMarkWhite.png in Resources */,
 				0843F0A61AE502AE00220F15 /* SpriteKitViewController.xib in Resources */,
 				0843F00A1AE4FDB400220F15 /* TestPanel3.xib in Resources */,
+				08F483C51B9571BD00814233 /* JazzHands-text2.png in Resources */,
 				0843F10E1AE5076900220F15 /* m15@2x.png in Resources */,
 				0843EFFD1AE4FAA800220F15 /* Toronto, ON.jpg in Resources */,
 				0843EEFD1AE4DB7F00220F15 /* VIP_on@2x.png in Resources */,
 				0843F1281AE5076900220F15 /* m39@2x.png in Resources */,
+				08F483CB1B9571BD00814233 /* Onboard-cone.png in Resources */,
 				08F20BA11B677C1F005F092A /* CalendarRowBottom@2x.png in Resources */,
 				08D7D97D1AE619D500543F2A /* BlueViewController.xib in Resources */,
 				0843EFDD1AE4F6E800220F15 /* home_icon@2x.png in Resources */,
@@ -2342,10 +2740,12 @@
 				0843EE8E1AE4D9B900220F15 /* FirstViewController.xib in Resources */,
 				0843EFFB1AE4FAA800220F15 /* ForkImage.png in Resources */,
 				08F27D671B550ABC0039DF49 /* userpic6.jpg in Resources */,
+				08EC5E311B9552480081C8CA /* HMSeg-3@2x.png in Resources */,
 				08F27D611B550ABC0039DF49 /* photo6.jpg in Resources */,
 				08B2A1DB1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib in Resources */,
 				0843F1301AE5076900220F15 /* m9@2x.png in Resources */,
 				0874A5011B6233D900007951 /* NJKWebViewProgressDemo.xib in Resources */,
+				08EC5DF91B954D7F0081C8CA /* TTSwithc-round-switch-mask.png in Resources */,
 				0843F1191AE5076900220F15 /* m25@2x.png in Resources */,
 				08F20B5E1B67292A005F092A /* photo4.jpg in Resources */,
 				08F27D5C1B550ABC0039DF49 /* photo1.jpg in Resources */,
@@ -2354,53 +2754,76 @@
 				08F27D731B550ABC0039DF49 /* Single@2x.png in Resources */,
 				0843F11B1AE5076900220F15 /* m27@2x.png in Resources */,
 				0843F0911AE502AE00220F15 /* MapOverlaysViewController.xib in Resources */,
+				08EC5DF31B954D7F0081C8CA /* TTSwithc-switchRed.png in Resources */,
 				08F27D621B550ABC0039DF49 /* userpic1.jpg in Resources */,
 				08F19C891B4681C000722C9C /* ok.png in Resources */,
 				0843F1241AE5076900220F15 /* m35@2x.png in Resources */,
 				0843F0951AE502AE00220F15 /* MotionEffectViewController.xib in Resources */,
+				08EC5E061B954D7F0081C8CA /* TTSwithc-square-switch-mask@2x.png in Resources */,
 				08F20B661B67292A005F092A /* photo8.jpg in Resources */,
 				08F27D751B550ABC0039DF49 /* Single_Selected@2x.png in Resources */,
 				08F20BA51B677C1F005F092A /* CalendarTodaysDate@2x.png in Resources */,
 				0843F1351AE5076900220F15 /* stage_3@2x.png in Resources */,
 				0843F1071AE5076900220F15 /* face_detection.jpg in Resources */,
 				0843F1131AE5076900220F15 /* m1@2x.png in Resources */,
+				08F483C91B9571BD00814233 /* Onboard-charcoal.png in Resources */,
+				08EC5DFC1B954D7F0081C8CA /* TTSwithc-round-switch-overlay@2x.png in Resources */,
 				08F20B601B67292A005F092A /* photo5.jpg in Resources */,
 				08F20B641B67292A005F092A /* photo7.jpg in Resources */,
 				0843F0871AE502AE00220F15 /* DynamicBehaviorsViewController.xib in Resources */,
+				08F483DD1B9571BD00814233 /* Onboard-yellow.png in Resources */,
 				08B2A1E01B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib in Resources */,
+				08F483D41B9571BD00814233 /* Onboard-space age.ttf in Resources */,
+				08EC5E0E1B954D7F0081C8CA /* TTSwithc-square-switch-track@2x.png in Resources */,
 				08D7CEA11B21789A00A3C8AD /* TYGMenuTableViewController.xib in Resources */,
 				08D530881B5F973700409CF1 /* iTunesArtwork in Resources */,
+				08EC5E091B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png in Resources */,
+				08EC5E001B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png in Resources */,
+				08EC5DEF1B954D7F0081C8CA /* TTSwithc-switchGreen.png in Resources */,
 				0843EF091AE4DB7F00220F15 /* 我的_on@2x.png in Resources */,
+				08EC5E0A1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png in Resources */,
 				08D7D9D51AE6317D00543F2A /* AMPoptipViewController.xib in Resources */,
 				0843EEFF1AE4DB7F00220F15 /* VIP_黑.png in Resources */,
+				08EC5E031B954D7F0081C8CA /* TTSwithc-round-switch-track.png in Resources */,
+				08EC5DF11B954D7F0081C8CA /* TTSwithc-switchMask.png in Resources */,
+				08F483DE1B9571BD00814233 /* Onboard-yellowbg.png in Resources */,
+				08EC5DF81B954D7F0081C8CA /* TTSwithc-switchToggleHigh@2x.png in Resources */,
 				0843EEFE1AE4DB7F00220F15 /* VIP_on@3x.png in Resources */,
 				08D530831B5F973200409CF1 /* back_OFF_25.png in Resources */,
 				0843EFD91AE4F6E800220F15 /* action_icon@2x.png in Resources */,
 				08F20BA41B677C1F005F092A /* CalendarTodaysDate.png in Resources */,
 				08D7D97C1AE619D500543F2A /* GreenViewController.xib in Resources */,
 				0843F0A21AE502AE00220F15 /* SpeechSynthesisViewController.xib in Resources */,
+				08EC5E081B954D7F0081C8CA /* TTSwithc-square-switch-overlay@2x.png in Resources */,
+				08EC5DFE1B954D7F0081C8CA /* TTSwithc-round-switch-thumb-highlight@2x.png in Resources */,
 				0843EF991AE4E9BA00220F15 /* check_mark@2x.png in Resources */,
 				08F20B5C1B67292A005F092A /* photo3.jpg in Resources */,
 				0843F11E1AE5076900220F15 /* m2@2x.png in Resources */,
 				08D7D9CD1AE6316600543F2A /* AMPOP-green@2x.png in Resources */,
 				0843EFFC1AE4FAA800220F15 /* HeaderImage.png in Resources */,
 				0843F0A81AE502AE00220F15 /* WebPaginationViewController.xib in Resources */,
+				08F483D31B9571BD00814233 /* Onboard-shark.png in Resources */,
 				08F27D6C1B550ABC0039DF49 /* Heart_Highlighted@2x.png in Resources */,
 				08F20B621B67292A005F092A /* photo6.jpg in Resources */,
 				08B3A3D01B661083007838EA /* menu@2x.png in Resources */,
 				0843F0A41AE502AE00220F15 /* SpringAnimationViewController.xib in Resources */,
 				0843EF961AE4E75600220F15 /* drop_down@2x.png in Resources */,
+				08F483CC1B9571BD00814233 /* Onboard-headphones.png in Resources */,
 				0843EF041AE4DB7F00220F15 /* 发现_on@3x.png in Resources */,
 				08D530821B5F973200409CF1 /* back_ON_25.png in Resources */,
+				08F483D61B9571BD00814233 /* Onboard-space2.png in Resources */,
 				08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */,
 				0843F08B1AE502AE00220F15 /* ImageFiltersViewController.xib in Resources */,
 				0843F1221AE5076900220F15 /* m33@2x.png in Resources */,
 				08F20B691B67292A005F092A /* video_thumb.jpg in Resources */,
 				08E9C8C61B0AD36A00DDF85C /* PopBasicViewController.xib in Resources */,
 				0843F1291AE5076900220F15 /* m3@2x.png in Resources */,
+				08EC5E301B9552480081C8CA /* HMSeg-3.png in Resources */,
 				08A320A71B82BFE800943DE9 /* TYGMapKitViewController.xib in Resources */,
 				08F20B591B67292A005F092A /* photo1t.jpg in Resources */,
+				08EC5E0B1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png in Resources */,
 				083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */,
+				08F483C61B9571BD00814233 /* JazzHands-text3.png in Resources */,
 				08D7D9D21AE6316600543F2A /* AMPOP-yellow.png in Resources */,
 				0843EFB71AE4F01D00220F15 /* iCarouselExampleViewController.xib in Resources */,
 				08D7D9CA1AE6316600543F2A /* AMPOP-blue.png in Resources */,
@@ -2409,15 +2832,20 @@
 				08D7D9B11AE62AEE00543F2A /* green.jpg in Resources */,
 				08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */,
 				0843F1381AE5076900220F15 /* stage_6@2x.png in Resources */,
+				08F483D71B9571BD00814233 /* Onboard-space3.png in Resources */,
+				08EC5E041B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png in Resources */,
 				0843EFAE1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib in Resources */,
 				0843F07F1AE502AE00220F15 /* ActivityTrackingViewController.xib in Resources */,
 				08B2A1E51B85C46800B89635 /* KGModalDemo.xib in Resources */,
 				08A320C61B82C7F900943DE9 /* 定位3_白.png in Resources */,
 				0843F11A1AE5076900220F15 /* m26@2x.png in Resources */,
 				0843F1171AE5076900220F15 /* m23@2x.png in Resources */,
+				08EC5E341B9552480081C8CA /* HMSeg-4.png in Resources */,
 				0843EFE01AE4F6E800220F15 /* search_icon.png in Resources */,
 				08F27D6E1B550ABC0039DF49 /* Last_Alt@2x.png in Resources */,
 				0843EF0B1AE4DB7F00220F15 /* 我的_黑.png in Resources */,
+				08F483DC1B9571BD00814233 /* Onboard-tree.png in Resources */,
+				08F483D01B9571BD00814233 /* Onboard-purple.png in Resources */,
 				08F27D631B550ABC0039DF49 /* userpic2.jpg in Resources */,
 				08F20BA01B677C1F005F092A /* CalendarRowBottom.png in Resources */,
 				08A320C81B82C7F900943DE9 /* 定位3_橙.png in Resources */,
@@ -2425,24 +2853,35 @@
 				0843EFE11AE4F6E800220F15 /* search_icon@2x.png in Resources */,
 				08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */,
 				08D530871B5F973700409CF1 /* SuperDemoIcon.png in Resources */,
+				08EC5DF21B954D7F0081C8CA /* TTSwithc-switchMask@2x.png in Resources */,
 				0843F0931AE502AE00220F15 /* MapSnapshotViewController.xib in Resources */,
 				0843F0811AE502AE00220F15 /* ActivityTypesViewController.xib in Resources */,
 				0843F1111AE5076900220F15 /* m18@2x.png in Resources */,
 				08D7D9B21AE62AEE00543F2A /* red.jpg in Resources */,
 				08F27D661B550ABC0039DF49 /* userpic5.jpg in Resources */,
 				0843F11F1AE5076900220F15 /* m30@2x.png in Resources */,
+				08EC5DF71B954D7F0081C8CA /* TTSwithc-switchToggleHigh.png in Resources */,
 				0843F1141AE5076900220F15 /* m20@2x.png in Resources */,
+				08F483BF1B9571BD00814233 /* JazzHands-jazz.png in Resources */,
 				0843EF0D1AE4DB7F00220F15 /* 我的_黑@3x.png in Resources */,
 				0874A4F51B622D3A00007951 /* LDProgressViewController.xib in Resources */,
+				08F483C21B9571BD00814233 /* JazzHands-MusicStand.png in Resources */,
 				08F20B5B1B67292A005F092A /* photo2t.jpg in Resources */,
+				08EC5E331B9552480081C8CA /* HMSeg-4-selected@2x.png in Resources */,
 				0843F10C1AE5076900220F15 /* m13@2x.png in Resources */,
 				0843F12B1AE5076900220F15 /* m4@2x.png in Resources */,
 				0843F08D1AE502AE00220F15 /* Map3DViewController.xib in Resources */,
 				08B3A3CE1B661083007838EA /* check@2x.png in Resources */,
+				08F483BA1B9571BD00814233 /* JazzHands-BigCloud.png in Resources */,
 				08F20B821B6770D3005F092A /* ABCalendarPickerDemo.storyboard in Resources */,
+				08F483DB1B9571BD00814233 /* Onboard-testtube.png in Resources */,
 				0843F1361AE5076900220F15 /* stage_4@2x.png in Resources */,
+				08F483BC1B9571BD00814233 /* JazzHands-hands.png in Resources */,
+				08EC5E271B9552480081C8CA /* HMSeg-1-selected@2x.png in Resources */,
 				08B3A3D11B661083007838EA /* MGSwipeBackground.jpg in Resources */,
+				08F483C81B9571BD00814233 /* Onboard-blue.png in Resources */,
 				0843EE641AE4D8B500220F15 /* Images.xcassets in Resources */,
+				08F483E61B9571F800814233 /* MYBlur-HeaderImage.png in Resources */,
 				0843EF761AE4E38700220F15 /* SelectTableViewController.xib in Resources */,
 				08F20B5A1B67292A005F092A /* photo2.jpg in Resources */,
 				08D7D9B01AE62AEE00543F2A /* blue.jpg in Resources */,
@@ -2452,17 +2891,27 @@
 				08F27D681B550ABC0039DF49 /* First@2x.png in Resources */,
 				08D7D9CC1AE6316600543F2A /* AMPOP-green.png in Resources */,
 				08F20B671B67292A005F092A /* photo8t.jpg in Resources */,
+				08F483C11B9571BD00814233 /* JazzHands-MusicNotes.png in Resources */,
+				08F483B91B9571BD00814233 /* JazzHands-Airplane.png in Resources */,
 				08F27D6A1B550ABC0039DF49 /* First_Selected@2x.png in Resources */,
 				08F27D6D1B550ABC0039DF49 /* Last@2x.png in Resources */,
+				08EC5DF61B954D7F0081C8CA /* TTSwithc-switchToggle@2x.png in Resources */,
+				08EC5DF01B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png in Resources */,
+				08F483BE1B9571BD00814233 /* JazzHands-IFTTTPresents.png in Resources */,
 				0843F0081AE4FDB400220F15 /* MYCustomPanel.xib in Resources */,
 				0843EFA61AE4EA8400220F15 /* city.plist in Resources */,
 				0843EF0A1AE4DB7F00220F15 /* 我的_on@3x.png in Resources */,
+				08F483D51B9571BD00814233 /* Onboard-space1.png in Resources */,
 				08F27D6F1B550ABC0039DF49 /* Last_Selected@2x.png in Resources */,
 				08F27D721B550ABC0039DF49 /* Middle_Selected@2x.png in Resources */,
+				08EC5E321B9552480081C8CA /* HMSeg-4-selected.png in Resources */,
 				0843EFDC1AE4F6E800220F15 /* home_icon.png in Resources */,
 				08F20B5D1B67292A005F092A /* photo3t.jpg in Resources */,
 				0843F1081AE5076900220F15 /* IPhone_5s@2x.png in Resources */,
+				08EC5E011B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text.png in Resources */,
 				08A320CA1B82C7F900943DE9 /* 定位3_绿.png in Resources */,
+				08EC5E2D1B9552480081C8CA /* HMSeg-2@2x.png in Resources */,
+				08F483BD1B9571BD00814233 /* JazzHands-IFTTTCloud.png in Resources */,
 				08A320BF1B82C29900943DE9 /* TYGAppVersionViewController.xib in Resources */,
 				08A320AF1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib in Resources */,
 				08D530891B5F973700409CF1 /* iTunesArtwork@2x in Resources */,
@@ -2476,14 +2925,21 @@
 				0843F0891AE502AE00220F15 /* FontsViewController.xib in Resources */,
 				08F20BA31B677C1F005F092A /* CalendarSelectedDate@2x.png in Resources */,
 				08F20B9C1B677C1F005F092A /* CalendarPreviousMonth.png in Resources */,
+				08F483D21B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf in Resources */,
+				08F483D81B9571BD00814233 /* Onboard-space4.png in Resources */,
 				0843EFA51AE4EA8400220F15 /* area.plist in Resources */,
 				0843EF101AE4DB7F00220F15 /* 首页_on@3x.png in Resources */,
 				0843EF021AE4DB7F00220F15 /* 发现_on.png in Resources */,
 				08F27D5F1B550ABC0039DF49 /* photo4.jpg in Resources */,
+				08EC5E2F1B9552480081C8CA /* HMSeg-3-selected@2x.png in Resources */,
+				08F483C31B9571BD00814233 /* JazzHands-OrangeStick.png in Resources */,
 				0843F0381AE4FF0800220F15 /* MJTestViewController.xib in Resources */,
+				08EC5E021B954D7F0081C8CA /* TTSwithc-round-switch-track-no-text@2x.png in Resources */,
 				08D7D9D11AE6316600543F2A /* AMPOP-red@2x.png in Resources */,
 				0843EF0E1AE4DB7F00220F15 /* 首页_on.png in Resources */,
 				08D7D9CE1AE6316600543F2A /* AMPOP-orange.png in Resources */,
+				08EC5DF51B954D7F0081C8CA /* TTSwithc-switchToggle.png in Resources */,
+				08F483CF1B9571BD00814233 /* Onboard-nasalization rg.ttf in Resources */,
 				0843F0971AE502AE00220F15 /* MultipeerConnectivityViewController.xib in Resources */,
 				080E5A091B21923C00F54F44 /* QBPopupMenuDemo.xib in Resources */,
 				0843EFD81AE4F6E800220F15 /* action_icon.png in Resources */,
@@ -2498,17 +2954,22 @@
 				0843F0091AE4FDB400220F15 /* TestHeader.xib in Resources */,
 				0843F1181AE5076900220F15 /* m24@2x.png in Resources */,
 				08F20B611B67292A005F092A /* photo5t.jpg in Resources */,
+				08EC5E2A1B9552480081C8CA /* HMSeg-2-selected.png in Resources */,
 				0843EF071AE4DB7F00220F15 /* 发现_黑@3x.png in Resources */,
 				0843F1311AE5076900220F15 /* sample.jpg in Resources */,
 				0843EE881AE4D93D00220F15 /* FourViewController.xib in Resources */,
 				08F20B9D1B677C1F005F092A /* CalendarPreviousMonth@2x.png in Resources */,
+				08F483C01B9571BD00814233 /* JazzHands-littleCloud.png in Resources */,
+				08F483CD1B9571BD00814233 /* Onboard-layers.png in Resources */,
 				0843F10D1AE5076900220F15 /* m14@2x.png in Resources */,
+				08EC5E2E1B9552480081C8CA /* HMSeg-3-selected.png in Resources */,
 				0843EF131AE4DB7F00220F15 /* 首页_黑@3x.png in Resources */,
 				08F20B581B67292A005F092A /* photo1.jpg in Resources */,
 				08F20B841B67718C005F092A /* CalendarShadow.png in Resources */,
 				0843EF011AE4DB7F00220F15 /* VIP_黑@3x.png in Resources */,
 				08B2A1EA1B85C49F00B89635 /* KLCPopupDemo.xib in Resources */,
 				0843F1251AE5076900220F15 /* m36@2x.png in Resources */,
+				08F483E71B9571F800814233 /* MYBlur-Toronto, ON.jpg in Resources */,
 				0843EFDB1AE4F6E800220F15 /* check_icon@2x.png in Resources */,
 				08A320CF1B82CAA300943DE9 /* TYGIBViewController.xib in Resources */,
 				0843F11D1AE5076900220F15 /* m29@2x.png in Resources */,
@@ -2518,7 +2979,10 @@
 				08F20B9E1B677C1F005F092A /* CalendarRow.png in Resources */,
 				0843F12F1AE5076900220F15 /* m8@2x.png in Resources */,
 				0843EF0C1AE4DB7F00220F15 /* 我的_黑@2x.png in Resources */,
+				08EC5E351B9552480081C8CA /* HMSeg-4@2x.png in Resources */,
+				08F483CE1B9571BD00814233 /* Onboard-milky_way.jpg in Resources */,
 				08F20B9F1B677C1F005F092A /* CalendarRow@2x.png in Resources */,
+				08F483CA1B9571BD00814233 /* Onboard-coffee.png in Resources */,
 				0843F1121AE5076900220F15 /* m19@2x.png in Resources */,
 				0843EE831AE4D92900220F15 /* ThirdViewController.xib in Resources */,
 				08D7D9961AE6223000543F2A /* TSMessagesViewController.xib in Resources */,
@@ -2541,7 +3005,9 @@
 				0843EF111AE4DB7F00220F15 /* 首页_黑.png in Resources */,
 				0843EF9A1AE4E9BA00220F15 /* done@2x.png in Resources */,
 				08B3A3CD1B661083007838EA /* cat@2x.png in Resources */,
+				08EC5E0C1B954D7F0081C8CA /* TTSwithc-square-switch-thumb@2x.png in Resources */,
 				08F27D701B550ABC0039DF49 /* Middle@2x.png in Resources */,
+				08F483C41B9571BD00814233 /* JazzHands-Sun.png in Resources */,
 				0843F09B1AE502AE00220F15 /* ReadingListViewController.xib in Resources */,
 				0843F13B1AE5076900220F15 /* stage_9@2x.png in Resources */,
 			);
@@ -2609,6 +3075,7 @@
 				0843F0C31AE502D200220F15 /* UIViewController+Animator.m in Sources */,
 				08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */,
 				0843F03B1AE4FF6400220F15 /* MJSampleIndex.m in Sources */,
+				08EC5E111B9550660081C8CA /* StyledPageControlTableViewController.m in Sources */,
 				0843F08C1AE502AE00220F15 /* Map3DViewController.m in Sources */,
 				08F27D4D1B550ABC0039DF49 /* IndexedListViewController.m in Sources */,
 				0843EF751AE4E38700220F15 /* SelectTableViewController.m in Sources */,
@@ -2666,6 +3133,7 @@
 				0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */,
 				0843F0A11AE502AE00220F15 /* SpeechSynthesisViewController.m in Sources */,
 				08A320BA1B82C27100943DE9 /* TYGAPPVersion.m in Sources */,
+				08EC5DC61B953FAE0081C8CA /* TYGUIListTableViewController.m in Sources */,
 				0843EEDB1AE4DB0C00220F15 /* TYG_UIItems.m in Sources */,
 				0843F0BD1AE502D200220F15 /* AVCaptureManager.m in Sources */,
 				0843F07E1AE502AE00220F15 /* ActivityTrackingViewController.m in Sources */,
@@ -2682,10 +3150,12 @@
 				0843EF891AE4E6B200220F15 /* DropDownListView.m in Sources */,
 				0843EEDA1AE4DB0C00220F15 /* ImageBoxView.m in Sources */,
 				0874A4F31B622BA800007951 /* LDProgressViewController.m in Sources */,
+				08EC5E141B9551480081C8CA /* HMSegmentedControlDemo.m in Sources */,
 				08A320AA1B82C02A00943DE9 /* TYGMapAnnotation.m in Sources */,
 				0843F0BE1AE502D200220F15 /* HUTransitionAnimator.m in Sources */,
 				08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */,
 				0843F09C1AE502AE00220F15 /* SampleScene.m in Sources */,
+				08EC5DCA1B954AF90081C8CA /* TTSwitchDemoViewController.m in Sources */,
 				08B2A1E91B85C49F00B89635 /* KLCPopupDemo.m in Sources */,
 				08F27D4C1B550ABC0039DF49 /* EditingViewController.m in Sources */,
 				0843EE821AE4D92900220F15 /* ThirdViewController.m in Sources */,
@@ -2743,6 +3213,7 @@
 				0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */,
 				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,
 				0843EED81AE4DB0C00220F15 /* EmptryView.m in Sources */,
+				08F483EA1B95731300814233 /* TYGLoadingTableViewController.m in Sources */,
 				08D7D9951AE6223000543F2A /* TSMessagesViewController.m in Sources */,
 				0843EEDE1AE4DB0C00220F15 /* UIImage+FixOrientation.m in Sources */,
 				0843F0BF1AE502D200220F15 /* HUTransitionGhostAnimator.m in Sources */,
@@ -2753,6 +3224,7 @@
 				08A320AE1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m in Sources */,
 				0843F09F1AE502AE00220F15 /* SmileDetectionViewController.m in Sources */,
 				08E9C8C51B0AD36A00DDF85C /* PopBasicViewController.m in Sources */,
+				08F483ED1B95742600814233 /* IFTTTJazzHandsViewController.m in Sources */,
 				08F27D561B550ABC0039DF49 /* XIBTestItem.m in Sources */,
 				08F27D511B550ABC0039DF49 /* StylingViewController.m in Sources */,
 			);

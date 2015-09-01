@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05C3E95AEE4A33775BD13695"
+               BlueprintIdentifier = "B78EEFF33A8EE4241D3D7F80"
                BuildableName = "libASValueTrackingSlider.a"
                BlueprintName = "ASValueTrackingSlider"
                ReferencedContainer = "container:Pods.xcodeproj">

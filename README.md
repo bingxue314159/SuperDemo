@@ -22,4 +22,4 @@ NSString *const FillColorAnimation = @"fillColor";
 ```
 
 ##签名
-![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/程序,你快下来吧.gif "签名")
+![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/程序,你快下来吧.gif "签名")    

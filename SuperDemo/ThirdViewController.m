@@ -39,7 +39,7 @@
     [titleArray addObject:@"快速生成TableView-RETableRootViewController"];
     
     [titleArray addObject:@"Checkbox-M13CheckboxDemo"];
-    [titleArray addObject:@"*Progress进度条-TYGProgressTableViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -35,8 +35,10 @@
     [titleArray addObject:@"*日历集合-CalendarViewController"];
     [titleArray addObject:@"左右滑动列表cell-SWTableViewCellDemo"];
     [titleArray addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
-//    [titleArray addObject:@"BlocksKit-BlocksKitViewController"];
-//    [titleArray addObject:@"DTCoreText-DTCoreTextViewController"];
+    [titleArray addObject:@"*原生UI控件替代方案-TYGUIListTableViewController"];
+    [titleArray addObject:@"*Progress进度条-TYGProgressTableViewController"];
+    [titleArray addObject:@"*启动引导-TYGLoadingTableViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

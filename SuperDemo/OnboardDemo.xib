@@ -12,7 +12,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg7-W6-Qt0">
@@ -136,15 +136,15 @@
                     <exclude reference="vZy-BX-Nkx"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="QtZ-mE-L6V"/>
-                    <exclude reference="YpY-aX-xCn"/>
-                    <exclude reference="rHJ-so-zXA"/>
-                    <exclude reference="3qe-Cr-M7X"/>
-                    <exclude reference="fjB-Lu-EVD"/>
-                    <exclude reference="nSL-t3-W6Y"/>
                     <exclude reference="06L-nD-SsO"/>
                     <exclude reference="3ek-l9-4yf"/>
                     <exclude reference="67G-no-qPh"/>
+                    <exclude reference="3qe-Cr-M7X"/>
+                    <exclude reference="fjB-Lu-EVD"/>
+                    <exclude reference="nSL-t3-W6Y"/>
+                    <exclude reference="QtZ-mE-L6V"/>
+                    <exclude reference="YpY-aX-xCn"/>
+                    <exclude reference="rHJ-so-zXA"/>
                     <exclude reference="BTx-wE-qom"/>
                     <exclude reference="CcH-zf-2tI"/>
                     <exclude reference="bW3-1C-aWt"/>
@@ -158,15 +158,15 @@
                     <include reference="vZy-BX-Nkx"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="QtZ-mE-L6V"/>
-                    <include reference="YpY-aX-xCn"/>
-                    <include reference="rHJ-so-zXA"/>
-                    <include reference="3qe-Cr-M7X"/>
-                    <include reference="fjB-Lu-EVD"/>
-                    <include reference="nSL-t3-W6Y"/>
                     <include reference="06L-nD-SsO"/>
                     <include reference="3ek-l9-4yf"/>
                     <include reference="67G-no-qPh"/>
+                    <include reference="3qe-Cr-M7X"/>
+                    <include reference="fjB-Lu-EVD"/>
+                    <include reference="nSL-t3-W6Y"/>
+                    <include reference="QtZ-mE-L6V"/>
+                    <include reference="YpY-aX-xCn"/>
+                    <include reference="rHJ-so-zXA"/>
                     <include reference="BTx-wE-qom"/>
                     <include reference="CcH-zf-2tI"/>
                     <include reference="bW3-1C-aWt"/>

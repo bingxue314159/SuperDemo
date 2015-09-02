@@ -33,6 +33,8 @@
     [titleArray addObject:@"版本检测-TYGAppVersionViewController"];
     
     [titleArray addObject:@"IBInspectable-TYGIBViewController"];
+    [titleArray addObject:@"自定义不规则按钮点击事件的响应区域-TYGUIButtonViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -521,6 +521,9 @@
 		08F483ED1B95742600814233 /* IFTTTJazzHandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */; };
 		08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F483F21B957C9A00814233 /* OnboardDemo.m */; };
 		08F483F51B957E4600814233 /* OnboardDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F483F41B957E4600814233 /* OnboardDemo.xib */; };
+		08F8BCEA1B969212009FF488 /* TYGUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F8BCE91B969212009FF488 /* TYGUIButton.m */; };
+		08F8BCEE1B969286009FF488 /* TYGUIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */; };
+		08F8BCEF1B969286009FF488 /* TYGUIButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1230,6 +1233,11 @@
 		08F483F11B957C9A00814233 /* OnboardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardDemo.h; sourceTree = "<group>"; };
 		08F483F21B957C9A00814233 /* OnboardDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardDemo.m; sourceTree = "<group>"; };
 		08F483F41B957E4600814233 /* OnboardDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardDemo.xib; sourceTree = "<group>"; };
+		08F8BCE81B969212009FF488 /* TYGUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUIButton.h; sourceTree = "<group>"; };
+		08F8BCE91B969212009FF488 /* TYGUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUIButton.m; sourceTree = "<group>"; };
+		08F8BCEB1B969286009FF488 /* TYGUIButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUIButtonViewController.h; sourceTree = "<group>"; };
+		08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUIButtonViewController.m; sourceTree = "<group>"; };
+		08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGUIButtonViewController.xib; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1318,20 +1326,21 @@
 			isa = PBXGroup;
 			children = (
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
-				08A320B01B82C23B00943DE9 /* TYGDinwei */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
 				0843EEC21AE4DB0C00220F15 /* File.h */,
-				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
 				0843EEC31AE4DB0C00220F15 /* File.m */,
 				0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */,
 				0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */,
 				0843EEC61AE4DB0C00220F15 /* TYG_allHeadFiles.h */,
 				0843EEC71AE4DB0C00220F15 /* TYG_UIItems.h */,
 				0843EEC81AE4DB0C00220F15 /* TYG_UIItems.m */,
+				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
 				0843EEC91AE4DB0C00220F15 /* TYGAudioUtil.h */,
 				0843EECA1AE4DB0C00220F15 /* TYGAudioUtil.m */,
 				0843EECB1AE4DB0C00220F15 /* TYGConfig.h */,
+				08A320B01B82C23B00943DE9 /* TYGDinwei */,
+				08F8BCE71B969212009FF488 /* TYGUIButton */,
 				0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */,
 				0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */,
 				0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */,
@@ -1952,6 +1961,9 @@
 				08A320BB1B82C29900943DE9 /* TYGAppVersionViewController.h */,
 				08A320BC1B82C29900943DE9 /* TYGAppVersionViewController.m */,
 				08A320BD1B82C29900943DE9 /* TYGAppVersionViewController.xib */,
+				08F8BCEB1B969286009FF488 /* TYGUIButtonViewController.h */,
+				08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */,
+				08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */,
 				08A320D41B82CADD00943DE9 /* TYGIBView */,
 			);
 			name = TYGNotes;
@@ -2550,6 +2562,15 @@
 			path = MYBlurImages;
 			sourceTree = "<group>";
 		};
+		08F8BCE71B969212009FF488 /* TYGUIButton */ = {
+			isa = PBXGroup;
+			children = (
+				08F8BCE81B969212009FF488 /* TYGUIButton.h */,
+				08F8BCE91B969212009FF488 /* TYGUIButton.m */,
+			);
+			path = TYGUIButton;
+			sourceTree = "<group>";
+		};
 		6A5DE5FEE734230BFA577471 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2946,6 +2967,7 @@
 				08F483C01B9571BD00814233 /* JazzHands-littleCloud.png in Resources */,
 				08F483CD1B9571BD00814233 /* Onboard-layers.png in Resources */,
 				0843F10D1AE5076900220F15 /* m14@2x.png in Resources */,
+				08F8BCEF1B969286009FF488 /* TYGUIButtonViewController.xib in Resources */,
 				08EC5E2E1B9552480081C8CA /* HMSeg-3-selected.png in Resources */,
 				0843EF131AE4DB7F00220F15 /* 首页_黑@3x.png in Resources */,
 				08F20B581B67292A005F092A /* photo1.jpg in Resources */,
@@ -3089,6 +3111,7 @@
 				08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */,
 				0843F0361AE4FF0800220F15 /* MJTableViewController.m in Sources */,
 				0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */,
+				08F8BCEE1B969286009FF488 /* TYGUIButtonViewController.m in Sources */,
 				0843F08E1AE502AE00220F15 /* MapDirectionsViewController.m in Sources */,
 				0843EE5F1AE4D8B500220F15 /* SecondViewController.m in Sources */,
 				0843EF931AE4E70C00220F15 /* kDropDownSelectDemo.m in Sources */,
@@ -3113,6 +3136,7 @@
 				08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */,
 				0843EED91AE4DB0C00220F15 /* File.m in Sources */,
 				08F27D531B550ABC0039DF49 /* XIBTestViewController.m in Sources */,
+				08F8BCEA1B969212009FF488 /* TYGUIButton.m in Sources */,
 				08C72E011B25321F00967012 /* REMenuExample.m in Sources */,
 				0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */,
 				0843F0A11AE502AE00220F15 /* SpeechSynthesisViewController.m in Sources */,

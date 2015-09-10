@@ -201,7 +201,6 @@
     
     [geoCoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
         CLPlacemark *placemark=[placemarks firstObject];
-        NSLog(@"详细信息:%@",placemark.addressDictionary);
         completionHandler(placemark,error);
     }];
 }

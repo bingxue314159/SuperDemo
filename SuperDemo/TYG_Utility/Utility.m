@@ -226,54 +226,6 @@
     [lableView performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:1.5f];
 }
 
-//验证邮箱格式（可匹配多个结果）
-+ (BOOL) isEmail:(NSString *)email{
-    NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}" options:NSRegularExpressionCaseInsensitive error:&error];
-    NSTextCheckingResult *result = [regex firstMatchInString:email options:0 range:NSMakeRange(0, [email length])];
-    if (result) {
-        NSLog(@"%@\n", [email substringWithRange:result.range]);
-        return YES;
-    }
-    return NO;
-}
-
-//利用正则表达式验证邮箱输入合法性
-+(BOOL)isValidateEmail:(NSString *)email {
-    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    return [emailTest evaluateWithObject:email];
-}
-
-//手机号码格式验证
-+(BOOL)isTelphoneNumber:(NSString *)telNum{
-    
-    telNum = [telNum stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    if ([telNum length] == 11) {
-        NSString *telNumRegex = @"^1[3-8]+\\d{9}$";
-        NSPredicate *telNumTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", telNumRegex];
-        return [telNumTest evaluateWithObject:telNum];
-    }
-    return NO;
-}
-
-//验证是否是数字与字母的组合
-+(BOOL)isNumberAndChar:(NSString *)sting{
-    sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *stringRegex = @"^[A-Za-z0-9]+$";
-    NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
-    return [stringTest evaluateWithObject:sting];
-}
-
-//验证是否是数字
-+(BOOL)isNumber:(NSString *)sting{
-    //^((\+|\-)?[1-9]\d*\.?\d*)|((\+|\-)?0\.\d*)|(\.\d*)$
-    sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *stringRegex = @"^([0-9]+\\d*\\.?\\d*)|(0(\\.\\d*)?)|(\\.\\d*)$";
-    NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
-    return [stringTest evaluateWithObject:sting];
-}
-
 //去除两边的空格
 + (NSString *)trimString:(NSString *)string{
     

@@ -19,39 +19,23 @@
 
 //创建GET方法的URL后面的参数
 + (NSString *)createPostURL:(NSMutableDictionary *)params;
+
 //获取当前时间yyyy-MM-dd HH:mm:ss
 + (NSString *)getCurrentDate;
+
 /*
  * 功能：检测网络连接状态
  */
 + (BOOL) connectedToNetwork;
-//检测一个网址是否可以正常访问
+
+/**
+ * 检测一个网址是否可以正常访问
+ */
 + (BOOL) hostAvailable: (NSString *) theHost;
 
 /**
- * 验证邮箱格式
+ * 去除两边的空格
  */
-+ (BOOL) isEmail:(NSString *)email;
-
-/**
- * 手机号码格式验证
- */
-+ (BOOL) isTelphoneNumber:(NSString *)telNum;
-
-/**
- * 利用正则表达式验证邮箱输入合法性
- */
-+ (BOOL)isValidateEmail:(NSString *)email;
-
-/**
- * 利用正则表达式验证是否是数字与字母的组合
- */
-+ (BOOL)isNumberAndChar:(NSString *)sting;
-
-//验证是否是数字
-+(BOOL)isNumber:(NSString *)sting;
-
-//去除两边的空格
 + (NSString *)trimString:(NSString *)string;
 
 /**

@@ -19,6 +19,7 @@
 #import "TYG_UIItems.h"
 #import "File.h"
 #import "TYGConfig.h"
+#import "TYGValid.h"
 
 #import "SVProgressHUD.h"
 #import "TSMessage.h"

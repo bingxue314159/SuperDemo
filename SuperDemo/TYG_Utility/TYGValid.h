@@ -43,7 +43,7 @@
 /**
  *  验证是否是身份证号
  */
-+ (BOOL)isIdCard:(NSString *)idCardString;
++ (BOOL)isIDCard:(NSString *)idCardString;
 
 /**
  * 固定电话号码格式

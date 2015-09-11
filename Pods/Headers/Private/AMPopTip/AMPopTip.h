@@ -1,1 +1,1 @@
-../../../AMPopTip/AMPopTip/AMPopTip.h
+../../../AMPopTip/Source/AMPopTip.h

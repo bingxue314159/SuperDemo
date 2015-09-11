@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCFFCDEB4B847DA5146D5231"
+               BlueprintIdentifier = "FCB5DDC146F1773E2718E27F"
                BuildableName = "libKGModal.a"
                BlueprintName = "KGModal"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -409,12 +409,12 @@
 /*
  * 指定个一文件路径,此方法一般用在FMDB初始化数据库中
  */
-+ (NSString *) getYoujaibaDBFilePath{
++ (NSString *) getDBFilePath{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
     
     //dbPath： 数据库路径，在Document中。
-    NSString *dbPath = [documentDirectory stringByAppendingPathComponent:@"uuxoo.db"];
+    NSString *dbPath = [documentDirectory stringByAppendingPathComponent:@"appBase.db"];
     
     return dbPath;
 }
@@ -439,21 +439,23 @@
 
 /**
  *  汉字转拼音
- *
  *  @param chinese 汉字
- *
  *  @return 不带声调的拼音
  */
 + (NSString *) getPinyinFromChinese:(NSString *)chinese{
+    
+    if (chinese.length) {
+        //先转换为带声调的拼音
+        NSMutableString *str = [chinese mutableCopy];
+        CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformMandarinLatin,NO);
+        
+        //再转换为不带声调的拼音
+        CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformStripDiacritics,NO);
+        
+        return str;
+    }
 
-    //先转换为带声调的拼音
-    NSMutableString *str = [chinese mutableCopy];
-    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformMandarinLatin,NO);
-    
-    //再转换为不带声调的拼音
-    CFStringTransform((CFMutableStringRef)str,NULL, kCFStringTransformStripDiacritics,NO);
-    
-    return str;
+    return @"";
 }
 
 //封装系统相关信息

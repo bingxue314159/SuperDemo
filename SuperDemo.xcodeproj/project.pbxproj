@@ -525,6 +525,8 @@
 		08FC9EF91BA268AF00CEE275 /* GTMBase64_tyg.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF21BA268AF00CEE275 /* GTMBase64_tyg.m */; };
 		08FC9EFA1BA268AF00CEE275 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF51BA268AF00CEE275 /* NSData+AES256.m */; };
 		08FC9EFB1BA268AF00CEE275 /* TYGEncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF71BA268AF00CEE275 /* TYGEncryptDecrypt.m */; };
+		08FC9F111BA2ADBF00CEE275 /* TYGValidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */; };
+		08FC9F121BA2ADBF00CEE275 /* TYGValidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -1241,6 +1243,9 @@
 		08FC9EF51BA268AF00CEE275 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
 		08FC9EF61BA268AF00CEE275 /* TYGEncryptDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGEncryptDecrypt.h; sourceTree = "<group>"; };
 		08FC9EF71BA268AF00CEE275 /* TYGEncryptDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGEncryptDecrypt.m; sourceTree = "<group>"; };
+		08FC9F0E1BA2ADBF00CEE275 /* TYGValidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGValidViewController.h; sourceTree = "<group>"; };
+		08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGValidViewController.m; sourceTree = "<group>"; };
+		08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGValidViewController.xib; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1953,6 +1958,9 @@
 				08F8BCEB1B969286009FF488 /* TYGUIButtonViewController.h */,
 				08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */,
 				08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */,
+				08FC9F0E1BA2ADBF00CEE275 /* TYGValidViewController.h */,
+				08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */,
+				08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */,
 				08A320D41B82CADD00943DE9 /* TYGIBView */,
 			);
 			name = TYGNotes;
@@ -2861,6 +2869,7 @@
 				0843F1231AE5076900220F15 /* m34@2x.png in Resources */,
 				0843EFE11AE4F6E800220F15 /* search_icon@2x.png in Resources */,
 				08EA56191B4381B7007ED35B /* BlocksKitViewController.xib in Resources */,
+				08FC9F121BA2ADBF00CEE275 /* TYGValidViewController.xib in Resources */,
 				08D530871B5F973700409CF1 /* SuperDemoIcon.png in Resources */,
 				08EC5DF21B954D7F0081C8CA /* TTSwithc-switchMask@2x.png in Resources */,
 				0843F0931AE502AE00220F15 /* MapSnapshotViewController.xib in Resources */,
@@ -3125,6 +3134,7 @@
 				0843F0C21AE502D200220F15 /* PulsingHaloLayer.m in Sources */,
 				08F20B901B677BF3005F092A /* TSQTAViewController.m in Sources */,
 				08F27D4F1B550ABC0039DF49 /* RetractableViewController.m in Sources */,
+				08FC9F111BA2ADBF00CEE275 /* TYGValidViewController.m in Sources */,
 				08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */,
 				0843F0341AE4FF0800220F15 /* MJSampleIndexViewController.m in Sources */,
 				08F27D081B54F5E10039DF49 /* AwesomeMenuDemoViewController.m in Sources */,

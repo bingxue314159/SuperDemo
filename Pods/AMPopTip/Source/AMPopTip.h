@@ -8,12 +8,58 @@
 
 @import UIKit;
 
+/**-----------------------------------------------------------------------------
+ * @name AMPopTip Options
+ * -----------------------------------------------------------------------------
+ */
+
+/** @enum AMPopTipDirection
+ *
+ * Enum that specifies the direction of the poptip.
+ */
 typedef NS_ENUM(NSInteger, AMPopTipDirection) {
+    /** Shows the poptip up */
     AMPopTipDirectionUp,
+    /** Shows the poptip down */
     AMPopTipDirectionDown,
+    /** Shows the poptip to the left */
     AMPopTipDirectionLeft,
+    /** Shows the poptip to the right */
     AMPopTipDirectionRight,
+    /** Shows the poptip up, with no arrow */
     AMPopTipDirectionNone
+};
+
+/** @enum AMPopTipEntranceAnimation
+ *
+ * Enum that specifies the type of entrance animation. Entrance animations are performed
+ * while showing the poptip.
+ */
+typedef NS_ENUM(NSInteger, AMPopTipEntranceAnimation) {
+    /** The poptip scales from 0% to 100% */
+    AMPopTipEntranceAnimationScale,
+    /** The poptip moves in position from the edge of the screen */
+    AMPopTipEntranceAnimationTransition,
+    /** No animation */
+    AMPopTipEntranceAnimationNone,
+    /** The Animation is provided by the user */
+    AMPopTipEntranceAnimationCustom
+};
+
+/** @enum AMPopTipActionAnimation
+ *
+ * Enum that specifies the type of action animation. Action animations are performed
+ * after the poptip is visible and the entrance animation completed.
+ */
+typedef NS_ENUM(NSInteger, AMPopTipActionAnimation) {
+    /** The poptip bounces following its direction */
+    AMPopTipActionAnimationBounce,
+    /** The poptip floats in place */
+    AMPopTipActionAnimationFloat,
+    /** The poptip pulsates by changing its size */
+    AMPopTipActionAnimationPulse,
+    /** No animation */
+    AMPopTipActionAnimationNone
 };
 
 @interface AMPopTip : UIView
@@ -98,6 +144,18 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  */
 - (void)updateText:(NSString *)text;
 
+/** Makes the popover perform the action animation
+ *
+ * Makes the popover perform the action indefinitely. The action animation calls for the user's attention after the popover is shown
+ */
+- (void)startActionAnimation;
+
+/** Stops the popover action animation
+ *
+ * Stops the popover action animation. Does nothing if the popover wasn't animating in the first place.
+ */
+- (void)stopActionAnimation;
+
 /**-----------------------------------------------------------------------------
 * @name AMPopTip Properties
 * -----------------------------------------------------------------------------
@@ -138,7 +196,6 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  */
 @property (nonatomic, assign) CGFloat borderWidth UI_APPEARANCE_SELECTOR;
 
-
 /** Popover border radius
  *
  * Holds the CGFloat with the popover's border radius
@@ -155,7 +212,7 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  *
  * Holds the offset between the popover and origin
  */
-@property (nonatomic, assign) float offset UI_APPEARANCE_SELECTOR;
+@property (nonatomic, assign) CGFloat offset UI_APPEARANCE_SELECTOR;
 
 /** Text Padding
  *
@@ -167,13 +224,13 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  *
  * Holds the insets setting for padding different direction
  */
-@property (nonatomic, assign) UIEdgeInsets edgeInsets;
+@property (nonatomic, assign) UIEdgeInsets edgeInsets UI_APPEARANCE_SELECTOR;
 
 /** Arrow size
  *
  * Holds the CGSize with the width and height of the arrow
  */
-@property (nonatomic, assign) CGSize  arrowSize UI_APPEARANCE_SELECTOR;
+@property (nonatomic, assign) CGSize arrowSize UI_APPEARANCE_SELECTOR;
 
 /** Revealing Animation time
  *
@@ -199,6 +256,66 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  */
 @property (nonatomic, assign) NSTimeInterval delayOut UI_APPEARANCE_SELECTOR;
 
+/** Entrance animation type
+ *
+ * Holds the enum with the type of entrance animation (triggered once the popover is shown)
+ */
+@property (nonatomic, assign) AMPopTipEntranceAnimation entranceAnimation UI_APPEARANCE_SELECTOR;
+
+/** Action animation type
+ *
+ * Holds the enum with the type of action animation (triggered once the popover is shown)
+ */
+@property (nonatomic, assign) AMPopTipActionAnimation actionAnimation UI_APPEARANCE_SELECTOR;
+
+/** Offset for the float action animation
+ *
+ * Holds the offset between the popover initial and ending state during the float action animation
+ */
+@property (nonatomic, assign) CGFloat actionFloatOffset UI_APPEARANCE_SELECTOR;
+
+/** Offset for the float action animation
+ *
+ * Holds the offset between the popover initial and ending state during the float action animation
+ */
+@property (nonatomic, assign) CGFloat actionBounceOffset UI_APPEARANCE_SELECTOR;
+
+/** Offset for the pulse action animation
+ *
+ * Holds the offset in the popover size during the  pulse action animation
+ */
+@property (nonatomic, assign) CGFloat actionPulseOffset UI_APPEARANCE_SELECTOR;
+
+/** Action Animation time
+ *
+ * Holds the NSTimeInterval with the duration of the action animation
+ */
+@property (nonatomic, assign) NSTimeInterval actionAnimationIn UI_APPEARANCE_SELECTOR;
+
+/** Action Animation stop time
+ *
+ * Holds the NSTimeInterval with the duration of the action stop animation
+ */
+@property (nonatomic, assign) NSTimeInterval actionAnimationOut UI_APPEARANCE_SELECTOR;
+
+/** Action Animation delay
+ *
+ * Holds the NSTimeInterval with the delay of the action animation
+ */
+@property (nonatomic, assign) NSTimeInterval actionDelayIn UI_APPEARANCE_SELECTOR;
+
+/** Action Animation stop delay
+ *
+ * Holds the NSTimeInterval with the delay of the action animation stop
+ */
+@property (nonatomic, assign) NSTimeInterval actionDelayOut UI_APPEARANCE_SELECTOR;
+
+/** Margin from the left efge
+ *
+ * CGfloat value that determines the leftmost margin from the screen
+ */
+@property (nonatomic, assign) CGFloat edgeMargin UI_APPEARANCE_SELECTOR;
+
 /** The frame the poptip is pointing to
  *
  * Holds the CGrect with the rect the tip is pointing to
@@ -212,12 +329,6 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  */
 @property (nonatomic, assign, readonly) BOOL isVisible;
 
-/** Margin from the left efge
- *
- * CGfloat value that determines the leftmost margin from the screen
- */
-@property (nonatomic, assign) CGFloat edgeMargin UI_APPEARANCE_SELECTOR;
-
 /** Dismiss on tap
  *
  * A boolean value that determines whether the poptip is dismissed on tap.
@@ -229,6 +340,19 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  * A boolean value that determines whether to dismiss when tapping outside the popover.
  */
 @property (nonatomic, assign) BOOL shouldDismissOnTapOutside;
+
+/** Dismiss on swipe outside
+*
+* A boolean value that determines whether to dismiss when swiping outside the popover.
+*/
+@property (nonatomic, assign) BOOL shouldDismissOnSwipeOutside;
+
+/** Direction to dismiss on swipe outside
+*
+* A direction that determines what swipe direction to dismiss when swiping outside the popover.
+* The default direction is UISwipeGestureRecognizerDirectionRight if this is not set.
+*/
+@property (nonatomic, assign) UISwipeGestureRecognizerDirection swipeRemoveGestureDirection;
 
 /** Tap handler
  *
@@ -247,5 +371,32 @@ typedef NS_ENUM(NSInteger, AMPopTipDirection) {
  * A block that will be fired when the popover is dismissed.
  */
 @property (nonatomic, copy) void (^dismissHandler)();
+
+/** Entrance animation
+ *
+ * A block block that handles the entrance animation of the poptip. Should be provided
+ * when using a AMPopTipActionAnimationCustom entrance animation type.
+ * Please note that the poptip will be automatically added as a subview before firing the block
+ * Remember to call the completion block provided
+ */
+@property (nonatomic, copy) void (^entranceAnimationHandler)(void (^completion)(void));
+
+/** Arrow position
+ *
+ * The CGPoint originating the arrow. Read only.
+ */
+@property (nonatomic, readonly) CGPoint arrowPosition;
+
+/** Container View
+ *
+ * A read only reference to the view containing the poptip
+ */
+@property (nonatomic, weak, readonly) UIView *containerView;
+
+/** Direction
+ *
+ * The direction from which the poptip is shown. Read only.
+ */
+@property (nonatomic, assign, readonly) AMPopTipDirection direction;
 
 @end

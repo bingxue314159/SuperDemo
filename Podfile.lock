@@ -22,7 +22,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - AMPopTip (0.7.2)
+  - AMPopTip (0.9.12)
   - ASProgressPopUpView (0.8)
   - ASValueTrackingSlider (0.11.2)
   - AwesomeMenu (1.0.0)
@@ -116,7 +116,7 @@ DEPENDENCIES:
   - ABCalendarPicker (~> 1.1.2)
   - ActionSheetPicker-3.0 (~> 1.6.2)
   - AFNetworking (~> 2.0)
-  - AMPopTip (~> 0.7.1)
+  - AMPopTip (~> 0.9.12)
   - ASProgressPopUpView (~> 0.8)
   - ASValueTrackingSlider (~> 0.11.2)
   - AwesomeMenu (~> 1.0.0)
@@ -178,7 +178,7 @@ SPEC CHECKSUMS:
   ABCalendarPicker: dfa1269abd0d7b5697c9abe3001d31e5b901ed4b
   ActionSheetPicker-3.0: cc9f90ae785070623e9b972270013c3242190fb0
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  AMPopTip: 85f39d509fec9746b51a08c18857777dd68566cc
+  AMPopTip: 3c98a9b38148868366b57765064bd9565f653038
   ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
   ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3

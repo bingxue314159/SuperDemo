@@ -14,7 +14,7 @@ pod 'Masonry'   #一个轻量级的布局框架 拥有自己的描述语法 采�
 pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果
 pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果
 pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）
-pod 'AMPopTip', '~> 0.7.1'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
+pod 'AMPopTip', '~> 0.9.12'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 
 pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库
 pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条

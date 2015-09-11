@@ -93,7 +93,7 @@
  * 校验位计算公式：Y_P = mod( ∑(Ai×Wi),11 )
  * i为身份证号码1...17 位; Y_P为校验码Y所在校验码数组位置
  */
-+ (BOOL)isIdCard:(NSString *)idCardString{
++ (BOOL)isIDCard:(NSString *)idCardString{
     
     //^(\d{6})(\d{4})(\d{2})(\d{2})(\d{3})([0-9]|X)$
     //^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$
@@ -158,7 +158,7 @@
 +(BOOL)isPhoneNumber:(NSString *)sting{
     //^(^0\d{2}-?\d{8}$)|(^0\d{3}-?\d{7}$)|(^0\d2-?\d{8}$)|(^0\d3-?\d{7}$)$
     sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *stringRegex = @"^(^0\\d{2}-?\\d{8}$)|(^0\\d{3}-?\\d{7}$)|(^0\\d2-?\\d{8}$)|(^0\\d3-?\\d{7}$)$";
+    NSString *stringRegex = @"^(^0\\d{2}-?\\d{8}$)|(^0\\d{3}-?\\d{7,8}$)|(^0\\d2-?\\d{8}$)|(^0\\d3-?\\d{7,8}$)$";
     NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
     return [stringTest evaluateWithObject:sting];
 }

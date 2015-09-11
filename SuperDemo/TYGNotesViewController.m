@@ -34,7 +34,7 @@
     
     [titleArray addObject:@"IBInspectable-TYGIBViewController"];
     [titleArray addObject:@"自定义不规则按钮点击事件的响应区域-TYGUIButtonViewController"];
-    
+    [titleArray addObject:@"正则验证-TYGValidViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

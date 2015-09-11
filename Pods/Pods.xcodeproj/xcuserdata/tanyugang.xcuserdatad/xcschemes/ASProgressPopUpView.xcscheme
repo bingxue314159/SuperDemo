@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB38BF870233FB158356B0AE"
+               BlueprintIdentifier = "4C44323C8FD41B8C52F0BE0F"
                BuildableName = "libASProgressPopUpView.a"
                BlueprintName = "ASProgressPopUpView"
                ReferencedContainer = "container:Pods.xcodeproj">

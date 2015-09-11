@@ -100,7 +100,7 @@
 /*
  * 指定个一文件路径,此方法一般用在FMDB初始化数据库中
  */
-+ (NSString *) getYoujaibaDBFilePath;
++ (NSString *) getDBFilePath;
 
 /**
  * 获取UUID

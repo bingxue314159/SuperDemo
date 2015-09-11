@@ -60,10 +60,6 @@
 		0843EF111AE4DB7F00220F15 /* 首页_黑.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EEF91AE4DB7F00220F15 /* 首页_黑.png */; };
 		0843EF121AE4DB7F00220F15 /* 首页_黑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EEFA1AE4DB7F00220F15 /* 首页_黑@2x.png */; };
 		0843EF131AE4DB7F00220F15 /* 首页_黑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EEFB1AE4DB7F00220F15 /* 首页_黑@3x.png */; };
-		0843EF211AE4DBC200220F15 /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF171AE4DBC200220F15 /* EncryptUtil.m */; };
-		0843EF221AE4DBC200220F15 /* GTMBase64_tyg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF191AE4DBC200220F15 /* GTMBase64_tyg.m */; };
-		0843EF231AE4DBC200220F15 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */; };
-		0843EF241AE4DBC200220F15 /* TYGEncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */; };
 		0843EF691AE4DDAF00220F15 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF661AE4DDAF00220F15 /* AnimationViewController.xib */; };
 		0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF681AE4DDAF00220F15 /* AnimationViewController.m */; };
 		0843EF751AE4E38700220F15 /* SelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EF731AE4E38700220F15 /* SelectTableViewController.m */; };
@@ -525,6 +521,10 @@
 		08F8BCEA1B969212009FF488 /* TYGUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F8BCE91B969212009FF488 /* TYGUIButton.m */; };
 		08F8BCEE1B969286009FF488 /* TYGUIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */; };
 		08F8BCEF1B969286009FF488 /* TYGUIButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */; };
+		08FC9EF81BA268AF00CEE275 /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF01BA268AF00CEE275 /* EncryptUtil.m */; };
+		08FC9EF91BA268AF00CEE275 /* GTMBase64_tyg.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF21BA268AF00CEE275 /* GTMBase64_tyg.m */; };
+		08FC9EFA1BA268AF00CEE275 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF51BA268AF00CEE275 /* NSData+AES256.m */; };
+		08FC9EFB1BA268AF00CEE275 /* TYGEncryptDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FC9EF71BA268AF00CEE275 /* TYGEncryptDecrypt.m */; };
 		75268F412E0C12BCA3B94A2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919A0D95E62CE1129EF5D99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -619,15 +619,6 @@
 		0843EEF91AE4DB7F00220F15 /* 首页_黑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_黑.png"; sourceTree = "<group>"; };
 		0843EEFA1AE4DB7F00220F15 /* 首页_黑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_黑@2x.png"; sourceTree = "<group>"; };
 		0843EEFB1AE4DB7F00220F15 /* 首页_黑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_黑@3x.png"; sourceTree = "<group>"; };
-		0843EF161AE4DBC200220F15 /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
-		0843EF171AE4DBC200220F15 /* EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtil.m; sourceTree = "<group>"; };
-		0843EF181AE4DBC200220F15 /* GTMBase64_tyg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64_tyg.h; sourceTree = "<group>"; };
-		0843EF191AE4DBC200220F15 /* GTMBase64_tyg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64_tyg.m; sourceTree = "<group>"; };
-		0843EF1A1AE4DBC200220F15 /* GTMDefines_tyg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines_tyg.h; sourceTree = "<group>"; };
-		0843EF1B1AE4DBC200220F15 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
-		0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
-		0843EF1D1AE4DBC200220F15 /* TYGEncryptDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGEncryptDecrypt.h; sourceTree = "<group>"; };
-		0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGEncryptDecrypt.m; sourceTree = "<group>"; };
 		0843EF661AE4DDAF00220F15 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		0843EF671AE4DDAF00220F15 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		0843EF681AE4DDAF00220F15 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
@@ -1241,6 +1232,15 @@
 		08F8BCEB1B969286009FF488 /* TYGUIButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUIButtonViewController.h; sourceTree = "<group>"; };
 		08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUIButtonViewController.m; sourceTree = "<group>"; };
 		08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGUIButtonViewController.xib; sourceTree = "<group>"; };
+		08FC9EEF1BA268AF00CEE275 /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
+		08FC9EF01BA268AF00CEE275 /* EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtil.m; sourceTree = "<group>"; };
+		08FC9EF11BA268AF00CEE275 /* GTMBase64_tyg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64_tyg.h; sourceTree = "<group>"; };
+		08FC9EF21BA268AF00CEE275 /* GTMBase64_tyg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64_tyg.m; sourceTree = "<group>"; };
+		08FC9EF31BA268AF00CEE275 /* GTMDefines_tyg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines_tyg.h; sourceTree = "<group>"; };
+		08FC9EF41BA268AF00CEE275 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		08FC9EF51BA268AF00CEE275 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		08FC9EF61BA268AF00CEE275 /* TYGEncryptDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGEncryptDecrypt.h; sourceTree = "<group>"; };
+		08FC9EF71BA268AF00CEE275 /* TYGEncryptDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGEncryptDecrypt.m; sourceTree = "<group>"; };
 		2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5919A0D95E62CE1129EF5D99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1331,6 +1331,7 @@
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
+				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
 				0843EEC21AE4DB0C00220F15 /* File.h */,
 				0843EEC31AE4DB0C00220F15 /* File.m */,
 				0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */,
@@ -1401,7 +1402,6 @@
 				0843EF9D1AE4EA8400220F15 /* area picker */,
 				0843F0A91AE502D200220F15 /* AVCaptureManager */,
 				0843EFBD1AE4F13700220F15 /* DMLazyScrollView */,
-				0843EF151AE4DBC200220F15 /* Encrypt_Decryption */,
 				0843F0AC1AE502D200220F15 /* HUAnimator */,
 				0843EF841AE4E6B200220F15 /* kDropDown */,
 				0843F0B51AE502D200220F15 /* PulsingHalo */,
@@ -1411,22 +1411,6 @@
 				08DA8B9B1B28234500999A2C /* WebView */,
 			);
 			name = Utility;
-			sourceTree = "<group>";
-		};
-		0843EF151AE4DBC200220F15 /* Encrypt_Decryption */ = {
-			isa = PBXGroup;
-			children = (
-				0843EF161AE4DBC200220F15 /* EncryptUtil.h */,
-				0843EF171AE4DBC200220F15 /* EncryptUtil.m */,
-				0843EF181AE4DBC200220F15 /* GTMBase64_tyg.h */,
-				0843EF191AE4DBC200220F15 /* GTMBase64_tyg.m */,
-				0843EF1A1AE4DBC200220F15 /* GTMDefines_tyg.h */,
-				0843EF1B1AE4DBC200220F15 /* NSData+AES256.h */,
-				0843EF1C1AE4DBC200220F15 /* NSData+AES256.m */,
-				0843EF1D1AE4DBC200220F15 /* TYGEncryptDecrypt.h */,
-				0843EF1E1AE4DBC200220F15 /* TYGEncryptDecrypt.m */,
-			);
-			path = Encrypt_Decryption;
 			sourceTree = "<group>";
 		};
 		0843EF611AE4DC1000220F15 /* ViewController */ = {
@@ -2576,6 +2560,22 @@
 			path = TYGUIButton;
 			sourceTree = "<group>";
 		};
+		08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */ = {
+			isa = PBXGroup;
+			children = (
+				08FC9EEF1BA268AF00CEE275 /* EncryptUtil.h */,
+				08FC9EF01BA268AF00CEE275 /* EncryptUtil.m */,
+				08FC9EF11BA268AF00CEE275 /* GTMBase64_tyg.h */,
+				08FC9EF21BA268AF00CEE275 /* GTMBase64_tyg.m */,
+				08FC9EF31BA268AF00CEE275 /* GTMDefines_tyg.h */,
+				08FC9EF41BA268AF00CEE275 /* NSData+AES256.h */,
+				08FC9EF51BA268AF00CEE275 /* NSData+AES256.m */,
+				08FC9EF61BA268AF00CEE275 /* TYGEncryptDecrypt.h */,
+				08FC9EF71BA268AF00CEE275 /* TYGEncryptDecrypt.m */,
+			);
+			path = Encrypt_Decryption;
+			sourceTree = "<group>";
+		};
 		6A5DE5FEE734230BFA577471 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3129,7 +3129,6 @@
 				0843F0341AE4FF0800220F15 /* MJSampleIndexViewController.m in Sources */,
 				08F27D081B54F5E10039DF49 /* AwesomeMenuDemoViewController.m in Sources */,
 				08F27D5A1B550ABC0039DF49 /* XIBTestCell.m in Sources */,
-				0843EF231AE4DBC200220F15 /* NSData+AES256.m in Sources */,
 				08F20B6D1B6768BA005F092A /* CalendarViewController.m in Sources */,
 				08EA561D1B4381E8007ED35B /* DTCoreTextViewController.m in Sources */,
 				0843F0881AE502AE00220F15 /* FontsViewController.m in Sources */,
@@ -3147,6 +3146,7 @@
 				0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */,
 				0843F0A11AE502AE00220F15 /* SpeechSynthesisViewController.m in Sources */,
 				08A320BA1B82C27100943DE9 /* TYGAPPVersion.m in Sources */,
+				08FC9EFB1BA268AF00CEE275 /* TYGEncryptDecrypt.m in Sources */,
 				08EC5DC61B953FAE0081C8CA /* TYGUIListTableViewController.m in Sources */,
 				0843EEDB1AE4DB0C00220F15 /* TYG_UIItems.m in Sources */,
 				0843F0BD1AE502D200220F15 /* AVCaptureManager.m in Sources */,
@@ -3154,7 +3154,6 @@
 				0843EFB61AE4F01D00220F15 /* iCarouselExampleViewController.m in Sources */,
 				08B2A1E41B85C46800B89635 /* KGModalDemo.m in Sources */,
 				0843F0941AE502AE00220F15 /* MotionEffectViewController.m in Sources */,
-				0843EF241AE4DBC200220F15 /* TYGEncryptDecrypt.m in Sources */,
 				0843F0CD1AE506D600220F15 /* MasterViewController.m in Sources */,
 				08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */,
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
@@ -3172,17 +3171,18 @@
 				08EC5DCA1B954AF90081C8CA /* TTSwitchDemoViewController.m in Sources */,
 				08B2A1E91B85C49F00B89635 /* KLCPopupDemo.m in Sources */,
 				08F27D4C1B550ABC0039DF49 /* EditingViewController.m in Sources */,
+				08FC9EF81BA268AF00CEE275 /* EncryptUtil.m in Sources */,
 				0843EE821AE4D92900220F15 /* ThirdViewController.m in Sources */,
 				08D7D9731AE6199500543F2A /* CubeDemo.m in Sources */,
 				0843F0981AE502AE00220F15 /* QRCodeViewController.m in Sources */,
 				08B2A1D91B85B42400B89635 /* ASValueTrackingSliderDemo.m in Sources */,
 				0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */,
 				0843F0371AE4FF0800220F15 /* MJTestViewController.m in Sources */,
-				0843EF211AE4DBC200220F15 /* EncryptUtil.m in Sources */,
 				08D7D9AC1AE6267200543F2A /* SWTableViewCellDemo.m in Sources */,
 				0843F0821AE502AE00220F15 /* BeaconViewController.m in Sources */,
 				0843F0921AE502AE00220F15 /* MapSnapshotViewController.m in Sources */,
 				0843EE5C1AE4D8B500220F15 /* FirstViewController.m in Sources */,
+				08FC9EF91BA268AF00CEE275 /* GTMBase64_tyg.m in Sources */,
 				0874A4FC1B62311700007951 /* M13CheckboxDemo.m in Sources */,
 				08F27D501B550ABC0039DF49 /* RETableRootViewController.m in Sources */,
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
@@ -3216,7 +3216,6 @@
 				0843F0841AE502AE00220F15 /* CustomTransitionViewController.m in Sources */,
 				0843EE561AE4D8B500220F15 /* main.m in Sources */,
 				08F20BA91B677C77005F092A /* TimesSquareViewDemo.m in Sources */,
-				0843EF221AE4DBC200220F15 /* GTMBase64_tyg.m in Sources */,
 				0843F0801AE502AE00220F15 /* ActivityTypesViewController.m in Sources */,
 				08F27D4E1B550ABC0039DF49 /* ListViewController.m in Sources */,
 				0843EFC41AE4F15000220F15 /* DMLazyScrollViewViewController.m in Sources */,
@@ -3229,6 +3228,7 @@
 				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,
 				0843EED81AE4DB0C00220F15 /* EmptryView.m in Sources */,
 				08F483EA1B95731300814233 /* TYGLoadingTableViewController.m in Sources */,
+				08FC9EFA1BA268AF00CEE275 /* NSData+AES256.m in Sources */,
 				08D7D9951AE6223000543F2A /* TSMessagesViewController.m in Sources */,
 				0843EEDE1AE4DB0C00220F15 /* UIImage+FixOrientation.m in Sources */,
 				0843F0BF1AE502D200220F15 /* HUTransitionGhostAnimator.m in Sources */,

@@ -127,10 +127,13 @@
     //隐藏那条黑线
 //    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     
-    
     //导航栏禁用半透明效果
-    if(SystemVersion >= 7.0){
-        [[UINavigationBar appearance] setTranslucent:NO];
+    if (SystemVersion >= 7.0) {
+//        [[UINavigationBar appearance] setTranslucent:NO];//这句不知道为什么，在iOS7.1.1下会闪退
+        self.navBarController1.navigationBar.translucent = NO;
+        self.navBarController2.navigationBar.translucent = NO;
+        self.navBarController3.navigationBar.translucent = NO;
+        self.navBarController4.navigationBar.translucent = NO;
     }
     
     //自定义返回按钮

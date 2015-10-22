@@ -93,7 +93,7 @@
 //字符串安全处理
 #define SAFE_STRING(str) ([(str) length] ? (str) : @"")
 //把数字变成字符串
-#define SAFE_StringFormInt(intNum) [NSString stringWithFormat:@"%d",(intNum)]
+#define SAFE_StringFormInt(intNum) [NSString stringWithFormat:@"%ld",(long)(intNum)]
 //对象安全处理
 #define SAFE_OBJECT(object) ([[NSNull null] isEqual:object] ? nil : object)
 //安全的移除一个对象

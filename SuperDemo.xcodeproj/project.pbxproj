@@ -1498,9 +1498,6 @@
 				08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */,
 				08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */,
 				08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */,
-				083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */,
-				083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */,
-				083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */,
 				08EA56151B4381B7007ED35B /* BlocksKitViewController.h */,
 				08EA56161B4381B7007ED35B /* BlocksKitViewController.m */,
 				08EA56171B4381B7007ED35B /* BlocksKitViewController.xib */,
@@ -1571,6 +1568,9 @@
 				0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */,
 				08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */,
 				08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */,
+				083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */,
+				083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */,
+				083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */,
 				08F19C711B4681C000722C9C /* ActionSheetPickDemo */,
 			);
 			name = Select;
@@ -1947,7 +1947,6 @@
 			children = (
 				08A3209F1B82BEFF00943DE9 /* TYGNotesViewController.h */,
 				08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */,
-				08A320A31B82BFE800943DE9 /* TYGMapKitViewController.h */,
 				08A320D01B82CABB00943DE9 /* TYGMapKit */,
 				08A320AB1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.h */,
 				08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */,
@@ -2001,6 +2000,7 @@
 		08A320D01B82CABB00943DE9 /* TYGMapKit */ = {
 			isa = PBXGroup;
 			children = (
+				08A320A31B82BFE800943DE9 /* TYGMapKitViewController.h */,
 				08A320A41B82BFE800943DE9 /* TYGMapKitViewController.m */,
 				08A320A51B82BFE800943DE9 /* TYGMapKitViewController.xib */,
 				08A320A81B82C02A00943DE9 /* TYGMapAnnotation.h */,
@@ -3372,8 +3372,10 @@
 			baseConfigurationReference = 882AD090EB3D58E64476C121 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3384,8 +3386,10 @@
 			baseConfigurationReference = 2697E9EC90E46C59705D89FE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

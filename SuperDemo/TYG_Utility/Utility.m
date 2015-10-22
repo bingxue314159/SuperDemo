@@ -479,7 +479,10 @@
     
     id obj = [dic objectForKey:key];
     
-    if ([null isEqual:obj]) {
+    if (nil == dic) {
+        value = @"";
+    }
+    else if ([null isEqual:obj]) {
         value = @"";
     }
     else if ([obj isKindOfClass:[NSNumber class]]) {
@@ -500,7 +503,11 @@
 + (id)safeGetObjectFromDic:(NSDictionary *)dic key:(NSString *)key{
     NSNull *null = [[NSNull alloc] init];
     id object;
-    if ([null isEqual:[dic objectForKey:key]]) {
+    
+    if (nil == dic) {
+        object = nil;
+    }
+    else if ([null isEqual:[dic objectForKey:key]]) {
         object = nil;
     }
     else{

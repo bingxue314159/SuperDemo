@@ -25,8 +25,8 @@
     [button setTitleColor:Color_Text forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    CGSize titleSize = [buttonTitle sizeWithFont:button.titleLabel.font];
-    
+    CGSize titleSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
+   
     button.frame = CGRectMake(0, 0, titleSize.width, titleSize.height);
     button.showsTouchWhenHighlighted = YES;
     return button;
@@ -85,24 +85,6 @@
 }
 
 /**
- * 功能：创建导航栏上的GPS按钮
- * 参数：按钮标题-buttonTitle type:0,白色图标  1，黑色图标
- * 返回：button对象
- */
-+ (UIButton *)buttonCreateGpsButton:(NSString *)buttonTitle type:(NSInteger)type{
-    
-    UIButton *button;
-    if (type == 0) {
-        button = [TYG_UIItems buttonCreatImageTitleButton:[UIImage imageNamed:@"定位3_白.png"] title:buttonTitle titleColor:[UIColor whiteColor] font:Font_Button(16) buttonType:UIButtonTypeCustom];
-    }
-    else{
-        button = [TYG_UIItems buttonCreatImageTitleButton:[UIImage imageNamed:@"定位3_黑.png"] title:buttonTitle titleColor:[UIColor blackColor] font:Font_Button(16) buttonType:UIButtonTypeCustom];
-    }
-    
-    return button;
-}
-
-/**
  * 功能：创建导航栏上的更多按钮
  * 参数：按钮标题-buttonTitle 按钮样式-buttonType
  * 返回：button对象
@@ -129,7 +111,7 @@
     [button setTitle:buttonTitle forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
-    CGSize titleSize = [buttonTitle sizeWithFont:button.titleLabel.font];
+    CGSize titleSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}];
     
     button.frame = CGRectMake(0, 0, titleSize.width, titleSize.height);
     button.showsTouchWhenHighlighted = YES;
@@ -176,31 +158,6 @@
     return button;
 }
 
-
-/**
- * 功能：创建带 图片 可以控制亮灭 的按键
- * 参数：按钮标题-buttonTitle 按钮样式-buttonType buttonSize-buttonSize
- * 返回：button对象
- */
-+(UIButton *)buttonCreatImageHighlightedButton:(UIImage *) buttonImage highlightedImage:(UIImage *) highlightedImage buttonSize:(CGSize)buttonSize{
-    
-    CGFloat buttonBackW = buttonSize.width;
-    CGFloat buttonBackH = buttonSize.height;
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, buttonBackW, buttonBackH);
-    //    button.showsTouchWhenHighlighted = YES;
-    //按钮图片
-    //    [button.imageView setContentMode:UIViewContentModeScaleToFill];
-    [button setImage:buttonImage forState:UIControlStateSelected];
-    [button setImage:buttonImage forState:UIControlStateHighlighted];
-    [button setImage:highlightedImage forState:UIControlStateNormal];
-
-    button.selected = NO;
-    
-    return button;
-}
-
 /*
  * 功能：创建图标
  * 参数：buttonImage-图票 buttonSize-图标大小
@@ -238,7 +195,7 @@
     UIButton *button = [UIButton buttonWithType:buttonType];
     
     //标题大小
-    CGSize titleSize = [buttonTitle sizeWithFont:font];
+    CGSize titleSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:font}];
     
     //处理图片，定义其大小
     CGSize imageSize = CGSizeMake(titleSize.height, titleSize.height);
@@ -264,9 +221,11 @@
     else{
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
-    //    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, imageSize.width/2, 0, 0)];
     
-    button.frame = CGRectMake(0, 0, imageSize.width + titleSize.width + 10, titleSize.height);
+    CGFloat titleOffsetRight = 10;
+    //    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, ititleOffsetRight, 0, 0)];
+    
+    button.frame = CGRectMake(0, 0, imageSize.width + titleSize.width + titleOffsetRight, titleSize.height);
     button.showsTouchWhenHighlighted = YES;
     
     return button;
@@ -283,41 +242,12 @@
                                     font:(UIFont *)font
                               buttonType:(UIButtonType)buttonType{
     
-    UIButton *button = [UIButton buttonWithType:buttonType];
-    
-    //标题大小
-    CGSize titleSize = [buttonTitle sizeWithFont:font];
-    //处理图片，定义其大小
-    CGSize imageSize = CGSizeMake(titleSize.height, titleSize.height);
-    buttonImage = [File ImageReSizeImage:buttonImage toSize:imageSize];
-    
-    //按钮图片
-    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [button.imageView setContentMode:UIViewContentModeCenter];
-    [button setImage:buttonImage forState:UIControlStateNormal];
-    [button setTintColor:[UIColor whiteColor]];
-    
-    //按钮文字
-    [button setTitle:buttonTitle forState:UIControlStateNormal];
-    [button.titleLabel setContentMode:UIViewContentModeCenter];
-    [button.titleLabel setBackgroundColor:[UIColor clearColor]];
-    [button.titleLabel setFont:font];
-    if (titleColor) {
-        [button setTitleColor:titleColor forState:UIControlStateNormal];
-    }
-    else{
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    }
-    CGFloat titleOffsetRight = 10;
-    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, titleOffsetRight, 0, 0)];
-    
-    button.frame = CGRectMake(0, 0, imageSize.width + titleSize.width + titleOffsetRight, titleSize.height);
-    button.showsTouchWhenHighlighted = YES;
+    UIButton *button = [self buttonCreatImageTitleButton:buttonImage highlightedImage:buttonImage title:buttonTitle titleColor:titleColor font:font buttonType:buttonType];
     return button;
 }
 
 /**
- * 功能：创建带 图片的筛选器 的按钮
+ * 功能：创建带 图片按钮(单图,文字左，图右)
  * 参数：按钮标题-buttonTitle 按钮图片-buttonImage
  * 返回：button对象
  */
@@ -330,7 +260,7 @@
     UIButton *button = [UIButton buttonWithType:buttonType];
     
     //标题大小
-    CGSize titleSize = [buttonTitle sizeWithFont:font];
+    CGSize titleSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:font}];
     //处理图片，定义其大小
     CGSize imageSize = CGSizeMake(titleSize.height-10, titleSize.height+10);
     buttonImage = [File ImageReSizeImage:buttonImage toSize:imageSize];
@@ -376,13 +306,13 @@
     
     //计算文本宽度，如果文本宽度 小于 frame.width，那么取文本宽度的值
     CGFloat labW = frame.size.width;
-    CGSize labelS = [text sizeWithFont:label.font constrainedToSize:CGSizeMake(MAXFLOAT, 0.0) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelS = [text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 0.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
     if (labelS.width < labW) {
         labW = labelS.width;
     }
     
     //计算文本高度
-    CGSize labelSize = [text sizeWithFont:label.font constrainedToSize:CGSizeMake(labW, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelSize = [text boundingRectWithSize:CGSizeMake(labW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
     CGFloat labH = labelSize.height;
     
     //新建新的frame
@@ -405,19 +335,18 @@
     label.text = text;
     label.numberOfLines = lines;
     
-    
     //计算文本宽度，如果文本宽度 小于 frame.width，那么取文本宽度的值
     CGFloat labW = width;
-    CGSize labelS = [text sizeWithFont:label.font constrainedToSize:CGSizeMake(MAXFLOAT, 0.0) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelS = [text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 0.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
     if (labelS.width < labW) {
         labW = labelS.width;
     }
     
     //计算字体高度
-    CGSize textSize = [text sizeWithFont:label.font];
+    CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName:label.font}];
     
     //计算文本高度
-    CGSize labelSize = [text sizeWithFont:label.font constrainedToSize:CGSizeMake(labW, textSize.height*lines) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelSize = [text boundingRectWithSize:CGSizeMake(labW, textSize.height*lines) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
     CGFloat labH = labelSize.height;
     
     //新建新的frame
@@ -427,74 +356,68 @@
     return label;
 }
 
-/*
- * 功能：定义图片pageControl
- * 参数：pageNumber-图片张数
- * 返回：pageControl
+/**
+ *  计算文本的size
+ *  @param text       原始文本
+ *  @param widthValue 最大宽度
+ *  @param font       字体
+ *  @return size
  */
-+ (UIPageControl *) pageControlCreatPageControl:(NSInteger)pageNumber{
-    CGFloat pageContH = 16;
-    CGFloat pageContW = pageContH *pageNumber;
-    
-    CGFloat mainW = [UIScreen mainScreen].applicationFrame.size.width;
-    if (pageContW > mainW) {
-        pageContH = mainW / pageNumber;
-        pageContW = mainW;
++ (CGSize)findSizeForText:(NSString *)text maxWidth:(CGFloat)widthValue andFont:(UIFont *)font{
+    CGSize size = CGSizeZero;
+    if (text){
+        CGSize textSize = { widthValue, CGFLOAT_MAX };       //Width and height of text area
+        
+        if (SystemVersion >= 7.0){
+            //iOS 7
+            CGRect frame = [text boundingRectWithSize:textSize
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                           attributes:@{ NSFontAttributeName:font }
+                                              context:nil];
+            size = CGSizeMake(frame.size.width, frame.size.height+1);
+        }
+        else{
+            //iOS 6.0
+            size = [text sizeWithFont:font constrainedToSize:textSize lineBreakMode:NSLineBreakByWordWrapping];
+        }
     }
-    NSLog(@"mainW = %f, pageContW = %f, pageConH = %f",mainW,pageContW,pageContH);
-    
-    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, pageContW, pageContH)];
-    
-    [pageControl.layer setCornerRadius:pageContH/2]; // 圆角层
-    //    pageControl.layer.masksToBounds = YES;
-    //    [pageControl setBounds:CGRectMake(0,0,pageContH*pageNumber,pageContH)]; //页面控件上的圆点间距基本在16左右。
-    pageControl.numberOfPages = pageNumber;//指定页面个数
-    pageControl.currentPage = 0;//指定pagecontroll的值，默认选中的小白点（第一个）
-    pageControl.autoresizesSubviews = YES;
-    
-    pageControl.backgroundColor = [UIColor clearColor];
-    pageControl.pageIndicatorTintColor = [UIColor grayColor];//圆点的颜色
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];//被选中的点的颜色
-    
-    pageControl.hidesForSinglePage = YES;//如果要在仅有一个页面的情况下隐藏指示器
-    pageControl.userInteractionEnabled = YES;
-    [pageControl setEnabled:YES];
-    
-    //    [pageControl addTarget:self action:@selector(changePage:)forControlEvents:UIControlEventValueChanged];//添加委托方法，当点击小白点就执行此方法
-    
-    
-    return pageControl;
-    
+    return size;
 }
 
-/*
- * 功能：绘制用户名，密码输入视图
- * 参数：
- * 返回：
+/**
+ *  创建虚线
+ *  @param lineViewFrame 虚线frame
+ *  @param lineLength    虚线每段的长度
+ *  @param lineSpacing   虚线每段的间隔
+ *  @param lineColor     虚线颜色
+ *  @return 虚线
  */
-+ (UIView *)drawUserPasswordView:(CGRect)frame{
-    return nil;
++ (UIView *)drawDashLineWithLineFrame:(CGRect)lineViewFrame lineLength:(int)lineLength lineSpacing:(int)lineSpacing lineColor:(UIColor *)lineColor{
+    
+    UIView *lineView = [[UIView alloc] initWithFrame:lineViewFrame];
+    
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    [shapeLayer setBounds:lineView.bounds];
+    [shapeLayer setPosition:CGPointMake(CGRectGetWidth(lineView.frame) / 2.0, CGRectGetHeight(lineView.frame))];
+    [shapeLayer setFillColor:[UIColor clearColor].CGColor];
+    //  设置虚线颜色
+    [shapeLayer setStrokeColor:lineColor.CGColor];
+    //  设置虚线宽度
+    [shapeLayer setLineWidth:CGRectGetHeight(lineView.frame)];
+    [shapeLayer setLineJoin:kCALineJoinRound];
+    //  设置线宽，线间距
+    [shapeLayer setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:lineLength], [NSNumber numberWithInt:lineSpacing], nil]];
+    //  设置路径
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, 0, 0);
+    CGPathAddLineToPoint(path, NULL, CGRectGetWidth(lineView.frame), 0);
+    [shapeLayer setPath:path];
+    CGPathRelease(path);
+    //  把绘制好的虚线添加上来
+    [lineView.layer addSublayer:shapeLayer];
+    
+    return lineView;
 }
 
-/*
- * 功能：绘制文本输入框
- * 参数：frame-对象大小
- * 返回：UITextField
- */
-+ (UITextField *) textFieldCreat:(CGRect)frame{
-    UITextField *textField = [[UITextField alloc] initWithFrame:frame];
-    //    textField.borderStyle = UITextBorderStyleRoundedRect;
-    
-    textField.returnKeyType = UIReturnKeyDone;
-    textField.adjustsFontSizeToFitWidth = YES;
-    textField.backgroundColor = [UIColor whiteColor];
-    textField.textAlignment = NSTextAlignmentLeft;
-    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    textField.contentHorizontalAlignment = NSTextAlignmentCenter;
-    textField.autocorrectionType = UITextAutocorrectionTypeNo;//是否启动自动提醒更正功能
-    textField.autocapitalizationType = UITextAutocapitalizationTypeNone;//键盘自动大小写
-    
-    return textField;
-}
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "TYGUIButtonViewController.h"
+#import "TYG_allHeadFiles.h"
 
 @interface TYGUIButtonViewController ()
 
@@ -23,6 +24,12 @@
     
 //    self.button1.layer.cornerRadius = CGRectGetWidth(self.button1.frame)/2.0;
     self.button1.layer.cornerRadius = 100;
+    
+    
+    UIView *lineView = [TYG_UIItems drawDashLineWithLineFrame:CGRectMake(0, 0, SCREEN_WIDTH, 4) lineLength:10 lineSpacing:4 lineColor:[UIColor redColor]];//虚线
+    
+    [self.view addSubview:lineView];
+                        
 }
 
 - (void)didReceiveMemoryWarning {

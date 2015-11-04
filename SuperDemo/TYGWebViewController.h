@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, WebShowStatusEnum) {
-    showTSMessage = 0,//TSMessage显示进度
-    showActivityIndicatorView,//系统自带菊花显示
-    showNetworkActivityIndicatorVisible,//状态栏显示网络状态
+    WebShowTSMessage = 0,//TSMessage显示进度
+    WebShowActivityIndicatorView,//系统自带菊花显示
+    WebShowNetworkActivityIndicatorVisible,//状态栏显示网络状态
 };
 
 @interface TYGWebViewController : UIViewController

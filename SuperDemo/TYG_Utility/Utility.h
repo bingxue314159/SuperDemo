@@ -17,12 +17,6 @@
     
 }
 
-//创建GET方法的URL后面的参数
-+ (NSString *)createPostURL:(NSMutableDictionary *)params;
-
-//获取当前时间yyyy-MM-dd HH:mm:ss
-+ (NSString *)getCurrentDate;
-
 /*
  * 功能：检测网络连接状态
  */
@@ -107,9 +101,6 @@
  */
 + (NSString *) getUUID;
 
-//获取“UUID-时间戳”
-+ (NSString *) getUUIDTimes;
-
 /**
  *  汉字转拼音
  *  @param chinese 汉字
@@ -145,15 +136,6 @@
 +(NSString *) safeToJSON:(NSDictionary *) dic;
 
 /**
- * 将字典或者数组转化为JSON串,并DES加密
- * 返回：加密后的密文
- */
-+(NSString *) safeToJSONToDES:(NSDictionary *) dic;
-
-// string DES加密
-+(NSString *)safeStringToDES:(NSString *)string;
-
-/**
  * 将服务器传输来的data数据转化为字典
  */
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData;
@@ -162,7 +144,7 @@
  *  获取随机颜色
  *  @return 随机颜色
  */
-+(UIColor *)randomColor;
++(UIColor *)RandomColor;
 
 /**
  *  生成随机数
@@ -170,7 +152,6 @@
  *  @param to   随机数右边界
  *  @return 边界内的随机数
  */
-+(int)getRandomNumber:(int)from to:(int)to;
-
++(int)RandomNumber:(int)from to:(int)to;
 
 @end

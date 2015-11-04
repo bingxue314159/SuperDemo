@@ -14,30 +14,6 @@
 
 @implementation Utility
 
-//创建GET方法的URL后面的参数
-+(NSString *)createPostURL:(NSMutableDictionary *)params
-{
-    NSString *postString=@"";
-    for(NSString *key in [params allKeys])
-    {
-        NSString *value=[params objectForKey:key];
-        postString=[postString stringByAppendingFormat:@"%@=%@&",key,value];
-    }
-    
-    if([postString length]>1)
-    {
-        postString=[postString substringToIndex:[postString length]-1];
-    }
-    return postString;
-}
-
-+(NSString *)getCurrentDate
-{
-    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    return [dateFormatter stringFromDate:[NSDate date]];
-}
-
 /*
  * 功能：检测网络连接状态
  * 备注：#import "SystemConfiguration/SystemConfiguration.h"
@@ -428,15 +404,6 @@
     return uuid.UUIDString;
 }
 
-//获取“UUID-时间戳”
-+ (NSString *) getUUIDTimes{
-    NSUUID *uuid = [UIDevice currentDevice].identifierForVendor;
-    NSTimeInterval dd = [NSDate timeIntervalSinceReferenceDate];
-    
-    NSString *string = [NSString stringWithFormat:@"%@-%f",uuid.UUIDString,dd];
-    return string;
-}
-
 /**
  *  汉字转拼音
  *  @param chinese 汉字
@@ -587,26 +554,6 @@
     return JsonStingSend;
 }
 
-// 将字典或者数组转化为JSON串,并DES加密
-+(NSString *) safeToJSONToDES:(NSDictionary *) dic{
-    NSString *json = [self safeToJSON:dic];
-    if (json) {
-        json = [TYGEncryptDecrypt DESEncrypt:json key:@"lghlmcl0"];
-    }
-    
-    return json;
-}
-
-// string DES加密
-+(NSString *)safeStringToDES:(NSString *)string{
-    
-    if (string) {
-        string = [TYGEncryptDecrypt DESEncrypt:string key:@"lghlmcl0"];
-    }
-    
-    return string;
-}
-
 //将服务器传输来的data数据转化为字典
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData{
 
@@ -631,7 +578,7 @@
  *  获取随机颜色
  *  @return 随机颜色
  */
-+(UIColor *)randomColor{
++(UIColor *)RandomColor{
     CGFloat hue = ( arc4random() % 256 / 256.0 ); //0.0 to 1.0
     CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5; // 0.5 to 1.0,away from white
     CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5; //0.5 to 1.0,away from black
@@ -645,7 +592,7 @@
  *  @param to   随机数右边界
  *  @return 边界内的随机数
  */
-+(int)getRandomNumber:(int)from to:(int)to{
++(int)RandomNumber:(int)from to:(int)to{
     return (int)(from + (arc4random() % (to - from + 1)));
 }
 

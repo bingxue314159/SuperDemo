@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         self.hidesBottomBarWhenPushed = YES;
-        self.webShowStatus = showTSMessage;
+        self.webShowStatus = WebShowTSMessage;
     }
     return self;
 }
@@ -59,11 +59,11 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     // 显示加载状态
     switch (self.webShowStatus) {
-        case showTSMessage: {
+        case WebShowTSMessage: {
             [SVProgressHUD showWithStatus:@"数据加载中…" maskType:SVProgressHUDMaskTypeBlack];
             break;
         }
-        case showActivityIndicatorView: {
+        case WebShowActivityIndicatorView: {
             if (nil == loadingView) {
                 loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
                 loadingView.center=CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
@@ -73,7 +73,7 @@
             [loadingView startAnimating];
             break;
         }
-        case showNetworkActivityIndicatorVisible: {
+        case WebShowNetworkActivityIndicatorVisible: {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
             break;
         }
@@ -88,15 +88,15 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     // 隐藏加载状态
     switch (self.webShowStatus) {
-        case showTSMessage: {
+        case WebShowTSMessage: {
             [SVProgressHUD dismiss];
             break;
         }
-        case showActivityIndicatorView: {
+        case WebShowActivityIndicatorView: {
             [loadingView stopAnimating];
             break;
         }
-        case showNetworkActivityIndicatorVisible: {
+        case WebShowNetworkActivityIndicatorVisible: {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             break;
         }
@@ -115,15 +115,15 @@
     [TSMessage showNotificationWithTitle:@"页面加载失败！" type:TSMessageNotificationTypeError];
     
     switch (self.webShowStatus) {
-        case showTSMessage: {
+        case WebShowTSMessage: {
             [SVProgressHUD dismiss];
             break;
         }
-        case showActivityIndicatorView: {
+        case WebShowActivityIndicatorView: {
             [loadingView stopAnimating];
             break;
         }
-        case showNetworkActivityIndicatorVisible: {
+        case WebShowNetworkActivityIndicatorVisible: {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             break;
         }

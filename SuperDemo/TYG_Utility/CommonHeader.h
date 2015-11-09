@@ -58,19 +58,6 @@
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 //判断iphone的版本号
 #define isSystemIsWhich(yoursystem) [[[UIDevice currentDevice] systemVersion] compare:yoursystmen] == NSOrderedDescending
-//判断屏幕物理尺寸大小
-/*
- iOS 设备现有的分辨率如下：
- iPhone/iPod Touch
- 普通屏                         　 320像素 x 480像素       iPhone 1、3G、3GS，iPod Touch 1、2、3
- 3：2 Retina 屏           　　640像素 x 960像素        iPhone 4、4S，iPod Touch 4
- 16：9 Retina 屏               640像素 x 1136像素      iPhone 5，iPod Touch 5
- 
- iPad
- 普通屏         　　　　　　   768像素 x 1024像素      iPad 1， iPad2，iPad mini
- Retina屏     　　　　         1536像素 x 2048像素     New iPad，iPad 4
- */
-
 
 //判断是真机还是模拟器
 #if TARGET_OS_IPHONE
@@ -295,14 +282,15 @@ obj = nil;\
 #   define ULog(...)
 #endif
 
-/*
+/**
  * 1) __VA_ARGS__ 是一个可变参数的宏，这个可变参数的宏是新的C99规范中新增的，目前似乎只有gcc支持（VC6.0的编译器不支持）。宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用,否则会编译出错。
- 　　2) __FILE__ 宏在预编译时会替换成当前的源文件名
- 　　3) __LINE__宏在预编译时会替换成当前的行号
- 　　4) __FUNCTION__宏在预编译时会替换成当前的函数名称
- 5) __DATE__编译时的日期
- 6) __TIME__编译时的时间
- **/
+ * 2) __FILE__ 宏在预编译时会替换成当前的源文件名
+ * 3) __LINE__宏在预编译时会替换成当前的行号
+ * 4) __FUNCTION__宏在预编译时会替换成当前的函数名称
+ * 5) __PRETTY_FUNCTION__对函数的打印会带上参数
+ * 6) __DATE__编译时的日期
+ * 7) __TIME__编译时的时间
+ */
 
 /*======================================================
  *********************** 其它 ***************************

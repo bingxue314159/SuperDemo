@@ -69,8 +69,6 @@
     return data;
 }
 
-
-
 -(void)cancelLocatePicker
 {
     [self.locatePicker cancelPicker];
@@ -87,12 +85,17 @@
         self.locatePicker = [[HZAreaPickerView alloc] initWithStyle:HZAreaPickerWithStateAndCityAndDistrict
                                                         withDelegate:self
                                                        andDatasource:self];
+        
+        NSArray *array = [self.areaText.text componentsSeparatedByString:@" "];
+        [self.locatePicker setValueWithArray:array animated:NO];
         [self.locatePicker showInView:self.view];
     } else {
         [self cancelLocatePicker];
         self.locatePicker = [[HZAreaPickerView alloc] initWithStyle:HZAreaPickerWithStateAndCity
                                                             withDelegate:self
                                                            andDatasource:self];
+        NSArray *array = [self.cityText.text componentsSeparatedByString:@" "];
+        [self.locatePicker setValueWithArray:array animated:NO];
         [self.locatePicker showInView:self.view];
     }
     return NO;

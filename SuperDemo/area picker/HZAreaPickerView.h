@@ -22,16 +22,12 @@ typedef enum {
 @class HZAreaPickerView;
 
 @protocol HZAreaPickerDatasource <NSObject>
-
 - (NSArray *)areaPickerData:(HZAreaPickerView *)picker;
-
 @end
 
 @protocol HZAreaPickerDelegate <NSObject>
-
 @optional
 - (void)pickerDidChaneStatus:(HZAreaPickerView *)picker;
-
 @end
 
 @interface HZAreaPickerView : UIView <UIPickerViewDelegate, UIPickerViewDataSource>

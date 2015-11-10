@@ -73,13 +73,8 @@
 		0843EF961AE4E75600220F15 /* drop_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF951AE4E75600220F15 /* drop_down@2x.png */; };
 		0843EF991AE4E9BA00220F15 /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF971AE4E9BA00220F15 /* check_mark@2x.png */; };
 		0843EF9A1AE4E9BA00220F15 /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF981AE4E9BA00220F15 /* done@2x.png */; };
-		0843EFA51AE4EA8400220F15 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF9E1AE4EA8400220F15 /* area.plist */; };
-		0843EFA61AE4EA8400220F15 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0843EF9F1AE4EA8400220F15 /* city.plist */; };
-		0843EFA71AE4EA8400220F15 /* HZAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFA11AE4EA8400220F15 /* HZAreaPickerView.m */; };
-		0843EFA81AE4EA8400220F15 /* HZAreaPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFA21AE4EA8400220F15 /* HZAreaPickerView.xib */; };
-		0843EFA91AE4EA8400220F15 /* HZLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFA41AE4EA8400220F15 /* HZLocation.m */; };
-		0843EFAD1AE4EAC100220F15 /* HZAreaPickerViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFAB1AE4EAC100220F15 /* HZAreaPickerViewDemo.m */; };
-		0843EFAE1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */; };
+		0843EFAD1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFAB1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m */; };
+		0843EFAE1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFAC1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib */; };
 		0843EFB61AE4F01D00220F15 /* iCarouselExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EFB31AE4F01D00220F15 /* iCarouselExampleViewController.m */; };
 		0843EFB71AE4F01D00220F15 /* iCarouselExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFB51AE4F01D00220F15 /* iCarouselExampleViewController.xib */; };
 		0843EFBA1AE4F03700220F15 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EFB81AE4F03700220F15 /* background.png */; };
@@ -383,6 +378,11 @@
 		08EC5E331B9552480081C8CA /* HMSeg-4-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E231B9552480081C8CA /* HMSeg-4-selected@2x.png */; };
 		08EC5E341B9552480081C8CA /* HMSeg-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E241B9552480081C8CA /* HMSeg-4.png */; };
 		08EC5E351B9552480081C8CA /* HMSeg-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08EC5E251B9552480081C8CA /* HMSeg-4@2x.png */; };
+		08EDD06E1BF179EE00FF110E /* TYGArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EDD0671BF179EE00FF110E /* TYGArea.m */; };
+		08EDD06F1BF179EE00FF110E /* TYGAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EDD0691BF179EE00FF110E /* TYGAreaPickerView.m */; };
+		08EDD0701BF179EE00FF110E /* TYGAreaPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EDD06A1BF179EE00FF110E /* TYGAreaPickerView.xib */; };
+		08EDD0711BF179EE00FF110E /* tygCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EDD06B1BF179EE00FF110E /* tygCity.plist */; };
+		08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EDD06D1BF179EE00FF110E /* TYGLocation.m */; };
 		08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */; };
 		08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */; };
 		08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */; };
@@ -640,16 +640,9 @@
 		0843EF951AE4E75600220F15 /* drop_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drop_down@2x.png"; sourceTree = "<group>"; };
 		0843EF971AE4E9BA00220F15 /* check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_mark@2x.png"; sourceTree = "<group>"; };
 		0843EF981AE4E9BA00220F15 /* done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done@2x.png"; sourceTree = "<group>"; };
-		0843EF9E1AE4EA8400220F15 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
-		0843EF9F1AE4EA8400220F15 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
-		0843EFA01AE4EA8400220F15 /* HZAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZAreaPickerView.h; sourceTree = "<group>"; };
-		0843EFA11AE4EA8400220F15 /* HZAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZAreaPickerView.m; sourceTree = "<group>"; };
-		0843EFA21AE4EA8400220F15 /* HZAreaPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HZAreaPickerView.xib; sourceTree = "<group>"; };
-		0843EFA31AE4EA8400220F15 /* HZLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLocation.h; sourceTree = "<group>"; };
-		0843EFA41AE4EA8400220F15 /* HZLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLocation.m; sourceTree = "<group>"; };
-		0843EFAA1AE4EAC100220F15 /* HZAreaPickerViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZAreaPickerViewDemo.h; sourceTree = "<group>"; };
-		0843EFAB1AE4EAC100220F15 /* HZAreaPickerViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZAreaPickerViewDemo.m; sourceTree = "<group>"; };
-		0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HZAreaPickerViewDemo.xib; sourceTree = "<group>"; };
+		0843EFAA1AE4EAC100220F15 /* TYGAreaPickerViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGAreaPickerViewDemo.h; sourceTree = "<group>"; };
+		0843EFAB1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGAreaPickerViewDemo.m; sourceTree = "<group>"; };
+		0843EFAC1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGAreaPickerViewDemo.xib; sourceTree = "<group>"; };
 		0843EFB31AE4F01D00220F15 /* iCarouselExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselExampleViewController.m; sourceTree = "<group>"; };
 		0843EFB41AE4F01D00220F15 /* iCarouselExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselExampleViewController.h; sourceTree = "<group>"; };
 		0843EFB51AE4F01D00220F15 /* iCarouselExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iCarouselExampleViewController.xib; sourceTree = "<group>"; };
@@ -1061,6 +1054,14 @@
 		08EC5E231B9552480081C8CA /* HMSeg-4-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4-selected@2x.png"; sourceTree = "<group>"; };
 		08EC5E241B9552480081C8CA /* HMSeg-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4.png"; sourceTree = "<group>"; };
 		08EC5E251B9552480081C8CA /* HMSeg-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMSeg-4@2x.png"; sourceTree = "<group>"; };
+		08EDD0661BF179EE00FF110E /* TYGArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGArea.h; sourceTree = "<group>"; };
+		08EDD0671BF179EE00FF110E /* TYGArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGArea.m; sourceTree = "<group>"; };
+		08EDD0681BF179EE00FF110E /* TYGAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGAreaPickerView.h; sourceTree = "<group>"; };
+		08EDD0691BF179EE00FF110E /* TYGAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGAreaPickerView.m; sourceTree = "<group>"; };
+		08EDD06A1BF179EE00FF110E /* TYGAreaPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGAreaPickerView.xib; sourceTree = "<group>"; };
+		08EDD06B1BF179EE00FF110E /* tygCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tygCity.plist; sourceTree = "<group>"; };
+		08EDD06C1BF179EE00FF110E /* TYGLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGLocation.h; sourceTree = "<group>"; };
+		08EDD06D1BF179EE00FF110E /* TYGLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGLocation.m; sourceTree = "<group>"; };
 		08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AbstractActionSheetPicker+CustomButton.h"; sourceTree = "<group>"; };
 		08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AbstractActionSheetPicker+CustomButton.m"; sourceTree = "<group>"; };
 		08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
@@ -1334,6 +1335,7 @@
 			isa = PBXGroup;
 			children = (
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
+				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
 				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
@@ -1404,7 +1406,6 @@
 			isa = PBXGroup;
 			children = (
 				0874A4E61B62273100007951 /* RTLabel */,
-				0843EF9D1AE4EA8400220F15 /* area picker */,
 				0843F0A91AE502D200220F15 /* AVCaptureManager */,
 				0843EFBD1AE4F13700220F15 /* DMLazyScrollView */,
 				0843F0AC1AE502D200220F15 /* HUAnimator */,
@@ -1563,9 +1564,9 @@
 				0843EF901AE4E70C00220F15 /* kDropDownSelectDemo.h */,
 				0843EF911AE4E70C00220F15 /* kDropDownSelectDemo.m */,
 				0843EF921AE4E70C00220F15 /* kDropDownSelectDemo.xib */,
-				0843EFAA1AE4EAC100220F15 /* HZAreaPickerViewDemo.h */,
-				0843EFAB1AE4EAC100220F15 /* HZAreaPickerViewDemo.m */,
-				0843EFAC1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib */,
+				0843EFAA1AE4EAC100220F15 /* TYGAreaPickerViewDemo.h */,
+				0843EFAB1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m */,
+				0843EFAC1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib */,
 				08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */,
 				08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */,
 				083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */,
@@ -1605,20 +1606,6 @@
 				08D7D9AF1AE62AEE00543F2A /* red.jpg */,
 			);
 			name = AnimationImage;
-			sourceTree = "<group>";
-		};
-		0843EF9D1AE4EA8400220F15 /* area picker */ = {
-			isa = PBXGroup;
-			children = (
-				0843EF9E1AE4EA8400220F15 /* area.plist */,
-				0843EF9F1AE4EA8400220F15 /* city.plist */,
-				0843EFA01AE4EA8400220F15 /* HZAreaPickerView.h */,
-				0843EFA11AE4EA8400220F15 /* HZAreaPickerView.m */,
-				0843EFA21AE4EA8400220F15 /* HZAreaPickerView.xib */,
-				0843EFA31AE4EA8400220F15 /* HZLocation.h */,
-				0843EFA41AE4EA8400220F15 /* HZLocation.m */,
-			);
-			path = "area picker";
 			sourceTree = "<group>";
 		};
 		0843EFBC1AE4F03D00220F15 /* iCarousel */ = {
@@ -2288,6 +2275,21 @@
 			path = HMSegmentImages;
 			sourceTree = "<group>";
 		};
+		08EDD0651BF179EE00FF110E /* TYGAreaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				08EDD0661BF179EE00FF110E /* TYGArea.h */,
+				08EDD0671BF179EE00FF110E /* TYGArea.m */,
+				08EDD0681BF179EE00FF110E /* TYGAreaPickerView.h */,
+				08EDD0691BF179EE00FF110E /* TYGAreaPickerView.m */,
+				08EDD06A1BF179EE00FF110E /* TYGAreaPickerView.xib */,
+				08EDD06B1BF179EE00FF110E /* tygCity.plist */,
+				08EDD06C1BF179EE00FF110E /* TYGLocation.h */,
+				08EDD06D1BF179EE00FF110E /* TYGLocation.m */,
+			);
+			path = TYGAreaPicker;
+			sourceTree = "<group>";
+		};
 		08F19C711B4681C000722C9C /* ActionSheetPickDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -2766,6 +2768,7 @@
 				08EC5DF91B954D7F0081C8CA /* TTSwithc-round-switch-mask.png in Resources */,
 				0843F1191AE5076900220F15 /* m25@2x.png in Resources */,
 				08F20B5E1B67292A005F092A /* photo4.jpg in Resources */,
+				08EDD0701BF179EE00FF110E /* TYGAreaPickerView.xib in Resources */,
 				08F27D5C1B550ABC0039DF49 /* photo1.jpg in Resources */,
 				08F20BA21B677C1F005F092A /* CalendarSelectedDate.png in Resources */,
 				08F27D651B550ABC0039DF49 /* userpic4.jpg in Resources */,
@@ -2830,6 +2833,7 @@
 				08D530821B5F973200409CF1 /* back_ON_25.png in Resources */,
 				08F483D61B9571BD00814233 /* Onboard-space2.png in Resources */,
 				08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */,
+				08EDD0711BF179EE00FF110E /* tygCity.plist in Resources */,
 				0843F08B1AE502AE00220F15 /* ImageFiltersViewController.xib in Resources */,
 				0843F1221AE5076900220F15 /* m33@2x.png in Resources */,
 				08F20B691B67292A005F092A /* video_thumb.jpg in Resources */,
@@ -2851,7 +2855,7 @@
 				0843F1381AE5076900220F15 /* stage_6@2x.png in Resources */,
 				08F483D71B9571BD00814233 /* Onboard-space3.png in Resources */,
 				08EC5E041B954D7F0081C8CA /* TTSwithc-round-switch-track@2x.png in Resources */,
-				0843EFAE1AE4EAC100220F15 /* HZAreaPickerViewDemo.xib in Resources */,
+				0843EFAE1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib in Resources */,
 				0843F07F1AE502AE00220F15 /* ActivityTrackingViewController.xib in Resources */,
 				08B2A1E51B85C46800B89635 /* KGModalDemo.xib in Resources */,
 				08A320C61B82C7F900943DE9 /* 定位3_白.png in Resources */,
@@ -2918,7 +2922,6 @@
 				08EC5DF01B954D7F0081C8CA /* TTSwithc-switchGreen@2x.png in Resources */,
 				08F483BE1B9571BD00814233 /* JazzHands-IFTTTPresents.png in Resources */,
 				0843F0081AE4FDB400220F15 /* MYCustomPanel.xib in Resources */,
-				0843EFA61AE4EA8400220F15 /* city.plist in Resources */,
 				0843EF0A1AE4DB7F00220F15 /* 我的_on@3x.png in Resources */,
 				08F483D51B9571BD00814233 /* Onboard-space1.png in Resources */,
 				08F27D6F1B550ABC0039DF49 /* Last_Selected@2x.png in Resources */,
@@ -2946,7 +2949,6 @@
 				08F20B9C1B677C1F005F092A /* CalendarPreviousMonth.png in Resources */,
 				08F483D21B9571BD00814233 /* Onboard-sf-outer-limits.upright.ttf in Resources */,
 				08F483D81B9571BD00814233 /* Onboard-space4.png in Resources */,
-				0843EFA51AE4EA8400220F15 /* area.plist in Resources */,
 				0843EF101AE4DB7F00220F15 /* 首页_on@3x.png in Resources */,
 				0843EF021AE4DB7F00220F15 /* 发现_on.png in Resources */,
 				08F27D5F1B550ABC0039DF49 /* photo4.jpg in Resources */,
@@ -3018,7 +3020,6 @@
 				0843EF031AE4DB7F00220F15 /* 发现_on@2x.png in Resources */,
 				08F27D601B550ABC0039DF49 /* photo5.jpg in Resources */,
 				08F20B651B67292A005F092A /* photo7t.jpg in Resources */,
-				0843EFA81AE4EA8400220F15 /* HZAreaPickerView.xib in Resources */,
 				0843F0851AE502AE00220F15 /* CustomTransitionViewController.xib in Resources */,
 				0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */,
 				0843F0C91AE5034B00220F15 /* BrowseCodeViewController.xib in Resources */,
@@ -3090,7 +3091,7 @@
 				0874A4F81B62309300007951 /* MDRadialProgressViewDemo.m in Sources */,
 				0874A4EF1B62274100007951 /* RTLabelTableViewCell.m in Sources */,
 				08F27D571B550ABC0039DF49 /* ListHeaderView.m in Sources */,
-				0843EFAD1AE4EAC100220F15 /* HZAreaPickerViewDemo.m in Sources */,
+				0843EFAD1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m in Sources */,
 				0843EFC01AE4F13700220F15 /* DMLazyScrollView.m in Sources */,
 				0843F0C31AE502D200220F15 /* UIViewController+Animator.m in Sources */,
 				08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */,
@@ -3105,7 +3106,6 @@
 				08D7D97A1AE619D500543F2A /* CubeViewController.m in Sources */,
 				0843EE871AE4D93D00220F15 /* FourViewController.m in Sources */,
 				0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */,
-				0843EFA91AE4EA8400220F15 /* HZLocation.m in Sources */,
 				0874A4E91B62273100007951 /* RTLabel.m in Sources */,
 				0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */,
 				08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */,
@@ -3166,6 +3166,7 @@
 				0843F0941AE502AE00220F15 /* MotionEffectViewController.m in Sources */,
 				0843F0CD1AE506D600220F15 /* MasterViewController.m in Sources */,
 				08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */,
+				08EDD06E1BF179EE00FF110E /* TYGArea.m in Sources */,
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
@@ -3212,6 +3213,7 @@
 				0843F0C01AE502D200220F15 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				0843F0A51AE502AE00220F15 /* SpriteKitViewController.m in Sources */,
 				08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */,
+				08EDD06F1BF179EE00FF110E /* TYGAreaPickerView.m in Sources */,
 				08F27D551B550ABC0039DF49 /* MultilineTextItem.m in Sources */,
 				08D7D9901AE620E700543F2A /* SVProgressHUDViewController.m in Sources */,
 				0843F09D1AE502AE00220F15 /* SloMoVideoRecordViewController.m in Sources */,
@@ -3231,8 +3233,8 @@
 				0843EFC41AE4F15000220F15 /* DMLazyScrollViewViewController.m in Sources */,
 				0843F0001AE4FADE00220F15 /* MYBlurIntroductionDemo.m in Sources */,
 				08F20B8F1B677BF3005F092A /* TSQTACalendarRowCell.m in Sources */,
+				08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */,
 				08DA8B991B28233C00999A2C /* TYGWebViewController.m in Sources */,
-				0843EFA71AE4EA8400220F15 /* HZAreaPickerView.m in Sources */,
 				08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */,
 				0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */,
 				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,

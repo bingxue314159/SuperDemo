@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2879D1CE3313AD9F768CBA6F"
+               BlueprintIdentifier = "B6E0A9F3F44BE5FCC20E73EE"
                BuildableName = "libTimesSquare.a"
                BlueprintName = "TimesSquare"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -32,7 +32,7 @@
     [titleArray addObject:@"选取器DEMO1-IQActionSheetDemo"];
     [titleArray addObject:@"选取器DEMO2-ActionSheetPickerTableViewController"];
     [titleArray addObject:@"选取器DEMO3-kDropDownSelectDemo"];
-    [titleArray addObject:@"地区选取器-HZAreaPickerViewDemo"];
+    [titleArray addObject:@"地区选取器-TYGAreaPickerViewDemo"];
     [titleArray addObject:@"照片选取器-TYGUzysViewController"];
     [titleArray addObject:@"照片浏览器-MWPhotoBrowserDemo"];
     

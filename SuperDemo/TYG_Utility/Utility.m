@@ -485,15 +485,54 @@
 }
 
 /**
- * 功能：安全加载视图控制器，当要加载的视图控制器A已存在时，会把A以上的视图控制器弹出，保留A,如果isRefresh = YES,A也弹出
- * 参数：flagViewController-要加载的视图控制器 isRefresh--是否更新已存在的视图控制器
- * 返回：
+ *  安全的多级弹出视图控制器
+ *  @param naviController 要执行弹出的视图控制器
+ *  @param level          弹出的层级数
+ *  @param animated       是否有动画效果
  */
-+ (void)SafePushViewController:(UIViewController *)flagViewController isRefreshOldView:(BOOL) isRefresh{
++ (void)SafePopViewController:(UINavigationController *)naviController level:(NSInteger) level isAnimated:(BOOL)animated{
     
-    UIViewController *RootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if (nil == naviController || level <= 0) {
+        return;
+    }
     
-    NSArray *chileController = RootViewController.navigationController.childViewControllers;
+    NSArray *chileController = naviController.childViewControllers;
+    NSInteger count = [chileController count];
+    if (count > level) {
+        UIViewController *controller;
+        
+        NSInteger maxIndex = count - 1;
+        for (NSInteger i = maxIndex; i >= 0; i--) {
+            controller = [chileController objectAtIndex:i];
+            level--;
+            
+            if (level == 0) {
+                [controller.navigationController popViewControllerAnimated:animated];
+                break;
+            }
+            else{
+                [controller.navigationController popViewControllerAnimated:NO];
+            }
+        }
+        
+        controller = nil;
+    }
+    else{
+        NSLog(@"MoveRightView message:RootViewController没有视图加载");
+    }
+    
+}
+
+/**
+ *  安全加载视图控制器，当要加载的视图控制器A已存在时，会把A以上的视图控制器弹出，保留A,如果isRefresh = YES,A也弹出
+ *  @param flagViewController 要加载的视图控制器
+ *  @param naviController     要执行弹出的视图控制器
+ *  @param isRefresh          是否更新已存在的视图控制器
+ *  @param isAnimated         是否支持动画
+ */
++ (void)SafePushViewController:(UIViewController *)flagViewController fromNaviController:(UINavigationController *)naviController isRefreshOldView:(BOOL) isRefresh isAnimated:(BOOL)isAnimated{
+    
+    NSArray *chileController = naviController.childViewControllers;
     NSInteger count = [chileController count];
     BOOL isOldView = NO;
     if (count >= 1 && flagViewController != nil) {
@@ -503,11 +542,11 @@
             
             if ([flagViewController isKindOfClass:[controller class]]) {
                 isOldView = YES;
-                for (int y = (count-1); y > i; y--) {
+                for (NSInteger y = (count-1); y > i; y--) {
                     UIViewController *controllerY = [chileController objectAtIndex:y];
                     //此处的动画效果一定要为NO，否则会因为POP太连续，导致动画效果没有执行完毕，从而不执行POP操作了
                     [controllerY.navigationController popViewControllerAnimated:NO];
-                    NSLog(@"MoveRightView message:pop %@",controllerY);
+                    NSLog(@"pop %@",controllerY);
                     
                 }
                 
@@ -520,19 +559,30 @@
         }
         
         if (!isOldView || isRefresh) {
-            [RootViewController.navigationController pushViewController:flagViewController animated:NO];
+            [naviController pushViewController:flagViewController animated:isAnimated];
         }
         
         controller = nil;
         flagViewController = nil;
-        NSLog(@"MoveRightView message: all controller = %@",RootViewController.navigationController.childViewControllers);
+        NSLog(@"childViewControllers = %@",naviController.childViewControllers);
     }
     else{
-        NSLog(@"MoveRightView message:RootViewController没有视图加载");
+        NSLog(@"没有视图加载");
     }
-    
 }
 
+/**
+ *  pop到A 再 push B
+ *  @param viewControllerA 视图控制器
+ *  @param viewControllerB 视图控制器
+ *  @param naviController  导航器
+ *  @param isAnimated      是否支持动画
+ */
++ (void)SafePopToViewController:(UIViewController *)viewControllerA thenPuthViewController:(UIViewController *)viewControllerB fromNaviController:(UINavigationController *)naviController isAnimated:(BOOL)isAnimated{
+    
+    [self SafePushViewController:viewControllerA fromNaviController:naviController isRefreshOldView:NO isAnimated:NO];
+    [naviController pushViewController:viewControllerB animated:isAnimated];
+}
 
 // 将字典或者数组转化为JSON串
 +(NSString *) safeToJSON:(NSDictionary *) dic{

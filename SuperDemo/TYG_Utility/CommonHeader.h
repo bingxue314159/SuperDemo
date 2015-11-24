@@ -40,6 +40,8 @@
 #define AppVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 //App build版本号 e.g. 1.1.0
 #define AppBuildVersion [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+//App BundleIdentifier e.g. com.baidu.test
+#define AppBundleIdentifier [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]
 
 //屏幕尺寸的宽高与scale的乘积就是相应的分辨率值。
 #define SystemScale [UIScreen mainScreen].scale

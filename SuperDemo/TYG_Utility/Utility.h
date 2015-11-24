@@ -123,12 +123,31 @@
  */
 + (id)safeGetObjectFromDic:(NSDictionary *)dic key:(NSString *)key;
 
-/*
- * 功能：安全加载视图控制器，当要加载的视图控制器A已存在时，会把A以上的视图控制器弹出，保留A,如果isRefresh = YES,A也弹出
- * 参数：flagViewController-要加载的视图控制器 isRefresh--是否更新已存在的视图控制器
- * 返回：
+/**
+ *  安全的多级弹出视图控制器
+ *  @param naviController 要执行弹出的视图控制器
+ *  @param level          弹出的层级数
+ *  @param animated       是否有动画效果
  */
-+ (void)SafePushViewController:(UIViewController *)flagViewController isRefreshOldView:(BOOL) isRefresh;
++ (void)SafePopViewController:(UINavigationController *)naviController level:(NSInteger) level isAnimated:(BOOL)animated;
+
+/**
+ *  安全加载视图控制器，当要加载的视图控制器A已存在时，会把A以上的视图控制器弹出，保留A,如果isRefresh = YES,A也弹出
+ *  @param flagViewController 要加载的视图控制器
+ *  @param naviController     要执行弹出的视图控制器
+ *  @param isRefresh          是否更新已存在的视图控制器
+ *  @param isAnimated         是否支持动画
+ */
++ (void)SafePushViewController:(UIViewController *)flagViewController fromNaviController:(UINavigationController *)naviController isRefreshOldView:(BOOL) isRefresh isAnimated:(BOOL)isAnimated;
+
+/**
+ *  pop到A 再 push B
+ *  @param viewControllerA 视图控制器
+ *  @param viewControllerB 视图控制器
+ *  @param naviController  导航器
+ *  @param isAnimated      是否支持动画
+ */
++ (void)SafePopToViewController:(UIViewController *)viewControllerA thenPuthViewController:(UIViewController *)viewControllerB fromNaviController:(UINavigationController *)naviController isAnimated:(BOOL)isAnimated;
 
 /**
  * 将字典或者数组转化为JSON串

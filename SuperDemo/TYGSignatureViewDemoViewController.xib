@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYGSignatureViewDemoViewController">
+            <connections>
+                <outlet property="seg" destination="rhd-sX-cEc" id="RoI-0O-SdF"/>
+                <outlet property="signatureView" destination="D9G-XE-PJE" id="KUR-Ov-6ee"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-sX-cEc">
+                    <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="iIK-xb-E4v"/>
+                    </constraints>
+                    <segments>
+                        <segment title="连点成线"/>
+                        <segment title="二次贝塞尔曲线"/>
+                        <segment title="可变的笔刷宽度"/>
+                    </segments>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="iIK-xb-E4v"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="iIK-xb-E4v"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="seg:" destination="-1" eventType="valueChanged" id="Zhk-gf-CRJ"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9G-XE-PJE">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rhd-sX-cEc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7tp-7F-Qsb"/>
+                <constraint firstAttribute="bottom" secondItem="rhd-sX-cEc" secondAttribute="bottom" constant="8" id="fZM-2y-Pdl"/>
+                <constraint firstAttribute="trailing" secondItem="D9G-XE-PJE" secondAttribute="trailing" id="gzl-MF-e1u"/>
+                <constraint firstItem="rhd-sX-cEc" firstAttribute="top" secondItem="D9G-XE-PJE" secondAttribute="bottom" constant="8" id="iYe-fs-smK"/>
+                <constraint firstAttribute="trailing" secondItem="rhd-sX-cEc" secondAttribute="trailing" constant="8" id="kg0-CZ-aM7"/>
+                <constraint firstItem="D9G-XE-PJE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vai-gW-1WY"/>
+                <constraint firstItem="D9G-XE-PJE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vht-cC-zIf"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="rhd-sX-cEc"/>
+                    <exclude reference="D9G-XE-PJE"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="gzl-MF-e1u"/>
+                    <exclude reference="vai-gW-1WY"/>
+                    <exclude reference="vht-cC-zIf"/>
+                    <exclude reference="7tp-7F-Qsb"/>
+                    <exclude reference="fZM-2y-Pdl"/>
+                    <exclude reference="iYe-fs-smK"/>
+                    <exclude reference="kg0-CZ-aM7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="rhd-sX-cEc"/>
+                    <include reference="D9G-XE-PJE"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="gzl-MF-e1u"/>
+                    <include reference="vai-gW-1WY"/>
+                    <include reference="vht-cC-zIf"/>
+                    <include reference="7tp-7F-Qsb"/>
+                    <include reference="fZM-2y-Pdl"/>
+                    <include reference="iYe-fs-smK"/>
+                    <include reference="kg0-CZ-aM7"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

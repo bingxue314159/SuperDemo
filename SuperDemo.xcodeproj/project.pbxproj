@@ -320,6 +320,11 @@
 		08DA8B951B28201500999A2C /* TYGOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DA8B931B28201500999A2C /* TYGOtherViewController.xib */; };
 		08DA8B991B28233C00999A2C /* TYGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DA8B971B28233C00999A2C /* TYGWebViewController.m */; };
 		08DA8B9A1B28233C00999A2C /* TYGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DA8B981B28233C00999A2C /* TYGWebViewController.xib */; };
+		08DB58811C06D9020011D722 /* TYGSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB587C1C06D9020011D722 /* TYGSignatureView.m */; };
+		08DB58861C06D95A0011D722 /* TYGSignatureViewQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */; };
+		08DB58891C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */; };
+		08DB588D1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */; };
+		08DB588E1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */; };
 		08E9C8C51B0AD36A00DDF85C /* PopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */; };
 		08E9C8C61B0AD36A00DDF85C /* PopBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */; };
 		08EA56181B4381B7007ED35B /* BlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EA56161B4381B7007ED35B /* BlocksKitViewController.m */; };
@@ -989,6 +994,15 @@
 		08DA8B961B28233C00999A2C /* TYGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewController.h; sourceTree = "<group>"; };
 		08DA8B971B28233C00999A2C /* TYGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewController.m; sourceTree = "<group>"; };
 		08DA8B981B28233C00999A2C /* TYGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGWebViewController.xib; sourceTree = "<group>"; };
+		08DB587B1C06D9020011D722 /* TYGSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureView.h; sourceTree = "<group>"; };
+		08DB587C1C06D9020011D722 /* TYGSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureView.m; sourceTree = "<group>"; };
+		08DB58841C06D95A0011D722 /* TYGSignatureViewQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureViewQuartz.h; sourceTree = "<group>"; };
+		08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureViewQuartz.m; sourceTree = "<group>"; };
+		08DB58871C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureViewQuartzQuadratic.h; sourceTree = "<group>"; };
+		08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureViewQuartzQuadratic.m; sourceTree = "<group>"; };
+		08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureViewDemoViewController.h; sourceTree = "<group>"; };
+		08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureViewDemoViewController.m; sourceTree = "<group>"; };
+		08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGSignatureViewDemoViewController.xib; sourceTree = "<group>"; };
 		08E9C8C21B0AD36A00DDF85C /* PopBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBasicViewController.h; sourceTree = "<group>"; };
 		08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBasicViewController.m; sourceTree = "<group>"; };
 		08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopBasicViewController.xib; sourceTree = "<group>"; };
@@ -1354,6 +1368,7 @@
 				08F8BCE71B969212009FF488 /* TYGUIButton */,
 				0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */,
 				0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */,
+				08DB587A1C06D9020011D722 /* TYGSignature */,
 				0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */,
 				0843EECF1AE4DB0C00220F15 /* UIImage+FixOrientation.m */,
 				0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */,
@@ -1947,6 +1962,9 @@
 				08FC9F0E1BA2ADBF00CEE275 /* TYGValidViewController.h */,
 				08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */,
 				08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */,
+				08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */,
+				08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */,
+				08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */,
 				08A320D41B82CADD00943DE9 /* TYGIBView */,
 			);
 			name = TYGNotes;
@@ -2157,6 +2175,19 @@
 				08DA8B981B28233C00999A2C /* TYGWebViewController.xib */,
 			);
 			name = WebView;
+			sourceTree = "<group>";
+		};
+		08DB587A1C06D9020011D722 /* TYGSignature */ = {
+			isa = PBXGroup;
+			children = (
+				08DB587B1C06D9020011D722 /* TYGSignatureView.h */,
+				08DB587C1C06D9020011D722 /* TYGSignatureView.m */,
+				08DB58841C06D95A0011D722 /* TYGSignatureViewQuartz.h */,
+				08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */,
+				08DB58871C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.h */,
+				08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */,
+			);
+			path = TYGSignature;
 			sourceTree = "<group>";
 		};
 		08EC5DC31B953F390081C8CA /* UIList */ = {
@@ -3019,6 +3050,7 @@
 				08D7D9B71AE62BFD00543F2A /* IQKeyboardViewController.xib in Resources */,
 				0843EF031AE4DB7F00220F15 /* 发现_on@2x.png in Resources */,
 				08F27D601B550ABC0039DF49 /* photo5.jpg in Resources */,
+				08DB588E1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib in Resources */,
 				08F20B651B67292A005F092A /* photo7t.jpg in Resources */,
 				0843F0851AE502AE00220F15 /* CustomTransitionViewController.xib in Resources */,
 				0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */,
@@ -3082,6 +3114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08F27D541B550ABC0039DF49 /* ListImageItem.m in Sources */,
+				08DB58811C06D9020011D722 /* TYGSignatureView.m in Sources */,
 				08F20B811B6770D3005F092A /* ABCalendarPickerDemo.m in Sources */,
 				08A320BE1B82C29900943DE9 /* TYGAppVersionViewController.m in Sources */,
 				0843F0C41AE502D200220F15 /* ZBFallenBricksAnimator.m in Sources */,
@@ -3168,6 +3201,7 @@
 				08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */,
 				08EDD06E1BF179EE00FF110E /* TYGArea.m in Sources */,
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
+				08DB58861C06D95A0011D722 /* TYGSignatureViewQuartz.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				08A320B61B82C23B00943DE9 /* TYGDinwei.m in Sources */,
@@ -3179,6 +3213,7 @@
 				0843F0BE1AE502D200220F15 /* HUTransitionAnimator.m in Sources */,
 				08F19C8A1B4681C000722C9C /* TestTableViewController.m in Sources */,
 				0843F09C1AE502AE00220F15 /* SampleScene.m in Sources */,
+				08DB58891C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m in Sources */,
 				08EC5DCA1B954AF90081C8CA /* TTSwitchDemoViewController.m in Sources */,
 				08B2A1E91B85C49F00B89635 /* KLCPopupDemo.m in Sources */,
 				08F27D4C1B550ABC0039DF49 /* EditingViewController.m in Sources */,
@@ -3198,6 +3233,7 @@
 				08F27D501B550ABC0039DF49 /* RETableRootViewController.m in Sources */,
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
 				0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */,
+				08DB588D1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m in Sources */,
 				0843F0901AE502AE00220F15 /* MapOverlaysViewController.m in Sources */,
 				08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */,
 				08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */,

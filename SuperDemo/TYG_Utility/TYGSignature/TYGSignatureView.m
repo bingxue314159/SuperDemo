@@ -17,24 +17,24 @@ static GLKVector3 StrokeColor = { 0, 0, 0 };
 static float clearColor[4] = { 1, 1, 1, 0 };
 
 // Vertex structure containing 3D point and color
-struct PPSSignaturePoint
+struct TYGSignaturePoint
 {
 	GLKVector3		vertex;
 	GLKVector3		color;
 };
-typedef struct PPSSignaturePoint PPSSignaturePoint;
+typedef struct TYGSignaturePoint TYGSignaturePoint;
 
 // Maximum verteces in signature
 static const int maxLength = MAXIMUM_VERTECES;
 
 // Append vertex to array buffer
-static inline void addVertex(uint *length, PPSSignaturePoint v) {
+static inline void addVertex(uint *length, TYGSignaturePoint v) {
     if ((*length) >= maxLength) {
         return;
     }
     
     GLvoid *data = glMapBufferOES(GL_ARRAY_BUFFER, GL_WRITE_ONLY_OES);
-    memcpy(data + sizeof(PPSSignaturePoint) * (*length), &v, sizeof(PPSSignaturePoint));
+    memcpy(data + sizeof(TYGSignaturePoint) * (*length), &v, sizeof(TYGSignaturePoint));
     glUnmapBufferOES(GL_ARRAY_BUFFER);
     
     (*length)++;
@@ -55,7 +55,7 @@ static float generateRandom(float from, float to) { return random() % 10000 / 10
 static float clamp(float min, float max, float value) { return fmaxf(min, fminf(max, value)); }
 
 // Find perpendicular vector from two other vectors to compute triangle strip around line
-static GLKVector3 perpendicular(PPSSignaturePoint p1, PPSSignaturePoint p2) {
+static GLKVector3 perpendicular(TYGSignaturePoint p1, TYGSignaturePoint p2) {
     GLKVector3 ret;
     ret.x = p2.vertex.y - p1.vertex.y;
     ret.y = -1 * (p2.vertex.x - p1.vertex.x);
@@ -63,9 +63,9 @@ static GLKVector3 perpendicular(PPSSignaturePoint p1, PPSSignaturePoint p2) {
     return ret;
 }
 
-static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVector3 color) {
+static TYGSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVector3 color) {
 
-    return (PPSSignaturePoint) {
+    return (TYGSignaturePoint) {
         {
             (viewPoint.x / bounds.size.width * 2.0 - 1),
             ((viewPoint.y / bounds.size.height) * 2.0 - 1) * -1,
@@ -86,10 +86,10 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     GLuint dotsBuffer;
     
     // Array of verteces, with current length
-    PPSSignaturePoint SignatureVertexData[maxLength];
+    TYGSignaturePoint SignatureVertexData[maxLength];
     uint length;
     
-    PPSSignaturePoint SignatureDotsData[maxLength];
+    TYGSignaturePoint SignatureDotsData[maxLength];
     uint dotsLength;
     
     // Width of line at current and previous vertex
@@ -99,8 +99,8 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     // Previous points for quadratic bezier computations
     CGPoint previousPoint;
     CGPoint previousMidPoint;
-    PPSSignaturePoint previousVertex;
-    PPSSignaturePoint currentVelocity;
+    TYGSignaturePoint previousVertex;
+    TYGSignaturePoint currentVelocity;
 }
 
 @end
@@ -235,10 +235,10 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     if (t.state == UIGestureRecognizerStateRecognized) {
         glBindBuffer(GL_ARRAY_BUFFER, dotsBuffer);
         
-        PPSSignaturePoint touchPoint = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
+        TYGSignaturePoint touchPoint = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
         addVertex(&dotsLength, touchPoint);
         
-        PPSSignaturePoint centerPoint = touchPoint;
+        TYGSignaturePoint centerPoint = touchPoint;
         centerPoint.color = StrokeColor;
         addVertex(&dotsLength, centerPoint);
 
@@ -252,7 +252,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         
         for (int i = 0; i <= segments; i++) {
             
-            PPSSignaturePoint p = centerPoint;
+            TYGSignaturePoint p = centerPoint;
             p.vertex.x += velocityRadius.x * cosf(angle);
             p.vertex.y += velocityRadius.y * sinf(angle);
             
@@ -300,7 +300,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         previousPoint = l;
         previousMidPoint = l;
         
-        PPSSignaturePoint startPoint = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
+        TYGSignaturePoint startPoint = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
         previousVertex = startPoint;
         previousThickness = penThickness;
         
@@ -329,14 +329,14 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
                 
                 CGPoint quadPoint = QuadraticPointInCurve(previousMidPoint, mid, previousPoint, (float)i / (float)(segments));
                 
-                PPSSignaturePoint v = ViewPointToGL(quadPoint, self.bounds, StrokeColor);
+                TYGSignaturePoint v = ViewPointToGL(quadPoint, self.bounds, StrokeColor);
                 [self addTriangleStripPointsForPrevious:previousVertex next:v];
                 
                 previousVertex = v;
             }
         } else if (distance > 1.0) {
             
-            PPSSignaturePoint v = ViewPointToGL(l, self.bounds, StrokeColor);
+            TYGSignaturePoint v = ViewPointToGL(l, self.bounds, StrokeColor);
             [self addTriangleStripPointsForPrevious:previousVertex next:v];
             
             previousVertex = v;            
@@ -348,7 +348,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
 
     } else if (p.state == UIGestureRecognizerStateEnded | p.state == UIGestureRecognizerStateCancelled) {
         
-        PPSSignaturePoint v = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
+        TYGSignaturePoint v = ViewPointToGL(l, self.bounds, (GLKVector3){1, 1, 1});
         addVertex(&length, v);
         
         previousVertex = v;
@@ -391,7 +391,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
 
 - (void)bindShaderAttributes {
     glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(PPSSignaturePoint), 0);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(TYGSignaturePoint), 0);
 //    glEnableVertexAttribArray(GLKVertexAttribColor);
 //    glVertexAttribPointer(GLKVertexAttribColor, 3, GL_FLOAT, GL_FALSE,  6 * sizeof(GLfloat), (char *)12);
 }
@@ -441,7 +441,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     previousPoint = CGPointMake(-100, -100);
 }
 
-- (void)addTriangleStripPointsForPrevious:(PPSSignaturePoint)previous next:(PPSSignaturePoint)next {
+- (void)addTriangleStripPointsForPrevious:(TYGSignaturePoint)previous next:(TYGSignaturePoint)next {
     float toTravel = penThickness / 2.0;
     
     for (int i = 0; i < 2; i++) {
@@ -457,7 +457,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         difX = difX * ratio;
         difY = difY * ratio;
                 
-        PPSSignaturePoint stripPoint = {
+        TYGSignaturePoint stripPoint = {
             { p1.x + difX, p1.y + difY, 0.0 },
             StrokeColor
         };

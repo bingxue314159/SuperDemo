@@ -14,4 +14,9 @@
 
 @interface TYGSignatureViewQuartz : UIView
 
+/**
+ *  擦除(清空画板)
+ */
+- (void)erase;
+
 @end

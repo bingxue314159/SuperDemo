@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080069991C0BFE1B00FE9A2A /* TYGSignatureLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */; };
 		080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */; };
 		080E5A091B21923C00F54F44 /* QBPopupMenuDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */; };
 		0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0814C6781B9EDBCC0061BDA3 /* TYGValid.m */; };
@@ -546,6 +547,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080069971C0BFE1B00FE9A2A /* TYGSignatureLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureLineView.h; sourceTree = "<group>"; };
+		080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureLineView.m; sourceTree = "<group>"; };
 		080E5A051B2191F800F54F44 /* QBPopupMenuDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPopupMenuDemo.h; sourceTree = "<group>"; };
 		080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBPopupMenuDemo.m; sourceTree = "<group>"; };
 		080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QBPopupMenuDemo.xib; sourceTree = "<group>"; };
@@ -2186,6 +2189,8 @@
 				08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */,
 				08DB58871C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.h */,
 				08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */,
+				080069971C0BFE1B00FE9A2A /* TYGSignatureLineView.h */,
+				080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */,
 			);
 			path = TYGSignature;
 			sourceTree = "<group>";
@@ -3191,6 +3196,7 @@
 				08A320BA1B82C27100943DE9 /* TYGAPPVersion.m in Sources */,
 				08FC9EFB1BA268AF00CEE275 /* TYGEncryptDecrypt.m in Sources */,
 				08EC5DC61B953FAE0081C8CA /* TYGUIListTableViewController.m in Sources */,
+				080069991C0BFE1B00FE9A2A /* TYGSignatureLineView.m in Sources */,
 				0843EEDB1AE4DB0C00220F15 /* TYG_UIItems.m in Sources */,
 				0843F0BD1AE502D200220F15 /* AVCaptureManager.m in Sources */,
 				0843F07E1AE502AE00220F15 /* ActivityTrackingViewController.m in Sources */,

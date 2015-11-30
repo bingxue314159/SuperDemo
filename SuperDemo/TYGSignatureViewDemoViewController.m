@@ -10,6 +10,7 @@
 #import "TYGSignatureView.h"
 #import "TYGSignatureViewQuartz.h"
 #import "TYGSignatureViewQuartzQuadratic.h"
+#import "TYGSignatureLineView.h"
 
 #import "TYG_allHeadFiles.h"
 
@@ -18,6 +19,7 @@
     TYGSignatureViewQuartz *view1;
     TYGSignatureViewQuartzQuadratic *view2;
     TYGSignatureView *view3;
+    TYGSignatureLineView *view4;
     
 }
 
@@ -53,6 +55,7 @@
 - (IBAction)seg:(UISegmentedControl *)sender {
     
     SAFE_emptyView(self.signatureView);
+    self.signatureView.tag = sender.selectedSegmentIndex;
     
     switch (sender.selectedSegmentIndex) {
         case 0:{
@@ -90,8 +93,63 @@
             [self.signatureView addSubview:view3];
             break;
         }
+        case 3:{
+            //油墨笔
+            if (nil == view4) {
+                view4 = [[TYGSignatureLineView alloc] init];
+                view4.frame = self.signatureView.bounds;
+                view4.backgroundColor = [Utility RandomColor];
+                
+                view4.lineColor = [UIColor redColor];
+            }
+            
+            [self.signatureView addSubview:view4];
+            break;
+        }
         default:
             break;
     }
+    
+    // Erase with long press
+    self.signatureView.userInteractionEnabled = YES;
+    UILongPressGestureRecognizer *longer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+    longer.cancelsTouchesInView = YES;
+    [self.signatureView addGestureRecognizer:longer];
+}
+
+//长按事件
+- (void)longPress:(UILongPressGestureRecognizer *)lp {
+    UIView *view = lp.view;
+
+    switch (view.tag) {
+        case 0:{
+            if (view1) {
+                [view1 erase];
+            }
+            
+            break;
+        }
+        case 1:{
+            if (view2) {
+                [view2 erase];
+            }
+            break;
+        }
+        case 2:{
+            if (view3) {
+                [view3 erase];
+            }
+            break;
+        }
+        case 3:{
+            if (view4) {
+                [view4 erase];
+            }
+            break;
+        }
+        default:
+            break;
+    }
+    
 }
 @end

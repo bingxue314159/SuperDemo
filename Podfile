@@ -4,21 +4,21 @@ pod "AFNetworking", "~> 2.0"
 pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
 pod 'IQKeyboardManager', '~> 3.2.3' #解决键盘遮挡住输入框的问题
 
-pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个扩展
+pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个扩展(推荐)
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
 
 pod 'pop', '~> 1.0' #FaceBook 动画库
 pod 'Masonry'   #一个轻量级的布局框架 拥有自己的描述语法 采用更优雅的链式语法封装自动布局 简洁明了 并具有高可读性 而且同时支持 iOS 和 Max OS X
 
-pod 'MJExtension', '~> 2.5.12'  #转换速度快、使用简单方便的字典转模型框
+pod 'MJExtension', '~> 2.5.12'  #转换速度快、使用简单方便的字典转模型框(非侵入式，推荐)
 
 #----------------------Progress & HUD & PopTip----------------------
-pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果
-pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果
-pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）
+pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果(推荐)
+pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果，可自定义程度高
+pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）(推荐)
 pod 'AMPopTip', '~> 0.9.12'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 
-pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库
+pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库（效果不太明显，可用M13ProgressSuite）
 pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
 pod 'LDProgressView', '~> 1.2.1'    # 实现扁平化风格或者或者非扁平化风格的ProgressView，可以给ProgressView添加动态条纹背景
 
@@ -32,20 +32,24 @@ pod 'KLCPopup', '~> 1.0'    #可用于展示任何自定义弹出视图,包含�
 #----------------------UI控件----------------------
 pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
-pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器
+pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器（推荐）
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）
 pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
 
 pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
+pod 'M13ProgressSuite', '~> 1.2.7'  #是一套包含很多 iOS 显示进度信息套件的工具
 pod 'CubeController', '~> 1.2.1'    #3D转场
 pod 'iCarousel', '~> 1.8.1' #实现各种各样的cover flow效果
 pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRatingView.git'   #评分星星
 
 pod 'RETableViewManager', '~> 1.6'  #快速创建表单
+pod 'QuickDialog', '~> 1.1.0'   #快速创建表单(推荐)
 pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
 pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
 
+#----------------------图表控件----------------------
+pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库
 
 #----------------------原生UI控件的替代----------------------
 pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多的定制功能，可更改颜色、间隙宽度、样式和直径
@@ -80,3 +84,5 @@ pod 'PDTSimpleCalendar', '~> 0.8.0' #日历组件,可以在各个方面对它进
 pod 'TimesSquare', '~> 1.0.2'   #日历组件
 pod 'ABCalendarPicker', '~> 1.1.2'  #日历组件
 pod 'DateTools', '~> 1.7.0' #可能是最好用的iOS日期工具库
+
+

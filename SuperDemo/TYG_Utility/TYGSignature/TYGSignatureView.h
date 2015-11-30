@@ -17,7 +17,6 @@
 
 /**
  *  擦除(清空画板)
- *  执行动作：长按UILongPressGestureRecognizer
  */
 - (void)erase;
 

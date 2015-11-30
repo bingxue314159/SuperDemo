@@ -26,9 +26,6 @@
     pan.maximumNumberOfTouches = pan.minimumNumberOfTouches = 1;
     [self addGestureRecognizer:pan];
     
-    // Erase with long press
-    [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(erase)]];
-    
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder

@@ -33,10 +33,6 @@ static CGPoint midpoint(CGPoint p0, CGPoint p1) {
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     pan.maximumNumberOfTouches = pan.minimumNumberOfTouches = 1;
     [self addGestureRecognizer:pan];
-    
-    // Erase with long press
-    [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(erase)]];
-    
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder

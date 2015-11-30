@@ -1,16 +1,16 @@
 #import "TYGSignatureView.h"
 #import <OpenGLES/ES2/glext.h>
 
-#define             STROKE_WIDTH_MIN 0.004 // Stroke width determined by touch velocity
-#define             STROKE_WIDTH_MAX 0.030
-#define       STROKE_WIDTH_SMOOTHING 0.5   // Low pass filter alpha
+#define             STROKE_WIDTH_MIN 0.004 // 笔划宽度取决于速度0.004
+#define             STROKE_WIDTH_MAX 0.030  //0.030
+#define       STROKE_WIDTH_SMOOTHING 0.5   // Low pass filter alpha 0.5
 
-#define           VELOCITY_CLAMP_MIN 20
-#define           VELOCITY_CLAMP_MAX 5000
+#define           VELOCITY_CLAMP_MIN 20     //最小速率20
+#define           VELOCITY_CLAMP_MAX 5000   //最大速率5000
 
-#define QUADRATIC_DISTANCE_TOLERANCE 3.0   // Minimum distance to make a curve
+#define QUADRATIC_DISTANCE_TOLERANCE 3.0   // 最小容宽距离Minimum distance to make a curve 3.0
 
-#define             MAXIMUM_VERTECES 100000
+#define             MAXIMUM_VERTECES 100000 //100000
 
 
 static GLKVector3 StrokeColor = { 0, 0, 0 };
@@ -168,10 +168,7 @@ static TYGSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
         tap.cancelsTouchesInView = YES;
         [self addGestureRecognizer:tap];
         
-        // Erase with long press
-        UILongPressGestureRecognizer *longer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-        longer.cancelsTouchesInView = YES;
-        [self addGestureRecognizer:longer];
+//        [tap requireGestureRecognizerToFail:pan];
         
     } else [NSException raise:@"NSOpenGLES2ContextException" format:@"Failed to create OpenGL ES2 context"];
 }
@@ -229,6 +226,7 @@ static TYGSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
 
 
 #pragma mark - Gesture Recognizers
+//点击事件
 - (void)tap:(UITapGestureRecognizer *)t {
     CGPoint l = [t locationInView:self];
     
@@ -270,15 +268,12 @@ static TYGSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     [self setNeedsDisplay];
 }
 
-- (void)longPress:(UILongPressGestureRecognizer *)lp {
-    [self erase];
-}
-
+//拖动事件
 - (void)pan:(UIPanGestureRecognizer *)p {
     
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
     
-    CGPoint v = [p velocityInView:self];
+    CGPoint v = [p velocityInView:self];//当前触摸点的速度
     CGPoint l = [p locationInView:self];
     
     currentVelocity = ViewPointToGL(v, self.bounds, (GLKVector3){0,0,0});
@@ -410,11 +405,10 @@ static TYGSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
     glGenVertexArraysOES(1, &vertexArray);
     glBindVertexArrayOES(vertexArray);
     
-    glGenBuffers(1, &vertexBuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+    glGenBuffers(1, &vertexBuffer);//创建一个渲染缓冲区对象
+    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);//将该渲染缓冲区对象绑定到管
     glBufferData(GL_ARRAY_BUFFER, sizeof(SignatureVertexData), SignatureVertexData, GL_DYNAMIC_DRAW);
     [self bindShaderAttributes];
-    
     
     // Signature Dots
     glGenVertexArraysOES(1, &dotsArray);

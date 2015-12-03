@@ -73,14 +73,16 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
 //    [self.tableView addHeaderWithTarget:self action:@selector(headerRereshing)];
     // dateKey用于存储刷新时间，可以保证不同界面拥有不同的刷新时间
 //    [self.tableView addHeaderWithTarget:self action:@selector(headerRereshing) dateKey:@"table"];
-    [self.tableView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(headerRereshing) dateKey:@"table"];
+//    [self.tableView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(headerRereshing) dateKey:@"table"];
     
-    [self.tableView.header beginRefreshing];
+    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+    [self.tableView.mj_header beginRefreshing];
     
     // 2.上拉加载更多(进入刷新状态就会调用self的footerRereshing)
 //    [self.tableView addFooterWithTarget:self action:@selector(footerRereshing)];
-    [self.tableView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+//    [self.tableView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
     
+    self.tableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
 }
 
 #pragma mark 开始进入刷新状态
@@ -97,7 +99,8 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
         [self.tableView reloadData];
         
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-        [self.tableView headerEndRefreshing];
+//        [self.tableView headerEndRefreshing];
+        [self.tableView.mj_header endRefreshing];
     });
 }
 
@@ -114,7 +117,8 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
         [self.tableView reloadData];
         
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-        [self.tableView footerEndRefreshing];
+//        [self.tableView footerEndRefreshing];
+        [self.tableView.mj_footer endRefreshing];
     });
 }
 

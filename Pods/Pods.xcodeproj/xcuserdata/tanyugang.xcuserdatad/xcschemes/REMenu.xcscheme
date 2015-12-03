@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6793499BA99EFBFAB3BC1D2"
+               BlueprintIdentifier = "7713F4371C0D9B6ABC9590A3"
                BuildableName = "libREMenu.a"
                BlueprintName = "REMenu"
                ReferencedContainer = "container:Pods.xcodeproj">

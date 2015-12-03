@@ -41,19 +41,21 @@
     
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];
     self.scrollView.backgroundColor = [UIColor yellowColor];
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*1.5);
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height*1.1);
     [self.view addSubview:self.scrollView];
     
 //    [self.scrollView addHeaderWithTarget:self action:@selector(headerRereshing)];
-    [self.scrollView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(headerRereshing) dateKey:@"mjScorll"];
+//    [self.scrollView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(headerRereshing) dateKey:@"mjScorll"];
     
-#warning 自动刷新(一进入程序就下拉刷新)
-//    [self.scrollView headerBeginRefreshing];
-    [self.scrollView.header beginRefreshing];
+    self.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+    
+
+    [self.scrollView.mj_header beginRefreshing];
     
     // 2.上拉加载更多(进入刷新状态就会调用self的footerRereshing)
 //    [self.scrollView addFooterWithTarget:self action:@selector(footerRereshing)];
-    [self.scrollView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+//    [self.scrollView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+    self.scrollView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
     
 }
 
@@ -68,7 +70,8 @@
 
         
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-        [self.scrollView headerEndRefreshing];
+//        [self.scrollView headerEndRefreshing];
+        [self.scrollView.mj_header endRefreshing];
     });
 }
 
@@ -81,7 +84,8 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-        [self.scrollView footerEndRefreshing];
+//        [self.scrollView footerEndRefreshing];
+        [self.scrollView.mj_footer endRefreshing];
     });
 }
 

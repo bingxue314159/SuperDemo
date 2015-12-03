@@ -75,14 +75,14 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
 //    [self.tableView addHeaderWithTarget:self action:@selector(headerRereshing) dateKey:@"table"];
 //    [self.tableView addLegendHeaderWithRefreshingTarget:self refreshingAction:@selector(headerRereshing) dateKey:@"table"];
     
-    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
     [self.tableView.mj_header beginRefreshing];
     
     // 2.上拉加载更多(进入刷新状态就会调用self的footerRereshing)
 //    [self.tableView addFooterWithTarget:self action:@selector(footerRereshing)];
 //    [self.tableView addLegendFooterWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
     
-    self.tableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
 }
 
 #pragma mark 开始进入刷新状态

@@ -84,7 +84,8 @@
 {
     __unsafe_unretained typeof(self) vc = self;
     // 添加下拉刷新头部控件
-    [self.collectionView addHeaderWithCallback:^{
+    
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         // 进入刷新状态就会回调这个Block
         
         // 增加5条假数据
@@ -96,20 +97,18 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [vc.collectionView reloadData];
             // 结束刷新
-            [vc.collectionView headerEndRefreshing];
+            [vc.collectionView.mj_header endRefreshing];
         });
-    } dateKey:@"collection"];
-    // dateKey用于存储刷新时间，也可以不传值，可以保证不同界面拥有不同的刷新时间
+    }];
     
-#warning 自动刷新(一进入程序就下拉刷新)
-    [self.collectionView headerBeginRefreshing];
+    [self.collectionView.mj_header beginRefreshing];
 }
 
 - (void)addFooter
 {
     __unsafe_unretained typeof(self) vc = self;
     // 添加上拉刷新尾部控件
-    [self.collectionView addFooterWithCallback:^{
+    self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         // 进入刷新状态就会回调这个Block
         
         // 增加5条假数据
@@ -121,9 +120,10 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [vc.collectionView reloadData];
             // 结束刷新
-            [vc.collectionView footerEndRefreshing];
+            [vc.collectionView.mj_footer endRefreshing];
         });
     }];
+    
 }
 
 /**

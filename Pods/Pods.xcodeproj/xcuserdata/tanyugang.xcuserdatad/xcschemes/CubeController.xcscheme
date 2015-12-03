@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47A38796FF0C325F85565E90"
+               BlueprintIdentifier = "BBAB799C6F5D76E827655B5E"
                BuildableName = "libCubeController.a"
                BlueprintName = "CubeController"
                ReferencedContainer = "container:Pods.xcodeproj">

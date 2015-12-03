@@ -113,17 +113,6 @@
     //导航栏背景
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"view1NavBg.png"] forBarMetrics:UIBarMetricsDefault];
     
-    /*
-    if (SystemVersion >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:Color_NavBar_BACKGROUND];
-        //状态栏风格--需要配合配置表
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
-    else {
-        [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]];
-    }
-     */
-    
     //隐藏那条黑线
 //    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     
@@ -135,6 +124,23 @@
         self.navBarController3.navigationBar.translucent = NO;
         self.navBarController4.navigationBar.translucent = NO;
     }
+    
+    /*
+     if (SystemVersion >= 7.0) {
+         [[UINavigationBar appearance] setBarTintColor:Color_NavBar_BACKGROUND];
+     }
+     else {
+         [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]];
+     }
+     */
+    
+    //状态栏风格--需要配合配置表,将 View controller-based status bar appearance 设置为NO（默认为 YES）：
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //设置状态栏风格,iOS9不建议使用
+    //iOS9后，建议Use -[UIViewController preferredStatusBarStyle]
+    self.navBarController1.navigationBar.barStyle = UIBarStyleBlack;
+    self.navBarController2.navigationBar.barStyle = UIBarStyleBlack;
+    self.navBarController3.navigationBar.barStyle = UIBarStyleBlack;
+    self.navBarController4.navigationBar.barStyle = UIBarStyleBlack;
     
     //自定义返回按钮
     UIImage *backButtonImage_OFF = [[UIImage imageNamed:@"back_ON_25.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
@@ -161,5 +167,11 @@
     //    self.viewControllers = [NSArray arrayWithObjects:firstViewController,secondViewController,thirdViewController,fourViewController, nil];
 }
 
-
+//设置状态栏的白色(一定要在rootViewController的中设置)
+//最好的方法是在navBarController1的rootViewController中调用：
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    //PS：此法的只有在设置了以下代码才会被调用（对于preferredStatusBarStyle不执行问题）：
+    //[self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    return UIStatusBarStyleLightContent;
+}
 @end

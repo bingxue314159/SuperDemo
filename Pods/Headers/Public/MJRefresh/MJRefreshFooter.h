@@ -1,1 +1,1 @@
-../../../MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefreshFooter.h
+../../../MJRefresh/MJRefresh/Base/MJRefreshFooter.h

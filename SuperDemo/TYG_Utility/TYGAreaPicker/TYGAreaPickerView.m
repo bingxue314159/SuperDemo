@@ -42,10 +42,10 @@
         provinces = [self readCityData];
         self.locate.province = [provinces firstObject];
         
-        cities = [TYGArea objectArrayWithKeyValuesArray:self.locate.province.childObjArray];
+        cities = [TYGArea mj_objectArrayWithKeyValuesArray:self.locate.province.childObjArray];
         self.locate.city = [cities firstObject];
 
-        districts = [TYGArea objectArrayWithKeyValuesArray:self.locate.city.childObjArray];
+        districts = [TYGArea mj_objectArrayWithKeyValuesArray:self.locate.city.childObjArray];
         self.locate.district = [districts firstObject];
     }
     
@@ -66,7 +66,7 @@
     NSDictionary *dicData = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tygCity.plist" ofType:nil]];
     NSArray *proArray = [dicData objectForKey:@"中国"];
     
-    NSArray *objArray = [TYGArea objectArrayWithKeyValuesArray:proArray];
+    NSArray *objArray = [TYGArea mj_objectArrayWithKeyValuesArray:proArray];
     
     return objArray;
 }
@@ -126,12 +126,12 @@
                 TYGArea *province = [provinces objectAtIndex:index];
                 self.locate.province = province;
                 
-                cities = [TYGArea objectArrayWithKeyValuesArray:province.childObjArray];
+                cities = [TYGArea mj_objectArrayWithKeyValuesArray:province.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:1 animated:YES];
                 [self.locatePicker reloadComponent:1];
                 
                 TYGArea *city = [cities firstObject];
-                districts = [TYGArea objectArrayWithKeyValuesArray:city.childObjArray];
+                districts = [TYGArea mj_objectArrayWithKeyValuesArray:city.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:2 animated:YES];
                 [self.locatePicker reloadComponent:2];
                 
@@ -153,7 +153,7 @@
                 
                 TYGArea *city = [cities objectAtIndex:index];
                 
-                districts = [TYGArea objectArrayWithKeyValuesArray:city.childObjArray];
+                districts = [TYGArea mj_objectArrayWithKeyValuesArray:city.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:2 animated:YES];
                 [self.locatePicker reloadComponent:2];
                 
@@ -194,7 +194,7 @@
                 TYGArea *province = [provinces objectAtIndex:index];
                 self.locate.province = province;
                 
-                cities = [TYGArea objectArrayWithKeyValuesArray:province.childObjArray];
+                cities = [TYGArea mj_objectArrayWithKeyValuesArray:province.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:1 animated:YES];
                 [self.locatePicker reloadComponent:1];
                 
@@ -278,12 +278,12 @@
                 TYGArea *province = [provinces objectAtIndex:row];
                 self.locate.province = province;
                 
-                cities = [TYGArea objectArrayWithKeyValuesArray:province.childObjArray];
+                cities = [TYGArea mj_objectArrayWithKeyValuesArray:province.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:1 animated:YES];
                 [self.locatePicker reloadComponent:1];
                 
                 TYGArea *city = [cities firstObject];
-                districts = [TYGArea objectArrayWithKeyValuesArray:city.childObjArray];
+                districts = [TYGArea mj_objectArrayWithKeyValuesArray:city.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:2 animated:YES];
                 [self.locatePicker reloadComponent:2];
                 
@@ -296,7 +296,7 @@
                 
                 TYGArea *city = [cities objectAtIndex:row];
                 
-                districts = [TYGArea objectArrayWithKeyValuesArray:city.childObjArray];
+                districts = [TYGArea mj_objectArrayWithKeyValuesArray:city.childObjArray];
                 [self.locatePicker selectRow:0 inComponent:2 animated:YES];
                 [self.locatePicker reloadComponent:2];
                 
@@ -319,7 +319,7 @@
                 TYGArea *province = [provinces objectAtIndex:row];
                 self.locate.province = province;
                 
-                cities = [TYGArea objectArrayWithKeyValuesArray:province.childObjArray];
+                cities = [TYGArea mj_objectArrayWithKeyValuesArray:province.childObjArray];
                 
                 [self.locatePicker selectRow:0 inComponent:1 animated:YES];
                 [self.locatePicker reloadComponent:1];

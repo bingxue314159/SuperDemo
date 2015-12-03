@@ -20,7 +20,7 @@
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5([data bytes], [data length], result);
+    CC_MD5([data bytes], (unsigned int)[data length], result);
     
     NSString *newStr = [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",

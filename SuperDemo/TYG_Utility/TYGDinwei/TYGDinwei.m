@@ -51,10 +51,23 @@
     if (authorStatus == kCLAuthorizationStatusNotDetermined) {
         //用户尚未做出决定是否启用定位服务
         //使用此方法前在要在info.plist中配置NSLocationWhenInUseUsageDescription
-        [_locationManager requestWhenInUseAuthorization];//iOS8
+        [_locationManager requestWhenInUseAuthorization];//iOS8，只在前台开启定位
+        //[_locationManager requestAlwaysAuthorization];//在后台也可定位
+
     }
     else if (authorStatus == kCLAuthorizationStatusAuthorizedWhenInUse || authorStatus == kCLAuthorizationStatusAuthorizedAlways){
+        
+        #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0
+        // iOS9新特性：将允许出现这种场景：同一app中多个location manager：一些只能在前台定位，另一些可在后台定位（并可随时禁止其后台定位）。
+        _locationManager.allowsBackgroundLocationUpdates = YES;
+        #endif
+        
         [self startUpdatingLocation];
+    }
+    else{
+        NSError *error = [NSError errorWithDomain:@"定位失败\n①请确保GPS定位已开启\n②确保'设置->隐私->定位服务'里面已经允许此APP获取位置信息" code:0 userInfo:nil];
+        _errorDinwei(_locationManager,error);
+        return;
     }
 #else
     // iPhone OS SDK 8.0 之前版本的处理

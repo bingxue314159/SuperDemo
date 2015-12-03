@@ -174,7 +174,8 @@
 
     CGRect appFrame = [UIScreen mainScreen].applicationFrame;
     CGFloat labelW = appFrame.size.width *2/3;
-    CGSize labelSize = [label.text sizeWithFont:label.font constrainedToSize:CGSizeMake(labelW, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize labelSize = [label.text boundingRectWithSize:CGSizeMake(labelW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
+    
     label.frame = CGRectMake(offset_h, offset_v, labelSize.width, labelSize.height);
     
     //view

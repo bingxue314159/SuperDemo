@@ -16,7 +16,7 @@
 -(NSString *)md5Hash {
 
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5([self bytes], [self length], result);
+    CC_MD5([self bytes], (unsigned int)[self length], result);
     
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
@@ -28,7 +28,7 @@
 //SHA1 40位
 -(NSString *)sha1Hash {
     unsigned char result[CC_SHA1_DIGEST_LENGTH];
-    CC_SHA1([self bytes], [self length], result);
+    CC_SHA1([self bytes], (unsigned int)[self length], result);
     
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
@@ -127,7 +127,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 										  buffer, bufferSize, /* output */
 										  &numBytesEncrypted);
 
-    NSLog(@"\ndata = %s \ndataLength = %d \nkey = %s \ncyStatus = %d",[self bytes],dataLength,keyPtr,cryptStatus);
+    NSLog(@"\ndata = %s \ndataLength = %lu \nkey = %s \ncyStatus = %d",[self bytes],(unsigned long)dataLength,keyPtr,cryptStatus);
 	if (cryptStatus == kCCSuccess) {
 
 		//the returned NSData takes ownership of the buffer and will free it on deallocation
@@ -168,7 +168,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 										  buffer, bufferSize, /* output */
 										  &numBytesDecrypted);
     
-	NSLog(@"\ndata = %s \ndataLength = %d \nkey = %s \ncyStatus = %d",[self bytes],dataLength,keyPtr,cryptStatus);
+	NSLog(@"\ndata = %s \ndataLength = %lu \nkey = %s \ncyStatus = %d",[self bytes],(unsigned long)dataLength,keyPtr,cryptStatus);
     
 	if (cryptStatus == kCCSuccess) {
 		//the returned NSData takes ownership of the buffer and will free it on deallocation

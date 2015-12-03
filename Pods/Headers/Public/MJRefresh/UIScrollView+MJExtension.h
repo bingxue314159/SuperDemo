@@ -1,1 +1,1 @@
-../../../MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/UIScrollView+MJExtension.h
+../../../MJRefresh/MJRefresh/UIScrollView+MJExtension.h

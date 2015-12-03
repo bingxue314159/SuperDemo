@@ -178,7 +178,7 @@
         view.contentMode = UIViewContentModeCenter;
         label = [[UILabel alloc] initWithFrame:view.bounds];
         label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = UITextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentCenter;
         label.font = [label.font fontWithSize:50];
         label.tag = 1;
         [view addSubview:label];
@@ -221,7 +221,7 @@
         
         label = [[UILabel alloc] initWithFrame:view.bounds];
         label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = UITextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentCenter;
         label.font = [label.font fontWithSize:50.0f];
         label.tag = 1;
         [view addSubview:label];
@@ -257,12 +257,12 @@
         case iCarouselOptionWrap:
         {
             //normally you would hard-code this to YES or NO
-            return self.wrap;
+            return self.wrap;//是否循环滚动
         }
         case iCarouselOptionSpacing:
         {
             //add a bit of spacing between the item views
-            return value * 1.05f;
+            return value * 1.05f;//两个VIEW的间隙
         }
         case iCarouselOptionFadeMax:
         {

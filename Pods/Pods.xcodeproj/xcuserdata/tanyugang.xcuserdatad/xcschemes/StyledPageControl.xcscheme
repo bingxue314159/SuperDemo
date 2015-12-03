@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1E5AEDFCA6AE9C8B2E1A859"
+               BlueprintIdentifier = "C9E36B1865C27DDCDA1FC2B6"
                BuildableName = "libStyledPageControl.a"
                BlueprintName = "StyledPageControl"
                ReferencedContainer = "container:Pods.xcodeproj">

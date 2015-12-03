@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4579A8B3E9C30753485FC5C7"
+               BlueprintIdentifier = "FCC03F739200695847428994"
                BuildableName = "libQBPopupMenu.a"
                BlueprintName = "QBPopupMenu"
                ReferencedContainer = "container:Pods.xcodeproj">

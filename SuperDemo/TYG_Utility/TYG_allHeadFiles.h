@@ -23,6 +23,7 @@
 
 #import "SVProgressHUD.h"
 #import "TSMessage.h"
+#import <Masonry.h>
 
 @protocol TYG_allHeadFiles <NSObject>
 

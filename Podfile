@@ -2,13 +2,13 @@
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"
 pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
-pod 'IQKeyboardManager', '~> 3.2.3' #解决键盘遮挡住输入框的问题
+pod 'IQKeyboardManager', '~> 3.2.3' #解决键盘遮挡住输入框的问题(推荐)
 
 pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个扩展(推荐)
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
 
 pod 'pop', '~> 1.0' #FaceBook 动画库
-pod 'Masonry'   #一个轻量级的布局框架 拥有自己的描述语法 采用更优雅的链式语法封装自动布局 简洁明了 并具有高可读性 而且同时支持 iOS 和 Max OS X
+pod 'Masonry'   #一个轻量级的布局框架,拥有自己的描述语法,采用更优雅的链式语法封装自动布局,简洁明了,并具有高可读性,而且同时支持 iOS和 Max OS X（推荐）
 
 pod 'MJExtension', '~> 2.5.12'  #转换速度快、使用简单方便的字典转模型框(非侵入式，推荐)
 
@@ -30,7 +30,7 @@ pod 'KGModal', '~> 1.1.0'   #一个易用的模态弹出窗口控件
 pod 'KLCPopup', '~> 1.0'    #可用于展示任何自定义弹出视图,包含多种视图弹出方式
 
 #----------------------UI控件----------------------
-pod 'MJRefresh', '~> 1.4.7' #快速集成下拉刷新、上拉更多
+pod 'MJRefresh', '~> 3.0.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
 pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器（推荐）
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）

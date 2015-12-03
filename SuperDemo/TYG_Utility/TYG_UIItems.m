@@ -368,18 +368,20 @@
     if (text){
         CGSize textSize = { widthValue, CGFLOAT_MAX };       //Width and height of text area
         
-        if (SystemVersion >= 7.0){
-            //iOS 7
-            CGRect frame = [text boundingRectWithSize:textSize
-                                              options:NSStringDrawingUsesLineFragmentOrigin
-                                           attributes:@{ NSFontAttributeName:font }
-                                              context:nil];
-            size = CGSizeMake(frame.size.width, frame.size.height+1);
-        }
-        else{
-            //iOS 6.0
-            size = [text sizeWithFont:font constrainedToSize:textSize lineBreakMode:NSLineBreakByWordWrapping];
-        }
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+        //iOS 7
+        CGRect frame = [text boundingRectWithSize:textSize
+                                          options:NSStringDrawingUsesLineFragmentOrigin
+                                       attributes:@{ NSFontAttributeName:font }
+                                          context:nil];
+        size = CGSizeMake(frame.size.width, frame.size.height+1);
+#else
+        //iOS 6.0
+        size = [text sizeWithFont:font constrainedToSize:textSize lineBreakMode:NSLineBreakByWordWrapping];
+#endif
+#endif
+        
     }
     return size;
 }

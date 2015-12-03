@@ -37,6 +37,8 @@
     [titleArray addObject:@"正则验证-TYGValidViewController"];
     [titleArray addObject:@"手势签名-TYGSignatureViewDemoViewController"];
     
+    [titleArray addObject:@"Masonry学习-TYGMasonryTestViewController"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

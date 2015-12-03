@@ -11,6 +11,7 @@
 		080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */; };
 		080E5A091B21923C00F54F44 /* QBPopupMenuDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */; };
 		0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0814C6781B9EDBCC0061BDA3 /* TYGValid.m */; };
+		081A5AE91C102A95000666AD /* TYGMasonryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */; };
 		083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */; };
 		083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */; };
 		0843EE561AE4D8B500220F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EE551AE4D8B500220F15 /* main.m */; };
@@ -249,6 +250,8 @@
 		08A320CE1B82CAA300943DE9 /* TYGIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320CC1B82CAA300943DE9 /* TYGIBViewController.m */; };
 		08A320CF1B82CAA300943DE9 /* TYGIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */; };
 		08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320D21B82CAD800943DE9 /* TYGIBView.m */; };
+		08A35CCB1C0ED8E7005594D5 /* TYGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */; };
+		08A35CCC1C0ED8E7005594D5 /* TYGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
 		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
@@ -319,8 +322,6 @@
 		08D7D9D51AE6317D00543F2A /* AMPoptipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08D7D9D41AE6317D00543F2A /* AMPoptipViewController.xib */; };
 		08DA8B941B28201500999A2C /* TYGOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DA8B921B28201500999A2C /* TYGOtherViewController.m */; };
 		08DA8B951B28201500999A2C /* TYGOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DA8B931B28201500999A2C /* TYGOtherViewController.xib */; };
-		08DA8B991B28233C00999A2C /* TYGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DA8B971B28233C00999A2C /* TYGWebViewController.m */; };
-		08DA8B9A1B28233C00999A2C /* TYGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DA8B981B28233C00999A2C /* TYGWebViewController.xib */; };
 		08DB58811C06D9020011D722 /* TYGSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB587C1C06D9020011D722 /* TYGSignatureView.m */; };
 		08DB58861C06D95A0011D722 /* TYGSignatureViewQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */; };
 		08DB58891C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */; };
@@ -554,6 +555,8 @@
 		080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QBPopupMenuDemo.xib; sourceTree = "<group>"; };
 		0814C6771B9EDBCC0061BDA3 /* TYGValid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGValid.h; sourceTree = "<group>"; };
 		0814C6781B9EDBCC0061BDA3 /* TYGValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGValid.m; sourceTree = "<group>"; };
+		081A5AE71C102A95000666AD /* TYGMasonryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGMasonryTestViewController.h; sourceTree = "<group>"; };
+		081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGMasonryTestViewController.m; sourceTree = "<group>"; };
 		083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUzysViewController.h; sourceTree = "<group>"; };
 		083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUzysViewController.m; sourceTree = "<group>"; };
 		083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGUzysViewController.xib; sourceTree = "<group>"; };
@@ -890,6 +893,9 @@
 		08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGIBViewController.xib; sourceTree = "<group>"; };
 		08A320D11B82CAD800943DE9 /* TYGIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGIBView.h; sourceTree = "<group>"; };
 		08A320D21B82CAD800943DE9 /* TYGIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGIBView.m; sourceTree = "<group>"; };
+		08A35CC81C0ED8E7005594D5 /* TYGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewController.h; sourceTree = "<group>"; };
+		08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewController.m; sourceTree = "<group>"; };
+		08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGWebViewController.xib; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
@@ -994,9 +1000,6 @@
 		08DA8B911B28201500999A2C /* TYGOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGOtherViewController.h; sourceTree = "<group>"; };
 		08DA8B921B28201500999A2C /* TYGOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGOtherViewController.m; sourceTree = "<group>"; };
 		08DA8B931B28201500999A2C /* TYGOtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGOtherViewController.xib; sourceTree = "<group>"; };
-		08DA8B961B28233C00999A2C /* TYGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewController.h; sourceTree = "<group>"; };
-		08DA8B971B28233C00999A2C /* TYGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewController.m; sourceTree = "<group>"; };
-		08DA8B981B28233C00999A2C /* TYGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGWebViewController.xib; sourceTree = "<group>"; };
 		08DB587B1C06D9020011D722 /* TYGSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureView.h; sourceTree = "<group>"; };
 		08DB587C1C06D9020011D722 /* TYGSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureView.m; sourceTree = "<group>"; };
 		08DB58841C06D95A0011D722 /* TYGSignatureViewQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureViewQuartz.h; sourceTree = "<group>"; };
@@ -1352,7 +1355,6 @@
 			isa = PBXGroup;
 			children = (
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
-				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
 				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
@@ -1364,14 +1366,18 @@
 				0843EEC71AE4DB0C00220F15 /* TYG_UIItems.h */,
 				0843EEC81AE4DB0C00220F15 /* TYG_UIItems.m */,
 				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
+				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
 				0843EEC91AE4DB0C00220F15 /* TYGAudioUtil.h */,
 				0843EECA1AE4DB0C00220F15 /* TYGAudioUtil.m */,
 				0843EECB1AE4DB0C00220F15 /* TYGConfig.h */,
 				08A320B01B82C23B00943DE9 /* TYGDinwei */,
+				08DB587A1C06D9020011D722 /* TYGSignature */,
 				08F8BCE71B969212009FF488 /* TYGUIButton */,
+				0814C6771B9EDBCC0061BDA3 /* TYGValid.h */,
+				0814C6781B9EDBCC0061BDA3 /* TYGValid.m */,
+				08A35CC71C0ED8E7005594D5 /* TYGWebView */,
 				0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */,
 				0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */,
-				08DB587A1C06D9020011D722 /* TYGSignature */,
 				0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */,
 				0843EECF1AE4DB0C00220F15 /* UIImage+FixOrientation.m */,
 				0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */,
@@ -1380,8 +1386,6 @@
 				0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.m */,
 				0843EED41AE4DB0C00220F15 /* Utility.h */,
 				0843EED51AE4DB0C00220F15 /* Utility.m */,
-				0814C6771B9EDBCC0061BDA3 /* TYGValid.h */,
-				0814C6781B9EDBCC0061BDA3 /* TYGValid.m */,
 				0843EED61AE4DB0C00220F15 /* W_R_Plist.h */,
 				0843EED71AE4DB0C00220F15 /* W_R_Plist.m */,
 			);
@@ -1432,7 +1436,6 @@
 				08D7D97E1AE61D8C00543F2A /* SphereView */,
 				0843EEBE1AE4DB0C00220F15 /* TYG_Utility */,
 				0843F0B81AE502D200220F15 /* ZBCustomTransitions */,
-				08DA8B9B1B28234500999A2C /* WebView */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -1967,6 +1970,8 @@
 				08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */,
 				08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */,
 				08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */,
+				081A5AE71C102A95000666AD /* TYGMasonryTestViewController.h */,
+				081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */,
 				08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */,
 				08A320D41B82CADD00943DE9 /* TYGIBView */,
 			);
@@ -2027,6 +2032,16 @@
 				08A320D21B82CAD800943DE9 /* TYGIBView.m */,
 			);
 			name = TYGIBView;
+			sourceTree = "<group>";
+		};
+		08A35CC71C0ED8E7005594D5 /* TYGWebView */ = {
+			isa = PBXGroup;
+			children = (
+				08A35CC81C0ED8E7005594D5 /* TYGWebViewController.h */,
+				08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */,
+				08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */,
+			);
+			path = TYGWebView;
 			sourceTree = "<group>";
 		};
 		08ADBFC91B69B5320034B231 /* PopAnimation */ = {
@@ -2168,16 +2183,6 @@
 				08D7D9C91AE6316600543F2A /* AMPOP-yellow@2x.png */,
 			);
 			path = AMPopVIewImage;
-			sourceTree = "<group>";
-		};
-		08DA8B9B1B28234500999A2C /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				08DA8B961B28233C00999A2C /* TYGWebViewController.h */,
-				08DA8B971B28233C00999A2C /* TYGWebViewController.m */,
-				08DA8B981B28233C00999A2C /* TYGWebViewController.xib */,
-			);
-			name = WebView;
 			sourceTree = "<group>";
 		};
 		08DB587A1C06D9020011D722 /* TYGSignature */ = {
@@ -2690,6 +2695,11 @@
 				TargetAttributes = {
 					0843EE4F1AE4D8B500220F15 = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					0843EE6B1AE4D8B500220F15 = {
 						CreatedOnToolsVersion = 6.3;
@@ -2880,6 +2890,7 @@
 				08F20B591B67292A005F092A /* photo1t.jpg in Resources */,
 				08EC5E0B1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png in Resources */,
 				083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */,
+				08A35CCC1C0ED8E7005594D5 /* TYGWebViewController.xib in Resources */,
 				08F483C61B9571BD00814233 /* JazzHands-text3.png in Resources */,
 				08D7D9D21AE6316600543F2A /* AMPOP-yellow.png in Resources */,
 				0843EFB71AE4F01D00220F15 /* iCarouselExampleViewController.xib in Resources */,
@@ -3051,7 +3062,6 @@
 				0843EFDA1AE4F6E800220F15 /* check_icon.png in Resources */,
 				0843F12A1AE5076900220F15 /* m40@2x.png in Resources */,
 				08F19C8C1B4681E900722C9C /* ActionSheetPickerDemo.storyboard in Resources */,
-				08DA8B9A1B28233C00999A2C /* TYGWebViewController.xib in Resources */,
 				08D7D9B71AE62BFD00543F2A /* IQKeyboardViewController.xib in Resources */,
 				0843EF031AE4DB7F00220F15 /* 发现_on@2x.png in Resources */,
 				08F27D601B550ABC0039DF49 /* photo5.jpg in Resources */,
@@ -3147,6 +3157,7 @@
 				0874A4E91B62273100007951 /* RTLabel.m in Sources */,
 				0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */,
 				08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */,
+				081A5AE91C102A95000666AD /* TYGMasonryTestViewController.m in Sources */,
 				083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */,
 				0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */,
 				08D7D98C1AE61DB400543F2A /* SphereViewController.m in Sources */,
@@ -3188,6 +3199,7 @@
 				08981BA21B69BEF400E448C8 /* TYGPopAnimationManager.m in Sources */,
 				08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */,
 				0843EED91AE4DB0C00220F15 /* File.m in Sources */,
+				08A35CCB1C0ED8E7005594D5 /* TYGWebViewController.m in Sources */,
 				08F27D531B550ABC0039DF49 /* XIBTestViewController.m in Sources */,
 				08F8BCEA1B969212009FF488 /* TYGUIButton.m in Sources */,
 				08C72E011B25321F00967012 /* REMenuExample.m in Sources */,
@@ -3276,7 +3288,6 @@
 				0843F0001AE4FADE00220F15 /* MYBlurIntroductionDemo.m in Sources */,
 				08F20B8F1B677BF3005F092A /* TSQTACalendarRowCell.m in Sources */,
 				08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */,
-				08DA8B991B28233C00999A2C /* TYGWebViewController.m in Sources */,
 				08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */,
 				0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */,
 				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,

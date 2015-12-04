@@ -79,10 +79,14 @@
             break;
         }
         case 8:{
-            content = @"";
+            content = @"银行卡号(16位或者19位)";
             break;
         }
         case 9:{
+            content = @"";
+            break;
+        }
+        case 10:{
             content = @"";
             break;
         }
@@ -143,9 +147,14 @@
         }
         case 8:{
             flag = YES;
+            flag = [TYGValid isBankCardNum:text];
             break;
         }
         case 9:{
+            flag = YES;
+            break;
+        }
+        case 10:{
             flag = YES;
             break;
         }

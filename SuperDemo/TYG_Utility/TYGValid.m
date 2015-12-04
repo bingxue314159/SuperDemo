@@ -174,5 +174,84 @@
     return [stringTest evaluateWithObject:sting];
 }
 
+/**
+ *  验证银行卡号（13位 到 19位）
+ *  @param bankIdCardNum 银行卡卡号
+ *  @return BOOL
+ */
++ (BOOL)isBankCardNum:(NSString *)bankCardNum{
+    
+    /*
+     前六位是：发行者标识代码 Issuer Identification Number (IIN)。
+     中间的位数是：个人账号标识(从卡号第七位开始)
+     最后一位位数是校验位,采用Luhn算法
+     */
+    
+    
+    BOOL flag = NO;
+    if (bankCardNum.length >= 13 && bankCardNum.length <= 19) {
+        
+        flag = [TYGValid isLuhnAlgorithm:bankCardNum];
+    }
+    
+    return flag;
+}
+
+/**
+ *  验证数字是否符合Luhn算法
+ *  @param anNumStr 纯数字字符串
+ *  @return BOOL
+ */
++ (BOOL)isLuhnAlgorithm:(NSString *)anNumStr{
+    /*
+     LUHN算法，主要用来计算信用卡等证件号码的合法性。
+     1、从卡号最后一位数字开始,偶数位乘以2,如果乘以2的结果是两位数，将两个位上数字相加保存。
+     2、把所有数字相加,得到总和。
+     3、如果信用卡号码是合法的，总和可以被10整除。
+     */
+    
+    BOOL flag = NO;
+    if (anNumStr.length > 0) {
+        //验证是否为数字
+        anNumStr = [anNumStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSString *stringRegex = @"^[0-9]+$";
+        NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
+        BOOL isNumStr = [stringTest evaluateWithObject:anNumStr];
+        if (isNumStr) {
+            
+            //拆解,数字分割成数组
+            NSMutableString *numMStr = [NSMutableString stringWithString:anNumStr];
+            NSInteger lastNum = [[numMStr substringFromIndex:(anNumStr.length - 1)] integerValue];
+            NSInteger countNum = 0;//求和
+            NSInteger count = 0;//计数器
+            for (NSInteger i = (numMStr.length - 1); i >= 0; i--) {
+                
+                count += 1;
+                if (count == 1) {
+                    //卡号最后一位数字，根据校验位前的数字计算得到
+                    continue;
+                }
+                
+                NSInteger tempNum = [[numMStr substringWithRange:NSMakeRange(i, 1)] integerValue];
+                if (count%2 == 0) {
+                    //取偶数位
+                    tempNum = tempNum*2;
+                    if (tempNum >= 10) {
+                        tempNum = tempNum%10 + 1;
+                    }
+                }
+                countNum += tempNum;
+            }
+
+            NSInteger checkdDigit = (countNum*9)%10;//得出真实的校验码
+            if (lastNum == checkdDigit) {
+                flag = YES;
+            }
+        }
+    }
+    
+    return flag;
+}
+
 
 @end

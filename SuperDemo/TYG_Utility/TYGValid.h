@@ -57,4 +57,18 @@
  */
 +(BOOL)isChinese:(NSString *)sting;
 
+/**
+ *  验证银行卡号（13位 到 19位）
+ *  @param bankIdCardNum 银行卡卡号
+ *  @return BOOL
+ */
++ (BOOL)isBankCardNum:(NSString *)bankCardNum;
+
+/**
+ *  验证数字是否符合Luhn算法
+ *  @param anNumStr 纯数字字符串
+ *  @return BOOL
+ */
++ (BOOL)isLuhnAlgorithm:(NSString *)anNumStr;
+
 @end

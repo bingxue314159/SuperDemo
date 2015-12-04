@@ -21,9 +21,11 @@
 }
 
 - (id)mj_newValueFromOldValue:(id)oldValue property:(MJProperty *)property{
-
-    oldValue = [oldValue length] ? (oldValue) : @"";
     
+    if ([oldValue isKindOfClass:[NSString class]]) {
+        oldValue = [oldValue length] ? (oldValue) : @"";
+    }
+
     return oldValue;
 }
 

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self testMasonry];
 }
 
@@ -32,6 +32,7 @@
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
+    //此处会被调用两次
     NSLog(@"viewDidLayoutSubviews黑色view0.frame = %@",NSStringFromCGRect(view0.frame));
 }
 

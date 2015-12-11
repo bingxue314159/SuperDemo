@@ -253,4 +253,4 @@ SPEC CHECKSUMS:
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   UzysAssetsPickerController: eae7c24955501a80df34286b1797a2ec6f6b1ab9
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

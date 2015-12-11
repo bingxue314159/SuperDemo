@@ -680,8 +680,8 @@
 		0843EFE81AE4F76800220F15 /* M13BadgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M13BadgeViewController.xib; sourceTree = "<group>"; };
 		0843EFEB1AE4F81F00220F15 /* M13BadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13BadgeViewController.h; sourceTree = "<group>"; };
 		0843EFEC1AE4F82000220F15 /* M13BadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13BadgeViewController.m; sourceTree = "<group>"; };
-		0843EFFE1AE4FADE00220F15 /* MYBlurIntroductionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYBlurIntroductionDemo.h; path = ../MYBlurIntroductionDemo.h; sourceTree = "<group>"; };
-		0843EFFF1AE4FADE00220F15 /* MYBlurIntroductionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYBlurIntroductionDemo.m; path = ../MYBlurIntroductionDemo.m; sourceTree = "<group>"; };
+		0843EFFE1AE4FADE00220F15 /* MYBlurIntroductionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionDemo.h; sourceTree = "<group>"; };
+		0843EFFF1AE4FADE00220F15 /* MYBlurIntroductionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionDemo.m; sourceTree = "<group>"; };
 		0843F0021AE4FDB400220F15 /* MYCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomPanel.h; sourceTree = "<group>"; };
 		0843F0031AE4FDB400220F15 /* MYCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomPanel.m; sourceTree = "<group>"; };
 		0843F0041AE4FDB400220F15 /* MYCustomPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCustomPanel.xib; sourceTree = "<group>"; };
@@ -1127,7 +1127,7 @@
 		08F20B7E1B6770D3005F092A /* ABCalendarPickerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCalendarPickerDemo.h; sourceTree = "<group>"; };
 		08F20B7F1B6770D3005F092A /* ABCalendarPickerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCalendarPickerDemo.m; sourceTree = "<group>"; };
 		08F20B801B6770D3005F092A /* ABCalendarPickerDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ABCalendarPickerDemo.storyboard; sourceTree = "<group>"; };
-		08F20B831B67718C005F092A /* CalendarShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CalendarShadow.png; path = ../CalendarShadow.png; sourceTree = "<group>"; };
+		08F20B831B67718C005F092A /* CalendarShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarShadow.png; sourceTree = "<group>"; };
 		08F20B8B1B677BF3005F092A /* TSQTACalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQTACalendarRowCell.h; sourceTree = "<group>"; };
 		08F20B8C1B677BF3005F092A /* TSQTACalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQTACalendarRowCell.m; sourceTree = "<group>"; };
 		08F20B8D1B677BF3005F092A /* TSQTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQTAViewController.h; sourceTree = "<group>"; };
@@ -1297,11 +1297,11 @@
 		0843EE471AE4D8B500220F15 = {
 			isa = PBXGroup;
 			children = (
+				F2ED8628DAA926E5E6971BAB /* Frameworks */,
+				6A5DE5FEE734230BFA577471 /* Pods */,
+				0843EE511AE4D8B500220F15 /* Products */,
 				0843EE521AE4D8B500220F15 /* SuperDemo */,
 				0843EE6F1AE4D8B500220F15 /* SuperDemoTests */,
-				0843EE511AE4D8B500220F15 /* Products */,
-				6A5DE5FEE734230BFA577471 /* Pods */,
-				F2ED8628DAA926E5E6971BAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1317,11 +1317,11 @@
 		0843EE521AE4D8B500220F15 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0843EF611AE4DC1000220F15 /* ViewController */,
+				0843EE531AE4D8B500220F15 /* Supporting Files */,
 				0843EF141AE4DB8700220F15 /* Utility */,
+				0843EF611AE4DC1000220F15 /* ViewController */,
 				0843EE631AE4D8B500220F15 /* Images.xcassets */,
 				0843EE651AE4D8B500220F15 /* LaunchScreen.xib */,
-				0843EE531AE4D8B500220F15 /* Supporting Files */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -1334,14 +1334,14 @@
 				0843F0CA1AE503B000220F15 /* PrefixHeader.pch */,
 				0843EE551AE4D8B500220F15 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0843EE6F1AE4D8B500220F15 /* SuperDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				0843EE721AE4D8B500220F15 /* SuperDemoTests.m */,
 				0843EE701AE4D8B500220F15 /* Supporting Files */,
+				0843EE721AE4D8B500220F15 /* SuperDemoTests.m */,
 			);
 			path = SuperDemoTests;
 			sourceTree = "<group>";
@@ -1351,35 +1351,35 @@
 			children = (
 				0843EE711AE4D8B500220F15 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0843EEBE1AE4DB0C00220F15 /* TYG_Utility */ = {
 			isa = PBXGroup;
 			children = (
+				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
 				08A350E71C1A64D2002422A0 /* SAMTextView */,
+				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
+				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
+				08A320B01B82C23B00943DE9 /* TYGDinwei */,
+				08DB587A1C06D9020011D722 /* TYGSignature */,
+				08F8BCE71B969212009FF488 /* TYGUIButton */,
+				08A35CC71C0ED8E7005594D5 /* TYGWebView */,
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
-				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
 				0843EEC21AE4DB0C00220F15 /* File.h */,
 				0843EEC31AE4DB0C00220F15 /* File.m */,
 				0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */,
 				0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */,
-				0843EEC61AE4DB0C00220F15 /* TYG_allHeadFiles.h */,
-				0843EEC71AE4DB0C00220F15 /* TYG_UIItems.h */,
-				0843EEC81AE4DB0C00220F15 /* TYG_UIItems.m */,
-				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
-				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
 				0843EEC91AE4DB0C00220F15 /* TYGAudioUtil.h */,
 				0843EECA1AE4DB0C00220F15 /* TYGAudioUtil.m */,
 				0843EECB1AE4DB0C00220F15 /* TYGConfig.h */,
-				08A320B01B82C23B00943DE9 /* TYGDinwei */,
-				08DB587A1C06D9020011D722 /* TYGSignature */,
-				08F8BCE71B969212009FF488 /* TYGUIButton */,
 				0814C6771B9EDBCC0061BDA3 /* TYGValid.h */,
 				0814C6781B9EDBCC0061BDA3 /* TYGValid.m */,
-				08A35CC71C0ED8E7005594D5 /* TYGWebView */,
+				0843EEC71AE4DB0C00220F15 /* TYG_UIItems.h */,
+				0843EEC81AE4DB0C00220F15 /* TYG_UIItems.m */,
+				0843EEC61AE4DB0C00220F15 /* TYG_allHeadFiles.h */,
 				0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */,
 				0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */,
 				0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */,
@@ -1431,99 +1431,95 @@
 		0843EF141AE4DB8700220F15 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				0874A4E61B62273100007951 /* RTLabel */,
 				0843F0A91AE502D200220F15 /* AVCaptureManager */,
 				0843EFBD1AE4F13700220F15 /* DMLazyScrollView */,
 				0843F0AC1AE502D200220F15 /* HUAnimator */,
-				0843EF841AE4E6B200220F15 /* kDropDown */,
 				0843F0B51AE502D200220F15 /* PulsingHalo */,
+				0874A4E61B62273100007951 /* RTLabel */,
 				08D7D97E1AE61D8C00543F2A /* SphereView */,
 				0843EEBE1AE4DB0C00220F15 /* TYG_Utility */,
 				0843F0B81AE502D200220F15 /* ZBCustomTransitions */,
+				0843EF841AE4E6B200220F15 /* kDropDown */,
 			);
-			name = Utility;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		0843EF611AE4DC1000220F15 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0843EF621AE4DC1F00220F15 /* first */,
+				0843EF651AE4DC3500220F15 /* four */,
+				0843EF631AE4DC2800220F15 /* second */,
+				0843EF641AE4DC2E00220F15 /* third */,
 				0843EE571AE4D8B500220F15 /* AppDelegate.h */,
 				0843EE581AE4D8B500220F15 /* AppDelegate.m */,
 				0843EE7C1AE4D8FD00220F15 /* MainViewController.h */,
 				0843EE7D1AE4D8FD00220F15 /* MainViewController.m */,
-				0843EF621AE4DC1F00220F15 /* first */,
-				0843EF631AE4DC2800220F15 /* second */,
-				0843EF641AE4DC2E00220F15 /* third */,
-				0843EF651AE4DC3500220F15 /* four */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		0843EF621AE4DC1F00220F15 /* first */ = {
 			isa = PBXGroup;
 			children = (
-				0843EE5A1AE4D8B500220F15 /* FirstViewController.h */,
-				0843EE5B1AE4D8B500220F15 /* FirstViewController.m */,
-				0843EE8D1AE4D9B900220F15 /* FirstViewController.xib */,
+				08D7D9741AE619A400543F2A /* CubeDemo */,
+				0897EEE61B44F5D400EBCA00 /* HUD */,
+				0897EEE31B44C7F200EBCA00 /* IOS7Sampler */,
+				0843F0241AE4FF0800220F15 /* MJRefreshDemo */,
+				08D7CE9C1B21786900A3C8AD /* Menu */,
+				0843EF771AE4E3A600220F15 /* Select */,
 				0843EF671AE4DDAF00220F15 /* AnimationViewController.h */,
 				0843EF681AE4DDAF00220F15 /* AnimationViewController.m */,
 				0843EF661AE4DDAF00220F15 /* AnimationViewController.xib */,
-				0843EFB41AE4F01D00220F15 /* iCarouselExampleViewController.h */,
-				0843EFB31AE4F01D00220F15 /* iCarouselExampleViewController.m */,
-				0843EFB51AE4F01D00220F15 /* iCarouselExampleViewController.xib */,
 				0843EFC11AE4F15000220F15 /* DMLazyScrollViewViewController.h */,
 				0843EFC21AE4F15000220F15 /* DMLazyScrollViewViewController.m */,
 				0843EFC31AE4F15000220F15 /* DMLazyScrollViewViewController_iPhone.xib */,
-				08D7CE9C1B21786900A3C8AD /* Menu */,
+				0843EE5A1AE4D8B500220F15 /* FirstViewController.h */,
+				0843EE5B1AE4D8B500220F15 /* FirstViewController.m */,
+				0843EE8D1AE4D9B900220F15 /* FirstViewController.xib */,
+				08D7D9B31AE62BFD00543F2A /* IQKeyboardViewController.h */,
+				08D7D9B41AE62BFD00543F2A /* IQKeyboardViewController.m */,
+				08D7D9B51AE62BFD00543F2A /* IQKeyboardViewController.xib */,
 				0843EFEB1AE4F81F00220F15 /* M13BadgeViewController.h */,
 				0843EFEC1AE4F82000220F15 /* M13BadgeViewController.m */,
 				0843EFE81AE4F76800220F15 /* M13BadgeViewController.xib */,
 				08D7D98A1AE61DB400543F2A /* SphereViewController.h */,
 				08D7D98B1AE61DB400543F2A /* SphereViewController.m */,
-				0897EEE61B44F5D400EBCA00 /* HUD */,
 				08D7D9921AE6223000543F2A /* TSMessagesViewController.h */,
 				08D7D9931AE6223000543F2A /* TSMessagesViewController.m */,
 				08D7D9941AE6223000543F2A /* TSMessagesViewController.xib */,
-				08D7D9B31AE62BFD00543F2A /* IQKeyboardViewController.h */,
-				08D7D9B41AE62BFD00543F2A /* IQKeyboardViewController.m */,
-				08D7D9B51AE62BFD00543F2A /* IQKeyboardViewController.xib */,
-				0897EEE31B44C7F200EBCA00 /* IOS7Sampler */,
-				08D7D9741AE619A400543F2A /* CubeDemo */,
-				0843F0241AE4FF0800220F15 /* MJRefreshDemo */,
-				0843EF771AE4E3A600220F15 /* Select */,
+				0843EFB41AE4F01D00220F15 /* iCarouselExampleViewController.h */,
+				0843EFB31AE4F01D00220F15 /* iCarouselExampleViewController.m */,
+				0843EFB51AE4F01D00220F15 /* iCarouselExampleViewController.xib */,
 			);
-			name = first;
+			path = first;
 			sourceTree = "<group>";
 		};
 		0843EF631AE4DC2800220F15 /* second */ = {
 			isa = PBXGroup;
 			children = (
-				0843EE5D1AE4D8B500220F15 /* SecondViewController.h */,
-				0843EE5E1AE4D8B500220F15 /* SecondViewController.m */,
 				08F20B6A1B67689C005F092A /* Calendar */,
-				08D7D9AA1AE6267200543F2A /* SWTableViewCellDemo.h */,
-				08D7D9AB1AE6267200543F2A /* SWTableViewCellDemo.m */,
+				08EC5DC71B9540420081C8CA /* LoadingView */,
+				08B2A1D31B85AA4800B89635 /* Progress */,
+				08EC5DC31B953F390081C8CA /* UIList */,
 				08B3A3C01B660E42007838EA /* MGSwipeTableCellDemo.h */,
 				08B3A3C11B660E42007838EA /* MGSwipeTableCellDemo.m */,
 				08B3A3BF1B660E42007838EA /* MGSwipeTableCellDemo.storyboard */,
 				08B3A3C21B660E42007838EA /* MGSwipeTableCellDemoTestData.h */,
 				08B3A3C31B660E42007838EA /* MGSwipeTableCellDemoTestData.m */,
-				08EC5DC71B9540420081C8CA /* LoadingView */,
-				08B2A1D31B85AA4800B89635 /* Progress */,
-				08EC5DC31B953F390081C8CA /* UIList */,
+				08D7D9AA1AE6267200543F2A /* SWTableViewCellDemo.h */,
+				08D7D9AB1AE6267200543F2A /* SWTableViewCellDemo.m */,
+				0843EE5D1AE4D8B500220F15 /* SecondViewController.h */,
+				0843EE5E1AE4D8B500220F15 /* SecondViewController.m */,
 			);
-			name = second;
+			path = second;
 			sourceTree = "<group>";
 		};
 		0843EF641AE4DC2E00220F15 /* third */ = {
 			isa = PBXGroup;
 			children = (
-				0843EE7F1AE4D92900220F15 /* ThirdViewController.h */,
-				0843EE801AE4D92900220F15 /* ThirdViewController.m */,
-				0843EE811AE4D92900220F15 /* ThirdViewController.xib */,
-				08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */,
-				08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */,
-				08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */,
+				08F27D091B550ABC0039DF49 /* RETableViewManagerExample */,
+				0874A4F01B62274600007951 /* RTLabelDemo */,
 				08EA56151B4381B7007ED35B /* BlocksKitViewController.h */,
 				08EA56161B4381B7007ED35B /* BlocksKitViewController.m */,
 				08EA56171B4381B7007ED35B /* BlocksKitViewController.xib */,
@@ -1532,25 +1528,29 @@
 				08EA561C1B4381E8007ED35B /* DTCoreTextViewController.xib */,
 				0874A4FA1B62311700007951 /* M13CheckboxDemo.h */,
 				0874A4FB1B62311700007951 /* M13CheckboxDemo.m */,
-				0874A4F01B62274600007951 /* RTLabelDemo */,
-				08F27D091B550ABC0039DF49 /* RETableViewManagerExample */,
+				08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */,
+				08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */,
+				08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */,
+				0843EE7F1AE4D92900220F15 /* ThirdViewController.h */,
+				0843EE801AE4D92900220F15 /* ThirdViewController.m */,
+				0843EE811AE4D92900220F15 /* ThirdViewController.xib */,
 			);
-			name = third;
+			path = third;
 			sourceTree = "<group>";
 		};
 		0843EF651AE4DC3500220F15 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				08ADBFC91B69B5320034B231 /* PopAnimation */,
+				08A320A21B82BF9C00943DE9 /* TYGNotes */,
 				0843EE841AE4D93D00220F15 /* FourViewController.h */,
 				0843EE851AE4D93D00220F15 /* FourViewController.m */,
 				0843EE861AE4D93D00220F15 /* FourViewController.xib */,
-				08A320A21B82BF9C00943DE9 /* TYGNotes */,
-				08ADBFC91B69B5320034B231 /* PopAnimation */,
 				08DA8B911B28201500999A2C /* TYGOtherViewController.h */,
 				08DA8B921B28201500999A2C /* TYGOtherViewController.m */,
 				08DA8B931B28201500999A2C /* TYGOtherViewController.xib */,
 			);
-			name = four;
+			path = four;
 			sourceTree = "<group>";
 		};
 		0843EF711AE4E01200220F15 /* images */ = {
@@ -1558,48 +1558,48 @@
 			children = (
 				08D7D9BF1AE6316600543F2A /* AMPopVIewImage */,
 				0843EF9C1AE4E9D700220F15 /* AnimationImage */,
-				0843EEE31AE4DB7F00220F15 /* bottom */,
 				08EC5E151B9552480081C8CA /* HMSegmentImages */,
-				0843EFBC1AE4F03D00220F15 /* iCarousel */,
 				08D5308A1B5F974600409CF1 /* ICON */,
-				0843F0CE1AE5076900220F15 /* iOS7SamplerImage */,
 				08F483911B9571BD00814233 /* JazzHandsImages */,
-				0843EF9B1AE4E9C300220F15 /* kDropDownImage */,
-				0843EFCD1AE4F6E800220F15 /* kxMenuImage */,
 				08F20B451B67292A005F092A /* Local Media */,
 				08F483DF1B9571F800814233 /* MYBlurImages */,
 				08F483A11B9571BD00814233 /* OnboardImages */,
+				08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */,
 				08B3A3C71B661083007838EA /* TableViewCell */,
 				08F20B911B677C1F005F092A /* TimesSquare */,
-				08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */,
+				0843EEE31AE4DB7F00220F15 /* bottom */,
+				0843EFBC1AE4F03D00220F15 /* iCarousel */,
+				0843F0CE1AE5076900220F15 /* iOS7SamplerImage */,
+				0843EF9B1AE4E9C300220F15 /* kDropDownImage */,
+				0843EFCD1AE4F6E800220F15 /* kxMenuImage */,
 				08B2A1D11B8569E900B89635 /* view1NavBg.png */,
 			);
-			name = images;
+			path = images;
 			sourceTree = "<group>";
 		};
 		0843EF771AE4E3A600220F15 /* Select */ = {
 			isa = PBXGroup;
 			children = (
-				0843EF721AE4E38700220F15 /* SelectTableViewController.h */,
-				0843EF731AE4E38700220F15 /* SelectTableViewController.m */,
-				0843EF741AE4E38700220F15 /* SelectTableViewController.xib */,
+				08F19C711B4681C000722C9C /* ActionSheetPickDemo */,
 				0843EF7F1AE4E54700220F15 /* IQActionSheetDemo.h */,
 				0843EF801AE4E54700220F15 /* IQActionSheetDemo.m */,
 				0843EF821AE4E54E00220F15 /* IQActionSheetDemo.xib */,
-				0843EF901AE4E70C00220F15 /* kDropDownSelectDemo.h */,
-				0843EF911AE4E70C00220F15 /* kDropDownSelectDemo.m */,
-				0843EF921AE4E70C00220F15 /* kDropDownSelectDemo.xib */,
+				08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */,
+				08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */,
+				0843EF721AE4E38700220F15 /* SelectTableViewController.h */,
+				0843EF731AE4E38700220F15 /* SelectTableViewController.m */,
+				0843EF741AE4E38700220F15 /* SelectTableViewController.xib */,
 				0843EFAA1AE4EAC100220F15 /* TYGAreaPickerViewDemo.h */,
 				0843EFAB1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m */,
 				0843EFAC1AE4EAC100220F15 /* TYGAreaPickerViewDemo.xib */,
-				08F20B421B67275B005F092A /* MWPhotoBrowserDemo.h */,
-				08F20B431B67275B005F092A /* MWPhotoBrowserDemo.m */,
 				083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */,
 				083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */,
 				083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */,
-				08F19C711B4681C000722C9C /* ActionSheetPickDemo */,
+				0843EF901AE4E70C00220F15 /* kDropDownSelectDemo.h */,
+				0843EF911AE4E70C00220F15 /* kDropDownSelectDemo.m */,
+				0843EF921AE4E70C00220F15 /* kDropDownSelectDemo.xib */,
 			);
-			name = Select;
+			path = Select;
 			sourceTree = "<group>";
 		};
 		0843EF841AE4E6B200220F15 /* kDropDown */ = {
@@ -1620,7 +1620,7 @@
 				0843EF981AE4E9BA00220F15 /* done@2x.png */,
 				0843EF951AE4E75600220F15 /* drop_down@2x.png */,
 			);
-			name = kDropDownImage;
+			path = kDropDownImage;
 			sourceTree = "<group>";
 		};
 		0843EF9C1AE4E9D700220F15 /* AnimationImage */ = {
@@ -1630,7 +1630,7 @@
 				08D7D9AE1AE62AEE00543F2A /* green.jpg */,
 				08D7D9AF1AE62AEE00543F2A /* red.jpg */,
 			);
-			name = AnimationImage;
+			path = AnimationImage;
 			sourceTree = "<group>";
 		};
 		0843EFBC1AE4F03D00220F15 /* iCarousel */ = {
@@ -1639,7 +1639,7 @@
 				0843EFB81AE4F03700220F15 /* background.png */,
 				0843EFB91AE4F03700220F15 /* page.png */,
 			);
-			name = iCarousel;
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 		0843EFBD1AE4F13700220F15 /* DMLazyScrollView */ = {
@@ -1685,10 +1685,10 @@
 		0843F0241AE4FF0800220F15 /* MJRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0843F0391AE4FF6400220F15 /* MJSampleIndex.h */,
-				0843F03A1AE4FF6400220F15 /* MJSampleIndex.m */,
 				0843F0251AE4FF0800220F15 /* MJCollectionViewController.h */,
 				0843F0261AE4FF0800220F15 /* MJCollectionViewController.m */,
+				0843F0391AE4FF6400220F15 /* MJSampleIndex.h */,
+				0843F03A1AE4FF6400220F15 /* MJSampleIndex.m */,
 				0843F0291AE4FF0800220F15 /* MJSampleIndexViewController.h */,
 				0843F02A1AE4FF0800220F15 /* MJSampleIndexViewController.m */,
 				0843F02B1AE4FF0800220F15 /* MJScrollViewController.h */,
@@ -1699,8 +1699,7 @@
 				0843F0301AE4FF0800220F15 /* MJTestViewController.m */,
 				0843F0311AE4FF0800220F15 /* MJTestViewController.xib */,
 			);
-			name = MJRefreshDemo;
-			path = Controller;
+			path = MJRefreshDemo;
 			sourceTree = "<group>";
 		};
 		0843F03C1AE502AE00220F15 /* SampleViewControllers */ = {
@@ -1831,8 +1830,8 @@
 		0843F0CF1AE5076900220F15 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				0843F0D01AE5076900220F15 /* face_detection.jpg */,
 				0843F0D11AE5076900220F15 /* IPhone_5s@2x.png */,
+				0843F0D01AE5076900220F15 /* face_detection.jpg */,
 				0843F0D21AE5076900220F15 /* m10@2x.png */,
 				0843F0D31AE5076900220F15 /* m11@2x.png */,
 				0843F0D41AE5076900220F15 /* m12@2x.png */,
@@ -1908,78 +1907,78 @@
 		0874A4F01B62274600007951 /* RTLabelDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0874A4EA1B62274100007951 /* RTLabelTableViewController.h */,
-				0874A4EB1B62274100007951 /* RTLabelTableViewController.m */,
 				0874A4EC1B62274100007951 /* RTLabelTableViewCell.h */,
 				0874A4ED1B62274100007951 /* RTLabelTableViewCell.m */,
+				0874A4EA1B62274100007951 /* RTLabelTableViewController.h */,
+				0874A4EB1B62274100007951 /* RTLabelTableViewController.m */,
 			);
-			name = RTLabelDemo;
+			path = RTLabelDemo;
 			sourceTree = "<group>";
 		};
 		0897EEE31B44C7F200EBCA00 /* IOS7Sampler */ = {
 			isa = PBXGroup;
 			children = (
-				0843F0CB1AE506D600220F15 /* MasterViewController.h */,
-				0843F0CC1AE506D600220F15 /* MasterViewController.m */,
+				0843F03C1AE502AE00220F15 /* SampleViewControllers */,
 				0843F0C51AE5034B00220F15 /* BrowseCodeViewController.h */,
 				0843F0C61AE5034B00220F15 /* BrowseCodeViewController.m */,
 				0843F0C71AE5034B00220F15 /* BrowseCodeViewController.xib */,
-				0843F03C1AE502AE00220F15 /* SampleViewControllers */,
+				0843F0CB1AE506D600220F15 /* MasterViewController.h */,
+				0843F0CC1AE506D600220F15 /* MasterViewController.m */,
 			);
-			name = IOS7Sampler;
+			path = IOS7Sampler;
 			sourceTree = "<group>";
 		};
 		0897EEE61B44F5D400EBCA00 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */,
-				0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */,
-				0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */,
-				08D7D98D1AE620E700543F2A /* SVProgressHUDViewController.h */,
-				08D7D98E1AE620E700543F2A /* SVProgressHUDViewController.m */,
-				08D7D98F1AE620E700543F2A /* SVProgressHUDViewController.xib */,
 				08D7D9BC1AE62FE400543F2A /* AMPoptipViewController.h */,
 				08D7D9BD1AE62FE400543F2A /* AMPoptipViewController.m */,
 				08D7D9D41AE6317D00543F2A /* AMPoptipViewController.xib */,
-				0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */,
-				0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */,
-				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
 				08B2A1E11B85C46800B89635 /* KGModalDemo.h */,
 				08B2A1E21B85C46800B89635 /* KGModalDemo.m */,
 				08B2A1E31B85C46800B89635 /* KGModalDemo.xib */,
 				08B2A1E61B85C49F00B89635 /* KLCPopupDemo.h */,
 				08B2A1E71B85C49F00B89635 /* KLCPopupDemo.m */,
 				08B2A1E81B85C49F00B89635 /* KLCPopupDemo.xib */,
+				0897EEF21B44F77700EBCA00 /* MBProgressHUDViewController.h */,
+				0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */,
+				0897EEF51B44F77F00EBCA00 /* MBProgressHUDViewController.xib */,
+				08D7D98D1AE620E700543F2A /* SVProgressHUDViewController.h */,
+				08D7D98E1AE620E700543F2A /* SVProgressHUDViewController.m */,
+				08D7D98F1AE620E700543F2A /* SVProgressHUDViewController.xib */,
+				0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */,
+				0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */,
+				0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */,
 			);
-			name = HUD;
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		08A320A21B82BF9C00943DE9 /* TYGNotes */ = {
 			isa = PBXGroup;
 			children = (
-				08A3209F1B82BEFF00943DE9 /* TYGNotesViewController.h */,
-				08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */,
+				08A320D41B82CADD00943DE9 /* TYGIBView */,
 				08A320D01B82CABB00943DE9 /* TYGMapKit */,
-				08A320AB1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.h */,
-				08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */,
-				08A320AD1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib */,
 				08A320BB1B82C29900943DE9 /* TYGAppVersionViewController.h */,
 				08A320BC1B82C29900943DE9 /* TYGAppVersionViewController.m */,
 				08A320BD1B82C29900943DE9 /* TYGAppVersionViewController.xib */,
+				081A5AE71C102A95000666AD /* TYGMasonryTestViewController.h */,
+				081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */,
+				08A3209F1B82BEFF00943DE9 /* TYGNotesViewController.h */,
+				08A320A01B82BEFF00943DE9 /* TYGNotesViewController.m */,
+				08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */,
+				08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */,
+				08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */,
 				08F8BCEB1B969286009FF488 /* TYGUIButtonViewController.h */,
 				08F8BCEC1B969286009FF488 /* TYGUIButtonViewController.m */,
 				08F8BCED1B969286009FF488 /* TYGUIButtonViewController.xib */,
+				08A320AB1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.h */,
+				08A320AC1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m */,
+				08A320AD1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.xib */,
 				08FC9F0E1BA2ADBF00CEE275 /* TYGValidViewController.h */,
 				08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */,
 				08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */,
-				08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */,
-				08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */,
-				081A5AE71C102A95000666AD /* TYGMasonryTestViewController.h */,
-				081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */,
-				08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */,
-				08A320D41B82CADD00943DE9 /* TYGIBView */,
 			);
-			name = TYGNotes;
+			path = TYGNotes;
 			sourceTree = "<group>";
 		};
 		08A320B01B82C23B00943DE9 /* TYGDinwei */ = {
@@ -2005,37 +2004,37 @@
 		08A320C01B82C7EA00943DE9 /* Dinwei */ = {
 			isa = PBXGroup;
 			children = (
-				08A320C11B82C7F900943DE9 /* 定位3_白.png */,
-				08A320C21B82C7F900943DE9 /* 定位3_黑.png */,
 				08A320C31B82C7F900943DE9 /* 定位3_橙.png */,
 				08A320C41B82C7F900943DE9 /* 定位3_灰.png */,
+				08A320C11B82C7F900943DE9 /* 定位3_白.png */,
 				08A320C51B82C7F900943DE9 /* 定位3_绿.png */,
+				08A320C21B82C7F900943DE9 /* 定位3_黑.png */,
 			);
-			name = Dinwei;
+			path = Dinwei;
 			sourceTree = "<group>";
 		};
 		08A320D01B82CABB00943DE9 /* TYGMapKit */ = {
 			isa = PBXGroup;
 			children = (
+				08A320A81B82C02A00943DE9 /* TYGMapAnnotation.h */,
+				08A320A91B82C02A00943DE9 /* TYGMapAnnotation.m */,
 				08A320A31B82BFE800943DE9 /* TYGMapKitViewController.h */,
 				08A320A41B82BFE800943DE9 /* TYGMapKitViewController.m */,
 				08A320A51B82BFE800943DE9 /* TYGMapKitViewController.xib */,
-				08A320A81B82C02A00943DE9 /* TYGMapAnnotation.h */,
-				08A320A91B82C02A00943DE9 /* TYGMapAnnotation.m */,
 			);
-			name = TYGMapKit;
+			path = TYGMapKit;
 			sourceTree = "<group>";
 		};
 		08A320D41B82CADD00943DE9 /* TYGIBView */ = {
 			isa = PBXGroup;
 			children = (
+				08A320D11B82CAD800943DE9 /* TYGIBView.h */,
+				08A320D21B82CAD800943DE9 /* TYGIBView.m */,
 				08A320CB1B82CAA300943DE9 /* TYGIBViewController.h */,
 				08A320CC1B82CAA300943DE9 /* TYGIBViewController.m */,
 				08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */,
-				08A320D11B82CAD800943DE9 /* TYGIBView.h */,
-				08A320D21B82CAD800943DE9 /* TYGIBView.m */,
 			);
-			name = TYGIBView;
+			path = TYGIBView;
 			sourceTree = "<group>";
 		};
 		08A350E71C1A64D2002422A0 /* SAMTextView */ = {
@@ -2060,26 +2059,30 @@
 		08ADBFC91B69B5320034B231 /* PopAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */,
-				08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */,
+				08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */,
+				08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */,
+				08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */,
 				08E9C8C21B0AD36A00DDF85C /* PopBasicViewController.h */,
 				08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */,
 				08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */,
 				08ADBFC41B69AE5F0034B231 /* PopSpringAnimationViewController.h */,
 				08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */,
 				08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */,
-				08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */,
-				08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */,
-				08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */,
+				08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */,
+				08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */,
 			);
-			name = PopAnimation;
+			path = PopAnimation;
 			sourceTree = "<group>";
 		};
 		08B2A1D31B85AA4800B89635 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
-				08B2A1D41B85AA7700B89635 /* TYGProgressTableViewController.h */,
-				08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */,
+				08B2A1DC1B85BDCB00B89635 /* ASProgressPopUpViewDemo.h */,
+				08B2A1DD1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m */,
+				08B2A1DE1B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib */,
+				08B2A1D71B85B42400B89635 /* ASValueTrackingSliderDemo.h */,
+				08B2A1D81B85B42400B89635 /* ASValueTrackingSliderDemo.m */,
+				08B2A1DA1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib */,
 				0874A4F11B622BA800007951 /* LDProgressViewController.h */,
 				0874A4F21B622BA800007951 /* LDProgressViewController.m */,
 				0874A4F41B622D3A00007951 /* LDProgressViewController.xib */,
@@ -2088,24 +2091,20 @@
 				0874A4FD1B6233D900007951 /* NJKWebViewProgressDemo.h */,
 				0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */,
 				0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */,
-				08B2A1D71B85B42400B89635 /* ASValueTrackingSliderDemo.h */,
-				08B2A1D81B85B42400B89635 /* ASValueTrackingSliderDemo.m */,
-				08B2A1DA1B85B4C300B89635 /* ASValueTrackingSliderDemo.xib */,
-				08B2A1DC1B85BDCB00B89635 /* ASProgressPopUpViewDemo.h */,
-				08B2A1DD1B85BDCB00B89635 /* ASProgressPopUpViewDemo.m */,
-				08B2A1DE1B85BDCB00B89635 /* ASProgressPopUpViewDemo.xib */,
+				08B2A1D41B85AA7700B89635 /* TYGProgressTableViewController.h */,
+				08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */,
 			);
-			name = Progress;
+			path = Progress;
 			sourceTree = "<group>";
 		};
 		08B3A3C71B661083007838EA /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */,
 				08B3A3C81B661083007838EA /* cat@2x.png */,
 				08B3A3C91B661083007838EA /* check@2x.png */,
 				08B3A3CA1B661083007838EA /* fav@2x.png */,
 				08B3A3CB1B661083007838EA /* menu@2x.png */,
-				08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -2114,55 +2113,55 @@
 			isa = PBXGroup;
 			children = (
 				08D530841B5F973700409CF1 /* SuperDemoIcon.png */,
+				08D530811B5F973200409CF1 /* back_OFF_25.png */,
+				08D530801B5F973200409CF1 /* back_ON_25.png */,
 				08D530851B5F973700409CF1 /* iTunesArtwork */,
 				08D530861B5F973700409CF1 /* iTunesArtwork@2x */,
-				08D530801B5F973200409CF1 /* back_ON_25.png */,
-				08D530811B5F973200409CF1 /* back_OFF_25.png */,
 			);
-			name = ICON;
+			path = ICON;
 			sourceTree = "<group>";
 		};
 		08D7CE9C1B21786900A3C8AD /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				08F27D061B54F5E10039DF49 /* AwesomeMenuDemoViewController.h */,
+				08F27D071B54F5E10039DF49 /* AwesomeMenuDemoViewController.m */,
+				08C72E131B25461A00967012 /* DEMOMenuViewController.h */,
+				08C72E141B25461A00967012 /* DEMOMenuViewController.m */,
+				08D7CEAA1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.h */,
+				08D7CEAB1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.m */,
+				08D7CEA21B217CAF00A3C8AD /* IGLDemoViewController.h */,
+				08D7CEA31B217CAF00A3C8AD /* IGLDemoViewController.m */,
+				080E5A051B2191F800F54F44 /* QBPopupMenuDemo.h */,
+				080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */,
+				080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */,
+				08C72E101B2545B400967012 /* REFrostedViewControllerExample.h */,
+				08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */,
+				08C72DFF1B25321F00967012 /* REMenuExample.h */,
+				08C72E001B25321F00967012 /* REMenuExample.m */,
+				08C72DFC1B252D2100967012 /* RWDemoViewController.h */,
+				08C72DFD1B252D2100967012 /* RWDemoViewController.m */,
 				08D7CE9D1B21789A00A3C8AD /* TYGMenuTableViewController.h */,
 				08D7CE9E1B21789A00A3C8AD /* TYGMenuTableViewController.m */,
 				08D7CE9F1B21789A00A3C8AD /* TYGMenuTableViewController.xib */,
 				0843EFCA1AE4F62F00220F15 /* kxMenuDemo.h */,
 				0843EFCB1AE4F62F00220F15 /* kxMenuDemo.m */,
-				08D7CEA21B217CAF00A3C8AD /* IGLDemoViewController.h */,
-				08D7CEA31B217CAF00A3C8AD /* IGLDemoViewController.m */,
-				08D7CEAA1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.h */,
-				08D7CEAB1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.m */,
-				080E5A051B2191F800F54F44 /* QBPopupMenuDemo.h */,
-				080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */,
-				080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */,
-				08C72DFC1B252D2100967012 /* RWDemoViewController.h */,
-				08C72DFD1B252D2100967012 /* RWDemoViewController.m */,
-				08C72DFF1B25321F00967012 /* REMenuExample.h */,
-				08C72E001B25321F00967012 /* REMenuExample.m */,
-				08C72E101B2545B400967012 /* REFrostedViewControllerExample.h */,
-				08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */,
-				08C72E131B25461A00967012 /* DEMOMenuViewController.h */,
-				08C72E141B25461A00967012 /* DEMOMenuViewController.m */,
-				08F27D061B54F5E10039DF49 /* AwesomeMenuDemoViewController.h */,
-				08F27D071B54F5E10039DF49 /* AwesomeMenuDemoViewController.m */,
 			);
-			name = Menu;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		08D7D9741AE619A400543F2A /* CubeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				08D7D9751AE619D500543F2A /* CubeViewController.h */,
-				08D7D9761AE619D500543F2A /* CubeViewController.m */,
-				08D7D9771AE619D500543F2A /* RedViewController.xib */,
-				08D7D9781AE619D500543F2A /* GreenViewController.xib */,
 				08D7D9791AE619D500543F2A /* BlueViewController.xib */,
 				08D7D9711AE6199500543F2A /* CubeDemo.h */,
 				08D7D9721AE6199500543F2A /* CubeDemo.m */,
+				08D7D9751AE619D500543F2A /* CubeViewController.h */,
+				08D7D9761AE619D500543F2A /* CubeViewController.m */,
+				08D7D9781AE619D500543F2A /* GreenViewController.xib */,
+				08D7D9771AE619D500543F2A /* RedViewController.xib */,
 			);
-			name = CubeDemo;
+			path = CubeDemo;
 			sourceTree = "<group>";
 		};
 		08D7D97E1AE61D8C00543F2A /* SphereView */ = {
@@ -2201,14 +2200,14 @@
 		08DB587A1C06D9020011D722 /* TYGSignature */ = {
 			isa = PBXGroup;
 			children = (
+				080069971C0BFE1B00FE9A2A /* TYGSignatureLineView.h */,
+				080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */,
 				08DB587B1C06D9020011D722 /* TYGSignatureView.h */,
 				08DB587C1C06D9020011D722 /* TYGSignatureView.m */,
 				08DB58841C06D95A0011D722 /* TYGSignatureViewQuartz.h */,
 				08DB58851C06D95A0011D722 /* TYGSignatureViewQuartz.m */,
 				08DB58871C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.h */,
 				08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */,
-				080069971C0BFE1B00FE9A2A /* TYGSignatureLineView.h */,
-				080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */,
 			);
 			path = TYGSignature;
 			sourceTree = "<group>";
@@ -2216,31 +2215,31 @@
 		08EC5DC31B953F390081C8CA /* UIList */ = {
 			isa = PBXGroup;
 			children = (
-				08EC5DC41B953FAE0081C8CA /* TYGUIListTableViewController.h */,
-				08EC5DC51B953FAE0081C8CA /* TYGUIListTableViewController.m */,
-				08EC5DC81B954AF90081C8CA /* TTSwitchDemoViewController.h */,
-				08EC5DC91B954AF90081C8CA /* TTSwitchDemoViewController.m */,
-				08EC5E0F1B9550660081C8CA /* StyledPageControlTableViewController.h */,
-				08EC5E101B9550660081C8CA /* StyledPageControlTableViewController.m */,
 				08EC5E121B9551480081C8CA /* HMSegmentedControlDemo.h */,
 				08EC5E131B9551480081C8CA /* HMSegmentedControlDemo.m */,
+				08EC5E0F1B9550660081C8CA /* StyledPageControlTableViewController.h */,
+				08EC5E101B9550660081C8CA /* StyledPageControlTableViewController.m */,
+				08EC5DC81B954AF90081C8CA /* TTSwitchDemoViewController.h */,
+				08EC5DC91B954AF90081C8CA /* TTSwitchDemoViewController.m */,
+				08EC5DC41B953FAE0081C8CA /* TYGUIListTableViewController.h */,
+				08EC5DC51B953FAE0081C8CA /* TYGUIListTableViewController.m */,
 			);
-			name = UIList;
+			path = UIList;
 			sourceTree = "<group>";
 		};
 		08EC5DC71B9540420081C8CA /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				08F483E81B95731300814233 /* TYGLoadingTableViewController.h */,
-				08F483E91B95731300814233 /* TYGLoadingTableViewController.m */,
+				0843F0011AE4FDB400220F15 /* MYIntroduction */,
+				08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */,
+				08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */,
 				08F483F11B957C9A00814233 /* OnboardDemo.h */,
 				08F483F21B957C9A00814233 /* OnboardDemo.m */,
 				08F483F41B957E4600814233 /* OnboardDemo.xib */,
-				08F483EB1B95742600814233 /* IFTTTJazzHandsViewController.h */,
-				08F483EC1B95742600814233 /* IFTTTJazzHandsViewController.m */,
-				0843F0011AE4FDB400220F15 /* MYIntroduction */,
+				08F483E81B95731300814233 /* TYGLoadingTableViewController.h */,
+				08F483E91B95731300814233 /* TYGLoadingTableViewController.m */,
 			);
-			name = LoadingView;
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		08EC5DCB1B954D7F0081C8CA /* TTSwitchImage */ = {
@@ -2337,9 +2336,9 @@
 				08EDD0681BF179EE00FF110E /* TYGAreaPickerView.h */,
 				08EDD0691BF179EE00FF110E /* TYGAreaPickerView.m */,
 				08EDD06A1BF179EE00FF110E /* TYGAreaPickerView.xib */,
-				08EDD06B1BF179EE00FF110E /* tygCity.plist */,
 				08EDD06C1BF179EE00FF110E /* TYGLocation.h */,
 				08EDD06D1BF179EE00FF110E /* TYGLocation.m */,
+				08EDD06B1BF179EE00FF110E /* tygCity.plist */,
 			);
 			path = TYGAreaPicker;
 			sourceTree = "<group>";
@@ -2347,23 +2346,23 @@
 		08F19C711B4681C000722C9C /* ActionSheetPickDemo */ = {
 			isa = PBXGroup;
 			children = (
-				08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */,
 				08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */,
 				08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */,
 				08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */,
 				08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */,
 				08F19C761B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.h */,
 				08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */,
+				08F19C8B1B4681E900722C9C /* ActionSheetPickerDemo.storyboard */,
 				08F19C781B4681C000722C9C /* ActionSheetPickerTableViewController.h */,
 				08F19C791B4681C000722C9C /* ActionSheetPickerTableViewController.m */,
 				08F19C7A1B4681C000722C9C /* ActionSheetPickerViewController.h */,
 				08F19C7B1B4681C000722C9C /* ActionSheetPickerViewController.m */,
-				08F19C7C1B4681C000722C9C /* cancel.png */,
 				08F19C7D1B4681C000722C9C /* NSDate+TCUtils.h */,
 				08F19C7E1B4681C000722C9C /* NSDate+TCUtils.m */,
-				08F19C7F1B4681C000722C9C /* ok.png */,
 				08F19C801B4681C000722C9C /* TestTableViewController.h */,
 				08F19C811B4681C000722C9C /* TestTableViewController.m */,
+				08F19C7C1B4681C000722C9C /* cancel.png */,
+				08F19C7F1B4681C000722C9C /* ok.png */,
 			);
 			path = ActionSheetPickDemo;
 			sourceTree = "<group>";
@@ -2396,22 +2395,21 @@
 		08F20B6A1B67689C005F092A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				08F20BA61B677C39005F092A /* TimesSquare */,
+				08F20B7E1B6770D3005F092A /* ABCalendarPickerDemo.h */,
+				08F20B7F1B6770D3005F092A /* ABCalendarPickerDemo.m */,
+				08F20B801B6770D3005F092A /* ABCalendarPickerDemo.storyboard */,
 				08F20B6B1B6768BA005F092A /* CalendarViewController.h */,
 				08F20B6C1B6768BA005F092A /* CalendarViewController.m */,
 				08B3A3BB1B660308007838EA /* PDTSimpleCalendarDemo.h */,
 				08B3A3BC1B660308007838EA /* PDTSimpleCalendarDemo.m */,
-				08F20B7E1B6770D3005F092A /* ABCalendarPickerDemo.h */,
-				08F20B7F1B6770D3005F092A /* ABCalendarPickerDemo.m */,
-				08F20B801B6770D3005F092A /* ABCalendarPickerDemo.storyboard */,
-				08F20BA61B677C39005F092A /* TimesSquare */,
 			);
-			name = Calendar;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		08F20B911B677C1F005F092A /* TimesSquare */ = {
 			isa = PBXGroup;
 			children = (
-				08F20B831B67718C005F092A /* CalendarShadow.png */,
 				08F20B921B677C1F005F092A /* CalendarPreviousMonth.png */,
 				08F20B931B677C1F005F092A /* CalendarPreviousMonth@2x.png */,
 				08F20B941B677C1F005F092A /* CalendarRow.png */,
@@ -2420,6 +2418,7 @@
 				08F20B971B677C1F005F092A /* CalendarRowBottom@2x.png */,
 				08F20B981B677C1F005F092A /* CalendarSelectedDate.png */,
 				08F20B991B677C1F005F092A /* CalendarSelectedDate@2x.png */,
+				08F20B831B67718C005F092A /* CalendarShadow.png */,
 				08F20B9A1B677C1F005F092A /* CalendarTodaysDate.png */,
 				08F20B9B1B677C1F005F092A /* CalendarTodaysDate@2x.png */,
 			);
@@ -2429,14 +2428,14 @@
 		08F20BA61B677C39005F092A /* TimesSquare */ = {
 			isa = PBXGroup;
 			children = (
-				08F20BA71B677C77005F092A /* TimesSquareViewDemo.h */,
-				08F20BA81B677C77005F092A /* TimesSquareViewDemo.m */,
-				08F20B8D1B677BF3005F092A /* TSQTAViewController.h */,
-				08F20B8E1B677BF3005F092A /* TSQTAViewController.m */,
 				08F20B8B1B677BF3005F092A /* TSQTACalendarRowCell.h */,
 				08F20B8C1B677BF3005F092A /* TSQTACalendarRowCell.m */,
+				08F20B8D1B677BF3005F092A /* TSQTAViewController.h */,
+				08F20B8E1B677BF3005F092A /* TSQTAViewController.m */,
+				08F20BA71B677C77005F092A /* TimesSquareViewDemo.h */,
+				08F20BA81B677C77005F092A /* TimesSquareViewDemo.m */,
 			);
-			name = TimesSquare;
+			path = TimesSquare;
 			sourceTree = "<group>";
 		};
 		08F27D091B550ABC0039DF49 /* RETableViewManagerExample */ = {
@@ -2470,10 +2469,10 @@
 				08F27D111B550ABC0039DF49 /* IndexedListViewController.m */,
 				08F27D121B550ABC0039DF49 /* ListViewController.h */,
 				08F27D131B550ABC0039DF49 /* ListViewController.m */,
-				08F27D141B550ABC0039DF49 /* RetractableViewController.h */,
-				08F27D151B550ABC0039DF49 /* RetractableViewController.m */,
 				08F27D161B550ABC0039DF49 /* RETableRootViewController.h */,
 				08F27D171B550ABC0039DF49 /* RETableRootViewController.m */,
+				08F27D141B550ABC0039DF49 /* RetractableViewController.h */,
+				08F27D151B550ABC0039DF49 /* RetractableViewController.m */,
 				08F27D181B550ABC0039DF49 /* StylingViewController.h */,
 				08F27D191B550ABC0039DF49 /* StylingViewController.m */,
 				08F27D1A1B550ABC0039DF49 /* ValidationsViewController.h */,
@@ -2559,15 +2558,15 @@
 				08F483921B9571BD00814233 /* JazzHands-Airplane.png */,
 				08F483931B9571BD00814233 /* JazzHands-BigCloud.png */,
 				08F483941B9571BD00814233 /* JazzHands-BlueStick.png */,
-				08F483951B9571BD00814233 /* JazzHands-hands.png */,
 				08F483961B9571BD00814233 /* JazzHands-IFTTTCloud.png */,
 				08F483971B9571BD00814233 /* JazzHands-IFTTTPresents.png */,
-				08F483981B9571BD00814233 /* JazzHands-jazz.png */,
-				08F483991B9571BD00814233 /* JazzHands-littleCloud.png */,
 				08F4839A1B9571BD00814233 /* JazzHands-MusicNotes.png */,
 				08F4839B1B9571BD00814233 /* JazzHands-MusicStand.png */,
 				08F4839C1B9571BD00814233 /* JazzHands-OrangeStick.png */,
 				08F4839D1B9571BD00814233 /* JazzHands-Sun.png */,
+				08F483951B9571BD00814233 /* JazzHands-hands.png */,
+				08F483981B9571BD00814233 /* JazzHands-jazz.png */,
+				08F483991B9571BD00814233 /* JazzHands-littleCloud.png */,
 				08F4839E1B9571BD00814233 /* JazzHands-text2.png */,
 				08F4839F1B9571BD00814233 /* JazzHands-text3.png */,
 			);
@@ -2669,6 +2668,7 @@
 				0843EE4D1AE4D8B500220F15 /* Frameworks */,
 				0843EE4E1AE4D8B500220F15 /* Resources */,
 				82D6B3D193E1B862803DE4C8 /* Copy Pods Resources */,
+				4C196CD89F87DD0B8C630029 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3119,6 +3119,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		4C196CD89F87DD0B8C630029 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		82D6B3D193E1B862803DE4C8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3349,6 +3364,7 @@
 				0843EE661AE4D8B500220F15 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -3379,7 +3395,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -3422,7 +3438,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3442,8 +3458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
-				INFOPLIST_FILE = SuperDemo/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "SuperDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3456,8 +3472,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/PrefixHeader.pch";
-				INFOPLIST_FILE = SuperDemo/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "SuperDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3476,7 +3492,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SuperDemoTests/Info.plist;
+				INFOPLIST_FILE = "SuperDemoTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDemo.app/SuperDemo";
@@ -3491,7 +3507,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SuperDemoTests/Info.plist;
+				INFOPLIST_FILE = "SuperDemoTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDemo.app/SuperDemo";

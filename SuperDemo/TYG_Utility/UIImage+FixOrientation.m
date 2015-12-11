@@ -10,21 +10,26 @@
 
 @implementation UIImage (FixOrientation)
 
+/**
+ *  修复图片的方向(如果可以，建议先降低图片分辨率再修复)
+ *  @return UIImage
+ */
 - (UIImage *)fixOrientation {
     
-//    NSData *data = UIImageJPEGRepresentation(self, 1.0);
-//    NSLog(@"FixOrientation imageWidth = %f, imageHeight = %f \n length = %lu",self.size.width,self.size.height,(unsigned long)[data length]);
+    /*
+    //缩小图片分辨率，如果分辨率太大，一次性处理图片过多，会导致内存暴涨
     CGFloat screenWidth = [[UIScreen mainScreen] bounds].size.width;
-//    NSLog(@"screeW = %f",screenWidth);
     CGFloat scale = [UIScreen mainScreen].scale;
     CGFloat movs = floorf(self.size.width/screenWidth);//缩小倍数
-    CGSize imageSize = CGSizeMake(scale * self.size.width/movs, scale * self.size.height/movs);
+    CGSize imageSize = CGSizeMake(scale * self.size.width/movs, scale * self.size.height/movs);//图片最终大小
+    */
     
+    CGSize imageSize = self.size;
     // No-op if the orientation is already correct
-//    if (self.imageOrientation == UIImageOrientationUp) {
-//        //如果为正向照片，则不用修正，此处跳过，是为了修改照片大小
-//        return reSizeImage;
-//    }
+    if (self.imageOrientation == UIImageOrientationUp && CGSizeEqualToSize(imageSize, self.size)) {
+        //如果为正向照片，且如果最终分辨率大小为原始大小，则不用修正
+        return self;
+    }
     
     // We need to calculate the proper transformation to make the image upright.
     // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.

@@ -1297,11 +1297,11 @@
 		0843EE471AE4D8B500220F15 = {
 			isa = PBXGroup;
 			children = (
-				F2ED8628DAA926E5E6971BAB /* Frameworks */,
-				6A5DE5FEE734230BFA577471 /* Pods */,
-				0843EE511AE4D8B500220F15 /* Products */,
 				0843EE521AE4D8B500220F15 /* SuperDemo */,
 				0843EE6F1AE4D8B500220F15 /* SuperDemoTests */,
+				F2ED8628DAA926E5E6971BAB /* Frameworks */,
+				0843EE511AE4D8B500220F15 /* Products */,
+				6A5DE5FEE734230BFA577471 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1317,11 +1317,11 @@
 		0843EE521AE4D8B500220F15 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0843EE531AE4D8B500220F15 /* Supporting Files */,
-				0843EF141AE4DB8700220F15 /* Utility */,
 				0843EF611AE4DC1000220F15 /* ViewController */,
 				0843EE631AE4D8B500220F15 /* Images.xcassets */,
 				0843EE651AE4D8B500220F15 /* LaunchScreen.xib */,
+				0843EF141AE4DB8700220F15 /* Utility */,
+				0843EE531AE4D8B500220F15 /* Supporting Files */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -1447,14 +1447,14 @@
 		0843EF611AE4DC1000220F15 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0843EF621AE4DC1F00220F15 /* first */,
-				0843EF651AE4DC3500220F15 /* four */,
-				0843EF631AE4DC2800220F15 /* second */,
-				0843EF641AE4DC2E00220F15 /* third */,
 				0843EE571AE4D8B500220F15 /* AppDelegate.h */,
 				0843EE581AE4D8B500220F15 /* AppDelegate.m */,
 				0843EE7C1AE4D8FD00220F15 /* MainViewController.h */,
 				0843EE7D1AE4D8FD00220F15 /* MainViewController.m */,
+				0843EF621AE4DC1F00220F15 /* first */,
+				0843EF631AE4DC2800220F15 /* second */,
+				0843EF641AE4DC2E00220F15 /* third */,
+				0843EF651AE4DC3500220F15 /* four */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

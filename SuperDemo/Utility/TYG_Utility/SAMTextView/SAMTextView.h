@@ -12,6 +12,7 @@
 /**
  UITextView subclass that adds placeholder support like UITextField has.
  */
+IB_DESIGNABLE
 @interface SAMTextView : UITextView
 
 /**
@@ -20,7 +21,7 @@
 
  The default value is `nil`.
  */
-@property (nonatomic, strong) NSString *placeholder;
+@property (nonatomic, strong) IBInspectable NSString *placeholder;
 
 /**
  The attributed string that is displayed when there is no other text in the text view.

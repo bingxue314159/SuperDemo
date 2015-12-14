@@ -328,6 +328,7 @@
 		08DB58891C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB58881C06D96D0011D722 /* TYGSignatureViewQuartzQuadratic.m */; };
 		08DB588D1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */; };
 		08DB588E1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */; };
+		08DF74421C1E6D3F007D43D5 /* TYGWebViewProgressDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DF74411C1E6D3F007D43D5 /* TYGWebViewProgressDemo.m */; };
 		08E9C8C51B0AD36A00DDF85C /* PopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */; };
 		08E9C8C61B0AD36A00DDF85C /* PopBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */; };
 		08EA56181B4381B7007ED35B /* BlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EA56161B4381B7007ED35B /* BlocksKitViewController.m */; };
@@ -1012,6 +1013,8 @@
 		08DB588A1C06DAC00011D722 /* TYGSignatureViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureViewDemoViewController.h; sourceTree = "<group>"; };
 		08DB588B1C06DAC00011D722 /* TYGSignatureViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureViewDemoViewController.m; sourceTree = "<group>"; };
 		08DB588C1C06DAC00011D722 /* TYGSignatureViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGSignatureViewDemoViewController.xib; sourceTree = "<group>"; };
+		08DF74401C1E6D3F007D43D5 /* TYGWebViewProgressDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewProgressDemo.h; sourceTree = "<group>"; };
+		08DF74411C1E6D3F007D43D5 /* TYGWebViewProgressDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewProgressDemo.m; sourceTree = "<group>"; };
 		08E9C8C21B0AD36A00DDF85C /* PopBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBasicViewController.h; sourceTree = "<group>"; };
 		08E9C8C31B0AD36A00DDF85C /* PopBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBasicViewController.m; sourceTree = "<group>"; };
 		08E9C8C41B0AD36A00DDF85C /* PopBasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopBasicViewController.xib; sourceTree = "<group>"; };
@@ -2093,6 +2096,8 @@
 				0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */,
 				08B2A1D41B85AA7700B89635 /* TYGProgressTableViewController.h */,
 				08B2A1D51B85AA7700B89635 /* TYGProgressTableViewController.m */,
+				08DF74401C1E6D3F007D43D5 /* TYGWebViewProgressDemo.h */,
+				08DF74411C1E6D3F007D43D5 /* TYGWebViewProgressDemo.m */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -3197,6 +3202,7 @@
 				08EA56181B4381B7007ED35B /* BlocksKitViewController.m in Sources */,
 				0843F0861AE502AE00220F15 /* DynamicBehaviorsViewController.m in Sources */,
 				08A320CE1B82CAA300943DE9 /* TYGIBViewController.m in Sources */,
+				08DF74421C1E6D3F007D43D5 /* TYGWebViewProgressDemo.m in Sources */,
 				08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */,
 				08F19C861B4681C000722C9C /* ActionSheetPickerViewController.m in Sources */,
 				08A320B51B82C23B00943DE9 /* LocationTrans.m in Sources */,

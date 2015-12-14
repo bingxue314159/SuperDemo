@@ -33,6 +33,7 @@
     [titleArray addObject:@"进度条-LDProgressViewController"];
     [titleArray addObject:@"饼形进度条-MDRadialProgressViewDemo"];
     [titleArray addObject:@"WebView进度条-NJKWebViewProgressDemo"];
+    [titleArray addObject:@"WebView进度条2-TYGWebViewProgressDemo"];
     [titleArray addObject:@"ASValueTrackingSlider-ASValueTrackingSliderDemo"];
     [titleArray addObject:@"ASProgressPopUpView-ASProgressPopUpViewDemo"];
     

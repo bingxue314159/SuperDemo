@@ -88,7 +88,7 @@
 + (id)getObject:(NSString *)key{
     //读取Settings.bundle里面的Root.plist
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    id rtn=[defaults stringForKey:key];
+    id rtn=[defaults objectForKey:key];
     
     //如果rtn为空，则从其他配置文件当中读取相关信息
     //    if ([rtn length] == 0) {

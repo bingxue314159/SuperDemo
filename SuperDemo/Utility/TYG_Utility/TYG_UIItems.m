@@ -291,38 +291,6 @@
 }
 
 /**
- * 功能：创建label对象（高度根据文本内容长度自适应）
- * 参数：文本内容-text 对象位置和大小-frame
- * 返回：label对象
- */
-+(UILabel *)labelCreatMutableLabel:(NSString *)text font:(UIFont *)font frame:(CGRect)frame{
-    UILabel *label = [[UILabel alloc] init];
-    label.font = font;
-    label.backgroundColor = [UIColor clearColor];
-    label.textColor = [UIColor  blackColor];
-    label.text = text;
-    label.numberOfLines = 0;
-    
-    
-    //计算文本宽度，如果文本宽度 小于 frame.width，那么取文本宽度的值
-    CGFloat labW = frame.size.width;
-    CGSize labelS = [text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 0.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
-    if (labelS.width < labW) {
-        labW = labelS.width;
-    }
-    
-    //计算文本高度
-    CGSize labelSize = [text boundingRectWithSize:CGSizeMake(labW, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
-    CGFloat labH = labelSize.height;
-    
-    //新建新的frame
-    CGRect newFrame = CGRectMake(frame.origin.x, frame.origin.y, labW, labH);
-    label.frame = newFrame;
-    
-    return label;
-}
-
-/**
  * 功能：创建指定行数的label对象（行数不足的，返回最大实际行数）
  * 参数：text-内容 font--字体 width--行宽 lines--行数
  * 返回：label
@@ -337,7 +305,7 @@
     
     //计算文本宽度，如果文本宽度 小于 frame.width，那么取文本宽度的值
     CGFloat labW = width;
-    CGSize labelS = [text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 0.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
+    CGSize labelS = [text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
     if (labelS.width < labW) {
         labW = labelS.width;
     }
@@ -345,9 +313,11 @@
     //计算字体高度
     CGSize textSize = [text sizeWithAttributes:@{NSFontAttributeName:label.font}];
     
-    //计算文本高度
-    CGSize labelSize = [text boundingRectWithSize:CGSizeMake(labW, textSize.height*lines) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
-    CGFloat labH = labelSize.height;
+    CGFloat labH = labelS.height;//不限高
+    if (lines > 0) {
+        //限高
+        labH = MIN(labH, textSize.height * lines);
+    }
     
     //新建新的frame
     CGRect newFrame = CGRectMake(0, 0, labW, labH);

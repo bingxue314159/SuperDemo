@@ -111,11 +111,11 @@
                     <exclude reference="VYT-Kx-joR"/>
                     <exclude reference="nuW-63-yBv"/>
                     <exclude reference="oiT-At-U6f"/>
-                    <exclude reference="3Em-Zr-Uiw"/>
-                    <exclude reference="Dk3-L9-2Ok"/>
                     <exclude reference="f1y-NM-mKT"/>
                     <exclude reference="xLv-zh-Kjg"/>
                     <exclude reference="yLo-dM-6st"/>
+                    <exclude reference="3Em-Zr-Uiw"/>
+                    <exclude reference="Dk3-L9-2Ok"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -128,11 +128,11 @@
                     <include reference="VYT-Kx-joR"/>
                     <include reference="nuW-63-yBv"/>
                     <include reference="oiT-At-U6f"/>
-                    <include reference="3Em-Zr-Uiw"/>
-                    <include reference="Dk3-L9-2Ok"/>
                     <include reference="f1y-NM-mKT"/>
                     <include reference="xLv-zh-Kjg"/>
                     <include reference="yLo-dM-6st"/>
+                    <include reference="3Em-Zr-Uiw"/>
+                    <include reference="Dk3-L9-2Ok"/>
                 </mask>
             </variation>
         </view>

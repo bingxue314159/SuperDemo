@@ -111,15 +111,15 @@
     NSDate *maxDate = [NSDate date];
 
 
-    _actionSheetPicker = [[ActionSheetDatePicker alloc] initWithTitle:@"" datePickerMode:UIDatePickerModeDate selectedDate:self.selectedDate
+    _actionSheetPicker = [[ActionSheetDatePicker alloc] initWithTitle:@"日期选取" datePickerMode:UIDatePickerModeDate selectedDate:self.selectedDate
                                                                target:self action:@selector(dateWasSelected:element:) origin:sender];
 
 
     [(ActionSheetDatePicker *) self.actionSheetPicker setMinimumDate:minDate];
     [(ActionSheetDatePicker *) self.actionSheetPicker setMaximumDate:maxDate];
 
-    [self.actionSheetPicker addCustomButtonWithTitle:@"Today" value:[NSDate date]];
-    [self.actionSheetPicker addCustomButtonWithTitle:@"Yesterday" value:[[NSDate date] TC_dateByAddingCalendarUnits:NSCalendarUnitDay amount:-1]];
+    [self.actionSheetPicker addCustomButtonWithTitle:@"今天" value:[NSDate date]];
+    [self.actionSheetPicker addCustomButtonWithTitle:@"昨天" value:[[NSDate date] TC_dateByAddingCalendarUnits:NSCalendarUnitDay amount:-1]];
     self.actionSheetPicker.hideCancel = YES;
     [self.actionSheetPicker showActionSheetPicker];
 }

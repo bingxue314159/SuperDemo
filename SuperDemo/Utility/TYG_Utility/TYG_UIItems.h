@@ -82,14 +82,6 @@
                                  font:(UIFont *)font
                            buttonType:(UIButtonType)buttonType;
 
-
-/**
- * 功能：创建label对象（高度根据文本内容长度自适应）
- * 参数：text-内容 font--字体 frame--frame
- * 返回：label
- */
-+(UILabel *)labelCreatMutableLabel:(NSString *)text font:(UIFont *)font frame:(CGRect)frame;
-
 /**
  * 功能：创建指定行数的label对象（行数不足的，返回最大实际行数）
  * 参数：text-内容 font--字体 width--行宽 lines--行数

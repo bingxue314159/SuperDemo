@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         self.hidesBottomBarWhenPushed = YES;
-        self.webShowStatus = WebShowTSMessage;
+        self.webShowStatus = WebShowSVProgressHUD;
     }
     return self;
 }
@@ -59,7 +59,7 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     // 显示加载状态
     switch (self.webShowStatus) {
-        case WebShowTSMessage: {
+        case WebShowSVProgressHUD: {
             [SVProgressHUD showWithStatus:@"数据加载中…" maskType:SVProgressHUDMaskTypeBlack];
             break;
         }
@@ -88,7 +88,7 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     // 隐藏加载状态
     switch (self.webShowStatus) {
-        case WebShowTSMessage: {
+        case WebShowSVProgressHUD: {
             [SVProgressHUD dismiss];
             break;
         }
@@ -115,7 +115,7 @@
     [TSMessage showNotificationWithTitle:@"页面加载失败！" type:TSMessageNotificationTypeError];
     
     switch (self.webShowStatus) {
-        case WebShowTSMessage: {
+        case WebShowSVProgressHUD: {
             [SVProgressHUD dismiss];
             break;
         }

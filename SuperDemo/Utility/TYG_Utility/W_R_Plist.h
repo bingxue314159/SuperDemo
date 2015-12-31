@@ -39,7 +39,7 @@
  * 功能：获取配置文件Root.plist当中关键字key对应的值,如果配置文件Root当中无数据
  *      则从Config配置文件当中读取相关数据
  */
-//+ (id)getObject:(NSString *)key;
++ (id)getObject:(NSString *)key;
 
 /**
  * 功能：设置配置文件Config.plist当中key对应的值value

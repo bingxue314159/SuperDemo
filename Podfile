@@ -8,7 +8,8 @@ pod 'BlocksKit', '~> 2.2.5' #为UIKit增加Block回调，是对Cocoa类的一个
 pod 'DTCoreText', '~> 1.6.15'   #一个功能十分强大的文字效果代码类库,在UITextView上实现十分丰富的文字效果，包括文字大小、颜色、字体、下划线，链接，给文字加上图片、视频，文字任意间距等等。实现类似于CSS网页的文字效果
 
 pod 'pop', '~> 1.0' #FaceBook 动画库
-pod 'Masonry'   #一个轻量级的布局框架,拥有自己的描述语法,采用更优雅的链式语法封装自动布局,简洁明了,并具有高可读性,而且同时支持 iOS和 Max OS X（推荐）
+pod 'Masonry'   #一个轻量级的布局框架,采用更优雅的链式语法封装自动布局,简洁明了,并具有高可读性,同时支持 iOS和 Max OS X（推荐）
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'    #自动计算表格行高
 
 pod 'MJExtension', '~> 3.0.7'  #转换速度快、使用简单方便的字典转模型框(非侵入式，推荐)
 
@@ -47,6 +48,8 @@ pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 pod 'QuickDialog', '~> 1.1.0'   #快速创建表单(推荐)
 pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
 pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
+
+pod 'BButton', '~> 4.0.2'   #各种样式的Button的快速创建（在图右文字，左文字右图，单图等）
 
 #----------------------图表控件----------------------
 pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库

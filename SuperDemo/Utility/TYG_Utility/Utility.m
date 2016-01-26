@@ -429,7 +429,7 @@
 //封装系统相关信息
 + (NSMutableDictionary *) dictionaryAddJOSNHeader:(NSMutableDictionary *) dic{
 
-    [dic setObject:@"Android" forKey:@"os"];//os
+    [dic setObject:@"iOS" forKey:@"os"];//os
     [dic setObject:@"1.0" forKey:@"v"];//API版本--Version
     [dic setObject:@"10086" forKey:@"app"];
     
@@ -445,23 +445,27 @@
     NSNull *null = [[NSNull alloc] init];
     NSString *value;
     
+    if (nil == dic || nil == key) {
+        return @"";
+    }
+    
     id obj = [dic objectForKey:key];
     
-    if (nil == dic) {
-        value = @"";
-    }
-    else if ([null isEqual:obj]) {
+    if (nil == obj || [null isEqual:obj]) {
         value = @"";
     }
     else if ([obj isKindOfClass:[NSNumber class]]) {
         value = [NSString stringWithFormat:@"%@",obj];
     }
-    else{
-        value = [dic objectForKey:key];
+    else if ([obj isKindOfClass:[NSString class]]) {
+        value = obj;
         //去掉左右两边的空格
-        if (value) {
+        if (value && value.length > 0) {
             value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         }
+    }
+    else{
+        value = [NSString stringWithFormat:@"%@",obj];
     }
     
     return value;
@@ -609,6 +613,9 @@
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData{
 
     NSString *resStr = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
+    if (nil == resStr) {
+        return nil;
+    }
     resStr = [resStr stringByReplacingOccurrencesOfString:@"\r\n" withString:@""];
     
     NSData *newJsonData = [resStr dataUsingEncoding:NSUTF8StringEncoding];

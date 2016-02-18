@@ -54,26 +54,4 @@
  */
 + (BOOL) ImageSaveImage:(UIImage *)image;
 
-/*
- *功能：获取文件大小
- *参数：data文件的二进制
- *返回：文件大小，单位：kb
- */
-+ (CGFloat)getFileSize:(NSData *)data;//获取文件大小
-
-/*
- * 功能：自定义图片在内存中的大小
- * 参数：image-图片 newSize-内存中的大小（kb）
- * 返回：image
- **/
-+ (UIImage *)ImageReSizeImage:(UIImage *)image newSize:(CGFloat) newSize;
-
-/*
- * 功能：iOS程序中使用系统相机拍照和从相册选取图片，直接上传后在非mac系统下看到的图片会发生旋转的现象,此处修复此问题
- * 参数：image-image orientation-照片的属性image.imageOrientation
- * 返回: image
- */
-+ (UIImage *)imageFixOrientation:(UIImage *)image;
-+(UIImage *)imageFixOrientation2:(UIImage *)aImage;
-
 @end

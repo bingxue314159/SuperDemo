@@ -81,6 +81,67 @@
     return nil;
 }
 
+//设置禁止所有文件云同步
+-(void)addNotBackUpiCloud{
+    
+    //Document
+    NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docPath = [docPaths objectAtIndex:0];
+    [self fileList:docPath];
+    
+    //Library
+    NSArray *libPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *libPath = [libPaths objectAtIndex:0];
+    [self fileList:libPath];
+}
+
+- (void)fileList:(NSString*)directory{
+    
+    NSError *error = nil;
+    
+    NSFileManager * fileManager = [NSFileManager defaultManager];
+    
+    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:directory error:&error];
+    
+    for (NSString* each in fileList) {
+        
+        NSMutableString* path = [[NSMutableString alloc]initWithString:directory];
+        
+        [path appendFormat:@"/%@",each];
+        NSURL *filePath = [NSURL fileURLWithPath:path];
+        
+        [W_R_Plist addSkipBackupAttributeToItemAtURL:filePath];
+        
+        [self fileList:path];
+        
+    }
+    
+}
+
+/**
+ *  设置禁止指定文件云同步
+ *  @param URL 文件路径
+ *  @return Bool
+ */
++ (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL{
+    
+    //assert([[NSFileManager defaultManager] fileExistsAtPath: [URL path]]);
+    if (![[NSFileManager defaultManager] fileExistsAtPath: [URL path]]) {
+        return NO;
+    }
+    else if (nil == URL){
+        return NO;
+    }
+    
+    NSError *error = nil;
+    BOOL success = [URL setResourceValue: [NSNumber numberWithBool: YES]
+                                  forKey: NSURLIsExcludedFromBackupKey error: &error];
+    if(!success){
+        NSLog(@"Error excluding %@ from backup %@", [URL lastPathComponent], error);
+    }
+    return success;
+}
+
 @end
 
 

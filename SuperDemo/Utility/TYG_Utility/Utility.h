@@ -86,11 +86,6 @@
  */
 + (NSString *)getTimeStrFromDate:(NSDate *)paramStartDate endDate:(NSDate*)paramEndDate;
 
-/**
- * 获取指定文件的位置
- */
-+ (NSString *) getFilePath:(NSString *)filename isNotExistsCreatIt:(BOOL) isCreat;
-
 /*
  * 指定个一文件路径,此方法一般用在FMDB初始化数据库中
  */
@@ -158,6 +153,14 @@
  * 将服务器传输来的data数据转化为字典
  */
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData;
+
+/**
+ *  版本比较
+ *  @param appVersion     APP本地版本
+ *  @param serviceVersion 服务器上的APP版本
+ *  @return -1:appVersion > serviceVersion,0:版本相同,1:appVersion < serviceVersion
+ */
++ (NSInteger)compareAppVersion:(NSString *)appVersion serviceVersion:(NSString *)serviceVersion;
 
 /**
  *  获取随机颜色

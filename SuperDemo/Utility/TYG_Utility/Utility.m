@@ -361,28 +361,6 @@
     return strResult;
 }
 
-+ (NSString *) getFilePath:(NSString *)filename isNotExistsCreatIt:(BOOL) isCreat{
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                              NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *filePath = [rootPath stringByAppendingPathComponent:filename];
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if (![fileManager fileExistsAtPath:filePath]) {
-        if (isCreat) {
-            [fileManager createFileAtPath:filePath contents:nil attributes:nil];
-            return filePath;
-        }
-        else{
-            return nil;
-        }
-    }
-    else{
-        return filePath;
-    }
-    return nil;
-}
-
 /*
  * 指定个一文件路径,此方法一般用在FMDB初始化数据库中
  */
@@ -629,6 +607,64 @@
     }
     
     return responseDic;
+}
+
+/**
+ *  版本比较
+ *  @param appVersion     APP本地版本
+ *  @param serviceVersion 服务器上的APP版本
+ *  @return -1:appVersion > serviceVersion,0:版本相同,1:appVersion < serviceVersion
+ */
++ (NSInteger)compareAppVersion:(NSString *)appVersion serviceVersion:(NSString *)serviceVersion{
+    
+    /*
+     NSComparisonResult comResult = [appVersion compare:serviceVersion options:NSNumericSearch];
+     switch (comResult) {
+     case NSOrderedAscending: {
+     //<
+     break;
+     }
+     case NSOrderedSame: {
+     //=
+     break;
+     }
+     case NSOrderedDescending: {
+     //>
+     break;
+     }
+     }
+     */
+    NSMutableArray *appVersionArray = [NSMutableArray arrayWithArray:[appVersion componentsSeparatedByString:@"."]];
+    NSMutableArray *serviceVersionArray = [NSMutableArray arrayWithArray:[serviceVersion componentsSeparatedByString:@"."]];
+    
+    while (serviceVersionArray.count < appVersionArray.count) {
+        [serviceVersionArray addObject:@"0"];
+    }
+    
+    while (serviceVersionArray.count > appVersionArray.count) {
+        [appVersionArray addObject:@"0"];
+    }
+    
+    NSInteger result = 0;
+    for (int i = 0; i < appVersionArray.count; i++) {
+        NSInteger appInt = [[appVersionArray objectAtIndex:i] integerValue];
+        NSInteger serviceInt = [[serviceVersionArray objectAtIndex:i] integerValue];
+        
+        
+        if (serviceInt > appInt) {
+            //服务器版本大于本地版本
+            result = 1;
+            break;
+        }
+        else if (serviceInt < appInt){
+            result = -1;
+            break;
+        }
+        
+    }
+    
+    return result;
+    
 }
 
 

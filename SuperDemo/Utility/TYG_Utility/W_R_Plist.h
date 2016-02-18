@@ -41,6 +41,13 @@
  */
 + (NSString *)getFilePath:(NSString *)filename isNotExistsCreatIt:(BOOL)isCreat;
 
+/**
+ *  设置禁止指定文件云同步
+ *  @param URL 文件路径
+ *  @return Bool
+ */
++ (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL;
+
 @end
 
 

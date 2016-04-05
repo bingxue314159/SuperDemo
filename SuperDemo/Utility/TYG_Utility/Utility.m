@@ -11,6 +11,9 @@
 #import "Utility.h"
 #import <QuartzCore/QuartzCore.h>
 #import "TYGEncryptDecrypt.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <netdb.h>
+#import <arpa/inet.h>
 
 @implementation Utility
 
@@ -203,7 +206,9 @@
     [lableView performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:1.5f];
 }
 
-//去除两边的空格
+/**
+ * 去除两边的空格
+ */
 + (NSString *)trimString:(NSString *)string{
     
     if (string) {
@@ -211,17 +216,6 @@
     }
 
     return string;
-}
-
-//获取view的controller
-+ (UIViewController *)getViewController:(UIView *)view {
-    for (UIView* next = [view superview]; next; next = next.superview) {
-        UIResponder *nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)nextResponder;
-        }
-    }
-    return nil;
 }
 
 // 获取系统当前时间
@@ -402,20 +396,6 @@
     }
 
     return @"";
-}
-
-//封装系统相关信息
-+ (NSMutableDictionary *) dictionaryAddJOSNHeader:(NSMutableDictionary *) dic{
-
-    [dic setObject:@"iOS" forKey:@"os"];//os
-    [dic setObject:@"1.0" forKey:@"v"];//API版本--Version
-    [dic setObject:@"10086" forKey:@"app"];
-    
-    //UUID--MacUUID
-    NSUUID *uuid = [UIDevice currentDevice].identifierForVendor;
-    [dic setObject:uuid.UUIDString forKey:@"clientId"];
-    
-    return dic;
 }
 
 //安全的从字典中获取字符串
@@ -666,7 +646,6 @@
     return result;
     
 }
-
 
 /**
  *  获取随机颜色

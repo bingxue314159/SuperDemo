@@ -17,7 +17,6 @@
 #import "CommonHeader.h"
 #import "W_R_Plist.h"
 #import "TYG_UIItems.h"
-#import "File.h"
 #import "TYGConfig.h"
 #import "TYGValid.h"
 

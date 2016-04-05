@@ -28,12 +28,10 @@
 		0843EE881AE4D93D00220F15 /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EE861AE4D93D00220F15 /* FourViewController.xib */; };
 		0843EE8E1AE4D9B900220F15 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0843EE8D1AE4D9B900220F15 /* FirstViewController.xib */; };
 		0843EED81AE4DB0C00220F15 /* EmptryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EEC11AE4DB0C00220F15 /* EmptryView.m */; };
-		0843EED91AE4DB0C00220F15 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EEC31AE4DB0C00220F15 /* File.m */; };
 		0843EEDA1AE4DB0C00220F15 /* ImageBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */; };
 		0843EEDB1AE4DB0C00220F15 /* TYG_UIItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EEC81AE4DB0C00220F15 /* TYG_UIItems.m */; };
 		0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EECA1AE4DB0C00220F15 /* TYGAudioUtil.m */; };
 		0843EEDD1AE4DB0C00220F15 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */; };
-		0843EEDE1AE4DB0C00220F15 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EECF1AE4DB0C00220F15 /* UIImage+FixOrientation.m */; };
 		0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */; };
 		0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.m */; };
 		0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED51AE4DB0C00220F15 /* Utility.m */; };
@@ -276,12 +274,16 @@
 		08B3A3CF1B661083007838EA /* fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CA1B661083007838EA /* fav@2x.png */; };
 		08B3A3D01B661083007838EA /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CB1B661083007838EA /* menu@2x.png */; };
 		08B3A3D11B661083007838EA /* MGSwipeBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */; };
+		08B6A98D1CA2303200C4D45D /* UIImageOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B6A98B1CA2303200C4D45D /* UIImageOperationViewController.m */; };
+		08B6A98E1CA2303200C4D45D /* UIImageOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B6A98C1CA2303200C4D45D /* UIImageOperationViewController.xib */; };
+		08B6A9911CA23F5400C4D45D /* UIImage+TYGOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B6A9901CA23F5400C4D45D /* UIImage+TYGOperation.m */; };
 		08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72DFD1B252D2100967012 /* RWDemoViewController.m */; };
 		08C72E011B25321F00967012 /* REMenuExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E001B25321F00967012 /* REMenuExample.m */; };
 		08C72E121B2545B400967012 /* REFrostedViewControllerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */; };
 		08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E141B25461A00967012 /* DEMOMenuViewController.m */; };
 		08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */; };
 		08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */; };
+		08CDF4AD1CB3883D0052B81B /* TYGPopAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CDF4AC1CB3883D0052B81B /* TYGPopAnimationDemo.m */; };
 		08D530821B5F973200409CF1 /* back_ON_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530801B5F973200409CF1 /* back_ON_25.png */; };
 		08D530831B5F973200409CF1 /* back_OFF_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530811B5F973200409CF1 /* back_OFF_25.png */; };
 		08D530871B5F973700409CF1 /* SuperDemoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D530841B5F973700409CF1 /* SuperDemoIcon.png */; };
@@ -588,8 +590,6 @@
 		0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		0843EEC01AE4DB0C00220F15 /* EmptryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptryView.h; sourceTree = "<group>"; };
 		0843EEC11AE4DB0C00220F15 /* EmptryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptryView.m; sourceTree = "<group>"; };
-		0843EEC21AE4DB0C00220F15 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
-		0843EEC31AE4DB0C00220F15 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBoxView.h; sourceTree = "<group>"; };
 		0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBoxView.m; sourceTree = "<group>"; };
 		0843EEC61AE4DB0C00220F15 /* TYG_allHeadFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYG_allHeadFiles.h; sourceTree = "<group>"; };
@@ -600,8 +600,6 @@
 		0843EECB1AE4DB0C00220F15 /* TYGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGConfig.h; sourceTree = "<group>"; };
 		0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
-		0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
-		0843EECF1AE4DB0C00220F15 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Badge.h"; sourceTree = "<group>"; };
 		0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Badge.m"; sourceTree = "<group>"; };
 		0843EED21AE4DB0C00220F15 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
@@ -933,6 +931,11 @@
 		08B3A3CA1B661083007838EA /* fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fav@2x.png"; sourceTree = "<group>"; };
 		08B3A3CB1B661083007838EA /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		08B3A3CC1B661083007838EA /* MGSwipeBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MGSwipeBackground.jpg; sourceTree = "<group>"; };
+		08B6A98A1CA2303200C4D45D /* UIImageOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageOperationViewController.h; sourceTree = "<group>"; };
+		08B6A98B1CA2303200C4D45D /* UIImageOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageOperationViewController.m; sourceTree = "<group>"; };
+		08B6A98C1CA2303200C4D45D /* UIImageOperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIImageOperationViewController.xib; sourceTree = "<group>"; };
+		08B6A98F1CA23F5400C4D45D /* UIImage+TYGOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYGOperation.h"; sourceTree = "<group>"; };
+		08B6A9901CA23F5400C4D45D /* UIImage+TYGOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYGOperation.m"; sourceTree = "<group>"; };
 		08C72DFC1B252D2100967012 /* RWDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDemoViewController.h; sourceTree = "<group>"; };
 		08C72DFD1B252D2100967012 /* RWDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDemoViewController.m; sourceTree = "<group>"; };
 		08C72DFF1B25321F00967012 /* REMenuExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuExample.h; sourceTree = "<group>"; };
@@ -944,6 +947,8 @@
 		08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDecayAnimationViewController.h; sourceTree = "<group>"; };
 		08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPDecayAnimationViewController.m; sourceTree = "<group>"; };
 		08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPDecayAnimationViewController.xib; sourceTree = "<group>"; };
+		08CDF4AB1CB3883D0052B81B /* TYGPopAnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGPopAnimationDemo.h; sourceTree = "<group>"; };
+		08CDF4AC1CB3883D0052B81B /* TYGPopAnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGPopAnimationDemo.m; sourceTree = "<group>"; };
 		08D530801B5F973200409CF1 /* back_ON_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_ON_25.png; sourceTree = "<group>"; };
 		08D530811B5F973200409CF1 /* back_OFF_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_OFF_25.png; sourceTree = "<group>"; };
 		08D530841B5F973700409CF1 /* SuperDemoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuperDemoIcon.png; sourceTree = "<group>"; };
@@ -1371,8 +1376,6 @@
 				0843EEBF1AE4DB0C00220F15 /* CommonHeader.h */,
 				0843EEC01AE4DB0C00220F15 /* EmptryView.h */,
 				0843EEC11AE4DB0C00220F15 /* EmptryView.m */,
-				0843EEC21AE4DB0C00220F15 /* File.h */,
-				0843EEC31AE4DB0C00220F15 /* File.m */,
 				0843EEC41AE4DB0C00220F15 /* ImageBoxView.h */,
 				0843EEC51AE4DB0C00220F15 /* ImageBoxView.m */,
 				0843EEC91AE4DB0C00220F15 /* TYGAudioUtil.h */,
@@ -1385,8 +1388,8 @@
 				0843EEC61AE4DB0C00220F15 /* TYG_allHeadFiles.h */,
 				0843EECC1AE4DB0C00220F15 /* UIButton+Badge.h */,
 				0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */,
-				0843EECE1AE4DB0C00220F15 /* UIImage+FixOrientation.h */,
-				0843EECF1AE4DB0C00220F15 /* UIImage+FixOrientation.m */,
+				08B6A98F1CA23F5400C4D45D /* UIImage+TYGOperation.h */,
+				08B6A9901CA23F5400C4D45D /* UIImage+TYGOperation.m */,
 				0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */,
 				0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */,
 				0843EED21AE4DB0C00220F15 /* UncaughtExceptionHandler.h */,
@@ -1980,6 +1983,9 @@
 				08FC9F0E1BA2ADBF00CEE275 /* TYGValidViewController.h */,
 				08FC9F0F1BA2ADBF00CEE275 /* TYGValidViewController.m */,
 				08FC9F101BA2ADBF00CEE275 /* TYGValidViewController.xib */,
+				08B6A98A1CA2303200C4D45D /* UIImageOperationViewController.h */,
+				08B6A98B1CA2303200C4D45D /* UIImageOperationViewController.m */,
+				08B6A98C1CA2303200C4D45D /* UIImageOperationViewController.xib */,
 			);
 			path = TYGNotes;
 			sourceTree = "<group>";
@@ -2073,6 +2079,8 @@
 				08ADBFC61B69AE5F0034B231 /* PopSpringAnimationViewController.xib */,
 				08981BA01B69BEF400E448C8 /* TYGPopAnimationManager.h */,
 				08981BA11B69BEF400E448C8 /* TYGPopAnimationManager.m */,
+				08CDF4AB1CB3883D0052B81B /* TYGPopAnimationDemo.h */,
+				08CDF4AC1CB3883D0052B81B /* TYGPopAnimationDemo.m */,
 			);
 			path = PopAnimation;
 			sourceTree = "<group>";
@@ -2865,6 +2873,7 @@
 				08EC5E091B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight.png in Resources */,
 				08EC5E001B954D7F0081C8CA /* TTSwithc-round-switch-thumb@2x.png in Resources */,
 				08EC5DEF1B954D7F0081C8CA /* TTSwithc-switchGreen.png in Resources */,
+				08B6A98E1CA2303200C4D45D /* UIImageOperationViewController.xib in Resources */,
 				0843EF091AE4DB7F00220F15 /* 我的_on@2x.png in Resources */,
 				08EC5E0A1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png in Resources */,
 				08D7D9D51AE6317D00543F2A /* AMPoptipViewController.xib in Resources */,
@@ -3181,6 +3190,7 @@
 				08EC5E111B9550660081C8CA /* StyledPageControlTableViewController.m in Sources */,
 				0843F08C1AE502AE00220F15 /* Map3DViewController.m in Sources */,
 				08F27D4D1B550ABC0039DF49 /* IndexedListViewController.m in Sources */,
+				08CDF4AD1CB3883D0052B81B /* TYGPopAnimationDemo.m in Sources */,
 				0843EF751AE4E38700220F15 /* SelectTableViewController.m in Sources */,
 				0843F0A31AE502AE00220F15 /* SpringAnimationViewController.m in Sources */,
 				08D7D9881AE61D8C00543F2A /* PFGoldenSectionSpiral.m in Sources */,
@@ -3233,7 +3243,6 @@
 				08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */,
 				08981BA21B69BEF400E448C8 /* TYGPopAnimationManager.m in Sources */,
 				08B3A3C51B660E42007838EA /* MGSwipeTableCellDemo.m in Sources */,
-				0843EED91AE4DB0C00220F15 /* File.m in Sources */,
 				08A35CCB1C0ED8E7005594D5 /* TYGWebViewController.m in Sources */,
 				08F27D531B550ABC0039DF49 /* XIBTestViewController.m in Sources */,
 				08F8BCEA1B969212009FF488 /* TYGUIButton.m in Sources */,
@@ -3312,6 +3321,8 @@
 				08A320A61B82BFE800943DE9 /* TYGMapKitViewController.m in Sources */,
 				08DA8B941B28201500999A2C /* TYGOtherViewController.m in Sources */,
 				0843EEDD1AE4DB0C00220F15 /* UIButton+Badge.m in Sources */,
+				08B6A98D1CA2303200C4D45D /* UIImageOperationViewController.m in Sources */,
+				08B6A9911CA23F5400C4D45D /* UIImage+TYGOperation.m in Sources */,
 				08D7CEAC1B2185A500A3C8AD /* DWBubbleMenuButtonDemo.m in Sources */,
 				08C72E121B2545B400967012 /* REFrostedViewControllerExample.m in Sources */,
 				0843F0841AE502AE00220F15 /* CustomTransitionViewController.m in Sources */,
@@ -3330,7 +3341,6 @@
 				08F483EA1B95731300814233 /* TYGLoadingTableViewController.m in Sources */,
 				08FC9EFA1BA268AF00CEE275 /* NSData+AES256.m in Sources */,
 				08D7D9951AE6223000543F2A /* TSMessagesViewController.m in Sources */,
-				0843EEDE1AE4DB0C00220F15 /* UIImage+FixOrientation.m in Sources */,
 				0843F0BF1AE502D200220F15 /* HUTransitionGhostAnimator.m in Sources */,
 				0843EEE21AE4DB0C00220F15 /* W_R_Plist.m in Sources */,
 				0843EF8A1AE4E6B200220F15 /* DropDownViewCell.m in Sources */,

@@ -38,7 +38,8 @@
     [titleArray addObject:@"手势签名-TYGSignatureViewDemoViewController"];
     
     [titleArray addObject:@"Masonry学习-TYGMasonryTestViewController"];
-    
+    [titleArray addObject:@"图片操作-UIImageOperationViewController"];
+
 }
 
 - (void)didReceiveMemoryWarning {

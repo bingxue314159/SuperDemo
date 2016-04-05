@@ -1,29 +1,28 @@
 //
-//  FourViewController.m
+//  TYGPopAnimationDemo.m
 //  SuperDemo
 //
-//  Created by tanyugang on 15/4/20.
-//  Copyright (c) 2015年 TYG. All rights reserved.
+//  Created by 谈宇刚 on 16/4/5.
+//  Copyright © 2016年 TYG. All rights reserved.
 //
+//  facebook POP
 
-#import "FourViewController.h"
+#import "TYGPopAnimationDemo.h"
 
-@interface FourViewController ()<UITableViewDataSource,UITableViewDelegate>{
+@interface TYGPopAnimationDemo (){
     NSMutableArray *titleArray;
 }
 
 @end
 
-@implementation FourViewController
+@implementation TYGPopAnimationDemo
+
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         titleArray = [NSMutableArray arrayWithCapacity:10];
-        
-        self.title = @"更多";
-        
     }
     return self;
 }
@@ -31,9 +30,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [titleArray addObject:@"*POP动画-TYGPopAnimationDemo"];
-    [titleArray addObject:@"*个人学习笔记-TYGNotesViewController"];
-    [titleArray addObject:@"*其它-TYGOtherViewController"];
+    [titleArray addObject:@"POP动画-PopBasicViewController"];
+    [titleArray addObject:@"POP动画-PopSpringAnimationViewController"];
+    [titleArray addObject:@"POP动画-POPDecayAnimationViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,5 +80,6 @@
     [self.navigationController pushViewController:viewController animated:YES];
     
 }
+
 
 @end

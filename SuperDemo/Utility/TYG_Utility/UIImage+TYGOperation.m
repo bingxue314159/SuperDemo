@@ -1,14 +1,152 @@
 //
-//  UIImage+FixOrientation.m
-//  2013002-­2
+//  UIImage+TYGOperation.m
+//  SuperDemo
 //
-//  Created by  tanyg on 13-10-23.
-//  Copyright (c) 2013年 2013002-­2. All rights reserved.
+//  Created by 谈宇刚 on 16/3/23.
+//  Copyright © 2016年 TYG. All rights reserved.
 //
 
-#import "UIImage+FixOrientation.h"
+#import "UIImage+TYGOperation.h"
 
-@implementation UIImage (FixOrientation)
+@implementation UIImage (TYGOperation)
+
+
+/**
+ *  添加文字水印
+ *  @param text 文字
+ *  @param rect 绘制的区域
+ *  @return 加好水印的图片
+ */
+- (UIImage *)addText:(NSString *)text inRect:(CGRect)rect{
+    
+    //UIGraphicsBeginImageContext(self.size);
+    UIGraphicsBeginImageContextWithOptions([self size], NO, 0.0);
+    //在画布中绘制内容
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
+    
+    //绘制文字
+    [[UIColor darkGrayColor] set];//颜色
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:30],
+                          NSObliquenessAttributeName:@0};//这里设置了字体，和倾斜度
+    [text drawInRect:rect withAttributes:dic];
+    
+    //从画布中得到image
+    UIImage *returnImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return returnImage;
+}
+
+/**
+ *  添加图片水印
+ *  @param addImage 水印图片
+ *  @param rect     绘制的区域
+ *  @return 加好水印的图片
+ */
+- (UIImage *)addImage:(UIImage *)addImage inRect:(CGRect)rect{
+    
+    //UIGraphicsBeginImageContext(self.size);
+    UIGraphicsBeginImageContextWithOptions([self size], NO, 0.0);
+    
+    //在画布中绘制内容
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];//原图
+    
+    //水印图
+    if (CGRectIsNull(rect)) {
+        rect = CGRectMake(0, self.size.height-addImage.size.height, addImage.size.width, addImage.size.height);
+    }
+    
+    [addImage drawInRect:rect];
+    
+    //从画布中得到image
+    UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return resultingImage;
+}
+
+/**
+ *  截图
+ *  @param view       需要截屏的界面
+ *  @param imageFrame 需要截图的区域
+ *  @return 截图
+ */
+- (UIImage *)getScreenShotImage:(UIView *)view imageFrame:(CGRect)imageFrame{
+    //截图
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, YES, 0);//设置截屏大小
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    if (CGRectEqualToRect(imageFrame, view.bounds) || CGRectEqualToRect(imageFrame, CGRectZero)) {
+        return viewImage;
+    }
+    
+    CGImageRef imageRefRect =CGImageCreateWithImageInRect(viewImage.CGImage, imageFrame);
+    
+    return [UIImage imageWithCGImage:imageRefRect];
+}
+
+/**
+ *  根据给定得图片，从其指定区域截取一张新得图片
+ *  @param image       图片
+ *  @param myImageRect 截取区域
+ *  @return UIImage-截取后的图片
+ */
+-(UIImage *)getImageFromFrame:(CGRect)myImageRect{
+    
+    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, myImageRect);
+    UIGraphicsBeginImageContextWithOptions(myImageRect.size,NO,0.0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, myImageRect, imageRef);
+    UIImage* smallImage = [UIImage imageWithCGImage:imageRef];
+    UIGraphicsEndImageContext();
+    CGImageRelease(imageRef);
+    return smallImage;
+}
+
+/*
+ * 功能：自定长宽
+ * 参数：image-图片 reSize-新的size
+ * 返回：image
+ */
+- (UIImage *)reSizeToSize:(CGSize)reSize{
+    
+    if (reSize.width == 0) {
+        reSize.width = reSize.height *self.size.width/self.size.height;
+    }
+    if (reSize.height == 0) {
+        reSize.height = reSize.width *self.size.height/self.size.width;
+    }
+    
+    //    UIGraphicsBeginImageContext(CGSizeMake(reSize.width, reSize.height));
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(reSize.width, reSize.height), NO, 0.0);
+    [self drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return reSizeImage;
+}
+
+/**
+ *  生成纯色图片
+ *  @param color 颜色
+ *  @param alpha 透明度
+ *  @return UIImage
+ */
+- (UIImage*)imageByColor:(UIColor*)color Alpha:(CGFloat)alpha{
+    
+    CGRect rect = CGRectMake(0, 0,1, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(ctx, color.CGColor);
+    CGContextSetAlpha(ctx, alpha);
+    CGContextFillRect(ctx, rect);
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 
 /**
  *  修复照片方向(默认方法)

@@ -11,10 +11,7 @@
 #import "CommonHeader.h"
 
 #import "UncaughtExceptionHandler.h"
-
 #import "MYBlurIntroductionDemo.h"
-
-
 #import "DEMOMenuViewController.h"
 
 @interface AppDelegate ()
@@ -51,7 +48,7 @@
     frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
     frostedViewController.liveBlur = YES;
 //    frostedViewController.delegate = self;
-//    [self.window addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
+    [self.window addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
     self.frostedViewController = frostedViewController;
     
     //首次运行时的引导图

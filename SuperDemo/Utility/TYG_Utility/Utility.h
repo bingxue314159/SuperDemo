@@ -9,9 +9,6 @@
  */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <SystemConfiguration/SystemConfiguration.h>
-#import <netdb.h>
-#import <arpa/inet.h>
 
 @interface Utility : NSObject {
     
@@ -46,11 +43,6 @@
  * 气泡式提示窗口
  */
 + (void)popMessage:(NSString *)msg;
-
-/**
- * 获取view的controller
- */
-+ (UIViewController *)getViewController:(UIView *)view;
 
 /**
  * 获取当前时间
@@ -102,11 +94,6 @@
  *  @return 不带声调的拼音(多个汉字拼音间会带有空格)
  */
 + (NSString *) getPinyinFromChinese:(NSString *)chinese;
-
-/**
- * 封装系统相关信息
- */
-+ (NSMutableDictionary *) dictionaryAddJOSNHeader:(NSMutableDictionary *) dic;
 
 /**
  * 安全的从字典中获取字符串

@@ -14,7 +14,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "File.h"
 
 @interface TYG_UIItems : NSObject
 

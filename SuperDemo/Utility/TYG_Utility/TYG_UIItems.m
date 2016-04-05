@@ -8,7 +8,7 @@
 
 #import "TYG_UIItems.h"
 #import <QuartzCore/QuartzCore.h>
-#import "File.h"
+#import "UIImage+TYGOperation.h"
 #import "CommonHeader.h"
 @implementation TYG_UIItems
 
@@ -68,9 +68,9 @@
     CGSize imageSize = CGSizeMake(25, 25);
     
     UIImage *backOffImage = GET_IMAGE(@"back_OFF", @"png");
-    backOffImage = [File ImageReSizeImage:backOffImage toSize:imageSize];
+    backOffImage = [backOffImage reSizeToSize:imageSize];
     UIImage *backOnImage = GET_IMAGE(@"back_ON", @"png");
-    backOnImage = [File ImageReSizeImage:backOnImage toSize:imageSize];
+    backOnImage = [backOnImage reSizeToSize:imageSize];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:backOffImage forState:UIControlStateNormal];
@@ -146,8 +146,8 @@
     button.frame = CGRectMake(0, 0, buttonBackW, buttonBackH);
     button.showsTouchWhenHighlighted = YES;
     
-    buttonImage = [File ImageReSizeImage:buttonImage toSize:imageSize];
-    highlightedImage = [File ImageReSizeImage:highlightedImage toSize:imageSize];
+    buttonImage = [buttonImage reSizeToSize:imageSize];
+    highlightedImage = [highlightedImage reSizeToSize:imageSize];
     
     //按钮图片
     [button.imageView setContentMode:UIViewContentModeCenter];
@@ -167,7 +167,7 @@
     
     CGFloat buttonBackW = buttonSize.width;
     CGFloat buttonBackH = buttonSize.height;
-    buttonImage = [File ImageReSizeImage:buttonImage toSize:buttonSize];
+    buttonImage = [buttonImage reSizeToSize:buttonSize];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, buttonBackW, buttonBackH);
@@ -199,8 +199,8 @@
     
     //处理图片，定义其大小
     CGSize imageSize = CGSizeMake(titleSize.height, titleSize.height);
-    buttonImage = [File ImageReSizeImage:buttonImage toSize:imageSize];
-    highlightedImage = [File ImageReSizeImage:highlightedImage toSize:imageSize];
+    buttonImage = [buttonImage reSizeToSize:imageSize];
+    highlightedImage = [highlightedImage reSizeToSize:imageSize];
     
     //按钮图片
     [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -263,7 +263,7 @@
     CGSize titleSize = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:font}];
     //处理图片，定义其大小
     CGSize imageSize = CGSizeMake(titleSize.height-10, titleSize.height+10);
-    buttonImage = [File ImageReSizeImage:buttonImage toSize:imageSize];
+    buttonImage = [buttonImage reSizeToSize:imageSize];
     
     //按钮图片
     [button setImageEdgeInsets:UIEdgeInsetsMake(0, titleSize.width*2, 0, 0)];//top,left,bottom,right

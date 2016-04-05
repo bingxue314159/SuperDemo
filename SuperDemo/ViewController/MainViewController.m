@@ -134,13 +134,11 @@
      }
      */
     
-    //状态栏风格--需要配合配置表,将 View controller-based status bar appearance 设置为NO（默认为 YES）：
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //设置状态栏风格,iOS9不建议使用
-    //iOS9后，建议Use -[UIViewController preferredStatusBarStyle]
-    self.navBarController1.navigationBar.barStyle = UIBarStyleBlack;
-    self.navBarController2.navigationBar.barStyle = UIBarStyleBlack;
-    self.navBarController3.navigationBar.barStyle = UIBarStyleBlack;
-    self.navBarController4.navigationBar.barStyle = UIBarStyleBlack;
+    //状态栏风格
+    ////方案一：需要配合配置表,将 View controller-based status bar appearance 设置为NO（默认为 YES）：
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //设置状态栏风格,iOS9不建议使用，会有警告产生
+    ////方案二：iOS9后，建议Use -[UIViewController preferredStatusBarStyle]
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
     
     //自定义返回按钮
     UIImage *backButtonImage_OFF = [[UIImage imageNamed:@"back_ON_25.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
@@ -149,8 +147,8 @@
     //返回按钮样式及颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 //    if(SystemVersion >= 7.0){
-//        [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back_ON_25.png"]];//IOS7
-//        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back_ON_25.png"]];//IOS7
+//        [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back_ON_25.png"]];//iOS7
+//        [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back_ON_25.png"]];//iOS7
 //    }
     
     //iOS 隐藏/去掉 导航栏返回按钮中的文字
@@ -159,12 +157,10 @@
     //导航栏标题样式
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:Color_NavBarTitel, NSForegroundColorAttributeName, Font_NavBarTitel, NSFontAttributeName, nil]];
     
-    //有导航栏
+    //组装
     self.viewControllers = [NSArray arrayWithObjects:self.navBarController1,self.navBarController2,self.navBarController3,self.navBarController4, nil];
     
     self.selectedIndex = 0;//设置启动时第一次显示的UI
-    //没有导航栏
-    //    self.viewControllers = [NSArray arrayWithObjects:firstViewController,secondViewController,thirdViewController,fourViewController, nil];
 }
 
 //设置状态栏的白色(一定要在rootViewController的中设置)

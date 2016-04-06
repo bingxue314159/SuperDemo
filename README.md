@@ -1,8 +1,8 @@
 # SuperDemo
 ##功能说明
 这是本人平时工作所用的一些开发技巧及第三方包的DEMO！    
-如果有需要学习iOS的同学或者是说不想自己一点点去集成的同学，拿去看一下，相信会有所帮助的！ 
-代码的封装在目录：SuperDemo/Utility/TYG_Utility/
+如果有需要学习iOS的同学或者是说不想自己一点点去集成的同学，拿去看一下，相信会有所帮助的！    
+代码的封装在目录：SuperDemo/Utility/TYG_Utility/    
    
 注：    
 1.采用CocoaPods集成第三方开源库，如果不知道什么是CocoaPods请自行百度！    

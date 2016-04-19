@@ -14,11 +14,17 @@
 #import "MYBlurIntroductionDemo.h"
 #import "DEMOMenuViewController.h"
 
+#import <FBMemoryProfiler/FBMemoryProfiler.h>
+#import "RetainCycleLoggerPlugin.h"
+#import "CacheCleanerPlugin.h"
+
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    FBMemoryProfiler *_memoryProfiler;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -59,6 +65,13 @@
 //    self.window.rootViewController = self.viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //Facebook内存循环引用监测工具，若APP运行比较卡，请关闭此部分
+    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+                                                                  [RetainCycleLoggerPlugin new]]
+                               retainCycleDetectorConfiguration:nil];
+    [_memoryProfiler enable];
+    
     return YES;
 }
 
@@ -94,6 +107,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//禁用第三方输入法
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(NSString *)extensionPointIdentifier{
+    //禁用第三方输入法
+    return NO;
 }
 
 @end

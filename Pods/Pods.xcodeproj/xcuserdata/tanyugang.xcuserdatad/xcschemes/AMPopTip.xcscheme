@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D709483B69109766379AEBC8'
+               BlueprintIdentifier = '6F964BF1637192EBF6D7C4EB'
                BlueprintName = 'AMPopTip'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libAMPopTip.a'>

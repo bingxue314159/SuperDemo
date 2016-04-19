@@ -130,7 +130,7 @@ static Byte ivBuff[]   = {0xA,1,0xB,5,4,0xF,7,9,0x17,3,1,6,8,0xC,0xD,91};
 
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmAES128,
                                           kCCOptionPKCS7Padding|kCCOptionECBMode,
-										  keyPtr, kCCKeySizeAES256,
+										  keyPtr, kCCKeySizeAES256,/* kCCBlockSizeAES128 */
 										  ivBuff, /* initialization vector (optional) */
 										  [self bytes], dataLength, /* input */
 										  buffer, bufferSize, /* output */

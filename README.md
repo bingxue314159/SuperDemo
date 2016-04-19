@@ -22,5 +22,18 @@ const float POPUPVIEW_HEIGHT_PAD = 1.1;
 NSString *const FillColorAnimation = @"fillColor";    
 ```
 
+###2.卡顿
+因在AppDelegate中加入了内存循环引用监测工具[FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler)，会导致APP运行起来会较明显的有卡顿或者迟缓现象，若出现此问题，可移除内存监测的代码
+```objc
+    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+                                                                  [RetainCycleLoggerPlugin new]]
+                               retainCycleDetectorConfiguration:nil];    
+    [_memoryProfiler enable];    
+```
+    
+FBMemoryProfiler用法    
+中文版：[iOS上自动检测内存泄露](http://www.cocoachina.com/ios/20160419/15954.html)
+英文版:[Automatic memory leak detection on iOS](https://code.facebook.com/posts/583946315094347/automatic-memory-leak-detection-on-ios/)
+
 ##签名
 ![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/程序,你快下来吧.gif "签名")    

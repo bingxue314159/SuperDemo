@@ -1,5 +1,5 @@
 
-platform :ios, '7.0'
+platform :ios, '8.0'
 pod "AFNetworking", "~> 2.0"
 pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
 pod 'IQKeyboardManager', '~> 3.2.3' #解决键盘遮挡住输入框的问题(推荐)
@@ -81,11 +81,15 @@ pod 'REMenu', '~> 1.10' #下弹式导航栏菜单
 pod 'RESideMenu', '~> 4.0.7'    #IOS7风格，抽屉式菜单
 pod 'REFrostedViewController', '~> 2.4' #IOS7几格，导航栏更多左、右滑动菜单
 
-
 #----------------------日历及时间组件----------------------
 pod 'PDTSimpleCalendar', '~> 0.8.0' #日历组件,可以在各个方面对它进行定制，无论是运行逻辑还是外观方面
 pod 'TimesSquare', '~> 1.0.2'   #日历组件
 pod 'ABCalendarPicker', '~> 1.1.2'  #日历组件
 pod 'DateTools', '~> 1.7.0' #可能是最好用的iOS日期工具库
 
+#----------------------FaceBook自动检测内存泄露 iOS SDK >= 8.0----------------------
+#对于客户端的自动化，只要在NSTimer上使用FBRetainCycleDetector，再用FBAllocationTracker来抓取实例来配合跟踪就行。
+pod 'FBRetainCycleDetector'   #它会连续的、自动的运行
+pod 'FBAllocationTracker' #主动跟踪NSObject子类的创建和释放。它可以以一个很小的性能开销来获取任何类的任何实例
+pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3E2EC5FD6A7E7D1DDEA120B2'
+               BlueprintIdentifier = 'A841196F3AE38D2C1E972465'
                BlueprintName = 'TTSwitch'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTTSwitch.a'>

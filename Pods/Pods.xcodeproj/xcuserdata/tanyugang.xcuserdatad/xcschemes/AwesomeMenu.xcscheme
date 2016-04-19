@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F57F9F1934CA21E4839A0829'
+               BlueprintIdentifier = 'A5AE7FE9953E6D231020CEAF'
                BlueprintName = 'AwesomeMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libAwesomeMenu.a'>

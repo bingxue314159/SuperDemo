@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '31279C5D60CAA4585EDE3D54'
+               BlueprintIdentifier = '43CD70AEDBF6745169A2C3D8'
                BlueprintName = 'KGModal'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libKGModal.a'>

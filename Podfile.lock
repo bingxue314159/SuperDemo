@@ -26,6 +26,7 @@ PODS:
   - ASProgressPopUpView (0.8)
   - ASValueTrackingSlider (0.11.2)
   - AwesomeMenu (1.0.0)
+  - BButton (4.0.2)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -57,6 +58,11 @@ PODS:
     - DTFoundation/Core
   - DWBubbleMenuButton (1.0.1)
   - EGOCache (2.1.3)
+  - FBAllocationTracker (0.1.2)
+  - FBMemoryProfiler (0.1.1):
+    - FBAllocationTracker (~> 0.1)
+    - FBRetainCycleDetector (~> 0.1)
+  - FBRetainCycleDetector (0.1.1)
   - HCSStarRatingView (1.0)
   - HexColors (2.2.1)
   - HMSegmentedControl (1.5.2)
@@ -119,6 +125,7 @@ PODS:
     - HexColors (~> 2.2.0)
   - TTSwitch (0.0.6)
   - UICountingLabel (1.2.0)
+  - UITableView+FDTemplateLayoutCell (1.4)
   - UzysAssetsPickerController (0.9.7)
 
 DEPENDENCIES:
@@ -129,12 +136,16 @@ DEPENDENCIES:
   - ASProgressPopUpView (~> 0.8)
   - ASValueTrackingSlider (~> 0.11.2)
   - AwesomeMenu (~> 1.0.0)
+  - BButton (~> 4.0.2)
   - BlocksKit (~> 2.2.5)
   - CubeController (~> 1.2.1)
   - DateTools (~> 1.7.0)
   - DTCoreText (~> 1.6.15)
   - DWBubbleMenuButton (~> 1.0.1)
   - EGOCache (~> 2.1.3)
+  - FBAllocationTracker
+  - FBMemoryProfiler
+  - FBRetainCycleDetector
   - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
   - HMSegmentedControl (~> 1.5.2)
   - iCarousel (~> 1.8.1)
@@ -177,6 +188,7 @@ DEPENDENCIES:
   - TimesSquare (~> 1.0.2)
   - TSMessages (~> 0.9.12)
   - TTSwitch (~> 0.0.6)
+  - UITableView+FDTemplateLayoutCell (~> 1.4)
   - UzysAssetsPickerController
 
 EXTERNAL SOURCES:
@@ -196,6 +208,7 @@ SPEC CHECKSUMS:
   ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
   ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
+  BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CubeController: 817245a45f97b1285b0490440859bd3728f3c1ef
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
@@ -204,6 +217,9 @@ SPEC CHECKSUMS:
   DTFoundation: 1d28080c20c3da041706545363f8238ab53a6204
   DWBubbleMenuButton: 4d9bdbb9d662bdf65c93ceb7fc65901871143d1e
   EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
+  FBAllocationTracker: f8086f5eacc992bd87d460eea7b084d63d62cf67
+  FBMemoryProfiler: e8192cfb24b96d89a0784698978259ffccc561c6
+  FBRetainCycleDetector: 2f5eede420492607df2bee1807887383b9887109
   HCSStarRatingView: 6fb5c03b4ae2b8a1cca712da20fca99898c69af1
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
@@ -251,6 +267,7 @@ SPEC CHECKSUMS:
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   TTSwitch: fef67a32dbd75e6981a3d27a7e954728e537de50
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UzysAssetsPickerController: eae7c24955501a80df34286b1797a2ec6f6b1ab9
 
 COCOAPODS: 0.39.0

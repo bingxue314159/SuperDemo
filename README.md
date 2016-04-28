@@ -6,7 +6,8 @@
    
 注：    
 1.采用CocoaPods集成第三方开源库，如果不知道什么是CocoaPods请自行百度！    
-2.请点击SuperDemo.xcworkspace 启动工程
+2.终端运行“pod install”    
+3.请点击SuperDemo.xcworkspace 启动工程    
 
 ##截图
 ![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/SuperDemo.gif "菜单")  

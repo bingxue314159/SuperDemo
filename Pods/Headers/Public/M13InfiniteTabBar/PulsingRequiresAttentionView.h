@@ -1,1 +1,0 @@
-../../../M13InfiniteTabBar/Classes/RequiresUserAttentionBackgroundViews/PulsingRequiresAttentionView.h

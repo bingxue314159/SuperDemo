@@ -1,1 +1,0 @@
-../../../AMPopTip/Source/AMPopTipDefaults.h

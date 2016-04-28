@@ -1,1 +1,0 @@
-../../../AMPopTip/Source/AMPopTip+Animation.h

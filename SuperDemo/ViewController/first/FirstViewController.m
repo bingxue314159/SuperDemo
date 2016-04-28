@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import <DeviceUtil.h>
 
 @interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArray;
@@ -22,7 +23,7 @@
     if (self) {
         titleArray = [NSMutableArray arrayWithCapacity:10];
         
-        self.title = @"首页";
+        self.title = [NSString stringWithFormat:@"%@(%@)",[DeviceUtil hardwareDescription], [DeviceUtil hardwareString]];
 
     }
     return self;

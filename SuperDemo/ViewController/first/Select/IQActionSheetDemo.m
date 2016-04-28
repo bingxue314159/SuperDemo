@@ -34,7 +34,7 @@
 {
      IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Single Picker" delegate:self];
     [picker setTag:1];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      [NSArray arrayWithObjects:@"First", @"Second", @"Third", @"Four", @"Five", nil],
                                      nil]];
     [picker show];
@@ -44,7 +44,7 @@
 - (IBAction)twoPickerViewClicked:(UIButton *)sender {
     IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Double Picker" delegate:self];
     [picker setTag:2];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      [NSArray arrayWithObjects:@"First 1", @"Second 1", @"Third 1", @"Four 1", @"Five 1", nil],
                                      [NSArray arrayWithObjects:@"First 2", @"Second 2", @"Third 2", @"Four 2", @"Five 2", nil],
                                      nil]];
@@ -54,7 +54,7 @@
 - (IBAction)threePickerViewClicked:(UIButton *)sender {
     IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Three Picker" delegate:self];
     [picker setTag:3];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      [NSArray arrayWithObjects:@"First 1", @"Second 1", @"Third 1", @"Four 1", @"Five 1", nil],
                                      [NSArray arrayWithObjects:@"First 2", @"Second 2", @"Third 2", @"Four 2", @"Five 2", nil],
                                      [NSArray arrayWithObjects:@"First 3", @"Second 3", @"Third 3", @"Four 3", @"Five 3", nil],
@@ -66,11 +66,13 @@
     IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Range Selector" delegate:self];
     [picker setTag:4];
     [picker setIsRangePickerView:YES];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      [NSArray arrayWithObjects:@"100", @"200", @"300", @"400", @"500",@"600", @"700", @"800", @"900", nil],
                                      [NSArray arrayWithObjects:@"To", nil],
                                      [NSArray arrayWithObjects:@"200", @"300", @"400", @"500",@"600", @"700", @"800", @"900",@"1000", nil],
                                      nil]];
+    
+    [picker setTitlesForComponents:@[]];
     [picker show];
 }
 
@@ -78,7 +80,7 @@
     IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Range Selector With Size" delegate:self];
     [picker setTag:5];
     [picker setIsRangePickerView:YES];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      [NSArray arrayWithObjects:@"100", @"200", @"300", @"400", @"500",@"600", @"700", @"800", @"900", nil],
                                      [NSArray arrayWithObjects:@"To", nil],
                                      [NSArray arrayWithObjects:@"200", @"300", @"400", @"500",@"600", @"700", @"800", @"900",@"1000", nil],

@@ -158,7 +158,7 @@
         case 0:{
             //view
             [picker setTag:0];
-            [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+            [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                              viewAnimationTypes,
                                              nil]];
             picker.selectedTitles = @[viewAnimationType];
@@ -167,7 +167,7 @@
         case 1:{
             //layer
             [picker setTag:1];
-            [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+            [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                              layerAnimationTypes,
                                              nil]];
             picker.selectedTitles = @[layerAnimationType];

@@ -1,5 +1,7 @@
 
 platform :ios, '8.0'
+
+#----------------------常用工具----------------------
 pod "AFNetworking", "~> 2.0"
 pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
 pod 'IQKeyboardManager', '~> 3.2.3' #解决键盘遮挡住输入框的问题(推荐)
@@ -66,7 +68,7 @@ pod 'Onboard', '~> 2.1.6'
 
 #----------------------TabBar----------------------
 pod 'JJTabBarController', '~> 1.0.0'    #可高度自定义的tabBar
-pod 'M13InfiniteTabBar', '~> 2.3.2' #可高度自定义的tabBar
+#pod 'M13InfiniteTabBar', '~> 2.3.2' #可高度自定义的tabBar
 
 #----------------------菜单----------------------
 pod 'KxMenu', '~> 1'    #垂直的弹出式菜单
@@ -93,3 +95,5 @@ pod 'FBRetainCycleDetector'   #它会连续的、自动的运行
 pod 'FBAllocationTracker' #主动跟踪NSObject子类的创建和释放。它可以以一个很小的性能开销来获取任何类的任何实例
 pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
 
+#----------------------其它工具----------------------
+pod 'DeviceUtil', '~> 1.3.7'    #获取设备三件版本号，如 iPhone 4,iPad mini2

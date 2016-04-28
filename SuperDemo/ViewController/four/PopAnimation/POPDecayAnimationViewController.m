@@ -97,7 +97,7 @@
     IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Effects" delegate:self];
     
     [picker setTag:1];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+    [picker setTitlesForComponents:[NSArray arrayWithObjects:
                                      layerAnimationTypes,
                                      nil]];
     picker.selectedTitles = @[layerAnimationType];

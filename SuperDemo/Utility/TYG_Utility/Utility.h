@@ -25,6 +25,16 @@
 + (BOOL) hostAvailable: (NSString *) theHost;
 
 /**
+ * 获取设备硬件型号，如:iPod1.1,iPhone4.3
+ */
++ (NSString *)getModel;
+
+/**
+ * 获取设备硬件名称，如iPhone 4,iPad mini2
+ */
++ (NSString*)deviceName;
+
+/**
  * 去除两边的空格
  */
 + (NSString *)trimString:(NSString *)string;

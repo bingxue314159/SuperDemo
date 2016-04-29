@@ -15,6 +15,9 @@
 #import <netdb.h>
 #import <arpa/inet.h>
 
+#include <sys/sysctl.h> //获取设备硬件名称，方法一
+#import <sys/utsname.h> //获取设备硬件名称，方法二
+
 @implementation Utility
 
 /*
@@ -142,6 +145,123 @@
 	
     BOOL isReachable = flags & kSCNetworkFlagsReachable;
     return isReachable ? YES : NO;;
+}
+
+//获取设备硬件型号，如:iPod1.1,iPhone4.3
++ (NSString *)getModel {
+    
+    //方法一,#include <sys/sysctl.h>
+    size_t size;
+    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    char *model = malloc(size);
+    sysctlbyname("hw.machine", model, &size, NULL, 0);
+    NSString *deviceModel = [NSString stringWithCString:model encoding:NSUTF8StringEncoding];
+    free(model);
+    return deviceModel;
+    
+    /*
+    //方法二,#import <sys/utsname.h>
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString* code = [NSString stringWithCString:systemInfo.machine
+                                        encoding:NSUTF8StringEncoding];
+    return code;
+     */
+}
+
+//获取设备硬件名称，如iPhone 4,iPad mini2
++ (NSString*)deviceName{
+    
+    NSString *code = [self getModel];
+    static NSDictionary* deviceNamesByCode = nil;
+    
+    if (!deviceNamesByCode) {
+        
+        deviceNamesByCode = @{
+              @"i386"      :@"Simulator",       //32-bit Simulator
+              @"x86_64"    :@"Simulator",       //64-bit Simulator
+              
+              @"iPod1,1"   :@"iPod Touch 1",    // (Original)
+              @"iPod2,1"   :@"iPod Touch 2",    // (Second Generation)
+              @"iPod3,1"   :@"iPod Touch 3",    // (Third Generation)
+              @"iPod4,1"   :@"iPod Touch 4",    // (Fourth Generation)
+              @"iPod5,1"   :@"iPod Touch 5",    // (Five Generation)
+              @"iPod7,1"   :@"iPod Touch 6",    // (6th Generation)
+              
+              @"iPhone1,1" :@"iPhone",          // (Original)
+              @"iPhone1,2" :@"iPhone",          // (3G)
+              @"iPhone2,1" :@"iPhone",          // (3GS)
+              @"iPhone3,1" :@"iPhone 4",        // (GSM)
+              @"iPhone3,2" :@"iPhone 4",        //
+              @"iPhone3,3" :@"iPhone 4",        // (CDMA/Verizon/Sprint)
+              @"iPhone4,1" :@"iPhone 4S",       //
+              @"iPhone5,1" :@"iPhone 5",        // (model A1428, AT&T/Canada)
+              @"iPhone5,2" :@"iPhone 5",        // (model A1429, everything else)
+              @"iPhone5,3" :@"iPhone 5c",       // (model A1456, A1532 | GSM)
+              @"iPhone5,4" :@"iPhone 5c",       // (model A1507, A1516, A1526 (China), A1529 | Global)
+              @"iPhone6,1" :@"iPhone 5s",       // (model A1433, A1533 | GSM)
+              @"iPhone6,2" :@"iPhone 5s",       // (model A1457, A1518, A1528 (China), A1530 | Global)
+              @"iPhone7,1" :@"iPhone 6 Plus",   //
+              @"iPhone7,2" :@"iPhone 6",        //
+              @"iPhone8,1" :@"iPhone 6S",       //
+              @"iPhone8,2" :@"iPhone 6S Plus",  //
+              @"iPhone8,4" :@"iPhone SE",       //
+              
+              @"iPad1,1"   :@"iPad",            // (Original,WiFi)
+              @"iPad2,1"   :@"iPad 2",          //WiFi
+              @"iPad2,2"   :@"iPad 2",          //GSM
+              @"iPad2,3"   :@"iPad 2",          //CDMAV
+              @"iPad2,4"   :@"iPad 2",          //CDMAS
+              @"iPad2,5"   :@"iPad Mini",       //iPad Mini 1st Gen - WiFi
+              @"iPad2,6"   :@"iPad Mini",       //iPad Mini 1st Gen
+              @"iPad2,7"   :@"iPad Mini",       //iPad Mini 1st Gen
+              @"iPad3,1"   :@"iPad 3",          // (3rd Generation - GSM)
+              @"iPad3,2"   :@"iPad 3",          // (3rd Generation - GSM)
+              @"iPad3,3"   :@"iPad 3",          // (3rd Generation - CDMA)
+              @"iPad3,4"   :@"iPad 4",          // (4th Generation)
+              @"iPad3,5"   :@"iPad 4",          // (4th Generation)
+              @"iPad3,6"   :@"iPad 4",          // (4th Generation)
+              @"iPad2,5"   :@"iPad Mini",       // (Original)
+              @"iPad4,1"   :@"iPad Air",        // 5th Generation iPad (iPad Air) - Wifi
+              @"iPad4,2"   :@"iPad Air",        // 5th Generation iPad (iPad Air) - Cellular
+              @"iPad4,3"   :@"iPad Air",
+              @"iPad4,4"   :@"iPad Mini 2",     // (2nd Generation iPad Mini - Wifi)
+              @"iPad4,5"   :@"iPad Mini 2",     // (2nd Generation iPad Mini - Cellular)
+              @"iPad4,6"   :@"iPad Mini 2",
+              @"iPad4,7"   :@"iPad Mini 3",     // (3rd Generation iPad Mini - Wifi (model A1599))
+              @"iPad4,8"   :@"iPad Mini 3",     // (3rd Generation iPad Mini)
+              @"iPad4,9"   :@"iPad Mini 3",     // (3rd Generation iPad Mini)
+              @"iPad5,1"   :@"iPad Mini 4",     //wifi
+              @"iPad5,2"   :@"iPad Mini 4",     //Cellular
+              @"iPad5,3"   :@"iPad Air 2",
+              @"iPad5,4"   :@"iPad Air 2",
+              @"iPad6,3"   :@"iPad Air 2",      //iPad Pro 9.7 inch
+              @"iPad6,4"   :@"iPad Air 2",      //iPad Pro 9.7 inch
+              @"iPad6,7"   :@"iPad Air 2",      //iPad Pro 12.9 inch
+              @"iPad6,8"   :@"iPad Air 2",      //iPad Pro 12.9 inch
+        };
+    }
+    
+    NSString* deviceName = [deviceNamesByCode objectForKey:code];
+    
+    if (!deviceName) {
+        // Not found on database. At least guess main device type from string contents:
+        
+        if ([code rangeOfString:@"iPod"].location != NSNotFound) {
+            deviceName = @"iPod Touch";
+        }
+        else if([code rangeOfString:@"iPad"].location != NSNotFound) {
+            deviceName = @"iPad";
+        }
+        else if([code rangeOfString:@"iPhone"].location != NSNotFound){
+            deviceName = @"iPhone";
+        }
+        else {
+            deviceName = @"Unknown";
+        }
+    }
+    
+    return deviceName;
 }
 
 //提示窗口

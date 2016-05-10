@@ -59,6 +59,15 @@
     
 }
 
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+    if (sphereView) {
+        [sphereView timerStop];
+        sphereView = nil;
+    }
+}
+
 -(void)subVClick:(UIButton*)sender{
     NSLog(@"%@",sender.titleLabel.text);
     
@@ -77,8 +86,6 @@
         }];
     }];
 }
-
-
 
 -(void)changePF:(UIButton*)sender{
     if ([sphereView isTimerStart]) {

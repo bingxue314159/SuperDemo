@@ -99,7 +99,11 @@
     return YES;
 }
 
-//根据网址获取相应的IP
+/**
+ *  根据网址获取相应的IP
+ *  @param theHost 网址,如：http://www.baidu.com
+ *  @return IP
+ */
 + (NSString *) getIPAddressForHost: (NSString *) theHost
 {
     theHost=[theHost substringFromIndex:7];
@@ -111,7 +115,7 @@
 	return addressString;
 }
 
-//检测一个网址是否可以正常访问
+/** 检测一个网址是否可以正常访问 */
 + (BOOL) hostAvailable: (NSString *) theHost
 {
 	
@@ -147,7 +151,9 @@
     return isReachable ? YES : NO;;
 }
 
-//获取设备硬件型号，如:iPod1.1,iPhone4.3
+/**
+ * 获取设备硬件型号，如:iPod1.1,iPhone4.3
+ */
 + (NSString *)getModel {
     
     //方法一,#include <sys/sysctl.h>
@@ -169,7 +175,9 @@
      */
 }
 
-//获取设备硬件名称，如iPhone 4,iPad mini2
+/**
+ * 获取设备硬件名称，如iPhone 4,iPad mini2
+ */
 + (NSString*)deviceName{
     
     NSString *code = [self getModel];
@@ -264,7 +272,9 @@
     return deviceName;
 }
 
-//提示窗口
+/**
+ * 提示窗口
+ */
 + (void)MsgBox:(NSString *)msg{
 	
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:msg
@@ -338,7 +348,9 @@
     return string;
 }
 
-// 获取系统当前时间
+/**
+ * 获取当前时间
+ */
 +(NSDate *)getThisTime{
     // 获取系统当前时间
     NSDate * date = [NSDate date];//格林威治标准时间GMT
@@ -366,8 +378,11 @@
     return time;
 }
 
-//从字符串转换为时间
-//输入的日期字符串形如：@"1992-05-21 13:08:08"
+/**
+ *  从字符串转换为时间
+ *  @param uiDate 输入的日期字符串形如：@"1992-05-21 13:08:08"
+ *  @return NSDate
+ */
 +(NSDate *) dateConvertDateFromString:(NSString*)uiDate
 {
     if (!(uiDate && uiDate.length > 0)) {
@@ -394,7 +409,9 @@
     return localeDate;
 }
 
-//解析新浪微博中的日期
+/**
+ * 解析新浪微博中的日期,@"EEE MMM d HH:mm:ss Z yyyy"
+ */
 + (NSString*)getTimeResolveSinaWeiboDate:(NSString*)date{
     NSDateFormatter *iosDateFormater=[[NSDateFormatter alloc]init];
     iosDateFormater.dateFormat=@"EEE MMM d HH:mm:ss Z yyyy";
@@ -449,10 +466,10 @@
     NSDateComponents *DateComponent = [chineseClendar components:unitFlags fromDate:paramStartDate toDate:paramEndDate options:0];
     
     NSInteger diffHour = [DateComponent hour];
-    NSInteger diffMin    = [DateComponent minute];
-    NSInteger diffSec   = [DateComponent second];
-    NSInteger diffDay   = [DateComponent day];
-    NSInteger diffMon  = [DateComponent month];
+    NSInteger diffMin = [DateComponent minute];
+    NSInteger diffSec = [DateComponent second];
+    NSInteger diffDay = [DateComponent day];
+    NSInteger diffMon = [DateComponent month];
     NSInteger diffYear = [DateComponent year];
     
     if (diffYear>0) {
@@ -518,7 +535,9 @@
     return @"";
 }
 
-//安全的从字典中获取字符串
+/**
+ * 安全的从字典中获取字符串
+ */
 + (NSString *)safeGetValueFromDic:(NSDictionary *)dic key:(NSString *)key{
     NSNull *null = [[NSNull alloc] init];
     NSString *value;
@@ -549,7 +568,9 @@
     return value;
 }
 
-//安全的从字典中获取对象
+/**
+ * 安全的从字典中获取对象
+ */
 + (id)safeGetObjectFromDic:(NSDictionary *)dic key:(NSString *)key{
     NSNull *null = [[NSNull alloc] init];
     id object;
@@ -667,7 +688,9 @@
     [naviController pushViewController:viewControllerB animated:isAnimated];
 }
 
-// 将字典或者数组转化为JSON串
+/**
+ * 将字典或者数组转化为JSON串
+ */
 +(NSString *) safeToJSON:(NSDictionary *) dic{
     
     NSString *JsonStingSend = nil;
@@ -687,7 +710,9 @@
     return JsonStingSend;
 }
 
-//将服务器传输来的data数据转化为字典
+/**
+ * 将服务器传输来的data数据转化为字典
+ */
 +(NSDictionary *)safeDataToDictionary:(NSData *)responseData{
 
     NSString *resStr = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];

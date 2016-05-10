@@ -10,14 +10,17 @@
 
 @implementation UIImage (TYGOperation)
 
-
 /**
  *  添加文字水印
- *  @param text 文字
- *  @param rect 绘制的区域
+ *  @param text      文字
+ *  @param textColor 文字颜色
+ *  @param rect      绘制的区域
  *  @return 加好水印的图片
  */
-- (UIImage *)addText:(NSString *)text inRect:(CGRect)rect{
+- (UIImage *)addText:(NSString *)text textColor:(UIColor *)textColor inRect:(CGRect)rect{
+    
+    NSAssert(text.length != 0, @"text不能为空");
+    NSAssert(textColor != nil, @"textColor不能为空");
     
     //UIGraphicsBeginImageContext(self.size);
     UIGraphicsBeginImageContextWithOptions([self size], NO, 0.0);
@@ -25,9 +28,10 @@
     [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
     
     //绘制文字
-    [[UIColor darkGrayColor] set];//颜色
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:30],
-                          NSObliquenessAttributeName:@0};//这里设置了字体，和倾斜度
+    //[textColor set];//颜色
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:30],//设置了字体
+                          NSObliquenessAttributeName:@0,//倾斜度
+                          NSForegroundColorAttributeName:textColor};//颜色
     [text drawInRect:rect withAttributes:dic];
     
     //从画布中得到image

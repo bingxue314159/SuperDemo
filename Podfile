@@ -14,6 +14,7 @@ pod 'Masonry'   #一个轻量级的布局框架,采用更优雅的链式语法�
 pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'    #自动计算表格行高
 
 pod 'MJExtension', '~> 3.0.7'  #转换速度快、使用简单方便的字典转模型框(非侵入式，推荐)
+pod 'GDataXML-HTML', '~> 1.3.0' #google官方的XML解释工具
 
 #----------------------Progress & HUD & PopTip----------------------
 pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果(推荐)

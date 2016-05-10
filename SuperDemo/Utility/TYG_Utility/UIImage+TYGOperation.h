@@ -18,11 +18,12 @@
 
 /**
  *  添加文字水印
- *  @param text 文字
- *  @param rect 绘制的区域
+ *  @param text      文字
+ *  @param textColor 文字颜色
+ *  @param rect      绘制的区域
  *  @return 加好水印的图片
  */
-- (UIImage *)addText:(NSString *)text inRect:(CGRect)rect;
+- (UIImage *)addText:(NSString *)text textColor:(UIColor *)textColor inRect:(CGRect)rect;
 
 /**
  *  添加图片水印

@@ -65,12 +65,14 @@
 + (NSString *) getTimeFromDate:(NSDate *)currentDate;
 
 /**
- * 从字符串@"1992-05-21 13:08:08"转换为时间
+ *  从字符串转换为时间
+ *  @param uiDate 输入的日期字符串形如：@"1992-05-21 13:08:08"
+ *  @return NSDate
  */
 + (NSDate *) dateConvertDateFromString:(NSString*)uiDate;
 
 /**
- * 解析新浪微博中的日期
+ * 解析新浪微博中的日期,@"EEE MMM d HH:mm:ss Z yyyy"
  */
 + (NSString*)getTimeResolveSinaWeiboDate:(NSString*)date;
 

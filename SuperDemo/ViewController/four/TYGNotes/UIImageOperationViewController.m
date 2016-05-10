@@ -45,9 +45,24 @@
     UIImage *image = [UIImage imageNamed:@"blue.jpg"];
     imageView.image = image;
     
+    //添加图片水印
+    CGFloat imageW = 150;
+    CGFloat imageH = 150;
+    CGFloat imageX = (image.size.width - imageW)/2.0;
+    CGFloat imageY = (image.size.height - imageW)/2.0;
+    UIImage *image2 = [image addImage:[UIImage imageNamed:@"SuperDemoIcon"] inRect:CGRectMake(imageX, imageY, imageW, imageH)];
     
-    UIImage *image2 = [image addText:@"自定义水印" inRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-    UIImage *image3 = [image2 addImage:[UIImage imageNamed:@"AMPOP-red"] inRect:CGRectMake(20, 30, 50, 50)];
+    //添加文字水印
+    NSString *text = @"自定义水印";
+    CGSize titleSize = [text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30]}];
+    
+    CGFloat textW = titleSize.width;
+    CGFloat textH = titleSize.height;
+    CGFloat textX = (image.size.width - textW)/2.0;
+    CGFloat textY = imageY + imageH + 4;
+    
+    UIImage *image3 = [image2 addText:@"自定义水印" textColor:[UIColor whiteColor] inRect:CGRectMake(textX, textY, textW, textH)];
+    ;
 
     imageView.image = image3;
 }

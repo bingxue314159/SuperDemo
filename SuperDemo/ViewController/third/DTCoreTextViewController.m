@@ -9,8 +9,9 @@
 #import "DTCoreTextViewController.h"
 #import "TYG_allHeadFiles.h"
 #import <DTCoreText.h>
+#import <BlocksKit+UIKit.h>
 
-@interface DTCoreTextViewController ()
+@interface DTCoreTextViewController ()<DTAttributedTextContentViewDelegate>
 
 @end
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self drawMainView];
+    [self drawLineLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +59,52 @@
                         range:NSMakeRange(0, 4)];
     
     label.attributedString = attriString;
+
+}
+
+- (void)drawLineLabel{
+    
+    DTAttributedLabel *bottomLabel = [[DTAttributedLabel alloc]initWithFrame:CGRectMake(8, 60, 300, 20)];
+    bottomLabel.backgroundColor = [UIColor clearColor];
+
+    NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc]initWithString:@"注册即视为同意我们的《用户服务协议》"];
+    
+    NSRange linkRang = NSMakeRange(10,8);
+
+    //设置字体颜色
+    [attributeStr addAttribute:(NSString *)kCTForegroundColorAttributeName value:(id)[UIColor redColor].CGColor range:linkRang];
+
+    //下划线
+    [attributeStr addAttribute:NSUnderlineStyleAttributeName value:@1 range:linkRang];
+    
+    // 设置链接属性，链接的文字范围
+    //    [attributeStr addAttribute:DTLinkAttribute value:[NSURL URLWithString:@"http://www.baidu.com"] range:linkRang];
+    [attributeStr addAttribute:NSLinkAttributeName value:[NSURL URLWithString:@"http://www.baidu.com"]  range:linkRang];
+    
+    
+    [bottomLabel setAttributedString:attributeStr];
+    bottomLabel.delegate = self; // 设置DTAttributedTextContentViewDelegate代理
+    
+    [self.view addSubview:bottomLabel];
+}
+
+// 返回将相应的链接所转换成的DTLinkButton对象
+- (UIView *)attributedTextContentView:(DTAttributedTextContentView *)attributedTextContentView viewForLink:(NSURL *)url identifier:(NSString *)identifier frame:(CGRect)frame{
+    
+    DTLinkButton *button = [[DTLinkButton alloc] initWithFrame:frame];
+    button.URL = url;
+    button.GUID = identifier;
+    [button addTarget:self action:@selector(linkButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    button.minimumHitSize = CGSizeMake(10, 10); // adjusts it's bounds so that button is always large enough
+    return button;
+}
+
+- (void)linkButtonClick:(DTLinkButton *)sender{
+    
+    [UIAlertView bk_showAlertViewWithTitle:@"用户服务协议" message:[NSString stringWithFormat:@"%@",sender.URL] cancelButtonTitle:@"好的" otherButtonTitles:nil handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        
+    }];
 }
 
 

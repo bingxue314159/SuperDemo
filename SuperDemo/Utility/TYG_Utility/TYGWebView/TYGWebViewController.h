@@ -17,8 +17,8 @@ typedef NS_ENUM(NSUInteger, WebShowStatusEnum) {
 @interface TYGWebViewController : UIViewController
 
 @property (nonatomic,strong) NSURL *url;
-@property (weak, nonatomic) IBOutlet UIWebView *mainWebView;
 @property (nonatomic,strong) NSString *htmlString;//如果url==nil，加载htmlString
 @property (nonatomic,assign) WebShowStatusEnum webShowStatus;
+@property (nonatomic,readonly) id mainWebView;
 
 @end

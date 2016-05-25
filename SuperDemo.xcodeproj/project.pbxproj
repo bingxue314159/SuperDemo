@@ -33,7 +33,7 @@
 		0843EEDC1AE4DB0C00220F15 /* TYGAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EECA1AE4DB0C00220F15 /* TYGAudioUtil.m */; };
 		0843EEDD1AE4DB0C00220F15 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EECD1AE4DB0C00220F15 /* UIButton+Badge.m */; };
 		0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */; };
-		0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.m */; };
+		0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.mm */; };
 		0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED51AE4DB0C00220F15 /* Utility.m */; };
 		0843EEE21AE4DB0C00220F15 /* W_R_Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EED71AE4DB0C00220F15 /* W_R_Plist.m */; };
 		0843EEFC1AE4DB7F00220F15 /* VIP_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843EEE41AE4DB7F00220F15 /* VIP_on.png */; };
@@ -250,7 +250,6 @@
 		08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320D21B82CAD800943DE9 /* TYGIBView.m */; };
 		08A350EA1C1A64D2002422A0 /* SAMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A350E91C1A64D2002422A0 /* SAMTextView.m */; };
 		08A35CCB1C0ED8E7005594D5 /* TYGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */; };
-		08A35CCC1C0ED8E7005594D5 /* TYGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
 		08ADBFC71B69AE5F0034B231 /* PopSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ADBFC51B69AE5F0034B231 /* PopSpringAnimationViewController.m */; };
@@ -605,7 +604,7 @@
 		0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Badge.h"; sourceTree = "<group>"; };
 		0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Badge.m"; sourceTree = "<group>"; };
 		0843EED21AE4DB0C00220F15 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
-		0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UncaughtExceptionHandler.mm; sourceTree = "<group>"; };
 		0843EED41AE4DB0C00220F15 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		0843EED51AE4DB0C00220F15 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		0843EED61AE4DB0C00220F15 /* W_R_Plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W_R_Plist.h; sourceTree = "<group>"; };
@@ -899,7 +898,6 @@
 		08A350E91C1A64D2002422A0 /* SAMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMTextView.m; sourceTree = "<group>"; };
 		08A35CC81C0ED8E7005594D5 /* TYGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewController.h; sourceTree = "<group>"; };
 		08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewController.m; sourceTree = "<group>"; };
-		08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGWebViewController.xib; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
 		08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGStarRationViewController.m; sourceTree = "<group>"; };
 		08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGStarRationViewController.xib; sourceTree = "<group>"; };
@@ -1399,7 +1397,7 @@
 				0843EED01AE4DB0C00220F15 /* UIImageView+Badge.h */,
 				0843EED11AE4DB0C00220F15 /* UIImageView+Badge.m */,
 				0843EED21AE4DB0C00220F15 /* UncaughtExceptionHandler.h */,
-				0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.m */,
+				0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.mm */,
 				0843EED41AE4DB0C00220F15 /* Utility.h */,
 				0843EED51AE4DB0C00220F15 /* Utility.m */,
 				0843EED61AE4DB0C00220F15 /* W_R_Plist.h */,
@@ -2067,7 +2065,6 @@
 			children = (
 				08A35CC81C0ED8E7005594D5 /* TYGWebViewController.h */,
 				08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */,
-				08A35CCA1C0ED8E7005594D5 /* TYGWebViewController.xib */,
 			);
 			path = TYGWebView;
 			sourceTree = "<group>";
@@ -2935,7 +2932,6 @@
 				08F20B591B67292A005F092A /* photo1t.jpg in Resources */,
 				08EC5E0B1B954D7F0081C8CA /* TTSwithc-square-switch-thumb.png in Resources */,
 				083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */,
-				08A35CCC1C0ED8E7005594D5 /* TYGWebViewController.xib in Resources */,
 				08F483C61B9571BD00814233 /* JazzHands-text3.png in Resources */,
 				08D7D9D21AE6316600543F2A /* AMPOP-yellow.png in Resources */,
 				0843EFB71AE4F01D00220F15 /* iCarouselExampleViewController.xib in Resources */,
@@ -3212,7 +3208,7 @@
 				0843EF751AE4E38700220F15 /* SelectTableViewController.m in Sources */,
 				0843F0A31AE502AE00220F15 /* SpringAnimationViewController.m in Sources */,
 				08D7D9881AE61D8C00543F2A /* PFGoldenSectionSpiral.m in Sources */,
-				0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.m in Sources */,
+				0843EEE01AE4DB0C00220F15 /* UncaughtExceptionHandler.mm in Sources */,
 				08D7D97A1AE619D500543F2A /* CubeViewController.m in Sources */,
 				0843EE871AE4D93D00220F15 /* FourViewController.m in Sources */,
 				0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */,

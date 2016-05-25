@@ -53,6 +53,7 @@
     frostedViewController.direction = REFrostedViewControllerDirectionLeft;
     frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
     frostedViewController.liveBlur = YES;
+    frostedViewController.menuViewSize = CGSizeMake(SCREEN_WIDTH * 0.75, SCREEN_HEIGHT);
 //    frostedViewController.delegate = self;
     [self.window addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
     self.frostedViewController = frostedViewController;

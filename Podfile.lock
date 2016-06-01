@@ -64,6 +64,7 @@ PODS:
     - FBAllocationTracker (~> 0.1)
     - FBRetainCycleDetector (~> 0.1)
   - FBRetainCycleDetector (0.1.2)
+  - GDataXML-HTML (1.3.0)
   - HCSStarRatingView (1.4.5)
   - HexColors (2.2.1)
   - HMSegmentedControl (1.5.2)
@@ -114,6 +115,7 @@ PODS:
     - REValidation (~> 0.1.4)
   - REValidation (0.1.4)
   - RWDropdownMenu (1.0.3)
+  - SAMTextView (0.2.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -147,6 +149,7 @@ DEPENDENCIES:
   - FBAllocationTracker
   - FBMemoryProfiler
   - FBRetainCycleDetector
+  - GDataXML-HTML (~> 1.3.0)
   - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
   - HMSegmentedControl (~> 1.5.2)
   - iCarousel (~> 1.8.1)
@@ -182,6 +185,7 @@ DEPENDENCIES:
   - RESideMenu (~> 4.0.7)
   - RETableViewManager (~> 1.6)
   - RWDropdownMenu (~> 1.0.2)
+  - SAMTextView (~> 0.2.2)
   - StyledPageControl (~> 1.0)
   - SVProgressHUD (~> 1.1.3)
   - SWTableViewCell (~> 0.3.7)
@@ -221,6 +225,7 @@ SPEC CHECKSUMS:
   FBAllocationTracker: bf649e786f2a7a7c7cffb99d59d3f81a0e9e294b
   FBMemoryProfiler: bc0d488b31bb18ce5659c80f58c989c837bb7378
   FBRetainCycleDetector: 45462f9ed1af0cd77224a4cc4e6dacaca47371b4
+  GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
   HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
@@ -259,6 +264,7 @@ SPEC CHECKSUMS:
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   RWDropdownMenu: c7fda4b7adf4f3f63a46d96359c2f490a7713795
+  SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   StyledPageControl: b49f33cb65b99370a78a490fac127b1ca6472fd0
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1

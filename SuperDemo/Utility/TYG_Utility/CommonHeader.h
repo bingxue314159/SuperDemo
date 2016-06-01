@@ -194,6 +194,21 @@ obj = nil;\
  ======================================================*/
 
 /**
+ * 转换计算着色的值(16进制->10进制) e.g. ColorFromRGB(0x067AB5)
+ */
+#define Color_RGB_OxH(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/**
+ * 转换计算着色的值 e.g. Color_RGB(120,110,0),相应的参数会除255.0
+ */
+#define Color_RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define Color_RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+
+/*======================================================
+ ********************** APP颜色类 **************************
+ ======================================================*/
+/**
  * 导航栏 默认背景颜色
  */
 #define Color_NavBar_BACKGROUND  [UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]
@@ -246,15 +261,6 @@ obj = nil;\
  */
 #define Color_moveRightViewBackground  [UIColor colorWithRed:0.0000 green:0.4745 blue:0.5255 alpha:1.0]
 
-/**
- * 转换计算着色的值 e.g. ColorFromRGB(0x067AB5)
- */
-#define Color_RGB_OxH(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-/**
- * 转换计算着色的值 e.g. Color_RGB(120,110,0),相应的参数会除255.0
- */
-#define Color_RGB(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
 /*======================================================
  ************* 定义各种frame及坐标和尺寸 ******************
@@ -352,7 +358,13 @@ obj = nil;\
 /*======================================================
  *********************** 其它 ***************************
  ======================================================*/
+//float a=0.0，a与0比较竟然不相等,只能通过a<0.000001来判断a是否为0
+#define FLOAT_ERROR_MARGIN 0.000001
 //由角度获取弧度
 #define degreesToRadian(x) (M_PI * (x) / 180.0)
 //由弧度获取角度
 #define radianToDegrees(radian) (radian*180.0)/(M_PI)
+
+//G－C－D
+#define GCD_BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define GCD_MAIN(block) dispatch_async(dispatch_get_main_queue(),block)

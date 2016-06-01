@@ -15,6 +15,7 @@ pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'    #自动计算表格行高
 
 pod 'MJExtension', '~> 3.0.7'  #转换速度快、使用简单方便的字典转模型框(非侵入式，推荐)
 pod 'GDataXML-HTML', '~> 1.3.0' #google官方的XML解释工具
+pod 'SAMTextView', '~> 0.2.2'#为UITextView增加placeHolder
 
 #----------------------Progress & HUD & PopTip----------------------
 pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果(推荐)

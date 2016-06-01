@@ -248,7 +248,6 @@
 		08A320CE1B82CAA300943DE9 /* TYGIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320CC1B82CAA300943DE9 /* TYGIBViewController.m */; };
 		08A320CF1B82CAA300943DE9 /* TYGIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */; };
 		08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A320D21B82CAD800943DE9 /* TYGIBView.m */; };
-		08A350EA1C1A64D2002422A0 /* SAMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A350E91C1A64D2002422A0 /* SAMTextView.m */; };
 		08A35CCB1C0ED8E7005594D5 /* TYGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */; };
 		08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8A9531AF7291F003CECB0 /* TYGStarRationViewController.m */; };
 		08A8A9561AF7291F003CECB0 /* TYGStarRationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A8A9541AF7291F003CECB0 /* TYGStarRationViewController.xib */; };
@@ -894,8 +893,6 @@
 		08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGIBViewController.xib; sourceTree = "<group>"; };
 		08A320D11B82CAD800943DE9 /* TYGIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGIBView.h; sourceTree = "<group>"; };
 		08A320D21B82CAD800943DE9 /* TYGIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGIBView.m; sourceTree = "<group>"; };
-		08A350E81C1A64D2002422A0 /* SAMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMTextView.h; sourceTree = "<group>"; };
-		08A350E91C1A64D2002422A0 /* SAMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMTextView.m; sourceTree = "<group>"; };
 		08A35CC81C0ED8E7005594D5 /* TYGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGWebViewController.h; sourceTree = "<group>"; };
 		08A35CC91C0ED8E7005594D5 /* TYGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGWebViewController.m; sourceTree = "<group>"; };
 		08A8A9521AF7291F003CECB0 /* TYGStarRationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGStarRationViewController.h; sourceTree = "<group>"; };
@@ -1370,7 +1367,6 @@
 			isa = PBXGroup;
 			children = (
 				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
-				08A350E71C1A64D2002422A0 /* SAMTextView */,
 				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
 				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
 				08A320B01B82C23B00943DE9 /* TYGDinwei */,
@@ -2049,15 +2045,6 @@
 				08A320CD1B82CAA300943DE9 /* TYGIBViewController.xib */,
 			);
 			path = TYGIBView;
-			sourceTree = "<group>";
-		};
-		08A350E71C1A64D2002422A0 /* SAMTextView */ = {
-			isa = PBXGroup;
-			children = (
-				08A350E81C1A64D2002422A0 /* SAMTextView.h */,
-				08A350E91C1A64D2002422A0 /* SAMTextView.m */,
-			);
-			path = SAMTextView;
 			sourceTree = "<group>";
 		};
 		08A35CC71C0ED8E7005594D5 /* TYGWebView */ = {
@@ -3197,7 +3184,6 @@
 				08F27D571B550ABC0039DF49 /* ListHeaderView.m in Sources */,
 				0843EFAD1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m in Sources */,
 				0843EFC01AE4F13700220F15 /* DMLazyScrollView.m in Sources */,
-				08A350EA1C1A64D2002422A0 /* SAMTextView.m in Sources */,
 				0843F0C31AE502D200220F15 /* UIViewController+Animator.m in Sources */,
 				08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */,
 				0843F03B1AE4FF6400220F15 /* MJSampleIndex.m in Sources */,

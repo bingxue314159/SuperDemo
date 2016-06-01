@@ -667,7 +667,7 @@
         }
         
         controller = nil;
-        flagViewController = nil;
+        //flagViewController = nil;
         NSLog(@"childViewControllers = %@",naviController.childViewControllers);
     }
     else{

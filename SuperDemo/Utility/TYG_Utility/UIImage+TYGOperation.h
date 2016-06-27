@@ -57,6 +57,14 @@
 - (UIImage *)reSizeToSize:(CGSize)reSize;
 
 /**
+ *  压缩图片到指定文件大小
+ *  @param image 原始图片
+ *  @param size  指定图片物理大小
+ *  @return 图片二进制文件
+ */
++ (NSData *)compressOrigianlImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
+
+/**
  *  生成纯色图片
  *  @param color 颜色
  *  @param alpha 透明度

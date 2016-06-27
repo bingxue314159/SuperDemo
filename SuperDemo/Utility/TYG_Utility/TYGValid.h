@@ -23,6 +23,13 @@
  */
 + (BOOL)isTelphoneNumber:(NSString *)telNum;
 
+/**
+ * 固定电话号码格式
+ * 因为固定电话格式比较复杂，情况比较多，主要验证了以下类型
+ * 如：010-12345678、0912-1234567、(010)-12345678、(0912)1234567、(010)12345678、(0912)-1234567、01012345678、09121234567
+ */
++(BOOL)isHomePhoneNumber:(NSString *)sting;
+
 /*
  * Email邮箱格式验证
  * 如：zhangsan@163.com、li-si@236.net、wan_gwu999@SEED.NET.TW
@@ -46,16 +53,14 @@
 + (BOOL)isIDCard:(NSString *)idCardString;
 
 /**
- * 固定电话号码格式
- * 因为固定电话格式比较复杂，情况比较多，主要验证了以下类型
- * 如：010-12345678、0912-1234567、(010)-12345678、(0912)1234567、(010)12345678、(0912)-1234567、01012345678、09121234567
- */
-+(BOOL)isPhoneNumber:(NSString *)sting;
-
-/**
  * 只能是中文汉字
  */
 +(BOOL)isChinese:(NSString *)sting;
+
+/**
+ * 是否含有中文汉字
+ */
++ (BOOL)isHaveChineseInString:(NSString *)string;
 
 /**
  *  验证银行卡号（13位 到 19位）

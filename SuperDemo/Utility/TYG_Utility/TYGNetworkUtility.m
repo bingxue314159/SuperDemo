@@ -11,6 +11,8 @@
 #import <arpa/inet.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
+#import <ifaddrs.h>   //获取设备IP地址
+
 @implementation TYGNetworkUtility
 
 /*
@@ -106,6 +108,30 @@
     struct in_addr **list = (struct in_addr **)host->h_addr_list;
     NSString *addressString = [NSString stringWithCString:inet_ntoa(*list[0]) encoding:NSUTF8StringEncoding];
     return addressString;
+}
+
+/** 获取设备IP地址 */
++ (NSString *)getIPAddress{
+    
+    NSString *address = nil;
+    struct ifaddrs *interfaces = NULL;
+    struct ifaddrs *temp_addr = NULL;
+    int success = 0;
+    success = getifaddrs(&interfaces);
+    if (success == 0) {
+        temp_addr = interfaces;
+        while (temp_addr != NULL) {
+            if (temp_addr->ifa_addr->sa_family == AF_INET) {
+                if ([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+                    address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                }
+                temp_addr = temp_addr->ifa_next;
+            }
+        }
+    }
+    freeifaddrs(interfaces);
+    
+    return address;
 }
 
 /** 检测一个网址是否可以正常访问 */

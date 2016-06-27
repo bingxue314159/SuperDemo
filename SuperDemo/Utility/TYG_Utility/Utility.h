@@ -57,19 +57,12 @@
  *  @param uiDate 输入的日期字符串形如：@"1992-05-21 13:08:08"
  *  @return NSDate
  */
-+ (NSDate *) dateConvertDateFromString:(NSString*)uiDate;
+//+ (NSDate *) dateConvertDateFromString:(NSString*)uiDate;
 
 /**
  * 解析新浪微博中的日期,@"EEE MMM d HH:mm:ss Z yyyy"
  */
 + (NSString*)getTimeResolveSinaWeiboDate:(NSString*)date;
-
-/**
- * 转换时间到当天零点或者最后一秒
- * @parma currentDate-传入的时间（e.g. 2014-05-09 18:06:59），timeType ? 0 : 1
- * @return 转化好的时间 2014-05-09 00:00:00 | 2014-05-09 23:59:59
- **/
-+ (NSDate *)dateFromDate:(NSDate *)currentDate timeType:(NSInteger)timeType;
 
 /**
  * 计算时间间隔，如：1小时前，1天前，1个月前，1年前

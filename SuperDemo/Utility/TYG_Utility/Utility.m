@@ -289,35 +289,6 @@
 }
 
 /**
- * 转换时间到当天零点或者最后一秒
- * @parma currentDate-传入的时间（e.g. 2014-05-09 18:06:59），timeType ? 0 : 1
- * @return 转化好的时间 2014-05-09 00:00:00 | 2014-05-09 23:59:59
- **/
-+ (NSDate *) dateFromDate:(NSDate *)currentDate timeType:(NSInteger)timeType{
-    
-    NSTimeInterval secondsPerDay = 8*60*60;
-    currentDate = [currentDate dateByAddingTimeInterval:-secondsPerDay];
-    
-    //设置时间输出格式：
-    NSDateFormatter * df = [[NSDateFormatter alloc] init ];
-    //    [df setDateFormat:@"yyyy年MM月dd日 HH小时mm分ss秒"];
-    [df setDateFormat:@"yyyy-MM-dd"];
-    [df setTimeZone:[NSTimeZone systemTimeZone]];
-    
-    //输出时间
-    NSString *time = [df stringFromDate:currentDate];//2013年09月22日 18小时15分40秒
-    
-    NSString *newStr = [NSString stringWithFormat:@"%@ 00:00:00",time];
-    if (timeType != 0) {
-        //结束时间
-        newStr = [NSString stringWithFormat:@"%@ 23:59:59",time];
-    }
-    NSDate *newDate = [Utility dateConvertDateFromString:newStr];
-    
-    return newDate;
-}
-
-/**
  * 计算时间间隔，如：1小时前，1天前，1个月前，1年前
  * @parma paramStartDate,paramEndDate-传入的起止时间（e.g. 2014-05-09 18:06:59）
  * @return 字符串，如：1小时前，1天前，1个月前，1年前

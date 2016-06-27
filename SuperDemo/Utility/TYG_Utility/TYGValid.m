@@ -42,12 +42,45 @@
 +(BOOL)isTelphoneNumber:(NSString *)telNum{
     
     telNum = [telNum stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    if ([telNum length] == 11) {
-        NSString *telNumRegex = @"^1[3-8]+\\d{9}$";
-        NSPredicate *telNumTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", telNumRegex];
-        return [telNumTest evaluateWithObject:telNum];
+    if ([telNum length] != 11) {
+        return NO;
     }
+    
+//    NSString *telNumRegex = @"^1[3-8]+\\d{9}$";
+//    NSPredicate *telNumTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", telNumRegex];
+//    return [telNumTest evaluateWithObject:telNum];
+
+    //移动号段正则
+    NSString *CM_NUM = @"^((13[4-9])|(147)|(15[0-2,7-9])|(178)|(18[2-4,7-8]))\\d{8}|(1705)\\d{7}$";
+    //联通号段正则
+    NSString *CU_NUM = @"^((13[0-2])|(145)|(15[5-6])|(176)|(18[5,6]))\\d{8}|(1709)\\d{7}$";
+    //电信号段正则
+    NSString *CT_NUM = @"^((133)|(153)|(177)|(18[0,1,9]))\\d{8}$";
+    
+    NSPredicate *pred_CM = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",CM_NUM];
+    NSPredicate *pred_CU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",CU_NUM];
+    NSPredicate *pred_CT = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",CT_NUM];
+    BOOL isMatch_CM = [pred_CM evaluateWithObject:telNum];
+    BOOL isMatch_CU = [pred_CU evaluateWithObject:telNum];
+    BOOL isMatch_CT = [pred_CT evaluateWithObject:telNum];
+    if (isMatch_CM || isMatch_CT || isMatch_CU) {
+        return YES;
+    }
+    
     return NO;
+}
+
+/**
+ * 固定电话号码格式
+ * 因为固定电话格式比较复杂，情况比较多，主要验证了以下类型
+ * 如：010-12345678、0912-1234567、(010)-12345678、(0912)1234567、(010)12345678、(0912)-1234567、01012345678、09121234567
+ */
++(BOOL)isHomePhoneNumber:(NSString *)sting{
+    //^(^0\d{2}-?\d{8}$)|(^0\d{3}-?\d{7}$)|(^0\d2-?\d{8}$)|(^0\d3-?\d{7}$)$
+    sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *stringRegex = @"^(^0\\d{2}-?\\d{8}$)|(^0\\d{3}-?\\d{7,8}$)|(^0\\d2-?\\d{8}$)|(^0\\d3-?\\d{7,8}$)$";
+    NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
+    return [stringTest evaluateWithObject:sting];
 }
 
 /**
@@ -70,7 +103,6 @@
     NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
     return [stringTest evaluateWithObject:sting];
 }
-
 
 /**
  * 验证是否是身份证号码
@@ -149,29 +181,28 @@
     return flag;
 }
 
-
-/**
- * 固定电话号码格式
- * 因为固定电话格式比较复杂，情况比较多，主要验证了以下类型
- * 如：010-12345678、0912-1234567、(010)-12345678、(0912)1234567、(010)12345678、(0912)-1234567、01012345678、09121234567
- */
-+(BOOL)isPhoneNumber:(NSString *)sting{
-    //^(^0\d{2}-?\d{8}$)|(^0\d{3}-?\d{7}$)|(^0\d2-?\d{8}$)|(^0\d3-?\d{7}$)$
-    sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    NSString *stringRegex = @"^(^0\\d{2}-?\\d{8}$)|(^0\\d{3}-?\\d{7,8}$)|(^0\\d2-?\\d{8}$)|(^0\\d3-?\\d{7,8}$)$";
-    NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
-    return [stringTest evaluateWithObject:sting];
-}
-
 /**
  * 只能是中文汉字
  */
-+(BOOL)isChinese:(NSString *)sting{
-    //^[\u4e00-\u9fa5]+$
-    sting = [sting stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
++(BOOL)isChinese:(NSString *)string{
+
+    for (NSInteger i = 0; i < [string length]; i++) {
+        int a = [string characterAtIndex:i];
+        if (a < 0x4e00 || a > 0x9fa5) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+/**
+ * 是否含有中文汉字
+ */
++ (BOOL)isHaveChineseInString:(NSString *)string{
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *stringRegex = @"^[\u4e00-\u9fa5]+$";
     NSPredicate *stringTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stringRegex];
-    return [stringTest evaluateWithObject:sting];
+    return [stringTest evaluateWithObject:string];
 }
 
 /**

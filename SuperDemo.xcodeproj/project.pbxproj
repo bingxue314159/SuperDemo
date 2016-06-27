@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		080069991C0BFE1B00FE9A2A /* TYGSignatureLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */; };
+		080ACAD81D20CB98000C2350 /* TYGFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 080ACAD71D20CB98000C2350 /* TYGFileManager.m */; };
 		080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */; };
 		080E5A091B21923C00F54F44 /* QBPopupMenuDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */; };
 		0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0814C6781B9EDBCC0061BDA3 /* TYGValid.m */; };
@@ -555,6 +556,8 @@
 /* Begin PBXFileReference section */
 		080069971C0BFE1B00FE9A2A /* TYGSignatureLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGSignatureLineView.h; sourceTree = "<group>"; };
 		080069981C0BFE1B00FE9A2A /* TYGSignatureLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGSignatureLineView.m; sourceTree = "<group>"; };
+		080ACAD61D20CB98000C2350 /* TYGFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGFileManager.h; sourceTree = "<group>"; };
+		080ACAD71D20CB98000C2350 /* TYGFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGFileManager.m; sourceTree = "<group>"; };
 		080E5A051B2191F800F54F44 /* QBPopupMenuDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPopupMenuDemo.h; sourceTree = "<group>"; };
 		080E5A061B2191F800F54F44 /* QBPopupMenuDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBPopupMenuDemo.m; sourceTree = "<group>"; };
 		080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QBPopupMenuDemo.xib; sourceTree = "<group>"; };
@@ -1403,6 +1406,8 @@
 				08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */,
 				0843EED61AE4DB0C00220F15 /* W_R_Plist.h */,
 				0843EED71AE4DB0C00220F15 /* W_R_Plist.m */,
+				080ACAD61D20CB98000C2350 /* TYGFileManager.h */,
+				080ACAD71D20CB98000C2350 /* TYGFileManager.m */,
 			);
 			path = TYG_Utility;
 			sourceTree = "<group>";
@@ -3211,6 +3216,7 @@
 				0843EEE11AE4DB0C00220F15 /* Utility.m in Sources */,
 				08D7D98C1AE61DB400543F2A /* SphereViewController.m in Sources */,
 				08B2A1D61B85AA7700B89635 /* TYGProgressTableViewController.m in Sources */,
+				080ACAD81D20CB98000C2350 /* TYGFileManager.m in Sources */,
 				0843EFCC1AE4F62F00220F15 /* kxMenuDemo.m in Sources */,
 				08F27D4B1B550ABC0039DF49 /* ControlsViewController.m in Sources */,
 				0843EF811AE4E54700220F15 /* IQActionSheetDemo.m in Sources */,

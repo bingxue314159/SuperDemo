@@ -38,8 +38,6 @@ pod 'KLCPopup', '~> 1.0'    #可用于展示任何自定义弹出视图,包含�
 pod 'MJRefresh', '~> 3.0.7' #快速集成下拉刷新、上拉更多
 pod 'IQActionSheetPickerView', '~> 1.0.1'   #选取器
 pod 'ActionSheetPicker-3.0', '~> 1.6.2' #选取器（推荐）
-pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）
-pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
 
 pod 'M13Checkbox', '~> 1.1.2'   #checkBox
 pod 'M13BadgeView', '~> 1.0.4'  #能够在view中添加未读标记显示未读数量--badge视图
@@ -50,10 +48,12 @@ pod 'HCSStarRatingView', :git => 'https://github.com/hugocampossousa/HCSStarRati
 
 pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 pod 'QuickDialog', '~> 1.1.0'   #快速创建表单(推荐)
+pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）
+pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
+pod 'DZNEmptyDataSet', '~> 1.8.1'   #处理空的table view和collection view
+
 pod 'UzysAssetsPickerController'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。
 pod 'MWPhotoBrowser', '~> 2.1.1' #照片视频浏览器
-
-pod 'BButton', '~> 4.0.2'   #各种样式的Button的快速创建（在图右文字，左文字右图，单图等）
 
 #----------------------图表控件----------------------
 pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库
@@ -62,11 +62,13 @@ pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库
 pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多的定制功能，可更改颜色、间隙宽度、样式和直径
 pod 'HMSegmentedControl', '~> 1.5.2'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
 pod 'TTSwitch', '~> 0.0.6'  #UISwicth 的扩展，ZJSwitch也不错
+pod 'BButton', '~> 4.0.2'   #各种样式的Button的快速创建（在图右文字，左文字右图，单图等）
 
 #----------------------启动引导----------------------
 pod 'MYBlurIntroductionView', '~> 1.0.3'    #实现了应用首次启动时的介绍组件，提供高度自定义功能。
 pod 'JazzHands', '~> 2.0.3'
 pod 'Onboard', '~> 2.1.6'
+pod 'EAIntroView', '~> 2.9.0'
 
 #----------------------TabBar----------------------
 pod 'JJTabBarController', '~> 1.0.0'    #可高度自定义的tabBar

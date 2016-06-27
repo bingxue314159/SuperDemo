@@ -18,10 +18,10 @@ Location LocationMake(double lng, double lat) {
     return loc;
 }
 
-///
-///  WGS-84 到 GCJ-02 的转换
-///
-
+/**
+ * WGS-84 到 GCJ-02 的转换
+ * iOS  到 Google地图、高德地图
+ */
 const double pi = 3.14159265358979324;
 
 //
@@ -32,6 +32,7 @@ const double pi = 3.14159265358979324;
 // ee = (a^2 - b^2) / a^2;
 const double a = 6378245.0;
 const double ee = 0.00669342162296594323;
+
 
 Location transformFromWGSToGCJ(Location wgLoc)
 {
@@ -82,10 +83,10 @@ double transformLon(double x, double y)
     return ret;
 }
 
-///
-///  GCJ-02 坐标转换成 BD-09 坐标
-///
-
+/**
+ * GCJ-02 坐标转换成 BD-09 坐标
+ * Google 到 百度
+ */
 const double x_pi = 3.14159265358979324 * 3000.0 / 180.0;
 Location bd_encrypt(Location gcLoc)
 {
@@ -95,10 +96,10 @@ Location bd_encrypt(Location gcLoc)
     return LocationMake(z * cos(theta) + 0.0065, z * sin(theta) + 0.006);
 }
 
-///
-///   BD-09 坐标转换成 GCJ-02坐标
-///
-///
+/**
+ *  BD-09 坐标转换成 GCJ-02坐标
+ *  百度 到 Google地图、高德地图
+ */
 Location bd_decrypt(Location bdLoc)
 {
     double x = bdLoc.lng - 0.0065, y = bdLoc.lat - 0.006;

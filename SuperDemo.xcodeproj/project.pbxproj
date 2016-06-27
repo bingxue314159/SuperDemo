@@ -224,6 +224,7 @@
 		0874A4FC1B62311700007951 /* M13CheckboxDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4FB1B62311700007951 /* M13CheckboxDemo.m */; };
 		0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */; };
 		0874A5011B6233D900007951 /* NJKWebViewProgressDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */; };
+		08878EA61D13CA32000AF43A /* TYGNetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */; };
 		0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */; };
 		0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */; };
 		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
@@ -856,6 +857,8 @@
 		0874A4FD1B6233D900007951 /* NJKWebViewProgressDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressDemo.h; sourceTree = "<group>"; };
 		0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressDemo.m; sourceTree = "<group>"; };
 		0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NJKWebViewProgressDemo.xib; sourceTree = "<group>"; };
+		08878EA41D13CA32000AF43A /* TYGNetworkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGNetworkUtility.h; sourceTree = "<group>"; };
+		08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGNetworkUtility.m; sourceTree = "<group>"; };
 		0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGHUDandPOPTableViewController.h; sourceTree = "<group>"; };
 		0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGHUDandPOPTableViewController.m; sourceTree = "<group>"; };
 		0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGHUDandPOPTableViewController.xib; sourceTree = "<group>"; };
@@ -1396,6 +1399,8 @@
 				0843EED31AE4DB0C00220F15 /* UncaughtExceptionHandler.mm */,
 				0843EED41AE4DB0C00220F15 /* Utility.h */,
 				0843EED51AE4DB0C00220F15 /* Utility.m */,
+				08878EA41D13CA32000AF43A /* TYGNetworkUtility.h */,
+				08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */,
 				0843EED61AE4DB0C00220F15 /* W_R_Plist.h */,
 				0843EED71AE4DB0C00220F15 /* W_R_Plist.m */,
 			);
@@ -3291,6 +3296,7 @@
 				0843F0821AE502AE00220F15 /* BeaconViewController.m in Sources */,
 				0843F0921AE502AE00220F15 /* MapSnapshotViewController.m in Sources */,
 				0843EE5C1AE4D8B500220F15 /* FirstViewController.m in Sources */,
+				08878EA61D13CA32000AF43A /* TYGNetworkUtility.m in Sources */,
 				08FC9EF91BA268AF00CEE275 /* GTMBase64_tyg.m in Sources */,
 				0874A4FC1B62311700007951 /* M13CheckboxDemo.m in Sources */,
 				08F27D501B550ABC0039DF49 /* RETableRootViewController.m in Sources */,

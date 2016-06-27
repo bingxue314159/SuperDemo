@@ -10,19 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface Utility : NSObject {
-    
-}
-
-/*
- * 功能：检测网络连接状态
- */
-+ (BOOL) connectedToNetwork;
-
-/**
- * 检测一个网址是否可以正常访问
- */
-+ (BOOL) hostAvailable: (NSString *) theHost;
+@interface Utility : NSObject
 
 /**
  * 获取设备硬件型号，如:iPod1.1,iPhone4.3

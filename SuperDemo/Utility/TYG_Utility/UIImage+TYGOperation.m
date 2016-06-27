@@ -260,6 +260,20 @@
 }
 
 /**
+ *  修复照片方向
+ *  @return image
+ */
+- (UIImage *)normalizedImage {
+    if (self.imageOrientation == UIImageOrientationUp) return self;
+    
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    [self drawInRect:(CGRect){0, 0, self.size}];
+    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalizedImage;
+}
+
+/**
  * 修复照片方向(方法一)
  * 返回: image
  */

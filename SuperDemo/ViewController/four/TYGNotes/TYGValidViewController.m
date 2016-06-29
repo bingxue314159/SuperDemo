@@ -118,7 +118,7 @@
             break;
         }
         case 1:{
-            flag = [TYGValid isPhoneNumber:text];
+            flag = [TYGValid isHomePhoneNumber:text];
             break;
         }
         case 2:{

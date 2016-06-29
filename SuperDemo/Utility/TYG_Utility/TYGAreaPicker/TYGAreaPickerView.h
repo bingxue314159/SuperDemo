@@ -25,14 +25,10 @@ typedef enum {
 
 @property (strong, nonatomic) IBOutlet UIPickerView *locatePicker;
 @property (strong, nonatomic) TYGLocation *locate;
-@property (nonatomic) TYGAreaPickerStyle pickerStyle;
+@property (nonatomic) TYGAreaPickerStyle pickerStyle;/**< 选取器样式 */
 
-/**
- *  初始化城市选取器
- *  @param pickerStyle 选取器样式
- *  @return 选取器对象
- */
-- (id)initWithStyle:(TYGAreaPickerStyle)pickerStyle;
+
++ (TYGAreaPickerView *)sharedInstance;
 
 /**
  *  装载view

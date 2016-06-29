@@ -34,9 +34,8 @@
 
 - (void)showPick:(TYGAreaPickerStyle)pickerStyle{
     
-    [self cancelLocatePicker];
-    locatePicker = [[TYGAreaPickerView alloc] initWithStyle:pickerStyle];
-    
+    locatePicker = [TYGAreaPickerView sharedInstance];
+    locatePicker.pickerStyle = pickerStyle;
     
     switch (pickerStyle) {
         case TYGAreaPickerWithStateAndCity:{
@@ -73,14 +72,9 @@
     }];
 }
 
--(void)cancelLocatePicker{
-    [locatePicker dissmiss];
-    locatePicker = nil;
-}
-
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    [self cancelLocatePicker];
+    [locatePicker dissmiss];
 }
 
 #pragma mark - UITextFieldDelegate

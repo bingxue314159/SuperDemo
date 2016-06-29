@@ -17,19 +17,30 @@
     NSArray *provinces;
     NSArray *cities;
     NSArray *districts;
+    
+    NSArray *defineValueArray;
 }
 
 @end
 
 @implementation TYGAreaPickerView
 
+static TYGAreaPickerView *sharedObject = nil;
++ (TYGAreaPickerView *)sharedInstance{
+    static dispatch_once_t _singletonPredicate;
+    dispatch_once(&_singletonPredicate, ^{
+        sharedObject = [[self alloc] init];
+    });
+    return sharedObject;
+}
+
 //初始化
-- (id)initWithStyle:(TYGAreaPickerStyle)pickerStyle{
+- (id)init{
     
     self = [[[NSBundle mainBundle] loadNibNamed:@"TYGAreaPickerView" owner:self options:nil] objectAtIndex:0];
     if (self) {
 
-        self.pickerStyle = pickerStyle;
+        self.pickerStyle = TYGAreaPickerWithStateAndCityAndDistrict;
         self.locatePicker.delegate = self;
         self.locatePicker.dataSource = self;
         
@@ -38,18 +49,27 @@
         self.frame = frame;
         
         self.locate.country = @"中国";
-        
         provinces = [self readCityData];
         self.locate.province = [provinces firstObject];
         
         cities = [TYGArea mj_objectArrayWithKeyValuesArray:self.locate.province.childObjArray];
         self.locate.city = [cities firstObject];
-
+        
         districts = [TYGArea mj_objectArrayWithKeyValuesArray:self.locate.city.childObjArray];
         self.locate.district = [districts firstObject];
+        
+        defineValueArray = @[self.locate.province.AREA_NAME,self.locate.city.AREA_NAME,self.locate.district.AREA_NAME];
+
     }
     
     return self;
+    
+}
+
+- (void)setPickerStyle:(TYGAreaPickerStyle)pickerStyle{
+    _pickerStyle = pickerStyle;
+    
+    [self.locatePicker reloadAllComponents];
     
 }
 
@@ -87,6 +107,11 @@
         maxLeng = 3;
     }
     
+    if (array.count < maxLeng) {
+        
+        array = [NSArray arrayWithArray:defineValueArray];
+    }
+    
     for (int i = 0; i < array.count; i++) {
         if (i<maxLeng) {
             NSString *title1 = [array objectAtIndex:i];
@@ -104,6 +129,8 @@
             break;
         }
     }
+    
+    
 }
 
 - (NSInteger)getTitleIndexWithTitle:(NSString *)title component:(NSInteger)component{

@@ -16,6 +16,13 @@
 #import <UIKit/UIKit.h>
 @class SystemConfig;
 
+//获取temp
+#define TYGPathTemp NSTemporaryDirectory()
+//获取沙盒 Document
+#define TYGPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define TYGPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
 @interface W_R_Plist : UIView
 
 /**

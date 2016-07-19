@@ -114,9 +114,10 @@
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"view1NavBg.png"] forBarMetrics:UIBarMetricsDefault];
     
     //隐藏那条黑线
-//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    //[[UINavigationBar appearance] setShadowImage:[UIImage new]];
     
     //导航栏禁用半透明效果
+    //只要同时设置BackgroundImage、ShadowImage，translucent = YES时，Navigationbar变成透明而不模糊
     if (SystemVersion >= 7.0) {
 //        [[UINavigationBar appearance] setTranslucent:NO];//这句不知道为什么，在iOS7.1.1下会闪退
         self.navBarController1.navigationBar.translucent = NO;
@@ -133,6 +134,9 @@
          [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.11 green:0.68 blue:0.75 alpha:1]];
      }
      */
+    
+    //iOS8 滑动的时候隐藏navigation bar
+    //[UINavigationBar appearance].hidesBarsOnSwipe = Yes;
     
     //状态栏风格
     ////方案一：需要配合配置表,将 View controller-based status bar appearance 设置为NO（默认为 YES）：

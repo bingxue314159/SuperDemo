@@ -30,7 +30,11 @@
 		<string>IOS中，加强了SSL，必须配置此参数才能进行网络访问</string>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>IOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
+	<string>iOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>iOS10中，加强了隐私权限，访问相机（不配置，闪退）</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>iOS10中，加强了隐私权限，访问相册（不配置，闪退）</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Onboard-sf-outer-limits.upright.ttf</string>

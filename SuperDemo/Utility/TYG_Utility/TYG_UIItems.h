@@ -18,75 +18,20 @@
 @interface TYG_UIItems : NSObject
 
 /**
- * 功能：创建纯文字按钮
- * 参数：按钮标题-buttonTitle 按钮样式-buttonType fontSize-文字大小
- * 返回：button对象
- */
-+(UIButton *)buttonCreatButton:(NSString *)buttonTitle font:(UIFont *)font buttonType:(UIButtonType)buttonType;//创建button对象
-
-+(UIButton *)buttonCreatReturnButton;//创建导航栏上的返回按钮
-+(UIButton *)buttonCreatMoreButton;//创建导航栏上的更多按钮
-+(UIButton *)buttonCreatExitButton;//创建导航栏上的退出按钮
-
-/**
- * 创建一条直线
- */
-+(UIButton *)buttonCreatLine:(CGRect)frame lineColor:(UIColor *)lineColor;
-
-/**
- * 功能：创建带 图片 的按钮
- * 参数：按钮标题-buttonTitle 按钮样式-buttonType imageSize-图片大小
- * 返回：button对象
- */
-+(UIButton *)buttonCreatImageButton:(UIImage *) buttonImage highlightedImage:(UIImage *) highlightedImage imageSize:(CGSize)imageSize;
-
-/**
- * 功能：创建图标
- * 参数：buttonImage-图票 buttonSize-图标大小
- * 返回：button对象
- */
-+(UIButton *)buttonCreatImageButton:(UIImage *) buttonImage buttonSize:(CGSize)buttonSize;
-
-/**
- * 功能：创建带 图片+文字 的按钮(双图,图左，文字右)
- * 参数：按钮标题-buttonTitle 按钮图片-buttonImage，highlightedImage fontSize-文字字体大小，图片大小根据文字大小自动计算
- * 返回：button对象
- */
-+(UIButton *)buttonCreatImageTitleButton:(UIImage *) buttonImage
-                        highlightedImage:(UIImage *) highlightedImage
-                                   title:(NSString *) buttonTitle
-                              titleColor:(UIColor *)titleColor
-                                    font:(UIFont *)font
-                              buttonType:(UIButtonType)buttonType;
-
-/**
- * 功能：创建带 图片+文字 的按钮(单图,图左，文字右)
- * 参数：按钮标题-buttonTitle 按钮图片-buttonImage，highlightedImage fontSize-文字字体大小，图片大小根据文字大小自动计算
- * 返回：button对象
- */
-+(UIButton *)buttonCreatImageTitleButton:(UIImage *) buttonImage
-                                   title:(NSString *) buttonTitle
-                              titleColor:(UIColor *)titleColor
-                                    font:(UIFont *)font
-                              buttonType:(UIButtonType)buttonType;
-
-/**
- * 功能：创建带 图片按钮(单图,文字左，图右)
- * 参数：按钮标题-buttonTitle 按钮图片-buttonImage
- * 返回：button对象
- */
-+(UIButton *)buttonCreatSaiXuanButton:(UIImage *) buttonImage
-                                title:(NSString *) buttonTitle
-                           titleColor:(UIColor *)titleColor
-                                 font:(UIFont *)font
-                           buttonType:(UIButtonType)buttonType;
-
-/**
  * 功能：创建指定行数的label对象（行数不足的，返回最大实际行数）
  * 参数：text-内容 font--字体 width--行宽 lines--行数
  * 返回：label
  */
 +(UILabel *)labelCreatLinesLabel:(NSString *)text font:(UIFont *)font width:(CGFloat)width lines:(NSInteger)lines;
+
+/**
+ *  计算文本的size
+ *  @param text       原始文本
+ *  @param widthValue 最大宽度
+ *  @param font       字体
+ *  @return size
+ */
++ (CGSize)findSizeForText:(NSString *)text maxWidth:(CGFloat)widthValue andFont:(UIFont *)font;
 
 /**
  *  创建虚线

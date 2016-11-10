@@ -84,7 +84,8 @@
 //把数字变成字符串
 #define SAFE_StringFormInt(intNum) [NSString stringWithFormat:@"%ld",(long)(intNum)]
 //对象安全处理
-#define SAFE_OBJECT(object) ([[NSNull null] isEqual:object] ? nil : object)
+//#define SAFE_OBJECT(object) ([[NSNull null] isEqual:object] ? nil : object)
+#define SAFE_OBJECT(object) (nil == object ? [NSNull null] : object)
 //安全的移除一个对象
 #define SAFE_RemoveView(view) if(view){\
 if ([view superview]) {[view removeFromSuperview];}\

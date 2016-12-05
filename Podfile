@@ -65,6 +65,7 @@ pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多�
 pod 'HMSegmentedControl', '~> 1.5.2'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
 pod 'TTSwitch', '~> 0.0.6'  #UISwicth 的扩展，ZJSwitch也不错
 pod 'BButton', '~> 4.0.2'   #各种样式的Button的快速创建（在图右文字，左文字右图，单图等）
+pod 'APNumberPad', '~> 1.1.3'   #iOS 数字键盘完整克隆，并提供可定制的功能按钮
 
 #----------------------启动引导----------------------
 pod 'MYBlurIntroductionView', '~> 1.0.3'    #实现了应用首次启动时的介绍组件，提供高度自定义功能。

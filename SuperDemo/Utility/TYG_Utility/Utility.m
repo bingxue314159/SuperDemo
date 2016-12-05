@@ -409,18 +409,16 @@
  * 安全的从字典中获取对象
  */
 + (id)safeGetObjectFromDic:(NSDictionary *)dic key:(NSString *)key{
-    NSNull *null = [[NSNull alloc] init];
-    id object;
+
+    if (nil == dic || key.length == 0) {
+        return nil;
+    }
     
-    if (nil == dic) {
-        object = nil;
+    if (![dic isKindOfClass:[NSDictionary class]]) {
+        return nil;
     }
-    else if ([null isEqual:[dic objectForKey:key]]) {
-        object = nil;
-    }
-    else{
-        object = [dic objectForKey:key];
-    }
+    
+    id object = [dic objectForKey:key];
     
     return object;
 }

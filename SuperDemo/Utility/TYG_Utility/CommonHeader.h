@@ -80,7 +80,7 @@
 #endif
 
 //字符串安全处理
-#define SAFE_STRING(str) ([(str) length] ? (str) : @"")
+#define SAFE_STRING(str) ([[NSNull null] isEqual:str] ? @"" : (([(str) length] ? (str) : @"")))
 //把数字变成字符串
 #define SAFE_StringFormInt(intNum) [NSString stringWithFormat:@"%ld",(long)(intNum)]
 //对象安全处理

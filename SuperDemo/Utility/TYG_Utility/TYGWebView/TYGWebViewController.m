@@ -256,6 +256,10 @@
     }];
     
     [alertView setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    
+    UITextField *textField = [alertView textFieldAtIndex:0];
+    textField.placeholder = defaultText;
+    
     [alertView show];
 }
 

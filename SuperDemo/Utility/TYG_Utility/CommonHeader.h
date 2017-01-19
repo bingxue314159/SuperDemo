@@ -83,6 +83,8 @@
 #define SAFE_STRING(str) ([[NSNull null] isEqual:str] ? @"" : (([(str) length] ? (str) : @"")))
 //把数字变成字符串
 #define SAFE_StringFormInt(intNum) [NSString stringWithFormat:@"%ld",(long)(intNum)]
+#define SAFE_StringFormFloat2d(floatNum) [NSString stringWithFormat:@"%.2f",floatNum]
+
 //对象安全处理
 //#define SAFE_OBJECT(object) ([[NSNull null] isEqual:object] ? nil : object)
 #define SAFE_OBJECT(object) (nil == object ? [NSNull null] : object)
@@ -359,7 +361,7 @@ obj = nil;\
 /*======================================================
  *********************** 其它 ***************************
  ======================================================*/
-//float a=0.0，a与0比较竟然不相等,只能通过a<0.000001来判断a是否为0
+//float a=0.0，a与0比较竟然不相等,只能通过a<0.000001来判断a是否为0，也可用 CGFLOAT_MIN 替代
 #define FLOAT_ERROR_MARGIN 0.000001
 //由角度获取弧度
 #define degreesToRadian(x) (M_PI * (x) / 180.0)

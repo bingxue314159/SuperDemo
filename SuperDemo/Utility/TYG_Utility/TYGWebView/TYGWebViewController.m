@@ -8,11 +8,12 @@
 
 #import "TYGWebViewController.h"
 #import "TYG_allHeadFiles.h"
+#import <BlocksKit+UIKit.h>
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
 #import <WebKit/WebKit.h>
 #endif
 
-@interface TYGWebViewController ()<WKNavigationDelegate,UIWebViewDelegate>
+@interface TYGWebViewController ()<WKNavigationDelegate,WKUIDelegate,UIWebViewDelegate>
 
 @property (nonatomic,readonly) double estimatedProgress NS_AVAILABLE_IOS(8_0);//加载进度
 @property (nonatomic,readonly) BOOL isUsingWKWebView;//是否正在使用 WKWebView
@@ -44,6 +45,7 @@
         
         WKWebView *webView = [[NSClassFromString(@"WKWebView") alloc] initWithFrame:self.view.bounds];
         webView.navigationDelegate = self;
+        webView.UIDelegate = self;
         webView.allowsBackForwardNavigationGestures = YES;//打开左划回退功能
         webView.backgroundColor = [UIColor clearColor];
         webView.opaque = NO;
@@ -211,6 +213,50 @@
     [TSMessage showNotificationWithTitle:@"页面加载失败！" type:TSMessageNotificationTypeError];
     
     [self endStatus];
+}
+
+
+#pragma mark - WKUIDelegate
+//web界面中有弹出警告框时调用
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
+    NSString * hostString = webView.URL.host;
+    [UIAlertView bk_showAlertViewWithTitle:hostString message:message cancelButtonTitle:@"OK" otherButtonTitles:nil handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        completionHandler();
+    }];
+}
+
+//web界面中有弹出确定框时调用
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
+    
+    NSString * hostString = webView.URL.host;
+    [UIAlertView bk_showAlertViewWithTitle:hostString message:message cancelButtonTitle:@"取消" otherButtonTitles:@[@"确定"] handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        if (buttonIndex == 1) {
+            completionHandler(YES);
+        }
+        else{
+            completionHandler(NO);
+        }
+        
+    }];
+}
+
+//web界面中有弹出输入框时调用
+- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString *))completionHandler{
+    
+    NSString * hostString = webView.URL.host;
+    
+    UIAlertView *alertView = [UIAlertView bk_alertViewWithTitle:prompt message:hostString];
+    [alertView bk_setCancelButtonWithTitle:@"取消" handler:^{
+        completionHandler(nil);
+    }];
+    
+    [alertView bk_addButtonWithTitle:@"确定" handler:^{
+        NSString * input = [alertView textFieldAtIndex:0].text;
+        completionHandler(input);
+    }];
+    
+    [alertView setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    [alertView show];
 }
 
 #pragma mark - WKNavigationDelegate

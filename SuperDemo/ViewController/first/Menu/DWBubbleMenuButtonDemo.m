@@ -15,6 +15,14 @@
 
 @implementation DWBubbleMenuButtonDemo
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
 
 - (void)viewDidAppear:(BOOL)animated {
     // Create down menu button

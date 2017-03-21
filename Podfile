@@ -1,6 +1,7 @@
 
 platform :ios, '8.0'
 
+target 'SuperDemo' do
 #----------------------常用工具----------------------
 pod "AFNetworking", "~> 2.0"
 pod 'EGOCache', '~> 2.1.3'  #缓存处理,可以缓存NSString、UIImage、NSImage以及NSData,支持多线程（thread-safe）,可以自定义过期的时间
@@ -21,7 +22,7 @@ pod 'SAMTextView', '~> 0.2.2'#为UITextView增加placeHolder
 pod 'SVProgressHUD', '~> 1.1.3' # 实现多种HUD效果(推荐)
 pod 'MBProgressHUD', '~> 0.9.1' # 实现多种HUD效果，可自定义程度高
 pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）(推荐)
-pod 'AMPopTip', '~> 0.9.12'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
+pod 'AMPopTip', '~> 1.4.2'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 #pod 'Toast', '~> 3.0'   #偏向于文字的消息提示控件，可指定到任意位置
 #pod 'CRToast', '~> 0.0.7'﻿  #导航栏处消息提示控件，类似于TSMessages，但可定义动画效果
 
@@ -63,6 +64,9 @@ pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库
 #----------------------原生UI控件的替代----------------------
 pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多的定制功能，可更改颜色、间隙宽度、样式和直径
 pod 'HMSegmentedControl', '~> 1.5.2'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
+pod 'WMPageController', '~> 2.2.1'  #类似于网易首页的效果，能管理多个viewController，用于在scrollView上滑动，用来管理多个相关联的viewcontroller
+pod 'TYPagerController', '~> 1.0.2' #支持定制， 页面控制器,可以滚动内容和标题栏,包含多种style
+#pod 'PageMenu', '~> 2.0.0'  #类似的分页式的 ViewController 切换
 pod 'TTSwitch', '~> 0.0.6'  #UISwicth 的扩展，ZJSwitch也不错
 pod 'BButton', '~> 4.0.2'   #各种样式的Button的快速创建（在图右文字，左文字右图，单图等）
 pod 'APNumberPad', '~> 1.1.3'   #iOS 数字键盘完整克隆，并提供可定制的功能按钮
@@ -103,4 +107,6 @@ pod 'FBAllocationTracker' #主动跟踪NSObject子类的创建和释放。它可
 pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
 
 #----------------------其它工具----------------------
-pod 'DeviceUtil', '~> 1.3.7'    #获取设备三件版本号，如 iPhone 4,iPad mini2
+pod 'DeviceUtil', '~> 2.0.3'    #获取设备三件版本号，如 iPhone 4,iPad mini2
+
+end

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.uuxoo.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -15,11 +15,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.3</string>
+	<string>1.2.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>33</string>
+	<string>36</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -29,10 +29,10 @@
 		<key>message</key>
 		<string>IOS中，加强了SSL，必须配置此参数才能进行网络访问</string>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>iOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
 	<key>NSCameraUsageDescription</key>
 	<string>iOS10中，加强了隐私权限，访问相机（不配置，闪退）</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>iOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>iOS10中，加强了隐私权限，访问相册（不配置，闪退）</string>
 	<key>UIAppFonts</key>

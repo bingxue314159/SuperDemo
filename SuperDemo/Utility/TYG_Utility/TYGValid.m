@@ -46,7 +46,7 @@
         return NO;
     }
     
-//    NSString *telNumRegex = @"^1[3-8]+\\d{9}$";
+//    NSString *telNumRegex = @"^((13[0-9])|(17[0-9])|(14[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
 //    NSPredicate *telNumTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", telNumRegex];
 //    return [telNumTest evaluateWithObject:telNum];
 

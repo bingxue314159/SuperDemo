@@ -2675,7 +2675,7 @@
 				TargetAttributes = {
 					0843EE4F1AE4D8B500220F15 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = YDCABN4W6L;
+						DevelopmentTeam = GBHXY9KGY6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -3403,14 +3403,15 @@
 			baseConfigurationReference = 8B05A2A88A7C572E9866CF46 /* Pods-SuperDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: car xin (2K7X6KTHE2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = YDCABN4W6L;
+				DEVELOPMENT_TEAM = GBHXY9KGY6;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "SuperDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.uuxoo.SuperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uuxoo.SuperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3422,14 +3423,15 @@
 			baseConfigurationReference = 4DF1A24D56201134D1B6B4AD /* Pods-SuperDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: car xin (GBHXY9KGY6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = YDCABN4W6L;
+				DEVELOPMENT_TEAM = GBHXY9KGY6;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "SuperDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.uuxoo.SuperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uuxoo.SuperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

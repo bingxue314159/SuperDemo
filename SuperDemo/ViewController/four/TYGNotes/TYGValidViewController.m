@@ -103,13 +103,16 @@
             break;
     }
     
-    [popTip hide];
+    
     if (content.length > 0) {
         //PopTip的BUG，不能连续调用
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.38 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [popTip showText:content direction:AMPopTipDirectionUp maxWidth:(SCREEN_WIDTH - 60) inView:self.view fromFrame:textField.frame];
         });
         
+    }
+    else {
+        [popTip hide];
     }
 
 }

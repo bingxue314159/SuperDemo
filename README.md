@@ -12,32 +12,10 @@
 ## 截图
 ![demo1](https://github.com/bingxue314159/SuperDemo/raw/master/Screen/SuperDemo.gif "菜单")  
 
-<<<<<<< Updated upstream
-## 已知问题
-### 1.冲突
-ASValueTrackingSlider与ASProgressPopUpView为同一作者，但在两个工程中用了同样的静态常量，把其中一个工程里的常量名更改一下就可以通过编译了   
-此问题已联系作者，已在'ASValueTrackingSlider', '~> 0.11.2' 版本解决    
-```objc
-const float ARROW_LENGTH = 8.0;   
-const float POPUPVIEW_WIDTH_PAD = 1.15;    
-const float POPUPVIEW_HEIGHT_PAD = 1.1;    
-NSString *const FillColorAnimation = @"fillColor";    
-```
-
-### 2.卡顿
-因在AppDelegate中加入了内存循环引用监测工具[FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler)，会导致APP运行起来会较明显的有卡顿或者迟缓现象，若出现此问题，可移除内存监测的代码
-```objc
-    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
-                                                                  [RetainCycleLoggerPlugin new]]
-                               retainCycleDetectorConfiguration:nil];    
-    [_memoryProfiler enable];    
-```
-    
 FBMemoryProfiler用法    
 =======
 ## 其它
 **FBMemoryProfiler用法**    
->>>>>>> Stashed changes
 中文版：[iOS上自动检测内存泄露](http://www.cocoachina.com/ios/20160419/15954.html)
 英文版: [Automatic memory leak detection on iOS](https://code.facebook.com/posts/583946315094347/automatic-memory-leak-detection-on-ios/)
 

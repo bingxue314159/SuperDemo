@@ -64,15 +64,10 @@ PODS:
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
   - EGOCache (2.1.3)
-  - FBAllocationTracker (0.1.3)
-  - FBMemoryProfiler (0.1.2):
-    - FBAllocationTracker (~> 0.1)
-    - FBRetainCycleDetector (~> 0.1)
-  - FBRetainCycleDetector (0.1.2)
   - GDataXML-HTML (1.3.0)
   - HCSStarRatingView (1.4.5)
   - HexColors (2.2.1)
-  - HMSegmentedControl (1.5.2)
+  - HMSegmentedControl (1.5.3)
   - iCarousel (1.8.2)
   - IGLDropDownMenu (1.0.0)
   - IQActionSheetPickerView (1.0.3)
@@ -156,12 +151,9 @@ DEPENDENCIES:
   - DZNEmptyDataSet (~> 1.8.1)
   - EAIntroView (~> 2.9.0)
   - EGOCache (~> 2.1.3)
-  - FBAllocationTracker
-  - FBMemoryProfiler
-  - FBRetainCycleDetector
   - GDataXML-HTML (~> 1.3.0)
   - HCSStarRatingView (from `https://github.com/hugocampossousa/HCSStarRatingView.git`)
-  - HMSegmentedControl (~> 1.5.2)
+  - HMSegmentedControl (~> 1.5.3)
   - iCarousel (~> 1.8.1)
   - IGLDropDownMenu (~> 1.0.0)
   - IQActionSheetPickerView (~> 1.0.1)
@@ -238,13 +230,10 @@ SPEC CHECKSUMS:
   EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
-  FBAllocationTracker: bf649e786f2a7a7c7cffb99d59d3f81a0e9e294b
-  FBMemoryProfiler: bc0d488b31bb18ce5659c80f58c989c837bb7378
-  FBRetainCycleDetector: 45462f9ed1af0cd77224a4cc4e6dacaca47371b4
   GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
   HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
-  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   IGLDropDownMenu: 6fb4338dbf7092db9086ce61efd60c01d4ef717b
   IQActionSheetPickerView: 8f7a61714dd2dda9cd95bdbde33ea16b07d6c548
@@ -294,6 +283,6 @@ SPEC CHECKSUMS:
   UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
   WMPageController: 181bcc9b1fb7c9c3466bff66012552953a547d28
 
-PODFILE CHECKSUM: 64d309e9ecbf4143d78133ec2c2f2bc7e19a6a93
+PODFILE CHECKSUM: 8678fc0281a8d921681ea35dfd825b8161affc37
 
-COCOAPODS: 1.2.1.beta.1
+COCOAPODS: 1.2.0

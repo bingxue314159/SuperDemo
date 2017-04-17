@@ -63,7 +63,7 @@ pod 'PNChart', '~> 0.8.7'   #简单带有动画效果的图表库
 
 #----------------------原生UI控件的替代----------------------
 pod 'StyledPageControl', '~> 1.0'   #UIPageControl 的扩展，可提供更多的定制功能，可更改颜色、间隙宽度、样式和直径
-pod 'HMSegmentedControl', '~> 1.5.2'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
+pod 'HMSegmentedControl', '~> 1.5.3'    #UISegmentedControl 的扩展,类似Google Currents和其它谷歌产品的风格的分段控件
 pod 'WMPageController', '~> 2.2.1'  #类似于网易首页的效果，能管理多个viewController，用于在scrollView上滑动，用来管理多个相关联的viewcontroller
 pod 'TYPagerController', '~> 1.0.2' #支持定制， 页面控制器,可以滚动内容和标题栏,包含多种style
 #pod 'PageMenu', '~> 2.0.0'  #类似的分页式的 ViewController 切换
@@ -102,9 +102,9 @@ pod 'DateTools', '~> 1.7.0' #可能是最好用的iOS日期工具库
 
 #----------------------FaceBook自动检测内存泄露 iOS SDK >= 8.0----------------------
 #对于客户端的自动化，只要在NSTimer上使用FBRetainCycleDetector，再用FBAllocationTracker来抓取实例来配合跟踪就行。
-pod 'FBRetainCycleDetector'   #它会连续的、自动的运行
-pod 'FBAllocationTracker' #主动跟踪NSObject子类的创建和释放。它可以以一个很小的性能开销来获取任何类的任何实例
-pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
+#pod 'FBRetainCycleDetector'   #它会连续的、自动的运行
+#pod 'FBAllocationTracker' #主动跟踪NSObject子类的创建和释放。它可以以一个很小的性能开销来获取任何类的任何实例
+#pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
 
 #----------------------其它工具----------------------
 pod 'DeviceUtil', '~> 2.0.3'    #获取设备三件版本号，如 iPhone 4,iPad mini2

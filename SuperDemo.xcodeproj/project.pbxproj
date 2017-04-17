@@ -393,8 +393,6 @@
 		08EDD0701BF179EE00FF110E /* TYGAreaPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EDD06A1BF179EE00FF110E /* TYGAreaPickerView.xib */; };
 		08EDD0711BF179EE00FF110E /* tygCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08EDD06B1BF179EE00FF110E /* tygCity.plist */; };
 		08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EDD06D1BF179EE00FF110E /* TYGLocation.m */; };
-		08EFFACD1CC60AC4000713B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFFACA1CC60AC4000713B5 /* CacheCleanerPlugin.m */; };
-		08EFFACE1CC60AC4000713B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFFACC1CC60AC4000713B5 /* RetainCycleLoggerPlugin.m */; };
 		08F19C821B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */; };
 		08F19C831B4681C000722C9C /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C751B4681C000722C9C /* ActionSheetPickerAppDelegate.m */; };
 		08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F19C771B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m */; };
@@ -1082,10 +1080,6 @@
 		08EDD06B1BF179EE00FF110E /* tygCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tygCity.plist; sourceTree = "<group>"; };
 		08EDD06C1BF179EE00FF110E /* TYGLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGLocation.h; sourceTree = "<group>"; };
 		08EDD06D1BF179EE00FF110E /* TYGLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGLocation.m; sourceTree = "<group>"; };
-		08EFFAC91CC60AC4000713B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
-		08EFFACA1CC60AC4000713B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
-		08EFFACB1CC60AC4000713B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
-		08EFFACC1CC60AC4000713B5 /* RetainCycleLoggerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCycleLoggerPlugin.m; sourceTree = "<group>"; };
 		08F19C721B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AbstractActionSheetPicker+CustomButton.h"; sourceTree = "<group>"; };
 		08F19C731B4681C000722C9C /* AbstractActionSheetPicker+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AbstractActionSheetPicker+CustomButton.m"; sourceTree = "<group>"; };
 		08F19C741B4681C000722C9C /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
@@ -1407,7 +1401,6 @@
 		0843EF141AE4DB8700220F15 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				08EFFAC81CC60AC4000713B5 /* FBRetainCycle */,
 				0843F0A91AE502D200220F15 /* AVCaptureManager */,
 				0843EFBD1AE4F13700220F15 /* DMLazyScrollView */,
 				0843F0AC1AE502D200220F15 /* HUAnimator */,
@@ -2317,17 +2310,6 @@
 			path = TYGAreaPicker;
 			sourceTree = "<group>";
 		};
-		08EFFAC81CC60AC4000713B5 /* FBRetainCycle */ = {
-			isa = PBXGroup;
-			children = (
-				08EFFAC91CC60AC4000713B5 /* CacheCleanerPlugin.h */,
-				08EFFACA1CC60AC4000713B5 /* CacheCleanerPlugin.m */,
-				08EFFACB1CC60AC4000713B5 /* RetainCycleLoggerPlugin.h */,
-				08EFFACC1CC60AC4000713B5 /* RetainCycleLoggerPlugin.m */,
-			);
-			path = FBRetainCycle;
-			sourceTree = "<group>";
-		};
 		08F19C711B4681C000722C9C /* ActionSheetPickDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -3088,7 +3070,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FEA8182668F9617235123305 /* [CP] Copy Pods Resources */ = {
@@ -3161,7 +3143,6 @@
 				08A320B51B82C23B00943DE9 /* LocationTrans.m in Sources */,
 				08D7D9B61AE62BFD00543F2A /* IQKeyboardViewController.m in Sources */,
 				08F19C881B4681C000722C9C /* NSDate+TCUtils.m in Sources */,
-				08EFFACD1CC60AC4000713B5 /* CacheCleanerPlugin.m in Sources */,
 				0843F0361AE4FF0800220F15 /* MJTableViewController.m in Sources */,
 				0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */,
 				08F8BCEE1B969286009FF488 /* TYGUIButtonViewController.m in Sources */,
@@ -3248,7 +3229,6 @@
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
 				080E5A071B2191F800F54F44 /* QBPopupMenuDemo.m in Sources */,
-				08EFFACE1CC60AC4000713B5 /* RetainCycleLoggerPlugin.m in Sources */,
 				0843F08A1AE502AE00220F15 /* ImageFiltersViewController.m in Sources */,
 				08F20B441B67275B005F092A /* MWPhotoBrowserDemo.m in Sources */,
 				08F19C841B4681C000722C9C /* ActionSheetPickerCustomPickerDelegate.m in Sources */,

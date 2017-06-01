@@ -225,6 +225,7 @@
 		0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4FE1B6233D900007951 /* NJKWebViewProgressDemo.m */; };
 		0874A5011B6233D900007951 /* NJKWebViewProgressDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */; };
 		08878EA61D13CA32000AF43A /* TYGNetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */; };
+		08933AF11EDFB6B900420C13 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08933AF01EDFB6B900420C13 /* ToastViewController.m */; };
 		0897EEF01B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */; };
 		0897EEF11B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */; };
 		0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897EEF31B44F77700EBCA00 /* MBProgressHUDViewController.m */; };
@@ -846,6 +847,8 @@
 		0874A4FF1B6233D900007951 /* NJKWebViewProgressDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NJKWebViewProgressDemo.xib; sourceTree = "<group>"; };
 		08878EA41D13CA32000AF43A /* TYGNetworkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGNetworkUtility.h; sourceTree = "<group>"; };
 		08878EA51D13CA32000AF43A /* TYGNetworkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGNetworkUtility.m; sourceTree = "<group>"; };
+		08933AEF1EDFB6B900420C13 /* ToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
+		08933AF01EDFB6B900420C13 /* ToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
 		0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGHUDandPOPTableViewController.h; sourceTree = "<group>"; };
 		0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGHUDandPOPTableViewController.m; sourceTree = "<group>"; };
 		0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGHUDandPOPTableViewController.xib; sourceTree = "<group>"; };
@@ -1919,6 +1922,8 @@
 				0897EEED1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.h */,
 				0897EEEE1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.m */,
 				0897EEEF1B44F69C00EBCA00 /* TYGHUDandPOPTableViewController.xib */,
+				08933AEF1EDFB6B900420C13 /* ToastViewController.h */,
+				08933AF01EDFB6B900420C13 /* ToastViewController.m */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -3209,6 +3214,7 @@
 				08D7D9731AE6199500543F2A /* CubeDemo.m in Sources */,
 				0843F0981AE502AE00220F15 /* QRCodeViewController.m in Sources */,
 				08B2A1D91B85B42400B89635 /* ASValueTrackingSliderDemo.m in Sources */,
+				08933AF11EDFB6B900420C13 /* ToastViewController.m in Sources */,
 				0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */,
 				0843F0371AE4FF0800220F15 /* MJTestViewController.m in Sources */,
 				08D7D9AC1AE6267200543F2A /* SWTableViewCellDemo.m in Sources */,

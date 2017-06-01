@@ -54,9 +54,11 @@
     [self.window addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
     self.frostedViewController = frostedViewController;
     
+    /*
     //首次运行时的引导图
-//    MYBlurIntroductionDemo *loadingView = [[MYBlurIntroductionDemo alloc] init];
-//    [self.viewController.view addSubview:loadingView.view];
+    MYBlurIntroductionDemo *loadingView = [[MYBlurIntroductionDemo alloc] init];
+    [self.viewController.view addSubview:loadingView.view];
+    */
     
     self.window.rootViewController = frostedViewController;
 //    self.window.rootViewController = self.viewController;
@@ -69,12 +71,10 @@
 - (void)panGestureRecognized:(UIPanGestureRecognizer *)sender
 {
     // Dismiss keyboard (optional)
-    //
     [self.window endEditing:YES];
     [self.frostedViewController.view endEditing:YES];
     
     // Present the view controller
-    //
     [self.frostedViewController panGestureRecognized:sender];
 }
 

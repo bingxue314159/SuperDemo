@@ -33,6 +33,7 @@
     [titleArray addObject:@"日历控件-PDTSimpleCalendarDemo"];
     [titleArray addObject:@"日历控件-ABCalendarPickerDemo"];
     [titleArray addObject:@"日历控件-TimesSquareViewDemo"];
+    [titleArray addObject:@"日历控件-FSTableViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,6 +77,13 @@
     
     if ([@"ABCalendarPickerDemo" isEqualToString:className]) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ABCalendarPickerDemo" bundle:nil];
+        
+        UIViewController *viewController = [storyboard instantiateInitialViewController];
+        [self.navigationController pushViewController:viewController animated:YES];
+        
+    }
+    else if ([@"FSTableViewController" isEqualToString:className]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"FSTableViewController" bundle:nil];
         
         UIViewController *viewController = [storyboard instantiateInitialViewController];
         [self.navigationController pushViewController:viewController animated:YES];

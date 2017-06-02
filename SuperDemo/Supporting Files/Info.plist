@@ -42,6 +42,8 @@
 	<string>iOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>iOS10中，加强了隐私权限，访问相册（不配置，闪退）</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>iOS10中，加强了隐私权限，访问日历（不配置，闪退）</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Onboard-sf-outer-limits.upright.ttf</string>

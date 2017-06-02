@@ -215,6 +215,20 @@
 		0843F13A1AE5076900220F15 /* stage_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1031AE5076900220F15 /* stage_8@2x.png */; };
 		0843F13B1AE5076900220F15 /* stage_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1041AE5076900220F15 /* stage_9@2x.png */; };
 		0843F13C1AE5076900220F15 /* addedIn7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0843F1061AE5076900220F15 /* addedIn7.plist */; };
+		085C7E9D1EE15E1600289452 /* DelegateAppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E7B1EE15E1600289452 /* DelegateAppearanceViewController.m */; };
+		085C7E9E1EE15E1600289452 /* DIYCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E7E1EE15E1600289452 /* DIYCalendarCell.m */; };
+		085C7E9F1EE15E1600289452 /* DIYExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E801EE15E1600289452 /* DIYExampleViewController.m */; };
+		085C7EA01EE15E1600289452 /* FSCalendarScopeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E831EE15E1600289452 /* FSCalendarScopeExampleViewController.m */; };
+		085C7EA11EE15E1600289452 /* FSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E851EE15E1600289452 /* FSTableViewController.m */; };
+		085C7EA21EE15E1600289452 /* FSTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085C7E861EE15E1600289452 /* FSTableViewController.storyboard */; };
+		085C7EA31EE15E1600289452 /* FullScreenExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E891EE15E1600289452 /* FullScreenExampleViewController.m */; };
+		085C7EA41EE15E1600289452 /* HidePlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E8C1EE15E1600289452 /* HidePlaceholderViewController.m */; };
+		085C7EA51EE15E1600289452 /* LoadViewExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E8F1EE15E1600289452 /* LoadViewExampleViewController.m */; };
+		085C7EA61EE15E1600289452 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E921EE15E1600289452 /* ButtonsViewController.m */; };
+		085C7EA71EE15E1600289452 /* RangePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E951EE15E1600289452 /* RangePickerCell.m */; };
+		085C7EA81EE15E1600289452 /* RangePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E971EE15E1600289452 /* RangePickerViewController.m */; };
+		085C7EA91EE15E1600289452 /* CalendarConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E9A1EE15E1600289452 /* CalendarConfigViewController.m */; };
+		085C7EAA1EE15E1600289452 /* StoryboardExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085C7E9C1EE15E1600289452 /* StoryboardExampleViewController.m */; };
 		0874A4E91B62273100007951 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4E81B62273100007951 /* RTLabel.m */; };
 		0874A4EE1B62274100007951 /* RTLabelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4EB1B62274100007951 /* RTLabelTableViewController.m */; };
 		0874A4EF1B62274100007951 /* RTLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874A4ED1B62274100007951 /* RTLabelTableViewCell.m */; };
@@ -829,6 +843,33 @@
 		0843F1031AE5076900220F15 /* stage_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stage_8@2x.png"; sourceTree = "<group>"; };
 		0843F1041AE5076900220F15 /* stage_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stage_9@2x.png"; sourceTree = "<group>"; };
 		0843F1061AE5076900220F15 /* addedIn7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addedIn7.plist; sourceTree = "<group>"; };
+		085C7E7A1EE15E1600289452 /* DelegateAppearanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateAppearanceViewController.h; sourceTree = "<group>"; };
+		085C7E7B1EE15E1600289452 /* DelegateAppearanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateAppearanceViewController.m; sourceTree = "<group>"; };
+		085C7E7D1EE15E1600289452 /* DIYCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYCalendarCell.h; sourceTree = "<group>"; };
+		085C7E7E1EE15E1600289452 /* DIYCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYCalendarCell.m; sourceTree = "<group>"; };
+		085C7E7F1EE15E1600289452 /* DIYExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYExampleViewController.h; sourceTree = "<group>"; };
+		085C7E801EE15E1600289452 /* DIYExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYExampleViewController.m; sourceTree = "<group>"; };
+		085C7E821EE15E1600289452 /* FSCalendarScopeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeExampleViewController.h; sourceTree = "<group>"; };
+		085C7E831EE15E1600289452 /* FSCalendarScopeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeExampleViewController.m; sourceTree = "<group>"; };
+		085C7E841EE15E1600289452 /* FSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTableViewController.h; sourceTree = "<group>"; };
+		085C7E851EE15E1600289452 /* FSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTableViewController.m; sourceTree = "<group>"; };
+		085C7E861EE15E1600289452 /* FSTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FSTableViewController.storyboard; sourceTree = "<group>"; };
+		085C7E881EE15E1600289452 /* FullScreenExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenExampleViewController.h; sourceTree = "<group>"; };
+		085C7E891EE15E1600289452 /* FullScreenExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenExampleViewController.m; sourceTree = "<group>"; };
+		085C7E8B1EE15E1600289452 /* HidePlaceholderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HidePlaceholderViewController.h; sourceTree = "<group>"; };
+		085C7E8C1EE15E1600289452 /* HidePlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HidePlaceholderViewController.m; sourceTree = "<group>"; };
+		085C7E8E1EE15E1600289452 /* LoadViewExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadViewExampleViewController.h; sourceTree = "<group>"; };
+		085C7E8F1EE15E1600289452 /* LoadViewExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewExampleViewController.m; sourceTree = "<group>"; };
+		085C7E911EE15E1600289452 /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
+		085C7E921EE15E1600289452 /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
+		085C7E941EE15E1600289452 /* RangePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangePickerCell.h; sourceTree = "<group>"; };
+		085C7E951EE15E1600289452 /* RangePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangePickerCell.m; sourceTree = "<group>"; };
+		085C7E961EE15E1600289452 /* RangePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangePickerViewController.h; sourceTree = "<group>"; };
+		085C7E971EE15E1600289452 /* RangePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangePickerViewController.m; sourceTree = "<group>"; };
+		085C7E991EE15E1600289452 /* CalendarConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarConfigViewController.h; sourceTree = "<group>"; };
+		085C7E9A1EE15E1600289452 /* CalendarConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarConfigViewController.m; sourceTree = "<group>"; };
+		085C7E9B1EE15E1600289452 /* StoryboardExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardExampleViewController.h; sourceTree = "<group>"; };
+		085C7E9C1EE15E1600289452 /* StoryboardExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardExampleViewController.m; sourceTree = "<group>"; };
 		0874A4E71B62273100007951 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		0874A4E81B62273100007951 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		0874A4EA1B62274100007951 /* RTLabelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabelTableViewController.h; sourceTree = "<group>"; };
@@ -1868,6 +1909,112 @@
 			path = plists;
 			sourceTree = "<group>";
 		};
+		085C7E781EE15E1600289452 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E791EE15E1600289452 /* Delegate Appearance */,
+				085C7E7C1EE15E1600289452 /* DIY */,
+				085C7E811EE15E1600289452 /* FSCalendarScope Example */,
+				085C7E841EE15E1600289452 /* FSTableViewController.h */,
+				085C7E851EE15E1600289452 /* FSTableViewController.m */,
+				085C7E861EE15E1600289452 /* FSTableViewController.storyboard */,
+				085C7E871EE15E1600289452 /* Fullscreen Example */,
+				085C7E8A1EE15E1600289452 /* Hide Placeholders */,
+				085C7E8D1EE15E1600289452 /* LoadView Example */,
+				085C7E901EE15E1600289452 /* Prev-Next-Buttons */,
+				085C7E931EE15E1600289452 /* Range Picker */,
+				085C7E981EE15E1600289452 /* Storyboard Example */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		085C7E791EE15E1600289452 /* Delegate Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E7A1EE15E1600289452 /* DelegateAppearanceViewController.h */,
+				085C7E7B1EE15E1600289452 /* DelegateAppearanceViewController.m */,
+			);
+			path = "Delegate Appearance";
+			sourceTree = "<group>";
+		};
+		085C7E7C1EE15E1600289452 /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E7D1EE15E1600289452 /* DIYCalendarCell.h */,
+				085C7E7E1EE15E1600289452 /* DIYCalendarCell.m */,
+				085C7E7F1EE15E1600289452 /* DIYExampleViewController.h */,
+				085C7E801EE15E1600289452 /* DIYExampleViewController.m */,
+			);
+			path = DIY;
+			sourceTree = "<group>";
+		};
+		085C7E811EE15E1600289452 /* FSCalendarScope Example */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E821EE15E1600289452 /* FSCalendarScopeExampleViewController.h */,
+				085C7E831EE15E1600289452 /* FSCalendarScopeExampleViewController.m */,
+			);
+			path = "FSCalendarScope Example";
+			sourceTree = "<group>";
+		};
+		085C7E871EE15E1600289452 /* Fullscreen Example */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E881EE15E1600289452 /* FullScreenExampleViewController.h */,
+				085C7E891EE15E1600289452 /* FullScreenExampleViewController.m */,
+			);
+			path = "Fullscreen Example";
+			sourceTree = "<group>";
+		};
+		085C7E8A1EE15E1600289452 /* Hide Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E8B1EE15E1600289452 /* HidePlaceholderViewController.h */,
+				085C7E8C1EE15E1600289452 /* HidePlaceholderViewController.m */,
+			);
+			path = "Hide Placeholders";
+			sourceTree = "<group>";
+		};
+		085C7E8D1EE15E1600289452 /* LoadView Example */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E8E1EE15E1600289452 /* LoadViewExampleViewController.h */,
+				085C7E8F1EE15E1600289452 /* LoadViewExampleViewController.m */,
+			);
+			path = "LoadView Example";
+			sourceTree = "<group>";
+		};
+		085C7E901EE15E1600289452 /* Prev-Next-Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E911EE15E1600289452 /* ButtonsViewController.h */,
+				085C7E921EE15E1600289452 /* ButtonsViewController.m */,
+			);
+			path = "Prev-Next-Buttons";
+			sourceTree = "<group>";
+		};
+		085C7E931EE15E1600289452 /* Range Picker */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E941EE15E1600289452 /* RangePickerCell.h */,
+				085C7E951EE15E1600289452 /* RangePickerCell.m */,
+				085C7E961EE15E1600289452 /* RangePickerViewController.h */,
+				085C7E971EE15E1600289452 /* RangePickerViewController.m */,
+			);
+			path = "Range Picker";
+			sourceTree = "<group>";
+		};
+		085C7E981EE15E1600289452 /* Storyboard Example */ = {
+			isa = PBXGroup;
+			children = (
+				085C7E991EE15E1600289452 /* CalendarConfigViewController.h */,
+				085C7E9A1EE15E1600289452 /* CalendarConfigViewController.m */,
+				085C7E9B1EE15E1600289452 /* StoryboardExampleViewController.h */,
+				085C7E9C1EE15E1600289452 /* StoryboardExampleViewController.m */,
+			);
+			path = "Storyboard Example";
+			sourceTree = "<group>";
+		};
 		0874A4E61B62273100007951 /* RTLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2367,6 +2514,7 @@
 		08F20B6A1B67689C005F092A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				085C7E781EE15E1600289452 /* FSCalendar */,
 				08F20BA61B677C39005F092A /* TimesSquare */,
 				08F20B7E1B6770D3005F092A /* ABCalendarPickerDemo.h */,
 				08F20B7F1B6770D3005F092A /* ABCalendarPickerDemo.m */,
@@ -2813,6 +2961,7 @@
 				08EC5DEF1B954D7F0081C8CA /* TTSwithc-switchGreen.png in Resources */,
 				08B6A98E1CA2303200C4D45D /* UIImageOperationViewController.xib in Resources */,
 				0843EF091AE4DB7F00220F15 /* 我的_on@2x.png in Resources */,
+				085C7EA21EE15E1600289452 /* FSTableViewController.storyboard in Resources */,
 				08EC5E0A1B954D7F0081C8CA /* TTSwithc-square-switch-thumb-highlight@2x.png in Resources */,
 				08D7D9D51AE6317D00543F2A /* AMPoptipViewController.xib in Resources */,
 				0843EEFF1AE4DB7F00220F15 /* VIP_黑.png in Resources */,
@@ -3100,8 +3249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085C7EA91EE15E1600289452 /* CalendarConfigViewController.m in Sources */,
 				08F27D541B550ABC0039DF49 /* ListImageItem.m in Sources */,
 				08DB58811C06D9020011D722 /* TYGSignatureView.m in Sources */,
+				085C7E9E1EE15E1600289452 /* DIYCalendarCell.m in Sources */,
 				08F20B811B6770D3005F092A /* ABCalendarPickerDemo.m in Sources */,
 				08A320BE1B82C29900943DE9 /* TYGAppVersionViewController.m in Sources */,
 				0843F0C41AE502D200220F15 /* ZBFallenBricksAnimator.m in Sources */,
@@ -3110,7 +3261,9 @@
 				0843F0961AE502AE00220F15 /* MultipeerConnectivityViewController.m in Sources */,
 				0874A4F81B62309300007951 /* MDRadialProgressViewDemo.m in Sources */,
 				0874A4EF1B62274100007951 /* RTLabelTableViewCell.m in Sources */,
+				085C7EA41EE15E1600289452 /* HidePlaceholderViewController.m in Sources */,
 				08F27D571B550ABC0039DF49 /* ListHeaderView.m in Sources */,
+				085C7EAA1EE15E1600289452 /* StoryboardExampleViewController.m in Sources */,
 				0843EFAD1AE4EAC100220F15 /* TYGAreaPickerViewDemo.m in Sources */,
 				0843EFC01AE4F13700220F15 /* DMLazyScrollView.m in Sources */,
 				0843F0C31AE502D200220F15 /* UIViewController+Animator.m in Sources */,
@@ -3166,6 +3319,7 @@
 				08F20B6D1B6768BA005F092A /* CalendarViewController.m in Sources */,
 				08EA561D1B4381E8007ED35B /* DTCoreTextViewController.m in Sources */,
 				0843F0881AE502AE00220F15 /* FontsViewController.m in Sources */,
+				085C7E9F1EE15E1600289452 /* DIYExampleViewController.m in Sources */,
 				08F27D521B550ABC0039DF49 /* ValidationsViewController.m in Sources */,
 				0843EE591AE4D8B500220F15 /* AppDelegate.m in Sources */,
 				08F27D581B550ABC0039DF49 /* ListImageCell.m in Sources */,
@@ -3193,10 +3347,12 @@
 				08B3A3C61B660E42007838EA /* MGSwipeTableCellDemoTestData.m in Sources */,
 				08EDD06E1BF179EE00FF110E /* TYGArea.m in Sources */,
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
+				085C7EA51EE15E1600289452 /* LoadViewExampleViewController.m in Sources */,
 				08DB58861C06D95A0011D722 /* TYGSignatureViewQuartz.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				08A320B61B82C23B00943DE9 /* TYGDinwei.m in Sources */,
+				085C7EA61EE15E1600289452 /* ButtonsViewController.m in Sources */,
 				0843EF891AE4E6B200220F15 /* DropDownListView.m in Sources */,
 				0843EEDA1AE4DB0C00220F15 /* ImageBoxView.m in Sources */,
 				0874A4F31B622BA800007951 /* LDProgressViewController.m in Sources */,
@@ -3214,6 +3370,7 @@
 				08D7D9731AE6199500543F2A /* CubeDemo.m in Sources */,
 				0843F0981AE502AE00220F15 /* QRCodeViewController.m in Sources */,
 				08B2A1D91B85B42400B89635 /* ASValueTrackingSliderDemo.m in Sources */,
+				085C7EA31EE15E1600289452 /* FullScreenExampleViewController.m in Sources */,
 				08933AF11EDFB6B900420C13 /* ToastViewController.m in Sources */,
 				0843EEDF1AE4DB0C00220F15 /* UIImageView+Badge.m in Sources */,
 				0843F0371AE4FF0800220F15 /* MJTestViewController.m in Sources */,
@@ -3223,6 +3380,7 @@
 				0843EE5C1AE4D8B500220F15 /* FirstViewController.m in Sources */,
 				08878EA61D13CA32000AF43A /* TYGNetworkUtility.m in Sources */,
 				08FC9EF91BA268AF00CEE275 /* GTMBase64_tyg.m in Sources */,
+				085C7EA11EE15E1600289452 /* FSTableViewController.m in Sources */,
 				0874A4FC1B62311700007951 /* M13CheckboxDemo.m in Sources */,
 				08F27D501B550ABC0039DF49 /* RETableRootViewController.m in Sources */,
 				08D7CEA01B21789A00A3C8AD /* TYGMenuTableViewController.m in Sources */,
@@ -3231,6 +3389,7 @@
 				0843F0901AE502AE00220F15 /* MapOverlaysViewController.m in Sources */,
 				08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */,
 				08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */,
+				085C7EA01EE15E1600289452 /* FSCalendarScopeExampleViewController.m in Sources */,
 				08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */,
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
@@ -3264,8 +3423,11 @@
 				08F27D4E1B550ABC0039DF49 /* ListViewController.m in Sources */,
 				0843EFC41AE4F15000220F15 /* DMLazyScrollViewViewController.m in Sources */,
 				0843F0001AE4FADE00220F15 /* MYBlurIntroductionDemo.m in Sources */,
+				085C7EA81EE15E1600289452 /* RangePickerViewController.m in Sources */,
 				08F20B8F1B677BF3005F092A /* TSQTACalendarRowCell.m in Sources */,
+				085C7EA71EE15E1600289452 /* RangePickerCell.m in Sources */,
 				08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */,
+				085C7E9D1EE15E1600289452 /* DelegateAppearanceViewController.m in Sources */,
 				08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */,
 				0843EFED1AE4F82000220F15 /* M13BadgeViewController.m in Sources */,
 				08F19C851B4681C000722C9C /* ActionSheetPickerTableViewController.m in Sources */,

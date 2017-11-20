@@ -24,7 +24,7 @@ pod 'MBProgressHUD', '~> 0.9' # 实现多种HUD效果，可自定义程度高
 pod 'TSMessages', '~> 0.9.12'   #消息弹出（从UI上部--导航栏弹出）(推荐)
 pod 'AMPopTip', '~> 1.4.2'  #信息提示控件，具有漂亮的弹出框动画效果。可以设置弹出框的弹出方向以及弹出框的箭头指向
 pod 'Toast', '~> 3.1.0'   #偏向于文字的消息提示控件，可指定到任意位置
-#pod 'CRToast', '~> 0.0.7'﻿  #导航栏处消息提示控件，类似于TSMessages，但可定义动画效果
+#pod 'CRToast', '~> 0.0.9'﻿  #导航栏处消息提示控件，类似于TSMessages，但可定义动画效果
 
 pod 'NJKWebViewProgress', '~> 0.2.3'    #UIWebView 的进度条接口库（效果不太明显，可用M13ProgressSuite）
 pod 'MDRadialProgress', '~> 1.3.2'  #饼型进度条
@@ -52,7 +52,7 @@ pod 'HCSStarRatingView', '~> 1.5'   #评分星星
 pod 'RETableViewManager', '~> 1.6'  #快速创建表单
 pod 'QuickDialog', '~> 1.1.0'   #快速创建表单(推荐)
 pod 'SWTableViewCell', '~> 0.3.7'   #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果（推荐）
-pod 'MGSwipeTableCell', '~> 1.5.1'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
+pod 'MGSwipeTableCell', '~> 1.6.4'  #实现效果很棒的左右滑动列表cell，出现隐藏菜单的效果，动效比较丰富
 pod 'DZNEmptyDataSet', '~> 1.8.1'   #处理空的table view和collection view
 
 pod 'UzysAssetsPickerController', '~> 0.9.9'    #可以代替 UIImagePickerController 使用。可以调用相机拍摄。通过系统图库选取图片、视频。

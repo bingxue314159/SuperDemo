@@ -32,10 +32,11 @@
     [super viewDidLoad];
     [titleArray addObject:@"HUD效果-SVProgressHUDViewController"];
     [titleArray addObject:@"HUD效果-MBProgressHUDViewController"];
-    [titleArray addObject:@"Toast-ToastViewController"];
     [titleArray addObject:@"POPTip-AMPoptipViewController"];
     [titleArray addObject:@"View弹出-KGModalDemo"];
     [titleArray addObject:@"View弹出-KLCPopupDemo"];
+    [titleArray addObject:@"Toast-ToastViewController"];
+    [titleArray addObject:@"消息弹出-TSMessagesViewController"];
     
     
 }

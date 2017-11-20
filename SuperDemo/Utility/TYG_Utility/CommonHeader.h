@@ -268,29 +268,6 @@ obj = nil;\
 /*======================================================
  ************* 定义各种frame及坐标和尺寸 ******************
  ======================================================*/
-//工具栏高度
-#define TabBarHeight 49
-
-//导航栏、状态栏调度
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
-// iPhone OS SDK 7.0 以后版本的处理
-#define NavBarHeight 64.0f
-#define STATUS_H 0.0f
-#else
-// iPhone OS SDK 7.0 之前版本的处理
-#define NavBarHeight 44.0f
-#define STATUS_H [[UIApplication sharedApplication] statusBarFrame].size.height
-#endif
-#endif
-
-//状态栏
-#define STATUS_FRAME [[UIApplication sharedApplication] statusBarFrame]//状态栏FRAME
-
-//RootViewController
-#define RootViewController [UIApplication sharedApplication].keyWindow.rootViewController
-#define RootWindow [UIApplication sharedApplication].keyWindow
-
 /**
  * 当前APP占设备的屏幕FRAME--不含状态栏高度
  */
@@ -320,6 +297,37 @@ obj = nil;\
  * 当前设备的屏幕高度(含状态栏高度)
  */
 #define SCREEN_HEIGHT   [[UIScreen mainScreen] bounds].size.height
+
+// iPhone X
+#define  isiPhoneX (SCREEN_WIDTH == 375.f && SCREEN_HEIGHT == 812.f ? YES : NO)
+
+// Tabbar safe bottom margin.
+#define TabbarSafeBottomMargin (isiPhoneX ? 34.f : 0.f)
+
+//工具栏高度
+#define TabBarHeight (isiPhoneX ? (49.f+34.f) : 49.f)
+
+//导航栏、状态栏调度
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+// iPhone OS SDK 7.0 以后版本的处理
+#define NavBarHeight  (isiPhoneX ? 88.f : 64.f) // Status bar & navigation bar height.
+#define STATUS_H 0.0f
+#else
+// iPhone OS SDK 7.0 之前版本的处理
+#define NavBarHeight 44.0f
+#define STATUS_H [[UIApplication sharedApplication] statusBarFrame].size.height
+#endif
+#endif
+
+//状态栏
+#define STATUS_FRAME [[UIApplication sharedApplication] statusBarFrame]//状态栏FRAME
+
+//RootViewController
+#define RootViewController [UIApplication sharedApplication].keyWindow.rootViewController
+#define RootWindow [UIApplication sharedApplication].keyWindow
+
+
 
 /*======================================================
  ********************* 打印日志 *************************

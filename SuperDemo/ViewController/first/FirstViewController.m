@@ -9,6 +9,8 @@
 #import "FirstViewController.h"
 #import <DeviceUtil.h>
 
+#import "TYG_allHeadFiles.h"
+
 @interface FirstViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *titleArray;
 }
@@ -24,7 +26,9 @@
         titleArray = [NSMutableArray arrayWithCapacity:10];
         
         self.title = [NSString stringWithFormat:@"%@(%@)",[DeviceUtil hardwareDescription], [DeviceUtil hardwareString]];
-
+        
+        NSString *log = [NSString stringWithFormat:@"%f,%f,%f",SCREEN_WIDTH,SCREEN_HEIGHT,SystemScale];
+        NSLog(@"%@",log);
     }
     return self;
 }
@@ -44,7 +48,6 @@
     [titleArray addObject:@"快速集成下拉刷新MJRefresh-MJSampleIndexViewController"];
     [titleArray addObject:@"3D导航-CubeDemo"];
     [titleArray addObject:@"标签云-SphereViewController"];
-    [titleArray addObject:@"消息弹出-TSMessagesViewController"];
     [titleArray addObject:@"键盘遮挡-IQKeyboardViewController"];
 }
 

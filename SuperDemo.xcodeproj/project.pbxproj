@@ -13,6 +13,11 @@
 		080E5A091B21923C00F54F44 /* QBPopupMenuDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080E5A081B21923C00F54F44 /* QBPopupMenuDemo.xib */; };
 		0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0814C6781B9EDBCC0061BDA3 /* TYGValid.m */; };
 		081A5AE91C102A95000666AD /* TYGMasonryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */; };
+		082D82691FF47CB2005784A5 /* TYGSystemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082D82671FF47CB2005784A5 /* TYGSystemInfoViewController.m */; };
+		082D826A1FF47CB2005784A5 /* TYGSystemInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082D82681FF47CB2005784A5 /* TYGSystemInfoViewController.xib */; };
+		082D826E1FF48C2C005784A5 /* TYGBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 082D826D1FF48C2C005784A5 /* TYGBatteryInfo.m */; };
+		082D82711FF48DBC005784A5 /* TYGDeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = 082D82701FF48DBC005784A5 /* TYGDeviceDataLibrery.m */; };
+		082D82741FF48E4F005784A5 /* TYGDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 082D82731FF48E4F005784A5 /* TYGDeviceInfo.m */; };
 		083AC1501B130B2700240FF6 /* TYGUzysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */; };
 		083AC1511B130B2700240FF6 /* TYGUzysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */; };
 		0843EE561AE4D8B500220F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0843EE551AE4D8B500220F15 /* main.m */; };
@@ -567,6 +572,15 @@
 		0814C6781B9EDBCC0061BDA3 /* TYGValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGValid.m; sourceTree = "<group>"; };
 		081A5AE71C102A95000666AD /* TYGMasonryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGMasonryTestViewController.h; sourceTree = "<group>"; };
 		081A5AE81C102A95000666AD /* TYGMasonryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGMasonryTestViewController.m; sourceTree = "<group>"; };
+		082D82661FF47CB2005784A5 /* TYGSystemInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGSystemInfoViewController.h; sourceTree = "<group>"; };
+		082D82671FF47CB2005784A5 /* TYGSystemInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGSystemInfoViewController.m; sourceTree = "<group>"; };
+		082D82681FF47CB2005784A5 /* TYGSystemInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYGSystemInfoViewController.xib; sourceTree = "<group>"; };
+		082D826C1FF48C2C005784A5 /* TYGBatteryInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGBatteryInfo.h; sourceTree = "<group>"; };
+		082D826D1FF48C2C005784A5 /* TYGBatteryInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGBatteryInfo.m; sourceTree = "<group>"; };
+		082D826F1FF48DBC005784A5 /* TYGDeviceDataLibrery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGDeviceDataLibrery.h; sourceTree = "<group>"; };
+		082D82701FF48DBC005784A5 /* TYGDeviceDataLibrery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGDeviceDataLibrery.m; sourceTree = "<group>"; };
+		082D82721FF48E4F005784A5 /* TYGDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGDeviceInfo.h; sourceTree = "<group>"; };
+		082D82731FF48E4F005784A5 /* TYGDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGDeviceInfo.m; sourceTree = "<group>"; };
 		083AC14D1B130B2700240FF6 /* TYGUzysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGUzysViewController.h; sourceTree = "<group>"; };
 		083AC14E1B130B2700240FF6 /* TYGUzysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGUzysViewController.m; sourceTree = "<group>"; };
 		083AC14F1B130B2700240FF6 /* TYGUzysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYGUzysViewController.xib; sourceTree = "<group>"; };
@@ -1326,6 +1340,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082D826B1FF48BD6005784A5 /* TYGSystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				082D826C1FF48C2C005784A5 /* TYGBatteryInfo.h */,
+				082D826D1FF48C2C005784A5 /* TYGBatteryInfo.m */,
+				082D826F1FF48DBC005784A5 /* TYGDeviceDataLibrery.h */,
+				082D82701FF48DBC005784A5 /* TYGDeviceDataLibrery.m */,
+				082D82721FF48E4F005784A5 /* TYGDeviceInfo.h */,
+				082D82731FF48E4F005784A5 /* TYGDeviceInfo.m */,
+			);
+			path = TYGSystemInfo;
+			sourceTree = "<group>";
+		};
 		0843EE471AE4D8B500220F15 = {
 			isa = PBXGroup;
 			children = (
@@ -1370,6 +1397,7 @@
 		0843EEBE1AE4DB0C00220F15 /* TYG_Utility */ = {
 			isa = PBXGroup;
 			children = (
+				082D826B1FF48BD6005784A5 /* TYGSystemInfo */,
 				08FC9EEE1BA268AF00CEE275 /* Encrypt_Decryption */,
 				08A320B71B82C27100943DE9 /* TYGAPPVersion */,
 				08EDD0651BF179EE00FF110E /* TYGAreaPicker */,
@@ -1555,14 +1583,17 @@
 		0843EF651AE4DC3500220F15 /* four */ = {
 			isa = PBXGroup;
 			children = (
-				08ADBFC91B69B5320034B231 /* PopAnimation */,
-				08A320A21B82BF9C00943DE9 /* TYGNotes */,
 				0843EE841AE4D93D00220F15 /* FourViewController.h */,
 				0843EE851AE4D93D00220F15 /* FourViewController.m */,
 				0843EE861AE4D93D00220F15 /* FourViewController.xib */,
+				08ADBFC91B69B5320034B231 /* PopAnimation */,
+				08A320A21B82BF9C00943DE9 /* TYGNotes */,
 				08DA8B911B28201500999A2C /* TYGOtherViewController.h */,
 				08DA8B921B28201500999A2C /* TYGOtherViewController.m */,
 				08DA8B931B28201500999A2C /* TYGOtherViewController.xib */,
+				082D82661FF47CB2005784A5 /* TYGSystemInfoViewController.h */,
+				082D82671FF47CB2005784A5 /* TYGSystemInfoViewController.m */,
+				082D82681FF47CB2005784A5 /* TYGSystemInfoViewController.xib */,
 			);
 			path = four;
 			sourceTree = "<group>";
@@ -2980,6 +3011,7 @@
 				0843EF991AE4E9BA00220F15 /* check_mark@2x.png in Resources */,
 				08F20B5C1B67292A005F092A /* photo3.jpg in Resources */,
 				0843F11E1AE5076900220F15 /* m2@2x.png in Resources */,
+				082D826A1FF47CB2005784A5 /* TYGSystemInfoViewController.xib in Resources */,
 				08D7D9CD1AE6316600543F2A /* AMPOP-green@2x.png in Resources */,
 				0843F0A81AE502AE00220F15 /* WebPaginationViewController.xib in Resources */,
 				08F483D31B9571BD00814233 /* Onboard-shark.png in Resources */,
@@ -3218,13 +3250,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEA8182668F9617235123305 /* [CP] Copy Pods Resources */ = {
@@ -3233,9 +3268,71 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-resources.sh",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/GradientBar.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TileDisabledSelected.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TileNormal.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TilePattern.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TileSelected.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TileToday.png",
+				"${PODS_ROOT}/ABCalendarPicker/ABCalendarPicker/TileTodaySelected.png",
+				"${PODS_ROOT}/APNumberPad/APNumberPad/APNumberPad.bundle",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png",
+				"${PODS_ROOT}/BButton/BButton/resources/FontAwesome.ttf",
+				"${PODS_ROOT}/DateTools/DateTools/DateTools.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DeviceUtil/DeviceUtil.bundle",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/Images/gl-calendar-magnify-glass.png",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/Images/gl-calendar-magnify-glass@2x.png",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/Images/gl-calendar-shadow.png",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/Images/gl-calendar-shadow@2x.png",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/Images/gl-calendar-shadow@3x.png",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/GLCalendarDayCell/GLCalendarDayCell.xib",
+				"${PODS_ROOT}/GLCalendarView/GLCalendarView/Sources/GLCalendarView.xib",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RETableViewManager/RETableViewManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/StyledPageControl/StyledPageControlDemo/PageControlDemo/Resources/pagecontrol-thumb-normal.png",
+				"${PODS_ROOT}/StyledPageControl/StyledPageControlDemo/PageControlDemo/Resources/pagecontrol-thumb-normal@2x.png",
+				"${PODS_ROOT}/StyledPageControl/StyledPageControlDemo/PageControlDemo/Resources/pagecontrol-thumb-selected.png",
+				"${PODS_ROOT}/StyledPageControl/StyledPageControlDemo/PageControlDemo/Resources/pagecontrol-thumb-selected@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json",
+				"${PODS_ROOT}/UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib",
+				"${PODS_ROOT}/UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3281,6 +3378,7 @@
 				0843EE871AE4D93D00220F15 /* FourViewController.m in Sources */,
 				0897EEF41B44F77700EBCA00 /* MBProgressHUDViewController.m in Sources */,
 				0874A4E91B62273100007951 /* RTLabel.m in Sources */,
+				082D82711FF48DBC005784A5 /* TYGDeviceDataLibrery.m in Sources */,
 				0814C6791B9EDBCC0061BDA3 /* TYGValid.m in Sources */,
 				08A8A9551AF7291F003CECB0 /* TYGStarRationViewController.m in Sources */,
 				081A5AE91C102A95000666AD /* TYGMasonryTestViewController.m in Sources */,
@@ -3349,6 +3447,7 @@
 				0874A5001B6233D900007951 /* NJKWebViewProgressDemo.m in Sources */,
 				085C7EA51EE15E1600289452 /* LoadViewExampleViewController.m in Sources */,
 				08DB58861C06D95A0011D722 /* TYGSignatureViewQuartz.m in Sources */,
+				082D82691FF47CB2005784A5 /* TYGSystemInfoViewController.m in Sources */,
 				08D7D9891AE61D8C00543F2A /* ZYQSphereView.m in Sources */,
 				0843F0C11AE502D200220F15 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				08A320B61B82C23B00943DE9 /* TYGDinwei.m in Sources */,
@@ -3390,6 +3489,7 @@
 				08F483F31B957C9A00814233 /* OnboardDemo.m in Sources */,
 				08A320A11B82BEFF00943DE9 /* TYGNotesViewController.m in Sources */,
 				085C7EA01EE15E1600289452 /* FSCalendarScopeExampleViewController.m in Sources */,
+				082D826E1FF48C2C005784A5 /* TYGBatteryInfo.m in Sources */,
 				08A320D31B82CAD800943DE9 /* TYGIBView.m in Sources */,
 				0843EF6A1AE4DDAF00220F15 /* AnimationViewController.m in Sources */,
 				0843F09A1AE502AE00220F15 /* ReadingListViewController.m in Sources */,
@@ -3426,6 +3526,7 @@
 				085C7EA81EE15E1600289452 /* RangePickerViewController.m in Sources */,
 				08F20B8F1B677BF3005F092A /* TSQTACalendarRowCell.m in Sources */,
 				085C7EA71EE15E1600289452 /* RangePickerCell.m in Sources */,
+				082D82741FF48E4F005784A5 /* TYGDeviceInfo.m in Sources */,
 				08EDD0721BF179EE00FF110E /* TYGLocation.m in Sources */,
 				085C7E9D1EE15E1600289452 /* DelegateAppearanceViewController.m in Sources */,
 				08C72DFE1B252D2100967012 /* RWDemoViewController.m in Sources */,

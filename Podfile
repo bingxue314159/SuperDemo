@@ -110,6 +110,6 @@ pod 'DateTools', '~> 1.7.0' #可能是最好用的iOS日期工具库
 #pod 'FBMemoryProfiler'    #手动性能分析,它会借用FBAllocationTracker和FBRetainCycleDetector来实现此功能
 
 #----------------------其它工具----------------------
-pod 'DeviceUtil', '~> 2.0.3'    #获取设备三件版本号，如 iPhone 4,iPad mini2
+pod 'DeviceUtil', '~> 2.0'    #获取设备三件版本号，如 iPhone 4,iPad mini2
 
 end

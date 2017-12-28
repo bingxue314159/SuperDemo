@@ -16,8 +16,7 @@
 
 @implementation FourViewController
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         titleArray = [NSMutableArray arrayWithCapacity:10];
@@ -33,7 +32,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     [titleArray addObject:@"*POP动画-TYGPopAnimationDemo"];
     [titleArray addObject:@"*个人学习笔记-TYGNotesViewController"];
-    [titleArray addObject:@"*其它-TYGOtherViewController"];
+    [titleArray addObject:@"其它-TYGOtherViewController"];
+    [titleArray addObject:@"设备信息-TYGSystemInfoViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

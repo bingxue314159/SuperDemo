@@ -94,6 +94,23 @@
     return YES;
 }
 
+//获取网络代理的方法
++ (BOOL)proxySetting
+{
+    CFDictionaryRef proxySettings = CFNetworkCopySystemProxySettings();
+    NSDictionary *dictProxy = (__bridge_transfer id)proxySettings;
+    //    NSLog(@"%@",dictProxy);
+    
+    //是否开启了http代理
+    if ([[dictProxy objectForKey:@"HTTPEnable"] boolValue]) {
+        NSString *proxyAddress = [dictProxy objectForKey:@"HTTPProxy"]; //代理地址
+        NSInteger proxyPort = [[dictProxy objectForKey:@"HTTPPort"] integerValue];  //代理端口号
+        NSLog(@"%@:%ld",proxyAddress,(long)proxyPort);
+        return YES;
+    }
+    return NO;
+}
+
 /**
  *  根据网址获取相应的IP
  *  @param theHost 网址,如：http://www.baidu.com
@@ -219,41 +236,96 @@
         temp_addr = interfaces;
         //*/
         while(temp_addr != NULL) {
-            if(temp_addr->ifa_addr->sa_family == AF_INET) {
-                // Check if interface is en0 which is the wifi connection on the iPhone
-                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
-                    
-                    //----192.168.1.255 广播地址
-                    NSString *broadcast = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_dstaddr)->sin_addr)];
-                    if (broadcast) {
-                        [dict setObject:broadcast forKey:@"broadcast"];
+
+            // Check if interface is en0 which is the wifi connection on the iPhone
+            //en0（Wifi）、pdp_ip0（移动网络）
+            if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+                
+                sa_family_t family = temp_addr->ifa_addr->sa_family;
+                switch (family) {
+                    case AF_INET:{
+                        // IPv4
+                        [dict removeAllObjects];
+                        [dict setObject:@"IPv4" forKey:@"style"];
+                        
+                        //----192.168.1.255 广播地址
+                        NSString *broadcast = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_dstaddr)->sin_addr)];
+                        if (broadcast) {
+                            [dict setObject:broadcast forKey:@"broadcast"];
+                        }
+                        NSLog(@"broadcast address--%@",broadcast);
+                        
+                        //--192.168.1.106 本机地址
+                        NSString *localIp = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                        if (localIp) {
+                            [dict setObject:localIp forKey:@"localIp"];
+                        }
+                        NSLog(@"local device ip--%@",localIp);
+                        
+                        //--255.255.255.0 子网掩码地址
+                        NSString *netmask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];
+                        if (netmask) {
+                            [dict setObject:netmask forKey:@"netmask"];
+                        }
+                        NSLog(@"netmask--%@",netmask);
+
+                        break;
                     }
-                    NSLog(@"broadcast address--%@",broadcast);
-                    
-                    //--192.168.1.106 本机地址
-                    NSString *localIp = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
-                    if (localIp) {
-                        [dict setObject:localIp forKey:@"localIp"];
+                    case AF_INET6:{
+                        // IPv6
+                        [dict removeAllObjects];
+                        [dict setObject:@"IPv6" forKey:@"style"];
+                        
+                        NSString *broadcast = nil;
+                        //----192.168.1.255 广播地址
+                        if (temp_addr->ifa_dstaddr && temp_addr->ifa_dstaddr != NULL) {
+                            NSString *broadcast = [self formatIPV6Address:((struct sockaddr_in6 *)temp_addr->ifa_dstaddr)->sin6_addr];
+                            if (broadcast) {
+                                [dict setObject:broadcast forKey:@"broadcast"];
+                            }
+                            NSLog(@"broadcast address--%@",broadcast);
+                        }
+                        
+                        //--192.168.1.106 本机地址
+                        if (temp_addr->ifa_addr && temp_addr->ifa_addr != NULL) {
+                            char str[INET6_ADDRSTRLEN] = {0};
+                            inet_ntop(family, &(((struct sockaddr_in6 *)temp_addr->ifa_addr)->sin6_addr), str, sizeof(str));
+                            if (strlen(str) > 0) {
+                                NSString *localIp = [NSString stringWithUTF8String:str];
+                                [dict setObject:localIp forKey:@"localIp"];
+                                NSLog(@"local device ip--%@",localIp);
+                            }
+                        }
+    
+                        //--255.255.255.0 子网掩码地址
+                        if (temp_addr->ifa_netmask && temp_addr->ifa_netmask != NULL) {
+                            NSString *netmask = [self formatIPV6Address:((struct sockaddr_in6 *)temp_addr->ifa_netmask)->sin6_addr];
+                            if (netmask) {
+                                [dict setObject:netmask forKey:@"netmask"];
+                            }
+                            NSLog(@"netmask--%@",netmask);
+                        }
+                        
+                        
+                        //（1）在模拟器和真机上都会出现以FE80开头的IPV6单播地址影响我们判断，所以在这里进行特殊的处理（当第一次遇到不是单播地址的IP地址即为本机IP地址）。
+                        //（2）在IPV6环境下，真机测试的时候，第一个出现的是一个IPV4地址，所以在IPV4条件下第一次遇到单播地址不退出。
+                        if (broadcast && ![broadcast isEqualToString:@""] && ![broadcast.uppercaseString hasPrefix:@"FE80"]){
+                            break;
+                        }
+                        break;
                     }
-                    NSLog(@"local device ip--%@",localIp);
-                    
-                    //--255.255.255.0 子网掩码地址
-                    NSString *netmask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];
-                    if (netmask) {
-                        [dict setObject:netmask forKey:@"netmask"];
+                    default:{
+                        //--en0 端口地址
+                        NSString *interface = [NSString stringWithUTF8String:temp_addr->ifa_name];
+                        if (interface) {
+                            [dict setObject:interface forKey:@"interface"];
+                        }
+                        NSLog(@"interface--%@",interface);
+                        break;
                     }
-                    NSLog(@"netmask--%@",netmask);
-                    
-                    //--en0 端口地址
-                    NSString *interface = [NSString stringWithUTF8String:temp_addr->ifa_name];
-                    if (interface) {
-                        [dict setObject:interface forKey:@"interface"];
-                    }
-                    NSLog(@"interface--%@",interface);
-                    return dict;
                 }
+                
             }
-            
             temp_addr = temp_addr->ifa_next;
         }
     }

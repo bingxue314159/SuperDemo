@@ -29,7 +29,7 @@
 - (NSString *)getMacAddress;
 /** 获取广告标识符 */
 - (NSString *)getIDFA;
-/** 本机类型--e.g. @"iPhone", @"iPod, @"iPhone Simulator" */
+/** 本机类型--e.g. @"iPhone7,2" */
 - (NSString *)getDeviceModel;
 /** 获取设备上次重启的时间 */
 - (NSDate *)getSystemUptime;
@@ -40,7 +40,7 @@
 - (NSUInteger)getBusFrequency;
 /** 获取当前设备主存 */
 - (NSUInteger)getRamSize;
-/** 获取CPU线程数量 */
+/** 获取CPU名称 */
 - (NSString *)getCPUProcessor;
 /** 获取CPU数量 */
 - (NSUInteger)getCPUCount;

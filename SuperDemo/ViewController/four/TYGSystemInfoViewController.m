@@ -58,6 +58,8 @@
     
     
     //基本信息
+    const NSString *deviceName = [[TYGDeviceInfo sharedManager] getDeviceName];//设备名称
+    NSString *deviceModel = [[TYGDeviceInfo sharedManager] getDeviceModel];//设备Model，e.g. @"iPhone7,2"
     NSString *iPhoneName = [UIDevice currentDevice].name;//获取iPhone名称，e.g. "My iPhone"
     NSString *systemModel = [[UIDevice currentDevice] model];//本机类型--e.g. @"iPhone", @"iPod, @"iPhone Simulator"
     NSString *localizedModel = [UIDevice currentDevice].localizedModel;//localized version of model
@@ -68,8 +70,8 @@
     NSString *systemLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];//获取当前语言
     NSDate *systemUpdate = [[TYGDeviceInfo sharedManager] getSystemUptime];//获取设备上次重启的时间
     
-    NSArray *baseinfoTitleArray = @[@"iPhoneName",@"systemModel",@"localizedModel",@"systemName",@"systemVersion",@"UUID",@"IDFA",@"systemLanguage",@"systemUpdate"];
-    NSArray *baseinfoDetailArray = @[iPhoneName,systemModel,localizedModel,systemName,systemVersion,uuid,idfa,systemLanguage,systemUpdate];
+    NSArray *baseinfoTitleArray = @[@"deviceName",@"deviceModel",@"iPhoneName",@"systemModel",@"localizedModel",@"systemName",@"systemVersion",@"UUID",@"IDFA",@"systemLanguage",@"systemUpdate"];
+    NSArray *baseinfoDetailArray = @[deviceName,deviceModel,iPhoneName,systemModel,localizedModel,systemName,systemVersion,uuid,idfa,systemLanguage,systemUpdate];
     
     [titlesArray addObject:baseinfoTitleArray];
     [detailTitlesArray addObject:baseinfoDetailArray];
@@ -102,12 +104,12 @@
     NSUInteger CPUFrequency = [[TYGDeviceInfo sharedManager] getCPUFrequency];//CPU频率
     NSUInteger BusFrequency = [[TYGDeviceInfo sharedManager] getBusFrequency];//获取总线程频率
     NSUInteger RamSize = [[TYGDeviceInfo sharedManager] getRamSize];//获取当前设备主存
-    NSString *CPUProcessor = [[TYGDeviceInfo sharedManager] getCPUProcessor];//获取CPU线程数量
+    NSString *CPUProcessor = [[TYGDeviceInfo sharedManager] getCPUProcessor];//获取CPU名称
     NSUInteger CPUCount = [[TYGDeviceInfo sharedManager] getCPUCount];//获取CPU数量
     CGFloat CPUUsage = [[TYGDeviceInfo sharedManager] getCPUUsage];//获取CPU总的使用百分比
     NSArray *PerCPUUsage = [[TYGDeviceInfo sharedManager] getPerCPUUsage];//获取单个CPU使用百分比
     
-    NSArray *cpuTitleArray = @[@"CPU频率",@"总线程频率",@"当前设备主存",@"CPU线程数量",@"CPU数量",@"CPU总的使用百分比",@"单个CPU使用百分比"];
+    NSArray *cpuTitleArray = @[@"CPU频率",@"总线程频率",@"当前设备主存",@"CPU",@"CPU数量",@"CPU总的使用百分比",@"单个CPU使用百分比"];
     NSArray *cpuDetailArray = @[[NSNumber numberWithUnsignedInteger:CPUFrequency],[NSNumber numberWithUnsignedInteger:BusFrequency],[[TYGDeviceInfo sharedManager] fileSizeToString:RamSize],SAFE_STRING(CPUProcessor),[NSNumber numberWithUnsignedInteger:CPUCount],[NSNumber numberWithFloat:CPUUsage],[PerCPUUsage componentsJoinedByString:@"~~"]];
     
     [titlesArray addObject:cpuTitleArray];

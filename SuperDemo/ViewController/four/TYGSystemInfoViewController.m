@@ -11,6 +11,7 @@
 #import "TYGDeviceInfo.h"
 #import "CommonHeader.h"
 #import "TYGNetworkUtility.h"
+#import "TYGSimInfo.h"
 
 @interface TYGSystemInfoViewController (){
     
@@ -54,8 +55,7 @@
 //初始化数据
 - (void)createData {
     
-    headerTitles = @[@"基本信息",@"电池",@"CPU",@"内存",@"存储",@"其它",@"网络(en0)"];
-    
+    headerTitles = @[@"基本信息",@"电池",@"CPU",@"内存",@"存储",@"其它",@"网络(en0)",@"SIM"];
     
     //基本信息
     const NSString *deviceName = [[TYGDeviceInfo sharedManager] getDeviceName];//设备名称
@@ -143,13 +143,14 @@
     [detailTitlesArray addObject:diskDetailArray];
     
     //其它
+    NSString *deviceSize = NSStringFromCGSize([[TYGDeviceInfo sharedManager] getScreenSize]);
     NSString *DeviceColor = [[TYGDeviceInfo sharedManager] getDeviceColor];
     NSString *DeviceEnclosureColor = [[TYGDeviceInfo sharedManager] getDeviceEnclosureColor];
     NSString *MacAddress = [[TYGDeviceInfo sharedManager] getMacAddress];
     NSString *canMakePhoneCall = [[TYGDeviceInfo sharedManager] canMakePhoneCall] ? @"是" : @"否";
     
-    NSArray *otherTitleArray = @[@"设备颜色(私有API)",@"设备外壳颜色(私有API)",@"mac地址",@"是否可打电话"];
-    NSArray *otherDetailArray = @[DeviceColor,DeviceEnclosureColor,MacAddress,canMakePhoneCall];
+    NSArray *otherTitleArray = @[@"分辨率",@"设备颜色(私有API)",@"设备外壳颜色(私有API)",@"mac地址",@"是否可打电话"];
+    NSArray *otherDetailArray = @[deviceSize,DeviceColor,DeviceEnclosureColor,MacAddress,canMakePhoneCall];
     
     [titlesArray addObject:otherTitleArray];
     [detailTitlesArray addObject:otherDetailArray];
@@ -178,6 +179,26 @@
     
     [titlesArray addObject:netTitleArray];
     [detailTitlesArray addObject:netDetailArray];
+    
+    //SIM
+    NSMutableArray *simTitleArray = [NSMutableArray arrayWithObjects:@"网络类型",@"网络环境",@"手机号码(私有API)",@"手机号码", nil];
+    NSMutableArray *simDetailArray = [NSMutableArray arrayWithCapacity:10];
+    
+    NSString *networktype = [[TYGSimInfo sharedManager] getCurrentRadioAccessTechnology];//获取当前网络的类型
+    NSString *networktype2 = [TYGSimInfo networktype];//获取网络环境
+    [simDetailArray addObject:SAFE_STRING(networktype)];
+    [simDetailArray addObject:SAFE_STRING(networktype2)];
+
+    NSDictionary *carrierInfo = [[TYGSimInfo sharedManager] getcarrierInfo];//获取sim卡信息
+    for (NSString *key in [carrierInfo allKeys]) {
+        NSString *value = [carrierInfo objectForKey:key];
+        [simTitleArray addObject:key];
+        [simDetailArray addObject:value];
+    }
+    
+    [titlesArray addObject:simTitleArray];
+    [detailTitlesArray addObject:simDetailArray];
+    
 }
 
 #pragma mark - Table view data source

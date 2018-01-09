@@ -92,6 +92,16 @@
 }
 
 #pragma mark - 系统信息
+//当前屏幕分辨率
+- (CGSize)getScreenSize{
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGFloat width = rect.size.width * scale;
+    CGFloat height = rect.size.height * scale;
+    
+    return CGSizeMake(width, height);
+}
+
 // 获取设备型号
 - (const NSString *)getDeviceName {
     return [[TYGDeviceDataLibrery sharedLibrery] getDiviceName];

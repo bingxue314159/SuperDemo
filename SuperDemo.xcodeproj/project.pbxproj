@@ -300,6 +300,7 @@
 		08C72E011B25321F00967012 /* REMenuExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E001B25321F00967012 /* REMenuExample.m */; };
 		08C72E121B2545B400967012 /* REFrostedViewControllerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */; };
 		08C72E151B25461A00967012 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C72E141B25461A00967012 /* DEMOMenuViewController.m */; };
+		08CADE9F200348A3009BEA38 /* TYGSimInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CADE9E200348A3009BEA38 /* TYGSimInfo.m */; };
 		08CB62411B69F11E0033C1DF /* POPDecayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */; };
 		08CB62421B69F11E0033C1DF /* POPDecayAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */; };
 		08CDF4AD1CB3883D0052B81B /* TYGPopAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CDF4AC1CB3883D0052B81B /* TYGPopAnimationDemo.m */; };
@@ -989,6 +990,8 @@
 		08C72E111B2545B400967012 /* REFrostedViewControllerExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewControllerExample.m; sourceTree = "<group>"; };
 		08C72E131B25461A00967012 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
 		08C72E141B25461A00967012 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		08CADE9D200348A3009BEA38 /* TYGSimInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGSimInfo.h; sourceTree = "<group>"; };
+		08CADE9E200348A3009BEA38 /* TYGSimInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGSimInfo.m; sourceTree = "<group>"; };
 		08CB623E1B69F11E0033C1DF /* POPDecayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDecayAnimationViewController.h; sourceTree = "<group>"; };
 		08CB623F1B69F11E0033C1DF /* POPDecayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPDecayAnimationViewController.m; sourceTree = "<group>"; };
 		08CB62401B69F11E0033C1DF /* POPDecayAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POPDecayAnimationViewController.xib; sourceTree = "<group>"; };
@@ -1349,6 +1352,8 @@
 				082D82701FF48DBC005784A5 /* TYGDeviceDataLibrery.m */,
 				082D82721FF48E4F005784A5 /* TYGDeviceInfo.h */,
 				082D82731FF48E4F005784A5 /* TYGDeviceInfo.m */,
+				08CADE9D200348A3009BEA38 /* TYGSimInfo.h */,
+				08CADE9E200348A3009BEA38 /* TYGSimInfo.m */,
 			);
 			path = TYGSystemInfo;
 			sourceTree = "<group>";
@@ -3544,6 +3549,7 @@
 				08A320AE1B82C0DE00943DE9 /* TYGUrlSchemeMapViewController.m in Sources */,
 				0843F09F1AE502AE00220F15 /* SmileDetectionViewController.m in Sources */,
 				08E9C8C51B0AD36A00DDF85C /* PopBasicViewController.m in Sources */,
+				08CADE9F200348A3009BEA38 /* TYGSimInfo.m in Sources */,
 				08F483ED1B95742600814233 /* IFTTTJazzHandsViewController.m in Sources */,
 				08F27D561B550ABC0039DF49 /* XIBTestItem.m in Sources */,
 				08F27D511B550ABC0039DF49 /* StylingViewController.m in Sources */,

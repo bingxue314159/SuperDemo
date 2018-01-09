@@ -19,11 +19,13 @@
 /** 容量转换 */
 -(NSString *)fileSizeToString:(unsigned long long)fileSize;
 
+/** 当前屏幕分辨率 */
+- (CGSize)getScreenSize;
 /** 获取设备型号 */
 - (const NSString *)getDeviceName;
-/** 获取设备颜色 */
+/** 获取设备颜色(私有API) */
 - (NSString *)getDeviceColor;
-/** 获取设备外壳颜色 */
+/** 获取设备外壳颜色(私有API) */
 - (NSString *)getDeviceEnclosureColor;
 /** 获取mac地址 */
 - (NSString *)getMacAddress;

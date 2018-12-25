@@ -20,8 +20,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>36</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>baidumap</string>
@@ -29,6 +27,8 @@
 		<string>comgooglemaps</string>
 		<string>qqmap</string>
 	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -36,14 +36,14 @@
 		<key>message</key>
 		<string>IOS中，加强了SSL，必须配置此参数才能进行网络访问</string>
 	</dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>iOS10中，加强了隐私权限，访问日历（不配置，闪退）</string>
 	<key>NSCameraUsageDescription</key>
 	<string>iOS10中，加强了隐私权限，访问相机（不配置，闪退）</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>iOS8中，加强了定位功能，请配置此参数(这一参数value会出现在警告框中)</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>iOS10中，加强了隐私权限，访问相册（不配置，闪退）</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>iOS10中，加强了隐私权限，访问日历（不配置，闪退）</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>iOS10中，Speech framework语音转文字权限（语音识别）</string>
 	<key>UIAppFonts</key>

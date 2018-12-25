@@ -1,5 +1,9 @@
+#指明依赖库的来源地址
+source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
+
+inhibit_all_warnings!  # 全局禁止显示警告
 
 target 'SuperDemo' do
 #----------------------常用工具----------------------

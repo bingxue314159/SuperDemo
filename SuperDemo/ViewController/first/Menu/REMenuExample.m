@@ -21,7 +21,13 @@
 {
     self = [super init];
     if (self) {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Balloon"]];
+//        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Balloon"]];
+        UIImageView *imageview = [[UIImageView alloc] init];
+        imageview.image = [UIImage imageNamed:@"Balloon"];
+        imageview.frame = self.view.bounds;
+        imageview.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view insertSubview:imageview atIndex:0];
+        
     }
     return self;
 }

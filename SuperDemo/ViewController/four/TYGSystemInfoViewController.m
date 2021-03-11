@@ -108,13 +108,13 @@
     NSUInteger CPUCount = [[TYGDeviceInfo sharedManager] getCPUCount];//获取CPU数量
     CGFloat CPUUsage = [[TYGDeviceInfo sharedManager] getCPUUsage];//获取CPU总的使用百分比
     NSArray *PerCPUUsage = [[TYGDeviceInfo sharedManager] getPerCPUUsage];//获取单个CPU使用百分比
-    
+
     NSArray *cpuTitleArray = @[@"CPU频率",@"总线程频率",@"当前设备主存",@"CPU",@"CPU数量",@"CPU总的使用百分比",@"单个CPU使用百分比"];
     NSArray *cpuDetailArray = @[[NSNumber numberWithUnsignedInteger:CPUFrequency],[NSNumber numberWithUnsignedInteger:BusFrequency],[[TYGDeviceInfo sharedManager] fileSizeToString:RamSize],SAFE_STRING(CPUProcessor),[NSNumber numberWithUnsignedInteger:CPUCount],[NSNumber numberWithFloat:CPUUsage],[PerCPUUsage componentsJoinedByString:@"~~"]];
-    
+
     [titlesArray addObject:cpuTitleArray];
     [detailTitlesArray addObject:cpuDetailArray];
-    
+
     //内存
     int64_t TotalMemory = [[TYGDeviceInfo sharedManager] getTotalMemory];//获取总内存空间
     int64_t ActiveMemory = [[TYGDeviceInfo sharedManager] getActiveMemory];//获取活跃的内存空间
@@ -123,71 +123,77 @@
     int64_t UsedMemory = [[TYGDeviceInfo sharedManager] getUsedMemory];//获取正在使用的内存空间
     int64_t WiredMemory = [[TYGDeviceInfo sharedManager] getWiredMemory];//获取存放内核的内存空间
     int64_t PurgableMemory = [[TYGDeviceInfo sharedManager] getPurgableMemory];//获取可释放的内存空间
-    
+
     NSArray *memoryTitleArray = @[@"总内存空间",@"活跃的内存空间",@"不活跃的内存空间",@"空闲的内存空间",@"正在使用的内存空间",@"存放内核的内存空间",@"可释放的内存空间"];
     NSArray *memoryDetailArray = @[[[TYGDeviceInfo sharedManager] fileSizeToString:TotalMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:ActiveMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:InActiveMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:FreeMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:UsedMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:WiredMemory],[[TYGDeviceInfo sharedManager] fileSizeToString:PurgableMemory]];
-    
+
     [titlesArray addObject:memoryTitleArray];
     [detailTitlesArray addObject:memoryDetailArray];
-    
+
     //存储
     NSString *ApplicationSize = [[TYGDeviceInfo sharedManager] getApplicationSize];//获取本 App 所占磁盘空间
     int64_t TotalDiskSpace = [[TYGDeviceInfo sharedManager] getTotalDiskSpace];//获取磁盘总空间
     int64_t FreeDiskSpace = [[TYGDeviceInfo sharedManager] getFreeDiskSpace];//获取未使用的磁盘空间
     int64_t UsedDiskSpace = [[TYGDeviceInfo sharedManager] getUsedDiskSpace];//获取已使用的磁盘空间
-    
+
     NSArray *diskTitleArray = @[@"本App所占磁盘空间",@"磁盘总空间",@"未使用的磁盘空间",@"已使用的磁盘空间"];
     NSArray *diskDetailArray = @[SAFE_STRING(ApplicationSize),[[TYGDeviceInfo sharedManager] fileSizeToString:TotalDiskSpace],[[TYGDeviceInfo sharedManager] fileSizeToString:FreeDiskSpace],[[TYGDeviceInfo sharedManager] fileSizeToString:UsedDiskSpace]];
-    
+
     [titlesArray addObject:diskTitleArray];
     [detailTitlesArray addObject:diskDetailArray];
-    
+
     //其它
     NSString *deviceSize = NSStringFromCGSize([[TYGDeviceInfo sharedManager] getScreenSize]);
     NSString *DeviceColor = [[TYGDeviceInfo sharedManager] getDeviceColor];
     NSString *DeviceEnclosureColor = [[TYGDeviceInfo sharedManager] getDeviceEnclosureColor];
     NSString *MacAddress = [[TYGDeviceInfo sharedManager] getMacAddress];
     NSString *canMakePhoneCall = [[TYGDeviceInfo sharedManager] canMakePhoneCall] ? @"是" : @"否";
-    
+
     NSArray *otherTitleArray = @[@"分辨率",@"设备颜色(私有API)",@"设备外壳颜色(私有API)",@"mac地址",@"是否可打电话"];
     NSArray *otherDetailArray = @[deviceSize,DeviceColor,DeviceEnclosureColor,MacAddress,canMakePhoneCall];
-    
+
     [titlesArray addObject:otherTitleArray];
     [detailTitlesArray addObject:otherDetailArray];
-    
+
     //网络en0
     NSMutableArray *netTitleArray = [NSMutableArray arrayWithObjects:@"SSID",@"BSSID",@"SSIDDATA", nil];
     NSMutableArray *netDetailArray = [NSMutableArray arrayWithCapacity:10];
-    
+
     NSDictionary *wifiSSIDDic = [TYGNetworkUtility fetchSSIDInfo];
     NSString *SSID = [wifiSSIDDic objectForKey:@"SSID"];
     NSString *BSSID = [wifiSSIDDic objectForKey:@"BSSID"];
     NSString *SSIDData = [wifiSSIDDic objectForKey:@"SSIDDATA"];
-    
+
     [netDetailArray addObject:SAFE_STRING(SSID)];
     [netDetailArray addObject:SAFE_STRING(BSSID)];
     [netDetailArray addObject:SAFE_STRING(SSIDData)];
-    
-    
+
+
     NSDictionary *currentWiFiDic = [TYGNetworkUtility getLocalInfoForCurrentWiFi];
     for (NSString *key in [currentWiFiDic allKeys]) {
         NSString *value = [currentWiFiDic objectForKey:key];
-        
+
         [netTitleArray addObject:key];
         [netDetailArray addObject:value];
     }
-    
+
     [titlesArray addObject:netTitleArray];
     [detailTitlesArray addObject:netDetailArray];
-    
+
     //SIM
-    NSMutableArray *simTitleArray = [NSMutableArray arrayWithObjects:@"网络类型",@"网络环境",@"手机号码(私有API)",@"手机号码", nil];
+    NSMutableArray *simTitleArray = [NSMutableArray arrayWithObjects:@"网络类型(方式一)",@"网络类型(方式二)",@"网络环境(方式一)",@"网络环境(方式二)",@"手机号码(私有API)",@"手机号码", nil];
     NSMutableArray *simDetailArray = [NSMutableArray arrayWithCapacity:10];
-    
+
     NSString *networktype = [[TYGSimInfo sharedManager] getCurrentRadioAccessTechnology];//获取当前网络的类型
+    NSString *networktype1 = [TYGSimInfo getCurrentRadioAccessTechnologyName];//获取当前网络的类型
     NSString *networktype2 = [TYGSimInfo networktype];//获取网络环境
+    NSString *networktype3 = [TYGSimInfo getNetworkType];//获取网络环境
     [simDetailArray addObject:SAFE_STRING(networktype)];
+    [simDetailArray addObject:SAFE_STRING(networktype1)];
     [simDetailArray addObject:SAFE_STRING(networktype2)];
+    [simDetailArray addObject:SAFE_STRING(networktype3)];
+    [simDetailArray addObject:@""];
+    [simDetailArray addObject:@""];
 
     NSDictionary *carrierInfo = [[TYGSimInfo sharedManager] getcarrierInfo];//获取sim卡信息
     for (NSString *key in [carrierInfo allKeys]) {
@@ -195,7 +201,7 @@
         [simTitleArray addObject:key];
         [simDetailArray addObject:value];
     }
-    
+
     [titlesArray addObject:simTitleArray];
     [detailTitlesArray addObject:simDetailArray];
     

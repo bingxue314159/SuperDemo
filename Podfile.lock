@@ -93,7 +93,7 @@ PODS:
   - MWPhotoBrowser (2.1.2):
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
-    - SDWebImage (!= 3.7.2, ~> 3.7)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
   - MYBlurIntroductionView (1.0.3)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
@@ -132,7 +132,7 @@ PODS:
   - TTSwitch (0.0.6)
   - TYPagerController (1.0.2)
   - UICountingLabel (1.2.0)
-  - UITableView+FDTemplateLayoutCell (1.4)
+  - "UITableView+FDTemplateLayoutCell (1.4)"
   - UzysAssetsPickerController (0.9.9)
   - WMPageController (2.2.1)
 
@@ -203,9 +203,89 @@ DEPENDENCIES:
   - TSMessages (~> 0.9.12)
   - TTSwitch (~> 0.0.6)
   - TYPagerController (~> 1.0.2)
-  - UITableView+FDTemplateLayoutCell (~> 1.4)
+  - "UITableView+FDTemplateLayoutCell (~> 1.4)"
   - UzysAssetsPickerController (~> 0.9.9)
   - WMPageController (~> 2.2.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ABCalendarPicker
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - AMPopTip
+    - APNumberPad
+    - ASProgressPopUpView
+    - ASValueTrackingSlider
+    - AwesomeMenu
+    - BButton
+    - BlocksKit
+    - CubeController
+    - DACircularProgress
+    - DateTools
+    - DeviceUtil
+    - DTCoreText
+    - DTFoundation
+    - DWBubbleMenuButton
+    - DZNEmptyDataSet
+    - EAIntroView
+    - EARestrictedScrollView
+    - EGOCache
+    - FSCalendar
+    - GDataXML-HTML
+    - GLCalendarView
+    - HCSStarRatingView
+    - HexColors
+    - HMSegmentedControl
+    - iCarousel
+    - IGLDropDownMenu
+    - IQActionSheetPickerView
+    - IQKeyboardManager
+    - JazzHands
+    - JJTabBarController
+    - JTCalendar
+    - KGModal
+    - KLCPopup
+    - KxMenu
+    - LDProgressView
+    - M13BadgeView
+    - M13Checkbox
+    - M13ProgressSuite
+    - Masonry
+    - MBProgressHUD
+    - MDRadialProgress
+    - MGSwipeTableCell
+    - MJExtension
+    - MJRefresh
+    - MWPhotoBrowser
+    - MYBlurIntroductionView
+    - NJKWebViewProgress
+    - Onboard
+    - PDTSimpleCalendar
+    - PNChart
+    - pop
+    - QBPopupMenu
+    - QuickDialog
+    - REFormattedNumberField
+    - REFrostedViewController
+    - REMenu
+    - RESideMenu
+    - RETableViewManager
+    - REValidation
+    - RWDropdownMenu
+    - SAMTextView
+    - SDWebImage
+    - StyledPageControl
+    - SVProgressHUD
+    - SWTableViewCell
+    - TimesSquare
+    - Toast
+    - TSMessages
+    - TTSwitch
+    - TYPagerController
+    - UICountingLabel
+    - "UITableView+FDTemplateLayoutCell"
+    - UzysAssetsPickerController
+    - WMPageController
 
 SPEC CHECKSUMS:
   ABCalendarPicker: dfa1269abd0d7b5697c9abe3001d31e5b901ed4b
@@ -282,10 +362,10 @@ SPEC CHECKSUMS:
   TTSwitch: fef67a32dbd75e6981a3d27a7e954728e537de50
   TYPagerController: 0b3e3e589a217ff537d5f78e1e76594beaa4cfc6
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  "UITableView+FDTemplateLayoutCell": 234e1582bcc4e18461af91155123bb96538ed030
   UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
   WMPageController: 181bcc9b1fb7c9c3466bff66012552953a547d28
 
-PODFILE CHECKSUM: b2a71dccce7877d7092db4c5b8d50c9fd6ebf523
+PODFILE CHECKSUM: bafba806afbf1275ddbd25b2007af7d0a3321c5c
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.10.1

@@ -12,6 +12,18 @@
 #import <CoreTelephony/CTCallCenter.h>
 #import <CoreTelephony/CTCall.h>
 
+#define SAFE_STRING(str) ([[NSNull null] isEqual:str] ? @"" : (([(str) length] ? (str) : @"")))
+
+//判断当前设备是否为刘海屏幕
+#define isLiuhaiScreen ({\
+BOOL isBangsScreen = NO; \
+if (@available(iOS 11.0, *)) { \
+UIWindow *window = [[UIApplication sharedApplication].windows firstObject]; \
+isBangsScreen = window.safeAreaInsets.bottom > 0; \
+} \
+isBangsScreen; \
+})
+
 @interface TYGSimInfo()
 
 @property (nonatomic, strong) CTTelephonyNetworkInfo *telephonyInfo;
@@ -32,7 +44,7 @@
 
 /**
  获取sim卡信息
-
+ 
  @return NSDictionary
  */
 - (NSDictionary *)getcarrierInfo{
@@ -47,11 +59,11 @@
     NSLog(@"carrier:%@", [carrier description]);
     
     NSMutableDictionary *carDic = [NSMutableDictionary dictionaryWithCapacity:5];
-    [carDic setObject:carrierName forKey:@"carrierName"];
-    [carDic setObject:mobileCountryCode forKey:@"mobileCountryCode"];
-    [carDic setObject:mobileNetworkCode forKey:@"mobileNetworkCode"];
-    [carDic setObject:isoCountryCode forKey:@"isoCountryCode"];
-    [carDic setObject:allowsVOIP forKey:@"allowsVOIP"];
+    [carDic setObject:SAFE_STRING(carrierName) forKey:@"carrierName"];
+    [carDic setObject:SAFE_STRING(mobileCountryCode) forKey:@"mobileCountryCode"];
+    [carDic setObject:SAFE_STRING(mobileNetworkCode) forKey:@"mobileNetworkCode"];
+    [carDic setObject:SAFE_STRING(isoCountryCode) forKey:@"isoCountryCode"];
+    [carDic setObject:SAFE_STRING(allowsVOIP) forKey:@"allowsVOIP"];
     
     return carDic;
 }
@@ -59,8 +71,8 @@
 
 /**
  获取当前网络的类型(ios7之后可以按照以下方式获取。方便而且类型多)
-
- @return 网络类型（3G，4G……）
+ 
+ @return 网络类型（CTRadioAccessTechnologyGPRS，CTRadioAccessTechnologyWCDMA……）
  */
 - (NSString *)getCurrentRadioAccessTechnology{
     
@@ -77,12 +89,58 @@
          CTRadioAccessTechnologyCDMAEVDORevB
          CTRadioAccessTechnologyeHRPD        //电信使用的一种3G到4G的演进技术， 3.75G
          CTRadioAccessTechnologyLTE          //接近4G
+         CTRadioAccessTechnologyNRNSA       //NR的非独立组网（NSA）模式@available(iOS 14.0, *)
+         CTRadioAccessTechnologyNR          //新无线(5G)@available(iOS 14.0, *)
          */
         return _telephonyInfo.currentRadioAccessTechnology;
     }
     
     return NULL;
 }
+
+
+/**
+ 获取当前网络的类型(ios7之后可以按照以下方式获取。方便而且类型多)
+ 
+ @return 网络类型（3G，4G……）
+ */
++ (NSString *)getCurrentRadioAccessTechnologyName{
+    CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
+    NSString *currentStatus = info.currentRadioAccessTechnology;
+    NSString *currentNet = @"";
+    
+    if ([currentStatus isEqualToString:CTRadioAccessTechnologyGPRS]) {
+        currentNet = @"GPRS";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyEdge]) {
+        currentNet = @"2.75G EDGE";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyWCDMA]){
+        currentNet = @"3G";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyHSDPA]){
+        currentNet = @"3.5G HSDPA";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyHSUPA]){
+        currentNet = @"3.5G HSUPA";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyCDMA1x]){
+        currentNet = @"2G";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyCDMAEVDORev0]){
+        currentNet = @"3G";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyCDMAEVDORevA]){
+        currentNet = @"3G";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyCDMAEVDORevB]){
+        currentNet = @"3G";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyeHRPD]){
+        currentNet = @"HRPD";
+    }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyLTE]){
+        currentNet = @"4G";
+    }else if (@available(iOS 14.0, *)) {
+        if ([currentStatus isEqualToString:CTRadioAccessTechnologyNRNSA]){
+            currentNet = @"5G NSA";
+        }else if ([currentStatus isEqualToString:CTRadioAccessTechnologyNR]){
+            currentNet = @"5G";
+        }
+    }
+    return currentNet;
+}
+
 
 /**
  获取网络环境
@@ -116,13 +174,164 @@
             netname = @"LTE";
             break;
         case 5:
-            netname = @"Wifi";
+            netname = @"WIFI";
             break;
         default:
             break;
     }
     return netname;
 }
+
+
+/// iOS获取设备的网络状态(已适配iOS13,iOS14无变化)
++ (NSString *)getNetworkType {
+    UIApplication *app = [UIApplication sharedApplication];
+    id statusBar = nil;
+    //    判断是否是iOS 13
+    NSString *network = @"";
+    if (@available(iOS 13.0, *)) {
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;
+        
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wundeclared-selector"
+        if ([statusBarManager respondsToSelector:@selector(createLocalStatusBar)]) {
+            UIView *localStatusBar = [statusBarManager performSelector:@selector(createLocalStatusBar)];
+            if ([localStatusBar respondsToSelector:@selector(statusBar)]) {
+                statusBar = [localStatusBar performSelector:@selector(statusBar)];
+            }
+        }
+        
+        #pragma clang diagnostic pop
+        if (statusBar) {
+            //            UIStatusBarDataCellularEntry
+            id currentData = [[statusBar valueForKeyPath:@"_statusBar"] valueForKeyPath:@"currentData"];
+            id _wifiEntry = [currentData valueForKeyPath:@"wifiEntry"];
+            id _cellularEntry = [currentData valueForKeyPath:@"cellularEntry"];
+            if (_wifiEntry && [[_wifiEntry valueForKeyPath:@"isEnabled"] boolValue]) {
+                //                If wifiEntry is enabled, is WiFi.
+                network = @"WIFI";
+            } else if (_cellularEntry && [[_cellularEntry valueForKeyPath:@"isEnabled"] boolValue]) {
+                NSNumber *type = [_cellularEntry valueForKeyPath:@"type"];
+                if (type) {
+                    switch (type.integerValue) {
+                        case 0:
+                            //                            无sim卡
+                            network = @"NONE";
+                            break;
+                        case 1:
+                            network = @"1G";
+                            break;
+                        case 4:
+                            network = @"3G";
+                            break;
+                        case 5:
+                            network = @"4G";
+                            break;
+                        default:
+                            //                            默认WWAN类型
+                            network = @"WWAN";
+                            break;
+                    }
+                }
+            }
+        }
+    }else {
+        statusBar = [app valueForKeyPath:@"statusBar"];
+        
+        if (isLiuhaiScreen) {
+            //            刘海屏
+            id statusBarView = [statusBar valueForKeyPath:@"statusBar"];
+            UIView *foregroundView = [statusBarView valueForKeyPath:@"foregroundView"];
+            NSArray *subviews = [[foregroundView subviews][2] subviews];
+            
+            if (subviews.count == 0) {
+                //                    iOS 12
+                id currentData = [statusBarView valueForKeyPath:@"currentData"];
+                id wifiEntry = [currentData valueForKey:@"wifiEntry"];
+                if ([[wifiEntry valueForKey:@"_enabled"] boolValue]) {
+                    network = @"WIFI";
+                }else {
+                    //                    卡1:
+                    id cellularEntry = [currentData valueForKey:@"cellularEntry"];
+                    //                    卡2:
+                    id secondaryCellularEntry = [currentData valueForKey:@"secondaryCellularEntry"];
+                    
+                    if (([[cellularEntry valueForKey:@"_enabled"] boolValue]|[[secondaryCellularEntry valueForKey:@"_enabled"] boolValue]) == NO) {
+                        //                            无卡情况
+                        network = @"NONE";
+                    }else {
+                        //                            判断卡1还是卡2
+                        BOOL isCardOne = [[cellularEntry valueForKey:@"_enabled"] boolValue];
+                        int networkType = isCardOne ? [[cellularEntry valueForKey:@"type"] intValue] : [[secondaryCellularEntry valueForKey:@"type"] intValue];
+                        switch (networkType) {
+                            case 0://无服务
+                                network = [NSString stringWithFormat:@"%@-%@", isCardOne ? @"Card 1" : @"Card 2", @"NONE"];
+                                break;
+                            case 3:
+                                network = [NSString stringWithFormat:@"%@-%@", isCardOne ? @"Card 1" : @"Card 2", @"2G/E"];
+                                break;
+                            case 4:
+                                network = [NSString stringWithFormat:@"%@-%@", isCardOne ? @"Card 1" : @"Card 2", @"3G"];
+                                break;
+                            case 5:
+                                network = [NSString stringWithFormat:@"%@-%@", isCardOne ? @"Card 1" : @"Card 2", @"4G"];
+                                break;
+                            default:
+                                break;
+                        }
+                        
+                    }
+                }
+                
+            }else {
+                
+                for (id subview in subviews) {
+                    if ([subview isKindOfClass:NSClassFromString(@"_UIStatusBarWifiSignalView")]) {
+                        network = @"WIFI";
+                    }else if ([subview isKindOfClass:NSClassFromString(@"_UIStatusBarStringView")]) {
+                        network = [subview valueForKeyPath:@"originalText"];
+                    }
+                }
+            }
+            
+        }else {
+            // 非刘海屏
+            UIView *foregroundView = [statusBar valueForKeyPath:@"foregroundView"];
+            NSArray *subviews = [foregroundView subviews];
+            
+            for (id subview in subviews) {
+                if ([subview isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
+                    int networkType = [[subview valueForKeyPath:@"dataNetworkType"] intValue];
+                    switch (networkType) {
+                        case 0:
+                            network = @"NONE";
+                            break;
+                        case 1:
+                            network = @"2G";
+                            break;
+                        case 2:
+                            network = @"3G";
+                            break;
+                        case 3:
+                            network = @"4G";
+                            break;
+                        case 5:
+                            network = @"WIFI";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+    }
+    
+    if ([network isEqualToString:@""]) {
+        network = @"NO DISPLAY";
+    }
+    return network;
+}
+
 
 - (void)test{
     //1.当sim卡更换时弹出此窗口

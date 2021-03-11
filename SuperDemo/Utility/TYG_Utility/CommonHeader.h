@@ -61,6 +61,26 @@
 //判断iphone的版本号
 #define isSystemIsWhich(yoursystem) [[[UIDevice currentDevice] systemVersion] compare:yoursystmen] == NSOrderedDescending
 
+//判断当前设备是否为刘海屏幕
+#define isLiuhaiScreen ({\
+    BOOL isBangsScreen = NO; \
+    if (@available(iOS 11.0, *)) { \
+        UIWindow *window = [[UIApplication sharedApplication].windows firstObject]; \
+        isBangsScreen = window.safeAreaInsets.bottom > 0; \
+    } \
+    isBangsScreen; \
+})
+
+#define isIphoneX ({\
+    BOOL isPhoneX = NO;\
+    if (@available(iOS 11.0, *)) {\
+        if (!UIEdgeInsetsEqualToEdgeInsets([UIApplication sharedApplication].delegate.window.safeAreaInsets, UIEdgeInsetsZero)) {\
+        isPhoneX = YES;\
+        }\
+    }\
+    isPhoneX;\
+})
+
 //判断是真机还是模拟器
 #if TARGET_OS_IPHONE
 //iPhone Device
